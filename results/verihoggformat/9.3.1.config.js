@@ -1,1 +1,1 @@
-config_loader_data['verihoggformat/9.3.1'] = [["","sequential_block",1,"logs/VerihoggFormat/chapter-9/9.3.1--sequential_block.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-9/9.3.1--sequential_block.sv.html"]]
+config_loader_data['verihoggformat/9.3.1'] = [["","sequential_block",1,"logs/VerihoggFormat/chapter-9/9.3.1--sequential_block.sv.log.html","tests/chapter-9/9.3.1--sequential_block.sv.html"]]

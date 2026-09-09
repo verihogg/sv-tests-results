@@ -1,1 +1,1 @@
-config_loader_data['verihogglint/11.3.5'] = [["","expr_short_circuit",1,"logs/VerihoggLint/chapter-11/11.3.5--expr_short_circuit.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-11/11.3.5--expr_short_circuit.sv.html"]]
+config_loader_data['verihogglint/11.3.5'] = [["","expr_short_circuit",1,"logs/VerihoggLint/chapter-11/11.3.5--expr_short_circuit.sv.log.html","tests/chapter-11/11.3.5--expr_short_circuit.sv.html"]]

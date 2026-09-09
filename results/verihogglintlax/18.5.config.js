@@ -1,1 +1,1 @@
-config_loader_data['verihogglintlax/18.5'] = [["","constraint_blocks_0",1,"logs/VerihoggLintLax/chapter-18/18.5--constraint-blocks_0.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-18/18.5--constraint-blocks_0.sv.html"]]
+config_loader_data['verihogglintlax/18.5'] = [["","constraint_blocks_0",1,"logs/VerihoggLintLax/chapter-18/18.5--constraint-blocks_0.sv.log.html","tests/chapter-18/18.5--constraint-blocks_0.sv.html"]]

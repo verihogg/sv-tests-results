@@ -1,1 +1,1 @@
-config_loader_data['slang_parse/8.26.6.1'] = [["","name_conflict_resolved",1,"logs/Slang_parse/chapter-8/8.26.6.1--name_conflict_resolved.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-8/8.26.6.1--name_conflict_resolved.sv.html"]]
+config_loader_data['slang_parse/8.26.6.1'] = [["","name_conflict_resolved",1,"logs/Slang_parse/chapter-8/8.26.6.1--name_conflict_resolved.sv.log.html","tests/chapter-8/8.26.6.1--name_conflict_resolved.sv.html"]]

@@ -1,1 +1,1 @@
-config_loader_data['verihogglint/12.7.1'] = [["","for_loop",1,"logs/VerihoggLint/chapter-12/12.7.1--for.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-12/12.7.1--for.sv.html"]]
+config_loader_data['verihogglint/12.7.1'] = [["","for_loop",1,"logs/VerihoggLint/chapter-12/12.7.1--for.sv.log.html","tests/chapter-12/12.7.1--for.sv.html"]]

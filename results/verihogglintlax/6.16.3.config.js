@@ -1,1 +1,1 @@
-config_loader_data['verihogglintlax/6.16.3'] = [["","string_getc",1,"logs/VerihoggLintLax/chapter-6/6.16.3--string_getc.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-6/6.16.3--string_getc.sv.html"]]
+config_loader_data['verihogglintlax/6.16.3'] = [["","string_getc",1,"logs/VerihoggLintLax/chapter-6/6.16.3--string_getc.sv.log.html","tests/chapter-6/6.16.3--string_getc.sv.html"]]

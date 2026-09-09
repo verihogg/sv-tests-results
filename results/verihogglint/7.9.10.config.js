@@ -1,1 +1,1 @@
-config_loader_data['verihogglint/7.9.10'] = [["","associative-arrays-as-arguments",1,"logs/VerihoggLint/chapter-7/arrays/associative/arguments.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-7/arrays/associative/arguments.sv.html"]]
+config_loader_data['verihogglint/7.9.10'] = [["","associative-arrays-as-arguments",1,"logs/VerihoggLint/chapter-7/arrays/associative/arguments.sv.log.html","tests/chapter-7/arrays/associative/arguments.sv.html"]]

@@ -1,1 +1,1 @@
-config_loader_data['verihogglintlax/7.9.8'] = [["","associative-arrays-arg-traversal",1,"logs/VerihoggLintLax/chapter-7/arrays/associative/methods/traversal.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-7/arrays/associative/methods/traversal.sv.html"]]
+config_loader_data['verihogglintlax/7.9.8'] = [["","associative-arrays-arg-traversal",1,"logs/VerihoggLintLax/chapter-7/arrays/associative/methods/traversal.sv.log.html","tests/chapter-7/arrays/associative/methods/traversal.sv.html"]]

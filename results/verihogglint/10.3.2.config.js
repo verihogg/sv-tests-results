@@ -1,1 +1,1 @@
-config_loader_data['verihogglint/10.3.2'] = [["","cont_assignment",1,"logs/VerihoggLint/chapter-10/10.3.2--cont-assignment.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-10/10.3.2--cont-assignment.sv.html"]]
+config_loader_data['verihogglint/10.3.2'] = [["","cont_assignment",1,"logs/VerihoggLint/chapter-10/10.3.2--cont-assignment.sv.log.html","tests/chapter-10/10.3.2--cont-assignment.sv.html"]]

@@ -1,1 +1,1 @@
-config_loader_data['verihogglint/9.4.2.4'] = [["","event_sequence",1,"logs/VerihoggLint/chapter-9/9.4.2.4--event_sequence.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-9/9.4.2.4--event_sequence.sv.html"]]
+config_loader_data['verihogglint/9.4.2.4'] = [["","event_sequence",1,"logs/VerihoggLint/chapter-9/9.4.2.4--event_sequence.sv.log.html","tests/chapter-9/9.4.2.4--event_sequence.sv.html"]]

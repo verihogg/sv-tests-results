@@ -1,1 +1,1 @@
-config_loader_data['verihoggformat/6.19.5.3'] = [["","enum_next",1,"logs/VerihoggFormat/chapter-6/6.19.5.3--enum_next.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-6/6.19.5.3--enum_next.sv.html"]]
+config_loader_data['verihoggformat/6.19.5.3'] = [["","enum_next",1,"logs/VerihoggFormat/chapter-6/6.19.5.3--enum_next.sv.log.html","tests/chapter-6/6.19.5.3--enum_next.sv.html"]]

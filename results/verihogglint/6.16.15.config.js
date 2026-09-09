@@ -1,1 +1,1 @@
-config_loader_data['verihogglint/6.16.15'] = [["","string_realtoa",1,"logs/VerihoggLint/chapter-6/6.16.15--string_realtoa.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-6/6.16.15--string_realtoa.sv.html"]]
+config_loader_data['verihogglint/6.16.15'] = [["","string_realtoa",1,"logs/VerihoggLint/chapter-6/6.16.15--string_realtoa.sv.log.html","tests/chapter-6/6.16.15--string_realtoa.sv.html"]]

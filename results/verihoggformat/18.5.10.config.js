@@ -1,1 +1,1 @@
-config_loader_data['verihoggformat/18.5.10'] = [["","variable_ordering_0",1,"logs/VerihoggFormat/chapter-18/18.5.10--variable-ordering_0.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-18/18.5.10--variable-ordering_0.sv.html"]]
+config_loader_data['verihoggformat/18.5.10'] = [["","variable_ordering_0",1,"logs/VerihoggFormat/chapter-18/18.5.10--variable-ordering_0.sv.log.html","tests/chapter-18/18.5.10--variable-ordering_0.sv.html"]]

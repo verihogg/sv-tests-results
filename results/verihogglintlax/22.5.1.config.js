@@ -1,1 +1,1 @@
-config_loader_data['verihogglintlax/22.5.1'] = [["","22.5.1--define_and_resetall",1,"logs/VerihoggLintLax/chapter-22/22.5.1--define_and_resetall.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-22/22.5.1--define_and_resetall.sv.html"]]
+config_loader_data['verihogglintlax/22.5.1'] = [["","22.5.1--define_and_resetall",1,"logs/VerihoggLintLax/chapter-22/22.5.1--define_and_resetall.sv.log.html","tests/chapter-22/22.5.1--define_and_resetall.sv.html"]]

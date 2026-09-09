@@ -1,1 +1,1 @@
-config_loader_data['verihoggformat/12.6.3'] = [["","conditional_pattern",1,"logs/VerihoggFormat/chapter-12/12.6.3--conditional_pattern.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-12/12.6.3--conditional_pattern.sv.html"]]
+config_loader_data['verihoggformat/12.6.3'] = [["","conditional_pattern",1,"logs/VerihoggFormat/chapter-12/12.6.3--conditional_pattern.sv.log.html","tests/chapter-12/12.6.3--conditional_pattern.sv.html"]]

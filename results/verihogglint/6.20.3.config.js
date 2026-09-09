@@ -1,1 +1,1 @@
-config_loader_data['verihogglint/6.20.3'] = [["","parameter_type",1,"logs/VerihoggLint/chapter-6/6.20.3--parameter_type.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-6/6.20.3--parameter_type.sv.html"]]
+config_loader_data['verihogglint/6.20.3'] = [["","parameter_type",1,"logs/VerihoggLint/chapter-6/6.20.3--parameter_type.sv.log.html","tests/chapter-6/6.20.3--parameter_type.sv.html"]]

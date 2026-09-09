@@ -1,1 +1,1 @@
-config_loader_data['verihogglint/10.6.1'] = [["","assign_deassign",1,"logs/VerihoggLint/chapter-10/10.6.1--assign-deassign.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-10/10.6.1--assign-deassign.sv.html"]]
+config_loader_data['verihogglint/10.6.1'] = [["","assign_deassign",1,"logs/VerihoggLint/chapter-10/10.6.1--assign-deassign.sv.log.html","tests/chapter-10/10.6.1--assign-deassign.sv.html"]]

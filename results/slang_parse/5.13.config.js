@@ -1,1 +1,1 @@
-config_loader_data['slang_parse/5.13'] = [["","builtin-methods-string",1,"logs/Slang_parse/chapter-5/5.13-builtin-methods-strings.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-5/5.13-builtin-methods-strings.sv.html"]]
+config_loader_data['slang_parse/5.13'] = [["","builtin-methods-string",1,"logs/Slang_parse/chapter-5/5.13-builtin-methods-strings.sv.log.html","tests/chapter-5/5.13-builtin-methods-strings.sv.html"]]

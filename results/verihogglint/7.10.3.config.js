@@ -1,1 +1,1 @@
-config_loader_data['verihogglint/7.10.3'] = [["","queues-elements-persistence",1,"logs/VerihoggLint/chapter-7/queues/persistence.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-7/queues/persistence.sv.html"]]
+config_loader_data['verihogglint/7.10.3'] = [["","queues-elements-persistence",1,"logs/VerihoggLint/chapter-7/queues/persistence.sv.log.html","tests/chapter-7/queues/persistence.sv.html"]]

@@ -1,1 +1,1 @@
-config_loader_data['slang_parse/11.12'] = [["","let_construct",1,"logs/Slang_parse/chapter-11/11.12--let_construct.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-11/11.12--let_construct.sv.html"]]
+config_loader_data['slang_parse/11.12'] = [["","let_construct",1,"logs/Slang_parse/chapter-11/11.12--let_construct.sv.log.html","tests/chapter-11/11.12--let_construct.sv.html"]]

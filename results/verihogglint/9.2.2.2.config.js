@@ -1,1 +1,1 @@
-config_loader_data['verihogglint/9.2.2.2'] = [["","always_comb",1,"logs/VerihoggLint/chapter-9/9.2.2.2--always_comb.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-9/9.2.2.2--always_comb.sv.html"]]
+config_loader_data['verihogglint/9.2.2.2'] = [["","always_comb",1,"logs/VerihoggLint/chapter-9/9.2.2.2--always_comb.sv.log.html","tests/chapter-9/9.2.2.2--always_comb.sv.html"]]

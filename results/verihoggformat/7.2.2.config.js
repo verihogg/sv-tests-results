@@ -1,1 +1,1 @@
-config_loader_data['verihoggformat/7.2.2'] = [["","unpacked-structures-members-default-value",1,"logs/VerihoggFormat/chapter-7/structures/unpacked/default-value.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-7/structures/unpacked/default-value.sv.html"]]
+config_loader_data['verihoggformat/7.2.2'] = [["","unpacked-structures-members-default-value",1,"logs/VerihoggFormat/chapter-7/structures/unpacked/default-value.sv.log.html","tests/chapter-7/structures/unpacked/default-value.sv.html"]]

@@ -1,1 +1,1 @@
-config_loader_data['verihogglintlax/13.4.3'] = [["","const_function",1,"logs/VerihoggLintLax/chapter-13/13.4.3--const-function.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-13/13.4.3--const-function.sv.html"]]
+config_loader_data['verihogglintlax/13.4.3'] = [["","const_function",1,"logs/VerihoggLintLax/chapter-13/13.4.3--const-function.sv.log.html","tests/chapter-13/13.4.3--const-function.sv.html"]]

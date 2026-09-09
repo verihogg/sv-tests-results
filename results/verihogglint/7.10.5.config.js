@@ -1,1 +1,1 @@
-config_loader_data['verihogglint/7.10.5'] = [["","bounded-queues",1,"logs/VerihoggLint/chapter-7/queues/bounded.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-7/queues/bounded.sv.html"]]
+config_loader_data['verihogglint/7.10.5'] = [["","bounded-queues",1,"logs/VerihoggLint/chapter-7/queues/bounded.sv.log.html","tests/chapter-7/queues/bounded.sv.html"]]

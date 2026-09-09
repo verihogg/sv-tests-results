@@ -1,1 +1,1 @@
-config_loader_data['verihogglintlax/tnoc'] = [["cores","TNoC",1,"logs/VerihoggLintLax/generated/tnoc/tnoc.sv.log.html","third_party/cores/tnoc/rtl/bcm/tbcm_counter.sv.html"]]
+config_loader_data['verihogglintlax/tnoc'] = [["cores","TNoC",1,"logs/VerihoggLintLax/generated/tnoc/tnoc.sv.log.html","../../../home/tima/git/verihogg/sv-tests/third_party/cores/tnoc/rtl/bcm/tbcm_counter.sv.html"]]

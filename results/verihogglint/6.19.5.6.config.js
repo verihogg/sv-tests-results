@@ -1,1 +1,1 @@
-config_loader_data['verihogglint/6.19.5.6'] = [["","enum_name",1,"logs/VerihoggLint/chapter-6/6.19.5.6--enum_name.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-6/6.19.5.6--enum_name.sv.html"]]
+config_loader_data['verihogglint/6.19.5.6'] = [["","enum_name",1,"logs/VerihoggLint/chapter-6/6.19.5.6--enum_name.sv.log.html","tests/chapter-6/6.19.5.6--enum_name.sv.html"]]

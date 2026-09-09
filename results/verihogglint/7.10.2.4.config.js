@@ -1,1 +1,1 @@
-config_loader_data['verihogglint/7.10.2.4'] = [["","pop_front",1,"logs/VerihoggLint/chapter-7/queues/pop_front.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-7/queues/pop_front.sv.html"]]
+config_loader_data['verihogglint/7.10.2.4'] = [["","pop_front",1,"logs/VerihoggLint/chapter-7/queues/pop_front.sv.log.html","tests/chapter-7/queues/pop_front.sv.html"]]

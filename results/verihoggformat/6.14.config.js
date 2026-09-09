@@ -1,1 +1,1 @@
-config_loader_data['verihoggformat/6.14'] = [["","chandle",1,"logs/VerihoggFormat/chapter-6/6.14--chandle.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-6/6.14--chandle.sv.html"]]
+config_loader_data['verihoggformat/6.14'] = [["","chandle",1,"logs/VerihoggFormat/chapter-6/6.14--chandle.sv.log.html","tests/chapter-6/6.14--chandle.sv.html"]]

@@ -1,1 +1,1 @@
-config_loader_data['verihoggformat/6.6.2'] = [["","net_uwire",0,"logs/VerihoggFormat/generated/nets/6.6.2--net_uwire.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/generated/nets/6.6.2--net_uwire.sv.html"]]
+config_loader_data['verihoggformat/6.6.2'] = [["","net_uwire",0,"logs/VerihoggFormat/generated/nets/6.6.2--net_uwire.sv.log.html","tests/generated/nets/6.6.2--net_uwire.sv.html"]]

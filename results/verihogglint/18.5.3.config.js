@@ -1,1 +1,1 @@
-config_loader_data['verihogglint/18.5.3'] = [["","set_membership_0",1,"logs/VerihoggLint/chapter-18/18.5.3--set-membership_0.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-18/18.5.3--set-membership_0.sv.html"]]
+config_loader_data['verihogglint/18.5.3'] = [["","set_membership_0",1,"logs/VerihoggLint/chapter-18/18.5.3--set-membership_0.sv.log.html","tests/chapter-18/18.5.3--set-membership_0.sv.html"]]

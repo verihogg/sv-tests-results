@@ -1,1 +1,1 @@
-config_loader_data['slang/6.19.5.4'] = [["","enum_prev",1,"logs/Slang/chapter-6/6.19.5.4--enum_prev.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-6/6.19.5.4--enum_prev.sv.html"]]
+config_loader_data['slang/6.19.5.4'] = [["","enum_prev",1,"logs/Slang/chapter-6/6.19.5.4--enum_prev.sv.log.html","tests/chapter-6/6.19.5.4--enum_prev.sv.html"]]

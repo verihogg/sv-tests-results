@@ -1,1 +1,1 @@
-config_loader_data['verihoggformat/8.20'] = [["","virtual_method",1,"logs/VerihoggFormat/chapter-8/8.20--virtual_method.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-8/8.20--virtual_method.sv.html"]]
+config_loader_data['verihoggformat/8.20'] = [["","virtual_method",1,"logs/VerihoggFormat/chapter-8/8.20--virtual_method.sv.log.html","tests/chapter-8/8.20--virtual_method.sv.html"]]

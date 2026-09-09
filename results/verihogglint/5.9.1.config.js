@@ -1,1 +1,1 @@
-config_loader_data['verihogglint/5.9.1'] = [["","string-special-chars",1,"logs/VerihoggLint/chapter-5/5.9.1-string-special-chars.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-5/5.9.1-string-special-chars.sv.html"]]
+config_loader_data['verihogglint/5.9.1'] = [["","string-special-chars",1,"logs/VerihoggLint/chapter-5/5.9.1-string-special-chars.sv.log.html","tests/chapter-5/5.9.1-string-special-chars.sv.html"]]

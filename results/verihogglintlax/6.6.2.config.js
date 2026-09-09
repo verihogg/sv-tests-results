@@ -1,1 +1,1 @@
-config_loader_data['verihogglintlax/6.6.2'] = [["","net_uwire",1,"logs/VerihoggLintLax/generated/nets/6.6.2--net_uwire.sv.log.html","tests/generated/nets/6.6.2--net_uwire.sv.html"]]
+config_loader_data['verihogglintlax/6.6.2'] = [["","net_uwire",1,"logs/VerihoggLintLax/generated/nets/6.6.2--net_uwire.sv.log.html","../../../home/tima/git/verihogg/sv-tests/tests/generated/nets/6.6.2--net_uwire.sv.html"]]

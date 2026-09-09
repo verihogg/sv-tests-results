@@ -1,1 +1,1 @@
-config_loader_data['verihogglintlax/5.3'] = [["","string-basic",1,"logs/VerihoggLintLax/chapter-5/5.9-string-basics.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-5/5.9-string-basics.sv.html"]]
+config_loader_data['verihogglintlax/5.3'] = [["","string-basic",1,"logs/VerihoggLintLax/chapter-5/5.9-string-basics.sv.log.html","tests/chapter-5/5.9-string-basics.sv.html"]]
