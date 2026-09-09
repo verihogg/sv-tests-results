@@ -17,7 +17,7 @@
         <div>
           <dt>incdirs</dt>
           <dd><ul>
-            <li>/__w/sv-tests/sv-tests/tests/chapter-6<li>
+            <li>/tests/chapter-6<li>
           </ul></dd>
         </div>
         <div><dt>top module</dt><dd></dd></div>
@@ -27,7 +27,7 @@
         <div>
           <dt>files</dt>
           <dd><ul>
-            <li><a href="../../../../../../../../__w/sv-tests/sv-tests/tests/chapter-6/6.9.2--vector_vectored_inv.sv.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/tests/chapter-6/6.9.2--vector_vectored_inv.sv</a><li>
+            <li><a href="tests/chapter-6/6.9.2--vector_vectored_inv.sv.html" target="file-frame">tests/chapter-6/6.9.2--vector_vectored_inv.sv</a><li>
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
@@ -38,17 +38,17 @@
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-lint -nobuiltin -I/__w/sv-tests/sv-tests/tests/chapter-6 /__w/sv-tests/sv-tests/tests/chapter-6/6.9.2--vector_vectored_inv.sv</pre>
-      <pre>[SNT:PA0207] /__w/sv-tests/sv-tests/tests/chapter-6/6.9.2--vector_vectored_inv.sv:17:7: Syntax error: no viable alternative at input &#39;module top();\n\tlogic vectored&#39;,</pre>
+      <pre>verihogg-lint -nobuiltin -I/tests/chapter-6 /tests/chapter-6/6.9.2--vector_vectored_inv.sv</pre>
+      <pre>[SNT:PA0207] /tests/chapter-6/6.9.2--vector_vectored_inv.sv:17:7: Syntax error: no viable alternative at input &#39;module top();\n\tlogic vectored&#39;,</pre>
       <pre>	logic vectored [15:0] a = 0;</pre>
       <pre>       ^--.</pre>
-      <pre>[SNT:PA0207] /__w/sv-tests/sv-tests/tests/chapter-6/6.9.2--vector_vectored_inv.sv:17:7: Syntax error: mismatched input &#39;vectored&#39; expecting {&#39;this&#39;, &#39;randomize&#39;, &#39;sample&#39;, Escaped_identifier, Simple_identifier},</pre>
+      <pre>[SNT:PA0207] /tests/chapter-6/6.9.2--vector_vectored_inv.sv:17:7: Syntax error: mismatched input &#39;vectored&#39; expecting {&#39;this&#39;, &#39;randomize&#39;, &#39;sample&#39;, Escaped_identifier, Simple_identifier},</pre>
       <pre>	logic vectored [15:0] a = 0;</pre>
       <pre>       ^--.</pre>
-      <pre>[SNT:PA0207] /__w/sv-tests/sv-tests/tests/chapter-6/6.9.2--vector_vectored_inv.sv:17:23: Syntax error: missing &#39;;&#39; at &#39;a&#39;,</pre>
+      <pre>[SNT:PA0207] /tests/chapter-6/6.9.2--vector_vectored_inv.sv:17:23: Syntax error: missing &#39;;&#39; at &#39;a&#39;,</pre>
       <pre>	logic vectored [15:0] a = 0;</pre>
       <pre>                       ^--.</pre>
-      <pre>[SNT:PA0207] /__w/sv-tests/sv-tests/tests/chapter-6/6.9.2--vector_vectored_inv.sv:19:1: Syntax error: mismatched input &#39;assign&#39; expecting &lt;EOF&gt;,</pre>
+      <pre>[SNT:PA0207] /tests/chapter-6/6.9.2--vector_vectored_inv.sv:19:1: Syntax error: mismatched input &#39;assign&#39; expecting &lt;EOF&gt;,</pre>
       <pre>	assign a[1] = 1;</pre>
       <pre> ^--.</pre>
       <pre>No config file</pre>

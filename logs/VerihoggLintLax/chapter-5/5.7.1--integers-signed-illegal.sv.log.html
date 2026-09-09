@@ -17,7 +17,7 @@
         <div>
           <dt>incdirs</dt>
           <dd><ul>
-            <li>/__w/sv-tests/sv-tests/tests/chapter-5<li>
+            <li>/tests/chapter-5<li>
           </ul></dd>
         </div>
         <div><dt>top module</dt><dd></dd></div>
@@ -27,7 +27,7 @@
         <div>
           <dt>files</dt>
           <dd><ul>
-            <li><a href="../../../../../../../../__w/sv-tests/sv-tests/tests/chapter-5/5.7.1--integers-signed-illegal.sv.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/tests/chapter-5/5.7.1--integers-signed-illegal.sv</a><li>
+            <li><a href="tests/chapter-5/5.7.1--integers-signed-illegal.sv.html" target="file-frame">tests/chapter-5/5.7.1--integers-signed-illegal.sv</a><li>
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
@@ -38,11 +38,11 @@
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-lint -nobuiltin -I/__w/sv-tests/sv-tests/tests/chapter-5 /__w/sv-tests/sv-tests/tests/chapter-5/5.7.1--integers-signed-illegal.sv</pre>
-      <pre>[SNT:PA0207] /__w/sv-tests/sv-tests/tests/chapter-5/5.7.1--integers-signed-illegal.sv:20:10: Syntax error: no viable alternative at input &#39;module top();\n  logic  [7:0] a;\n\n  initial begin\n    a = 8&#39;d&#39;,</pre>
+      <pre>verihogg-lint -nobuiltin -I/tests/chapter-5 /tests/chapter-5/5.7.1--integers-signed-illegal.sv</pre>
+      <pre>[SNT:PA0207] /tests/chapter-5/5.7.1--integers-signed-illegal.sv:20:10: Syntax error: no viable alternative at input &#39;module top();\n  logic  [7:0] a;\n\n  initial begin\n    a = 8&#39;d&#39;,</pre>
       <pre>    a = 8&#39;d-6;</pre>
       <pre>          ^--.</pre>
-      <pre>[SNT:PA0207] /__w/sv-tests/sv-tests/tests/chapter-5/5.7.1--integers-signed-illegal.sv:19:2: Syntax error: mismatched input &#39;initial&#39; expecting &lt;EOF&gt;,</pre>
+      <pre>[SNT:PA0207] /tests/chapter-5/5.7.1--integers-signed-illegal.sv:19:2: Syntax error: mismatched input &#39;initial&#39; expecting &lt;EOF&gt;,</pre>
       <pre>  initial begin</pre>
       <pre>  ^--.</pre>
       <pre>No config file</pre>
