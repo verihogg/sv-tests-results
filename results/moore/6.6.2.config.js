@@ -1,1 +1,0 @@
-config_loader_data['moore/6.6.2'] = [["","net_uwire",1,"logs/moore/generated/nets/6.6.2--net_uwire.sv.log.html","tests/generated/nets/6.6.2--net_uwire.sv.html"]]

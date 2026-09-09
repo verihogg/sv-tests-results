@@ -1,1 +1,0 @@
-config_loader_data['synligyosys/7.8.4'] = [["","associative-arrays-integral",1,"logs/SynligYosys/chapter-7/arrays/associative/integral.sv.log.html","tests/chapter-7/arrays/associative/integral.sv.html"]]

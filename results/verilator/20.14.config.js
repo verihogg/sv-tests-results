@@ -1,1 +1,0 @@
-config_loader_data['verilator/20.14'] = [["","coverage_routines",0,"logs/Verilator/chapter-20/20.14--coverage.sv.log.html","tests/chapter-20/20.14--coverage.sv.html"]]

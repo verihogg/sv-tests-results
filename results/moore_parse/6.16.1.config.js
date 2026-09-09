@@ -1,1 +1,0 @@
-config_loader_data['moore_parse/6.16.1'] = [["","string_len",1,"logs/moore_parse/chapter-6/6.16.1--string_len.sv.log.html","tests/chapter-6/6.16.1--string_len.sv.html"]]

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-synth_partselsynth_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/partselsynth.v.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/partselsynth.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:26:55</dd></div>
+        <div><dt>time elapsed</dt><dd>0.012s</dd></div>
+        <div><dt>ram usage</dt><dd>22304 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpjsau7urf/formatted/partselsynth.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpjsau7urf/formatted/partselsynth.v</pre>
+      <pre>formatted/partselsynth.v:22:11: error: expected a declaration name</pre>
+      <pre>  enable  = 0;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/partselsynth.v:23:11: error: expected a declaration name</pre>
+      <pre>  bar_b   = 0;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/partselsynth.v:24:11: error: expected a declaration name</pre>
+      <pre>  bar_a   = 0;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/partselsynth.v:25:11: error: expected a declaration name</pre>
+      <pre>  scon    = 8&#39;b10_000000;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/partselsynth.v:26:3: error: expected member</pre>
+      <pre>  #1 if (val !== 1&#39;b1) begin$display (&#34;FAILED -- scon=%b, val=%b&#34;, scon, val);</pre>
+      <pre>  ^</pre>
+      <pre>formatted/partselsynth.v:27:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/partselsynth.v:28:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end scon  = 0;</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/partselsynth.v:26:38: note: last complete block started here</pre>
+      <pre>  #1 if (val !== 1&#39;b1) begin$display (&#34;FAILED -- scon=%b, val=%b&#34;, scon, val);</pre>
+      <pre>                                     ^</pre>
+      <pre>formatted/partselsynth.v:26:77: note: and ended here</pre>
+      <pre>  #1 if (val !== 1&#39;b1) begin$display (&#34;FAILED -- scon=%b, val=%b&#34;, scon, val);</pre>
+      <pre>                                                                            ^</pre>
+      <pre>formatted/partselsynth.v:28:13: error: expected a declaration name</pre>
+      <pre>  end scon  = 0;</pre>
+      <pre>            ^</pre>
+      <pre>formatted/partselsynth.v:29:13: error: expected a declaration name</pre>
+      <pre>  enable    = 1;</pre>
+      <pre>            ^</pre>
+      <pre>formatted/partselsynth.v:30:3: error: expected member</pre>
+      <pre>  #1 if (val !== 1&#39;b0) begin$display (&#34;FAILED -- scon=%b, enable=%b, val=%b&#34;, scon, enable, val);</pre>
+      <pre>  ^</pre>
+      <pre>formatted/partselsynth.v:31:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/partselsynth.v:32:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/partselsynth.v:30:38: note: last complete block started here</pre>
+      <pre>  #1 if (val !== 1&#39;b0) begin$display (&#34;FAILED -- scon=%b, enable=%b, val=%b&#34;, scon, enable, val);</pre>
+      <pre>                                     ^</pre>
+      <pre>formatted/partselsynth.v:30:96: note: and ended here</pre>
+      <pre>  #1 if (val !== 1&#39;b0) begin$display (&#34;FAILED -- scon=%b, enable=%b, val=%b&#34;, scon, enable, val);</pre>
+      <pre>                                                                                               ^</pre>
+      <pre>formatted/partselsynth.v:33:14: error: expected a declaration name</pre>
+      <pre>      val_in = 1;</pre>
+      <pre>             ^</pre>
+      <pre>formatted/partselsynth.v:34:3: error: expected member</pre>
+      <pre>  #1 if (val !== 1&#39;b1) begin$display (&#34;FAILED -- scon=%b, enable=%b, val_in=%b, val=%b&#34;, scon,</pre>
+      <pre>  ^</pre>
+      <pre>formatted/partselsynth.v:36:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/partselsynth.v:37:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/partselsynth.v:34:38: note: last complete block started here</pre>
+      <pre>  #1 if (val !== 1&#39;b1) begin$display (&#34;FAILED -- scon=%b, enable=%b, val_in=%b, val=%b&#34;, scon,</pre>
+      <pre>                                     ^</pre>
+      <pre>formatted/partselsynth.v:35:58: note: and ended here</pre>
+      <pre>                                      enable, val_in, val);</pre>
+      <pre>                                                         ^</pre>
+      <pre>formatted/partselsynth.v:38:14: error: expected a declaration name</pre>
+      <pre>      enable = 0;</pre>
+      <pre>             ^</pre>
+      <pre>formatted/partselsynth.v:39:3: error: expected member</pre>
+      <pre>  #1 if (val !== 1&#39;b0) begin$display (&#34;FAILED -- scon=%b, enable=%b, val=%b&#34;, scon, enable, val);</pre>
+      <pre>  ^</pre>
+      <pre>formatted/partselsynth.v:40:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/partselsynth.v:41:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/partselsynth.v:39:38: note: last complete block started here</pre>
+      <pre>  #1 if (val !== 1&#39;b0) begin$display (&#34;FAILED -- scon=%b, enable=%b, val=%b&#34;, scon, enable, val);</pre>
+      <pre>                                     ^</pre>
+      <pre>formatted/partselsynth.v:39:96: note: and ended here</pre>
+      <pre>  #1 if (val !== 1&#39;b0) begin$display (&#34;FAILED -- scon=%b, enable=%b, val=%b&#34;, scon, enable, val);</pre>
+      <pre>                                                                                               ^</pre>
+      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

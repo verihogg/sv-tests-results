@@ -1,1 +1,0 @@
-config_loader_data['odin/rsd'] = [["cores","rsd",0,"logs/Odin/generated/rsd/rsd.sv.log.html","tests/generated/rsd/rsd.sv.html"]]

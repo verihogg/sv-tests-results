@@ -1,1 +1,0 @@
-config_loader_data['sv_parser/6.13'] = [["","void",1,"logs/sv_parser/chapter-6/6.13--void.sv.log.html","tests/chapter-6/6.13--void.sv.html"]]

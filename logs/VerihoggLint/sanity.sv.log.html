@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../log.css">
+  </head>
+  <body>
+    <header class="test-passed">
+        <a href="https://github.com/verihogg/verihogg-lint/tree/9eea937fde4f2d3e21e4d6eff1ce0bbdb5d6078f" target="_blank"><h1>VerihoggLint</h1></a>
+        <h2>sanity</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>A simple module that should fail during parsing</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>sanity</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/tests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>parsing elaboration</dd></div>
+        <div><dt>results group</dt><dd><em></em></dd></div>
+        <div><dt>mode</dt><dd>elaboration</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../__w/sv-tests/sv-tests/tests/sanity.sv.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/tests/sanity.sv</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 08:44:14</dd></div>
+        <div><dt>time elapsed</dt><dd>0.091s</dd></div>
+        <div><dt>ram usage</dt><dd>25440 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-lint -nobuiltin -I/__w/sv-tests/sv-tests/tests /__w/sv-tests/sv-tests/tests/sanity.sv</pre>
+      <pre>[SNT:PA0207] /__w/sv-tests/sv-tests/tests/sanity.sv:23:1: Syntax error: no viable alternative at input &#39;syntaxerror\n\twire&#39;,</pre>
+      <pre>	wire clk;</pre>
+      <pre> ^--.</pre>
+      <pre>No config file</pre>
+      <pre>Lint finished with 1 error(s).</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

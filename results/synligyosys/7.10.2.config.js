@@ -1,1 +1,0 @@
-config_loader_data['synligyosys/7.10.2'] = [["","max-size",0,"logs/SynligYosys/chapter-7/queues/max-size.sv.log.html","tests/chapter-7/queues/max-size.sv.html"]]

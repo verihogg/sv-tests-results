@@ -1,1 +1,0 @@
-config_loader_data['odin/8.13'] = [["","inheritance",0,"logs/Odin/chapter-8/8.13--inheritance.sv.log.html","tests/chapter-8/8.13--inheritance.sv.html"]]

@@ -1,0 +1,1 @@
+config_loader_data['verihogglint/7.5.1'] = [["","dynamic-arrays-op-new",1,"logs/VerihoggLint/chapter-7/arrays/dynamic/op-new.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-7/arrays/dynamic/op-new.sv.html"]]

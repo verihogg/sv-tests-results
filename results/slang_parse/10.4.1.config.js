@@ -1,1 +1,1 @@
-config_loader_data['slang_parse/10.4.1'] = [["","blocking_assignment",1,"logs/Slang_parse/chapter-10/10.4.1--blocking-assignment.sv.log.html","tests/chapter-10/10.4.1--blocking-assignment.sv.html"]]
+config_loader_data['slang_parse/10.4.1'] = [["","blocking_assignment",1,"logs/Slang_parse/chapter-10/10.4.1--blocking-assignment.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-10/10.4.1--blocking-assignment.sv.html"]]

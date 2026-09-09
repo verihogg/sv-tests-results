@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-sv_br_gh191_continue_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/br_gh191_continue.v.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/br_gh191_continue.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:27:28</dd></div>
+        <div><dt>time elapsed</dt><dd>0.011s</dd></div>
+        <div><dt>ram usage</dt><dd>22496 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpx8n9kccc/formatted/br_gh191_continue.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpx8n9kccc/formatted/br_gh191_continue.v</pre>
+      <pre>formatted/br_gh191_continue.v:58:24: error: expected &#39;while&#39;</pre>
+      <pre>      do beginidx += 1;</pre>
+      <pre>                       ^</pre>
+      <pre>formatted/br_gh191_continue.v:66:3: error: expected member</pre>
+      <pre>  while (idx &lt; 5) ;</pre>
+      <pre>  ^~~~~</pre>
+      <pre>formatted/br_gh191_continue.v:69:7: error: expected member</pre>
+      <pre>      $display (&#34;FAILED -- break from do-while loop&#34;);</pre>
+      <pre>      ^~~~~~~~</pre>
+      <pre>formatted/br_gh191_continue.v:70:7: error: expected member</pre>
+      <pre>      $finish;</pre>
+      <pre>      ^~~~~~~</pre>
+      <pre>formatted/br_gh191_continue.v:72:7: error: expected a declaration name</pre>
+      <pre>  idx = 0;</pre>
+      <pre>      ^</pre>
+      <pre>formatted/br_gh191_continue.v:73:3: error: expected member</pre>
+      <pre>  repeat (5)</pre>
+      <pre>  ^~~~~~</pre>
+      <pre>formatted/br_gh191_continue.v:75:11: error: expected a declaration name</pre>
+      <pre>      idx += 1;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/br_gh191_continue.v:76:20: error: expected member</pre>
+      <pre>      if (idx &lt; 2) continue;</pre>
+      <pre>                   ^</pre>
+      <pre>formatted/br_gh191_continue.v:77:11: error: expected a declaration name</pre>
+      <pre>      idx += 1;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/br_gh191_continue.v:81:7: error: expected member</pre>
+      <pre>      $display (&#34;FAILED -- continue from repeat(5) loop (idx=%0d)&#34;, idx);</pre>
+      <pre>      ^~~~~~~~</pre>
+      <pre>formatted/br_gh191_continue.v:82:7: error: expected member</pre>
+      <pre>      $finish;</pre>
+      <pre>      ^~~~~~~</pre>
+      <pre>formatted/br_gh191_continue.v:84:3: error: expected member</pre>
+      <pre>  $display (&#34;PASSED&#34;);</pre>
+      <pre>  ^~~~~~~~</pre>
+      <pre>formatted/br_gh191_continue.v:85:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/br_gh191_continue.v:80:5: note: last complete block started here</pre>
+      <pre>    begin</pre>
+      <pre>    ^</pre>
+      <pre>formatted/br_gh191_continue.v:83:5: note: and ended here</pre>
+      <pre>    end</pre>
+      <pre>    ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

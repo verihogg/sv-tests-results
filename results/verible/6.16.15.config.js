@@ -1,1 +1,0 @@
-config_loader_data['verible/6.16.15'] = [["","string_realtoa",1,"logs/Verible/chapter-6/6.16.15--string_realtoa.sv.log.html","tests/chapter-6/6.16.15--string_realtoa.sv.html"]]

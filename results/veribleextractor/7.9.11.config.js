@@ -1,1 +1,0 @@
-config_loader_data['veribleextractor/7.9.11'] = [["","associative-arrays-literals",1,"logs/VeribleExtractor/chapter-7/arrays/associative/literals.sv.log.html","tests/chapter-7/arrays/associative/literals.sv.html"]]

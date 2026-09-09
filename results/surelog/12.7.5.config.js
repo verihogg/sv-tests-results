@@ -1,1 +1,0 @@
-config_loader_data['surelog/12.7.5'] = [["","dowhile_loop",1,"logs/Surelog/chapter-12/12.7.5--dowhile.sv.log.html","tests/chapter-12/12.7.5--dowhile.sv.html"]]

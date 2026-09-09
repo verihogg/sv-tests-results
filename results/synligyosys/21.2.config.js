@@ -1,1 +1,0 @@
-config_loader_data['synligyosys/21.2'] = [["","display_boh",1,"logs/SynligYosys/chapter-21/21.2--display-boh.sv.log.html","tests/chapter-21/21.2--display-boh.sv.html"],["","write_boh",1,"logs/SynligYosys/chapter-21/21.2--write-boh.sv.log.html","tests/chapter-21/21.2--write-boh.sv.html"]]

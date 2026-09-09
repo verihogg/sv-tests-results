@@ -1,0 +1,1 @@
+config_loader_data['verihogglint/9.2.2.1'] = [["","always",1,"logs/VerihoggLint/chapter-9/9.2.2.1--always.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-9/9.2.2.1--always.sv.html"]]

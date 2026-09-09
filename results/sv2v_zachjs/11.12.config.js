@@ -1,1 +1,0 @@
-config_loader_data['sv2v_zachjs/11.12'] = [["","let_construct",0,"logs/Sv2v_zachjs/chapter-11/11.12--let_construct.sv.log.html","tests/chapter-11/11.12--let_construct.sv.html"]]

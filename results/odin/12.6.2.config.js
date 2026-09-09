@@ -1,1 +1,0 @@
-config_loader_data['odin/12.6.2'] = [["","if_pattern",0,"logs/Odin/chapter-12/12.6.2--if_pattern.sv.log.html","tests/chapter-12/12.6.2--if_pattern.sv.html"]]

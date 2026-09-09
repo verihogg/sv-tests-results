@@ -1,0 +1,1 @@
+config_loader_data['verihogglintlax/18.12'] = [["","randomization_of_scope_variables_0",1,"logs/VerihoggLintLax/chapter-18/18.12--randomization-of-scope-variables_0.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-18/18.12--randomization-of-scope-variables_0.sv.html"]]

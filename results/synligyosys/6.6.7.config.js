@@ -1,1 +1,0 @@
-config_loader_data['synligyosys/6.6.7'] = [["","nettype",1,"logs/SynligYosys/chapter-6/6.6.7--nettype.sv.log.html","tests/chapter-6/6.6.7--nettype.sv.html"]]

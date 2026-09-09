@@ -1,1 +1,0 @@
-config_loader_data['sv_parser/12.6.2'] = [["","if_pattern",1,"logs/sv_parser/chapter-12/12.6.2--if_pattern.sv.log.html","tests/chapter-12/12.6.2--if_pattern.sv.html"]]

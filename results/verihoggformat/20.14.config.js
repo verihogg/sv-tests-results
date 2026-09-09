@@ -1,0 +1,1 @@
+config_loader_data['verihoggformat/20.14'] = [["","coverage_routines",1,"logs/VerihoggFormat/chapter-20/20.14--coverage.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-20/20.14--coverage.sv.html"]]

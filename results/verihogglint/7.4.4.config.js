@@ -1,0 +1,1 @@
+config_loader_data['verihogglint/7.4.4'] = [["","memories-basic",1,"logs/VerihoggLint/chapter-7/memories/basic.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-7/memories/basic.sv.html"],["","memories-read-write",1,"logs/VerihoggLint/chapter-7/memories/read-write.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-7/memories/read-write.sv.html"]]

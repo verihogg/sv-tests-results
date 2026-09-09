@@ -1,1 +1,0 @@
-config_loader_data['odin/sanity'] = [["","sanity",1,"logs/Odin/sanity.sv.log.html","tests/sanity.sv.html"]]

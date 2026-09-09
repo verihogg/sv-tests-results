@@ -1,0 +1,1 @@
+config_loader_data['verihogglint/8.24'] = [["","out_of_block_methods",1,"logs/VerihoggLint/chapter-8/8.24--out_of_block_methods.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-8/8.24--out_of_block_methods.sv.html"]]

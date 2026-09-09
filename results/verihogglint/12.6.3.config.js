@@ -1,0 +1,1 @@
+config_loader_data['verihogglint/12.6.3'] = [["","conditional_pattern",1,"logs/VerihoggLint/chapter-12/12.6.3--conditional_pattern.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-12/12.6.3--conditional_pattern.sv.html"]]

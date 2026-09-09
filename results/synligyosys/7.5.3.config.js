@@ -1,1 +1,0 @@
-config_loader_data['synligyosys/7.5.3'] = [["","dynamic-arrays-op-delete",1,"logs/SynligYosys/chapter-7/arrays/dynamic/op-delete.sv.log.html","tests/chapter-7/arrays/dynamic/op-delete.sv.html"]]

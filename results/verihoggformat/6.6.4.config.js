@@ -1,0 +1,1 @@
+config_loader_data['verihoggformat/6.6.4'] = [["","net_trireg",0,"logs/VerihoggFormat/generated/nets/6.6.4--net_trireg.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/generated/nets/6.6.4--net_trireg.sv.html"]]

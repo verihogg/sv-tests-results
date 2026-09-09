@@ -1,0 +1,1 @@
+config_loader_data['verihoggformat/10.6.1'] = [["","assign_deassign",1,"logs/VerihoggFormat/chapter-10/10.6.1--assign-deassign.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-10/10.6.1--assign-deassign.sv.html"]]

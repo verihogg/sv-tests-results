@@ -1,0 +1,1 @@
+config_loader_data['verihogglintlax/8.10'] = [["","static_methods",1,"logs/VerihoggLintLax/chapter-8/8.10--static_methods.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-8/8.10--static_methods.sv.html"]]

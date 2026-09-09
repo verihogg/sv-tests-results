@@ -1,1 +1,0 @@
-config_loader_data['circt_verilog/20.14'] = [["","coverage_routines",0,"logs/circt_verilog/chapter-20/20.14--coverage.sv.log.html","tests/chapter-20/20.14--coverage.sv.html"]]

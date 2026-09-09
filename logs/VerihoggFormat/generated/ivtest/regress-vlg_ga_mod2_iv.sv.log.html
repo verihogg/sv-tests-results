@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-vlg_ga_mod2_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/ga_mod2.v.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/ga_mod2.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:27:28</dd></div>
+        <div><dt>time elapsed</dt><dd>0.010s</dd></div>
+        <div><dt>ram usage</dt><dd>20460 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpa_4d33wv/formatted/ga_mod2.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpa_4d33wv/formatted/ga_mod2.v</pre>
+      <pre>formatted/ga_mod2.v:32:9: error: expected a declaration name</pre>
+      <pre>  C     &lt;= 0;</pre>
+      <pre>        ^</pre>
+      <pre>formatted/ga_mod2.v:33:9: error: expected a declaration name</pre>
+      <pre>  in    &lt;= 2&#39;b10;</pre>
+      <pre>        ^</pre>
+      <pre>formatted/ga_mod2.v:34:3: error: expected member</pre>
+      <pre>  #10C  &lt;= 1;</pre>
+      <pre>  ^</pre>
+      <pre>formatted/ga_mod2.v:34:9: error: expected a declaration name</pre>
+      <pre>  #10C  &lt;= 1;</pre>
+      <pre>        ^</pre>
+      <pre>formatted/ga_mod2.v:35:3: error: expected member</pre>
+      <pre>  #10 if (out !== 2&#39;b10) begin$display (&#34;FAILED -- out=%b, in=%b&#34;, out, in);</pre>
+      <pre>  ^</pre>
+      <pre>formatted/ga_mod2.v:36:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/ga_mod2.v:37:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end C  &lt;= 0;</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/ga_mod2.v:35:40: note: last complete block started here</pre>
+      <pre>  #10 if (out !== 2&#39;b10) begin$display (&#34;FAILED -- out=%b, in=%b&#34;, out, in);</pre>
+      <pre>                                       ^</pre>
+      <pre>formatted/ga_mod2.v:35:75: note: and ended here</pre>
+      <pre>  #10 if (out !== 2&#39;b10) begin$display (&#34;FAILED -- out=%b, in=%b&#34;, out, in);</pre>
+      <pre>                                                                          ^</pre>
+      <pre>formatted/ga_mod2.v:37:10: error: expected a declaration name</pre>
+      <pre>  end C  &lt;= 0;</pre>
+      <pre>         ^</pre>
+      <pre>formatted/ga_mod2.v:38:10: error: expected a declaration name</pre>
+      <pre>  in     &lt;= 2&#39;b01;</pre>
+      <pre>         ^</pre>
+      <pre>formatted/ga_mod2.v:39:3: error: expected member</pre>
+      <pre>  #10C   &lt;= 1;</pre>
+      <pre>  ^</pre>
+      <pre>formatted/ga_mod2.v:39:10: error: expected a declaration name</pre>
+      <pre>  #10C   &lt;= 1;</pre>
+      <pre>         ^</pre>
+      <pre>formatted/ga_mod2.v:40:3: error: expected member</pre>
+      <pre>  #10 if (out !== 2&#39;b01) begin$display (&#34;FAILED -- out=%b, in=%b&#34;, out, in);</pre>
+      <pre>  ^</pre>
+      <pre>formatted/ga_mod2.v:41:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/ga_mod2.v:42:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/ga_mod2.v:40:40: note: last complete block started here</pre>
+      <pre>  #10 if (out !== 2&#39;b01) begin$display (&#34;FAILED -- out=%b, in=%b&#34;, out, in);</pre>
+      <pre>                                       ^</pre>
+      <pre>formatted/ga_mod2.v:40:75: note: and ended here</pre>
+      <pre>  #10 if (out !== 2&#39;b01) begin$display (&#34;FAILED -- out=%b, in=%b&#34;, out, in);</pre>
+      <pre>                                                                          ^</pre>
+      <pre>formatted/ga_mod2.v:44:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end // initial begin</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/ga_mod2.v:40:40: note: last complete block started here</pre>
+      <pre>  #10 if (out !== 2&#39;b01) begin$display (&#34;FAILED -- out=%b, in=%b&#34;, out, in);</pre>
+      <pre>                                       ^</pre>
+      <pre>formatted/ga_mod2.v:40:75: note: and ended here</pre>
+      <pre>  #10 if (out !== 2&#39;b01) begin$display (&#34;FAILED -- out=%b, in=%b&#34;, out, in);</pre>
+      <pre>                                                                          ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

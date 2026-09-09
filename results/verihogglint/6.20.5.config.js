@@ -1,0 +1,1 @@
+config_loader_data['verihogglint/6.20.5'] = [["","specparam",1,"logs/VerihoggLint/chapter-6/6.20.5--specparam.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-6/6.20.5--specparam.sv.html"],["","specparam_inv",0,"logs/VerihoggLint/chapter-6/6.20.5--specparam_inv.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-6/6.20.5--specparam_inv.sv.html"]]

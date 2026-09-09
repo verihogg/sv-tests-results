@@ -1,1 +1,0 @@
-config_loader_data['synligyosys/7.9.6'] = [["","associative-arrays-next",1,"logs/SynligYosys/chapter-7/arrays/associative/methods/next.sv.log.html","tests/chapter-7/arrays/associative/methods/next.sv.html"]]

@@ -1,1 +1,0 @@
-config_loader_data['verilator/9.4.2.3'] = [["","event_conditional",1,"logs/Verilator/chapter-9/9.4.2.3--event_conditional.sv.log.html","tests/chapter-9/9.4.2.3--event_conditional.sv.html"]]

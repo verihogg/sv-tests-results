@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-vlg_pr509b_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/pr509b.v.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/pr509b.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:27:28</dd></div>
+        <div><dt>time elapsed</dt><dd>0.011s</dd></div>
+        <div><dt>ram usage</dt><dd>22448 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpnsha2x8h/formatted/pr509b.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpnsha2x8h/formatted/pr509b.v</pre>
+      <pre>formatted/pr509b.v:41:3: error: expected member</pre>
+      <pre>  #3 if (Q !== 0) begin$display (&#34;FAILED -- Q should be 0, is %b&#34;, Q);</pre>
+      <pre>  ^</pre>
+      <pre>formatted/pr509b.v:42:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/pr509b.v:43:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/pr509b.v:41:33: note: last complete block started here</pre>
+      <pre>  #3 if (Q !== 0) begin$display (&#34;FAILED -- Q should be 0, is %b&#34;, Q);</pre>
+      <pre>                                ^</pre>
+      <pre>formatted/pr509b.v:41:69: note: and ended here</pre>
+      <pre>  #3 if (Q !== 0) begin$display (&#34;FAILED -- Q should be 0, is %b&#34;, Q);</pre>
+      <pre>                                                                    ^</pre>
+      <pre>formatted/pr509b.v:47:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/pr509b.v:48:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/pr509b.v:46:38: note: last complete block started here</pre>
+      <pre>      #20 if (Q !== 0) begin$display (&#34;FAILED -- Q should be 0, is %b&#34;, Q);</pre>
+      <pre>                                     ^</pre>
+      <pre>formatted/pr509b.v:46:74: note: and ended here</pre>
+      <pre>      #20 if (Q !== 0) begin$display (&#34;FAILED -- Q should be 0, is %b&#34;, Q);</pre>
+      <pre>                                                                         ^</pre>
+      <pre>formatted/pr509b.v:52:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/pr509b.v:53:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/pr509b.v:51:37: note: last complete block started here</pre>
+      <pre>      #5 if (Q !== 0) begin$display (&#34;FAILED -- Q should be 0, is %b&#34;, Q);</pre>
+      <pre>                                    ^</pre>
+      <pre>formatted/pr509b.v:51:73: note: and ended here</pre>
+      <pre>      #5 if (Q !== 0) begin$display (&#34;FAILED -- Q should be 0, is %b&#34;, Q);</pre>
+      <pre>                                                                        ^</pre>
+      <pre>formatted/pr509b.v:57:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/pr509b.v:58:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/pr509b.v:56:38: note: last complete block started here</pre>
+      <pre>      #26 if (Q !== 0) begin$display (&#34;FAILED -- Q should be 0, is %b&#34;, Q);</pre>
+      <pre>                                     ^</pre>
+      <pre>formatted/pr509b.v:56:74: note: and ended here</pre>
+      <pre>      #26 if (Q !== 0) begin$display (&#34;FAILED -- Q should be 0, is %b&#34;, Q);</pre>
+      <pre>                                                                         ^</pre>
+      <pre>formatted/pr509b.v:62:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/pr509b.v:63:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/pr509b.v:61:37: note: last complete block started here</pre>
+      <pre>      #5 if (Q !== 1) begin$display (&#34;FAILED -- Q should be 1, is %b&#34;, Q);</pre>
+      <pre>                                    ^</pre>
+      <pre>formatted/pr509b.v:61:73: note: and ended here</pre>
+      <pre>      #5 if (Q !== 1) begin$display (&#34;FAILED -- Q should be 1, is %b&#34;, Q);</pre>
+      <pre>                                                                        ^</pre>
+      <pre>formatted/pr509b.v:65:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/pr509b.v:66:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/pr509b.v:61:37: note: last complete block started here</pre>
+      <pre>      #5 if (Q !== 1) begin$display (&#34;FAILED -- Q should be 1, is %b&#34;, Q);</pre>
+      <pre>                                    ^</pre>
+      <pre>formatted/pr509b.v:61:73: note: and ended here</pre>
+      <pre>      #5 if (Q !== 1) begin$display (&#34;FAILED -- Q should be 1, is %b&#34;, Q);</pre>
+      <pre>                                                                        ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

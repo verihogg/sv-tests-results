@@ -1,0 +1,1 @@
+config_loader_data['verihogglintlax/9.2.2.2'] = [["","always_comb",1,"logs/VerihoggLintLax/chapter-9/9.2.2.2--always_comb.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-9/9.2.2.2--always_comb.sv.html"]]

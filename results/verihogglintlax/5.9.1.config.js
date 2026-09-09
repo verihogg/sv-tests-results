@@ -1,0 +1,1 @@
+config_loader_data['verihogglintlax/5.9.1'] = [["","string-special-chars",1,"logs/VerihoggLintLax/chapter-5/5.9.1-string-special-chars.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-5/5.9.1-string-special-chars.sv.html"]]

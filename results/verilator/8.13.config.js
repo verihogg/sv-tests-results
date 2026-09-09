@@ -1,1 +1,0 @@
-config_loader_data['verilator/8.13'] = [["","inheritance",1,"logs/Verilator/chapter-8/8.13--inheritance.sv.log.html","tests/chapter-8/8.13--inheritance.sv.html"]]

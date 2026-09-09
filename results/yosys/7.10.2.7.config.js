@@ -1,1 +1,0 @@
-config_loader_data['yosys/7.10.2.7'] = [["","bounded-queues",0,"logs/Yosys/chapter-7/queues/bounded.sv.log.html","tests/chapter-7/queues/bounded.sv.html"]]

@@ -1,1 +1,0 @@
-config_loader_data['icarus/8.20'] = [["","virtual_method",1,"logs/Icarus/chapter-8/8.20--virtual_method.sv.log.html","tests/chapter-8/8.20--virtual_method.sv.html"]]

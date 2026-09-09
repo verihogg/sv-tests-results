@@ -1,1 +1,0 @@
-config_loader_data['circt_verilog/6.6.2'] = [["","net_uwire",1,"logs/circt_verilog/generated/nets/6.6.2--net_uwire.sv.log.html","tests/generated/nets/6.6.2--net_uwire.sv.html"]]

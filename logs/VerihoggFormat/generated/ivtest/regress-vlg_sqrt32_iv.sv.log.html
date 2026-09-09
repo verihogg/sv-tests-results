@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-vlg_sqrt32_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/sqrt32.v.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/sqrt32.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:27:12</dd></div>
+        <div><dt>time elapsed</dt><dd>0.015s</dd></div>
+        <div><dt>ram usage</dt><dd>30572 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpf8t_0js7/formatted/sqrt32.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpf8t_0js7/formatted/sqrt32.v</pre>
+      <pre>formatted/sqrt32.v:83:9: error: expected a declaration name</pre>
+      <pre>  acc2  = 0;</pre>
+      <pre>        ^</pre>
+      <pre>formatted/sqrt32.v:84:3: error: unexpected identifier &#39;bitl&#39;; did you mean &#39;bit&#39;?</pre>
+      <pre>  bitl  = w / 2 - 1;</pre>
+      <pre>  ^~~~</pre>
+      <pre>formatted/sqrt32.v:84:9: error: expected a declaration name</pre>
+      <pre>  bitl  = w / 2 - 1;</pre>
+      <pre>        ^</pre>
+      <pre>formatted/sqrt32.v:84:13: error: expected a declaration name</pre>
+      <pre>  bitl  = w / 2 - 1;</pre>
+      <pre>            ^</pre>
+      <pre>formatted/sqrt32.v:85:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/sqrt32.v:82:67: note: last complete block started here</pre>
+      <pre>  (*ivl_synthesis_on *) always @(posedge clk or posedge reset) if (reset) beginacc = 0;</pre>
+      <pre>                                                                  ^</pre>
+      <pre>formatted/sqrt32.v:82:73: note: and ended here</pre>
+      <pre>  (*ivl_synthesis_on *) always @(posedge clk or posedge reset) if (reset) beginacc = 0;</pre>
+      <pre>                                                                        ^</pre>
+      <pre>formatted/sqrt32.v:86:33: error: expected &#39;;&#39;</pre>
+      <pre>      else beginif (guess2 &lt;= x) beginacc &lt;= guess;</pre>
+      <pre>                                ^</pre>
+      <pre>formatted/sqrt32.v:86:43: error: expected a declaration name</pre>
+      <pre>      else beginif (guess2 &lt;= x) beginacc &lt;= guess;</pre>
+      <pre>                                          ^</pre>
+      <pre>formatted/sqrt32.v:86:51: error: expected a declaration name</pre>
+      <pre>      else beginif (guess2 &lt;= x) beginacc &lt;= guess;</pre>
+      <pre>                                                  ^</pre>
+      <pre>formatted/sqrt32.v:87:13: error: expected a declaration name</pre>
+      <pre>  acc2      &lt;= guess2;</pre>
+      <pre>            ^</pre>
+      <pre>formatted/sqrt32.v:87:22: error: expected a declaration name</pre>
+      <pre>  acc2      &lt;= guess2;</pre>
+      <pre>                     ^</pre>
+      <pre>formatted/sqrt32.v:88:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end bitl  &lt;= bitl - 1;</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/sqrt32.v:86:20: note: last complete block started here</pre>
+      <pre>      else beginif (guess2 &lt;= x) beginacc &lt;= guess;</pre>
+      <pre>                   ^</pre>
+      <pre>formatted/sqrt32.v:86:32: note: and ended here</pre>
+      <pre>      else beginif (guess2 &lt;= x) beginacc &lt;= guess;</pre>
+      <pre>                               ^</pre>
+      <pre>formatted/sqrt32.v:88:7: error: unexpected identifier &#39;bitl&#39;; did you mean &#39;bit&#39;?</pre>
+      <pre>  end bitl  &lt;= bitl - 1;</pre>
+      <pre>      ^~~~</pre>
+      <pre>formatted/sqrt32.v:88:13: error: expected a declaration name</pre>
+      <pre>  end bitl  &lt;= bitl - 1;</pre>
+      <pre>            ^</pre>
+      <pre>formatted/sqrt32.v:88:16: error: unexpected identifier &#39;bitl&#39;; did you mean &#39;bit&#39;?</pre>
+      <pre>  end bitl  &lt;= bitl - 1;</pre>
+      <pre>               ^~~~</pre>
+      <pre>formatted/sqrt32.v:88:21: error: expected a declaration name</pre>
+      <pre>  end bitl  &lt;= bitl - 1;</pre>
+      <pre>                    ^</pre>
+      <pre>formatted/sqrt32.v:89:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/sqrt32.v:86:20: note: last complete block started here</pre>
+      <pre>      else beginif (guess2 &lt;= x) beginacc &lt;= guess;</pre>
+      <pre>                   ^</pre>
+      <pre>formatted/sqrt32.v:86:32: note: and ended here</pre>
+      <pre>      else beginif (guess2 &lt;= x) beginacc &lt;= guess;</pre>
+      <pre>                               ^</pre>
+      <pre>formatted/sqrt32.v:126:7: error: expected a declaration name</pre>
+      <pre>  clk = 0;</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sqrt32.v:127:3: error: expected member</pre>
+      <pre>  $display (&#34;ss=%d, width=%d, Amax=%d&#34;, ss, w, Amax);</pre>
+      <pre>  ^~~~~~~~</pre>
+      <pre>formatted/sqrt32.v:128:11: error: expected a declaration name</pre>
+      <pre>  errCnt  = 0;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/sqrt32.v:129:11: error: expected a declaration name</pre>
+      <pre>  A       = 4;</pre>
+      <pre>          ^</pre>
+      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

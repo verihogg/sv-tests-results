@@ -1,1 +1,0 @@
-config_loader_data['yosys_slang/5.13'] = [["","builtin-methods-string",1,"logs/yosys_slang/chapter-5/5.13-builtin-methods-strings.sv.log.html","tests/chapter-5/5.13-builtin-methods-strings.sv.html"]]

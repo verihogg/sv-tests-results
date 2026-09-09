@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-vlg_event_list_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/event_list.v.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/event_list.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:27:26</dd></div>
+        <div><dt>time elapsed</dt><dd>0.011s</dd></div>
+        <div><dt>ram usage</dt><dd>20640 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp33v2xfqc/formatted/event_list.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmp33v2xfqc/formatted/event_list.v</pre>
+      <pre>formatted/event_list.v:39:7: error: expected member</pre>
+      <pre>      $display (&#34;FAILED -- event_1 DID trigger flag2&#34;);</pre>
+      <pre>      ^~~~~~~~</pre>
+      <pre>formatted/event_list.v:40:7: error: expected member</pre>
+      <pre>      $finish;</pre>
+      <pre>      ^~~~~~~</pre>
+      <pre>formatted/event_list.v:44:7: error: expected member</pre>
+      <pre>      $display (&#34;FAILED -- event_1 didn&#39;t trigger flag12&#34;);</pre>
+      <pre>      ^~~~~~~~</pre>
+      <pre>formatted/event_list.v:45:7: error: expected member</pre>
+      <pre>      $finish;</pre>
+      <pre>      ^~~~~~~</pre>
+      <pre>formatted/event_list.v:47:11: error: expected a declaration name</pre>
+      <pre>  flag1   = 0;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/event_list.v:48:11: error: expected a declaration name</pre>
+      <pre>  flag2   = 0;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/event_list.v:49:11: error: expected a declaration name</pre>
+      <pre>  flag12  = 0;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/event_list.v:50:3: error: expected member</pre>
+      <pre>  #1 -&gt; event_2;</pre>
+      <pre>  ^</pre>
+      <pre>formatted/event_list.v:50:9: error: unexpected identifier &#39;event_2&#39;; did you mean &#39;event&#39;?</pre>
+      <pre>  #1 -&gt; event_2;</pre>
+      <pre>        ^~~~~~~</pre>
+      <pre>formatted/event_list.v:50:16: error: expected a declaration name</pre>
+      <pre>  #1 -&gt; event_2;</pre>
+      <pre>               ^</pre>
+      <pre>formatted/event_list.v:51:3: error: expected member</pre>
+      <pre>  #1 if (flag1 !== 0) begin$display (&#34;FAILED -- event_2 DID trigger flag1&#34;);</pre>
+      <pre>  ^</pre>
+      <pre>formatted/event_list.v:52:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/event_list.v:53:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/event_list.v:51:37: note: last complete block started here</pre>
+      <pre>  #1 if (flag1 !== 0) begin$display (&#34;FAILED -- event_2 DID trigger flag1&#34;);</pre>
+      <pre>                                    ^</pre>
+      <pre>formatted/event_list.v:51:75: note: and ended here</pre>
+      <pre>  #1 if (flag1 !== 0) begin$display (&#34;FAILED -- event_2 DID trigger flag1&#34;);</pre>
+      <pre>                                                                          ^</pre>
+      <pre>formatted/event_list.v:55:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/event_list.v:56:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/event_list.v:54:38: note: last complete block started here</pre>
+      <pre>      if (flag2 !== 1) begin$display (&#34;FAILED -- event_2 didn&#39;t trigger flag2&#34;);</pre>
+      <pre>                                     ^</pre>
+      <pre>formatted/event_list.v:54:79: note: and ended here</pre>
+      <pre>      if (flag2 !== 1) begin$display (&#34;FAILED -- event_2 didn&#39;t trigger flag2&#34;);</pre>
+      <pre>                                                                              ^</pre>
+      <pre>formatted/event_list.v:58:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/event_list.v:59:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/event_list.v:57:39: note: last complete block started here</pre>
+      <pre>      if (flag12 !== 1) begin$display (&#34;FAILED -- event_1 didn&#39;t trigger flag12&#34;);</pre>
+      <pre>                                      ^</pre>
+      <pre>formatted/event_list.v:57:81: note: and ended here</pre>
+      <pre>      if (flag12 !== 1) begin$display (&#34;FAILED -- event_1 didn&#39;t trigger flag12&#34;);</pre>
+      <pre>                                                                                ^</pre>
+      <pre>formatted/event_list.v:61:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/event_list.v:57:39: note: last complete block started here</pre>
+      <pre>      if (flag12 !== 1) begin$display (&#34;FAILED -- event_1 didn&#39;t trigger flag12&#34;);</pre>
+      <pre>                                      ^</pre>
+      <pre>formatted/event_list.v:57:81: note: and ended here</pre>
+      <pre>      if (flag12 !== 1) begin$display (&#34;FAILED -- event_1 didn&#39;t trigger flag12&#34;);</pre>
+      <pre>                                                                                ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

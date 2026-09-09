@@ -1,1 +1,0 @@
-config_loader_data['veribleextractor/12.5'] = [["","case",1,"logs/VeribleExtractor/chapter-12/12.5--case.sv.log.html","tests/chapter-12/12.5--case.sv.html"]]

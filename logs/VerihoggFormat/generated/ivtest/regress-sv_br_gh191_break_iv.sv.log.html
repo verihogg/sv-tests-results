@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-sv_br_gh191_break_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/br_gh191_break.v.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/br_gh191_break.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:27:46</dd></div>
+        <div><dt>time elapsed</dt><dd>0.012s</dd></div>
+        <div><dt>ram usage</dt><dd>22696 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpdbc10qs7/formatted/br_gh191_break.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpdbc10qs7/formatted/br_gh191_break.v</pre>
+      <pre>formatted/br_gh191_break.v:40:28: error: expected &#39;;&#39;</pre>
+      <pre>      do beginif (idx &gt;= 2) break;</pre>
+      <pre>                           ^</pre>
+      <pre>formatted/br_gh191_break.v:43:3: error: expected member</pre>
+      <pre>  while (idx &lt; 5) ;</pre>
+      <pre>  ^~~~~</pre>
+      <pre>formatted/br_gh191_break.v:46:7: error: expected member</pre>
+      <pre>      $display (&#34;FAILED -- break from do-while loop&#34;);</pre>
+      <pre>      ^~~~~~~~</pre>
+      <pre>formatted/br_gh191_break.v:47:7: error: expected member</pre>
+      <pre>      $finish;</pre>
+      <pre>      ^~~~~~~</pre>
+      <pre>formatted/br_gh191_break.v:49:7: error: expected a declaration name</pre>
+      <pre>  idx = 0;</pre>
+      <pre>      ^</pre>
+      <pre>formatted/br_gh191_break.v:50:3: error: expected member</pre>
+      <pre>  repeat (5)</pre>
+      <pre>  ^~~~~~</pre>
+      <pre>formatted/br_gh191_break.v:52:21: error: expected member</pre>
+      <pre>      if (idx &gt;= 2) break;</pre>
+      <pre>                    ^</pre>
+      <pre>formatted/br_gh191_break.v:53:11: error: expected a declaration name</pre>
+      <pre>      idx += 1;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/br_gh191_break.v:57:7: error: expected member</pre>
+      <pre>      $display (&#34;FAILED -- break from repeat(5) loop&#34;);</pre>
+      <pre>      ^~~~~~~~</pre>
+      <pre>formatted/br_gh191_break.v:58:7: error: expected member</pre>
+      <pre>      $finish;</pre>
+      <pre>      ^~~~~~~</pre>
+      <pre>formatted/br_gh191_break.v:60:3: error: expected member</pre>
+      <pre>  $display (&#34;PASSED&#34;);</pre>
+      <pre>  ^~~~~~~~</pre>
+      <pre>formatted/br_gh191_break.v:61:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/br_gh191_break.v:56:5: note: last complete block started here</pre>
+      <pre>    begin</pre>
+      <pre>    ^</pre>
+      <pre>formatted/br_gh191_break.v:59:5: note: and ended here</pre>
+      <pre>    end</pre>
+      <pre>    ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

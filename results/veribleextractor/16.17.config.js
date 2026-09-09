@@ -1,1 +1,0 @@
-config_loader_data['veribleextractor/16.17'] = [["","expect_test",1,"logs/VeribleExtractor/chapter-16/16.17--expect.sv.log.html","tests/chapter-16/16.17--expect.sv.html"]]

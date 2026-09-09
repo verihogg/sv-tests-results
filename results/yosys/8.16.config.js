@@ -1,1 +1,0 @@
-config_loader_data['yosys/8.16'] = [["","cast_task",0,"logs/Yosys/chapter-6/6.24.2--cast_task.sv.log.html","tests/chapter-6/6.24.2--cast_task.sv.html"]]

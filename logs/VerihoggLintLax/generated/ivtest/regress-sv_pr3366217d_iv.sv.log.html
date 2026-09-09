@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-lint/tree/9eea937fde4f2d3e21e4d6eff1ce0bbdb5d6078f" target="_blank"><h1>VerihoggLintLax</h1></a>
+        <h2>regress-sv_pr3366217d_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 1)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/tima/git/verihogg/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/home/tima/git/verihogg/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>elaboration</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr3366217d.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr3366217d.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 16:56:48</dd></div>
+        <div><dt>time elapsed</dt><dd>0.041s</dd></div>
+        <div><dt>ram usage</dt><dd>22412 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-lint -nobuiltin -I/home/tima/git/verihogg/sv-tests/third_party/tools/icarus/ivtest -I/home/tima/git/verihogg/sv-tests/third_party/tools/icarus/ivtest/ivltests <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr3366217d.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr3366217d.v</a></pre>
+      <pre>[SNT:PA0207] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr3366217d.v.html#l-3" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr3366217d.v:3:13</a>: Syntax error: mismatched input &#39;1&#39;bx&#39; expecting Integral_number,</pre>
+      <pre>  enum {udef[1&#39;bx]} udef1;</pre>
+      <pre>             ^--.</pre>
+      <pre>[SNT:PA0207] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr3366217d.v.html#l-4" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr3366217d.v:4:14</a>: Syntax error: mismatched input &#39;1&#39;bx&#39; expecting Integral_number,</pre>
+      <pre>  enum {udef1[1&#39;bx:1]} udef2;</pre>
+      <pre>              ^--.</pre>
+      <pre>[SNT:PA0207] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr3366217d.v.html#l-5" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr3366217d.v:5:16</a>: Syntax error: mismatched input &#39;1&#39;bx&#39; expecting Integral_number,</pre>
+      <pre>  enum {udef2[1:1&#39;bx]} udef3;</pre>
+      <pre>                ^--.</pre>
+      <pre>[SNT:PA0207] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr3366217d.v.html#l-6" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr3366217d.v:6:14</a>: Syntax error: mismatched input &#39;1&#39;bx&#39; expecting Integral_number,</pre>
+      <pre>  enum {udefb[1&#39;bx:1&#39;bx]} udef4;</pre>
+      <pre>              ^--.</pre>
+      <pre>[SNT:PA0207] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr3366217d.v.html#l-7" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr3366217d.v:7:13</a>: Syntax error: mismatched input &#39;1&#39;bx&#39; expecting Integral_number,</pre>
+      <pre>  enum {uval[1&#39;bx] = 1} uval1;</pre>
+      <pre>             ^--.</pre>
+      <pre>[SNT:PA0207] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr3366217d.v.html#l-7" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr3366217d.v:7:22</a>: Syntax error: mismatched input &#39;}&#39; expecting &#39;;&#39;,</pre>
+      <pre>  enum {uval[1&#39;bx] = 1} uval1;</pre>
+      <pre>                      ^--.</pre>
+      <pre>[SNT:PA0207] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr3366217d.v.html#l-8" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr3366217d.v:8:14</a>: Syntax error: mismatched input &#39;1&#39;bx&#39; expecting Integral_number,</pre>
+      <pre>  enum {uval1[1&#39;bx:1] = 1} uval2;</pre>
+      <pre>              ^--.</pre>
+      <pre>[SNT:PA0207] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr3366217d.v.html#l-8" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr3366217d.v:8:25</a>: Syntax error: mismatched input &#39;}&#39; expecting &#39;;&#39;,</pre>
+      <pre>  enum {uval1[1&#39;bx:1] = 1} uval2;</pre>
+      <pre>                         ^--.</pre>
+      <pre>[SNT:PA0207] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr3366217d.v.html#l-9" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr3366217d.v:9:16</a>: Syntax error: mismatched input &#39;1&#39;bx&#39; expecting Integral_number,</pre>
+      <pre>  enum {uval2[1:1&#39;bx] = 1} uval3;</pre>
+      <pre>                ^--.</pre>
+      <pre>[SNT:PA0207] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr3366217d.v.html#l-9" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr3366217d.v:9:25</a>: Syntax error: mismatched input &#39;}&#39; expecting &#39;;&#39;,</pre>
+      <pre>  enum {uval2[1:1&#39;bx] = 1} uval3;</pre>
+      <pre>                         ^--.</pre>
+      <pre>No config file</pre>
+      <pre>Lint finished with 1 error(s).</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

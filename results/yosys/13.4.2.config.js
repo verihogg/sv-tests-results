@@ -1,1 +1,0 @@
-config_loader_data['yosys/13.4.2'] = [["","function_automatic",0,"logs/Yosys/chapter-13/13.4.2--function-automatic.sv.log.html","tests/chapter-13/13.4.2--function-automatic.sv.html"],["","function_recursive",0,"logs/Yosys/chapter-13/13.4.2--function-recursive.sv.log.html","tests/chapter-13/13.4.2--function-recursive.sv.html"]]

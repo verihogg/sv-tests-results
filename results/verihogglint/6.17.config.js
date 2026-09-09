@@ -1,0 +1,1 @@
+config_loader_data['verihogglint/6.17'] = [["","event",1,"logs/VerihoggLint/chapter-6/6.17--event.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-6/6.17--event.sv.html"]]

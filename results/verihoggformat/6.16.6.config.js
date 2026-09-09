@@ -1,0 +1,1 @@
+config_loader_data['verihoggformat/6.16.6'] = [["","string_compare_fn",1,"logs/VerihoggFormat/chapter-6/6.16.6--string_compare.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-6/6.16.6--string_compare.sv.html"]]

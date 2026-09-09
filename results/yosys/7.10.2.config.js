@@ -1,1 +1,0 @@
-config_loader_data['yosys/7.10.2'] = [["","max-size",0,"logs/Yosys/chapter-7/queues/max-size.sv.log.html","tests/chapter-7/queues/max-size.sv.html"]]

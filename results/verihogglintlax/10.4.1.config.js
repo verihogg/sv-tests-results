@@ -1,0 +1,1 @@
+config_loader_data['verihogglintlax/10.4.1'] = [["","blocking_assignment",1,"logs/VerihoggLintLax/chapter-10/10.4.1--blocking-assignment.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-10/10.4.1--blocking-assignment.sv.html"]]

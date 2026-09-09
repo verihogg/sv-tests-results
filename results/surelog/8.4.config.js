@@ -1,1 +1,0 @@
-config_loader_data['surelog/8.4'] = [["","instantiation",1,"logs/Surelog/chapter-8/8.4--instantiation.sv.log.html","tests/chapter-8/8.4--instantiation.sv.html"]]

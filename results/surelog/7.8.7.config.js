@@ -1,1 +1,0 @@
-config_loader_data['surelog/7.8.7'] = [["","associative-arrays-allocating-elements",1,"logs/Surelog/chapter-7/arrays/associative/alloc.sv.log.html","tests/chapter-7/arrays/associative/alloc.sv.html"]]

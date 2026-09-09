@@ -1,0 +1,1 @@
+config_loader_data['verihoggformat/7.5.2'] = [["","dynamic-arrays-op-size",1,"logs/VerihoggFormat/chapter-7/arrays/dynamic/op-size.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-7/arrays/dynamic/op-size.sv.html"]]

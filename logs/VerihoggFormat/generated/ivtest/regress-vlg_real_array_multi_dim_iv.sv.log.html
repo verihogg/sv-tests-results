@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-vlg_real_array_multi_dim_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/real_array_multi_dim.v.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/real_array_multi_dim.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:27:45</dd></div>
+        <div><dt>time elapsed</dt><dd>0.015s</dd></div>
+        <div><dt>ram usage</dt><dd>28408 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpfrxg5c2b/formatted/real_array_multi_dim.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpfrxg5c2b/formatted/real_array_multi_dim.v</pre>
+      <pre>formatted/real_array_multi_dim.v:6:65: error: macro operators may only be used within a macro definition</pre>
+      <pre>                                                                `&#34; expr `&#34;, val,</pre>
+      <pre>                                                                ^~</pre>
+      <pre>formatted/real_array_multi_dim.v:6:72: error: expected identifier</pre>
+      <pre>                                                                `&#34; expr `&#34;, val,</pre>
+      <pre>                                                                       ^</pre>
+      <pre>formatted/real_array_multi_dim.v:6:73: error: macro operators may only be used within a macro definition</pre>
+      <pre>                                                                `&#34; expr `&#34;, val,</pre>
+      <pre>                                                                        ^~</pre>
+      <pre>formatted/real_array_multi_dim.v:7:69: error: expected &#39;;&#39;</pre>
+      <pre>                                                                expr); \</pre>
+      <pre>                                                                    ^</pre>
+      <pre>formatted/real_array_multi_dim.v:7:69: error: unexpected &#39;)&#39; delimiter</pre>
+      <pre>                                                                expr); \</pre>
+      <pre>                                                                    ^</pre>
+      <pre>formatted/real_array_multi_dim.v:7:72: error: macro operators may only be used within a macro definition</pre>
+      <pre>                                                                expr); \</pre>
+      <pre>                                                                       ^</pre>
+      <pre>formatted/real_array_multi_dim.v:8:9: error: expected a declaration name</pre>
+      <pre> failed = 1&#39;b1; \</pre>
+      <pre>        ^</pre>
+      <pre>formatted/real_array_multi_dim.v:8:17: error: macro operators may only be used within a macro definition</pre>
+      <pre> failed = 1&#39;b1; \</pre>
+      <pre>                ^</pre>
+      <pre>formatted/real_array_multi_dim.v:10:5: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>    end</pre>
+      <pre>    ^~~</pre>
+      <pre>formatted/real_array_multi_dim.v:19:7: error: expected &#39;)&#39;</pre>
+      <pre>      `check (r [0] [0], -0.5);</pre>
+      <pre>      ^</pre>
+      <pre>formatted/real_array_multi_dim.v:3:20: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (expr, val) \</pre>
+      <pre>                   ^</pre>
+      <pre>formatted/real_array_multi_dim.v:19:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (r [0] [0], -0.5);</pre>
+      <pre>      ^</pre>
+      <pre>formatted/real_array_multi_dim.v:3:15: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (expr, val) \</pre>
+      <pre>              ^</pre>
+      <pre>formatted/real_array_multi_dim.v:19:7: error: expected &#39;;&#39;</pre>
+      <pre>      `check (r [0] [0], -0.5);</pre>
+      <pre>      ^</pre>
+      <pre>formatted/real_array_multi_dim.v:3:25: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (expr, val) \</pre>
+      <pre>                        ^</pre>
+      <pre>formatted/real_array_multi_dim.v:19:31: error: expected &#39;)&#39;</pre>
+      <pre>      `check (r [0] [0], -0.5);</pre>
+      <pre>                              ^</pre>
+      <pre>formatted/real_array_multi_dim.v:19:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (r [0] [0], -0.5);</pre>
+      <pre>      ^</pre>
+      <pre>formatted/real_array_multi_dim.v:5:11: note: expanded from macro &#39;check&#39;</pre>
+      <pre> $display (&#34;FAILED: `%s`, expected %f, got %f&#34;,</pre>
+      <pre>          ^</pre>
+      <pre>formatted/real_array_multi_dim.v:20:7: error: expected &#39;)&#39;</pre>
+      <pre>      `check (r [0] [1], -0.375);</pre>
+      <pre>      ^</pre>
+      <pre>formatted/real_array_multi_dim.v:3:20: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (expr, val) \</pre>
+      <pre>                   ^</pre>
+      <pre>formatted/real_array_multi_dim.v:20:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (r [0] [1], -0.375);</pre>
+      <pre>      ^</pre>
+      <pre>formatted/real_array_multi_dim.v:3:15: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (expr, val) \</pre>
+      <pre>              ^</pre>
+      <pre>formatted/real_array_multi_dim.v:20:7: error: expected &#39;;&#39;</pre>
+      <pre>      `check (r [0] [1], -0.375);</pre>
+      <pre>      ^</pre>
+      <pre>formatted/real_array_multi_dim.v:3:25: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (expr, val) \</pre>
+      <pre>                        ^</pre>
+      <pre>formatted/real_array_multi_dim.v:20:33: error: expected &#39;)&#39;</pre>
+      <pre>      `check (r [0] [1], -0.375);</pre>
+      <pre>                                ^</pre>
+      <pre>formatted/real_array_multi_dim.v:20:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (r [0] [1], -0.375);</pre>
+      <pre>      ^</pre>
+      <pre>formatted/real_array_multi_dim.v:5:11: note: expanded from macro &#39;check&#39;</pre>
+      <pre> $display (&#34;FAILED: `%s`, expected %f, got %f&#34;,</pre>
+      <pre>          ^</pre>
+      <pre>formatted/real_array_multi_dim.v:21:7: error: expected &#39;)&#39;</pre>
+      <pre>      `check (r [1] [0], -0.25);</pre>
+      <pre>      ^</pre>
+      <pre>formatted/real_array_multi_dim.v:3:20: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (expr, val) \</pre>
+      <pre>                   ^</pre>
+      <pre>formatted/real_array_multi_dim.v:21:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (r [1] [0], -0.25);</pre>
+      <pre>      ^</pre>
+      <pre>formatted/real_array_multi_dim.v:3:15: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (expr, val) \</pre>
+      <pre>              ^</pre>
+      <pre>formatted/real_array_multi_dim.v:21:7: error: expected &#39;;&#39;</pre>
+      <pre>      `check (r [1] [0], -0.25);</pre>
+      <pre>      ^</pre>
+      <pre>formatted/real_array_multi_dim.v:3:25: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (expr, val) \</pre>
+      <pre>                        ^</pre>
+      <pre>formatted/real_array_multi_dim.v:21:32: error: expected &#39;)&#39;</pre>
+      <pre>      `check (r [1] [0], -0.25);</pre>
+      <pre>                               ^</pre>
+      <pre>formatted/real_array_multi_dim.v:21:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (r [1] [0], -0.25);</pre>
+      <pre>      ^</pre>
+      <pre>formatted/real_array_multi_dim.v:5:11: note: expanded from macro &#39;check&#39;</pre>
+      <pre> $display (&#34;FAILED: `%s`, expected %f, got %f&#34;,</pre>
+      <pre>          ^</pre>
+      <pre>formatted/real_array_multi_dim.v:22:7: error: expected &#39;)&#39;</pre>
+      <pre>      `check (r [1] [1], -0.125);</pre>
+      <pre>      ^</pre>
+      <pre>formatted/real_array_multi_dim.v:3:20: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (expr, val) \</pre>
+      <pre>                   ^</pre>
+      <pre>formatted/real_array_multi_dim.v:22:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (r [1] [1], -0.125);</pre>
+      <pre>      ^</pre>
+      <pre>formatted/real_array_multi_dim.v:3:15: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (expr, val) \</pre>
+      <pre>              ^</pre>
+      <pre>formatted/real_array_multi_dim.v:22:7: error: expected &#39;;&#39;</pre>
+      <pre>      `check (r [1] [1], -0.125);</pre>
+      <pre>      ^</pre>
+      <pre>formatted/real_array_multi_dim.v:3:25: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (expr, val) \</pre>
+      <pre>                        ^</pre>
+      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

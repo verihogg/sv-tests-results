@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-lint/tree/9eea937fde4f2d3e21e4d6eff1ce0bbdb5d6078f" target="_blank"><h1>VerihoggLintLax</h1></a>
+        <h2>case_production_statements_0_fail</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>randcase case statement test</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 1)</dd></div>
+        <div><dt>tags</dt><dd>18.17.3</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/tests/chapter-18<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>elaboration</dd></div>
+        <div><dt>results group</dt><dd><em></em></dd></div>
+        <div><dt>mode</dt><dd>elaboration</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../__w/sv-tests/sv-tests/tests/chapter-18/18.17.3--case-production-statements_0_fail.sv.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/tests/chapter-18/18.17.3--case-production-statements_0_fail.sv</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 08:56:18</dd></div>
+        <div><dt>time elapsed</dt><dd>0.079s</dd></div>
+        <div><dt>ram usage</dt><dd>25384 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-lint -nobuiltin -I/__w/sv-tests/sv-tests/tests/chapter-18 /__w/sv-tests/sv-tests/tests/chapter-18/18.17.3--case-production-statements_0_fail.sv</pre>
+      <pre>[SNT:PA0207] /__w/sv-tests/sv-tests/tests/chapter-18/18.17.3--case-production-statements_0_fail.sv:23:18: Syntax error: extraneous input &#39;;&#39; expecting {&#39;&#39;b0&#39;, &#39;&#39;b1&#39;, &#39;&#39;B0&#39;, &#39;&#39;B1&#39;, &#39;&#39;0&#39;, &#39;&#39;1&#39;, &#39;1&#39;b0&#39;, &#39;1&#39;b1&#39;, &#39;1&#39;bx&#39;, &#39;1&#39;bX&#39;, &#39;1&#39;B0&#39;, &#39;1&#39;B1&#39;, &#39;1&#39;Bx&#39;, &#39;1&#39;BX&#39;, Integral_number, Real_number, String, &#39;default&#39;, &#39;(&#39;, &#39;type&#39;, &#39;const&#39;, &#39;local&#39;, &#39;super&#39;, &#39;{&#39;, &#39;string&#39;, &#39;byte&#39;, &#39;shortint&#39;, &#39;int&#39;, &#39;longint&#39;, &#39;integer&#39;, &#39;time&#39;, &#39;bit&#39;, &#39;logic&#39;, &#39;reg&#39;, &#39;shortreal&#39;, &#39;real&#39;, &#39;realtime&#39;, &#39;signed&#39;, &#39;unsigned&#39;, &#39;$&#39;, &#39;++&#39;, &#39;+&#39;, &#39;--&#39;, &#39;-&#39;, DOLLAR_UNIT, &#39;!&#39;, &#39;endcase&#39;, &#39;tagged&#39;, &#39;&#39;&#39;, &#39;null&#39;, &#39;this&#39;, DOLLAR_ROOT, &#39;randomize&#39;, &#39;sample&#39;, &#39;&amp;&#39;, &#39;|&#39;, &#39;~|&#39;, &#39;~&amp;&#39;, &#39;^~&#39;, Escaped_identifier, &#39;~&#39;, &#39;^&#39;, &#39;~^&#39;, Simple_identifier},</pre>
+      <pre>          0 : zero;</pre>
+      <pre>                  ^--.</pre>
+      <pre>[SNT:PA0207] /__w/sv-tests/sv-tests/tests/chapter-18/18.17.3--case-production-statements_0_fail.sv:24:19: Syntax error: extraneous input &#39;;&#39; expecting {&#39;&#39;b0&#39;, &#39;&#39;b1&#39;, &#39;&#39;B0&#39;, &#39;&#39;B1&#39;, &#39;&#39;0&#39;, &#39;&#39;1&#39;, &#39;1&#39;b0&#39;, &#39;1&#39;b1&#39;, &#39;1&#39;bx&#39;, &#39;1&#39;bX&#39;, &#39;1&#39;B0&#39;, &#39;1&#39;B1&#39;, &#39;1&#39;Bx&#39;, &#39;1&#39;BX&#39;, Integral_number, Real_number, String, &#39;default&#39;, &#39;(&#39;, &#39;type&#39;, &#39;const&#39;, &#39;local&#39;, &#39;super&#39;, &#39;{&#39;, &#39;string&#39;, &#39;byte&#39;, &#39;shortint&#39;, &#39;int&#39;, &#39;longint&#39;, &#39;integer&#39;, &#39;time&#39;, &#39;bit&#39;, &#39;logic&#39;, &#39;reg&#39;, &#39;shortreal&#39;, &#39;real&#39;, &#39;realtime&#39;, &#39;signed&#39;, &#39;unsigned&#39;, &#39;$&#39;, &#39;++&#39;, &#39;+&#39;, &#39;--&#39;, &#39;-&#39;, DOLLAR_UNIT, &#39;!&#39;, &#39;endcase&#39;, &#39;tagged&#39;, &#39;&#39;&#39;, &#39;null&#39;, &#39;this&#39;, DOLLAR_ROOT, &#39;randomize&#39;, &#39;sample&#39;, &#39;&amp;&#39;, &#39;|&#39;, &#39;~|&#39;, &#39;~&amp;&#39;, &#39;^~&#39;, Escaped_identifier, &#39;~&#39;, &#39;^&#39;, &#39;~^&#39;, Simple_identifier},</pre>
+      <pre>          1 : first;</pre>
+      <pre>                   ^--.</pre>
+      <pre>[SNT:PA0207] /__w/sv-tests/sv-tests/tests/chapter-18/18.17.3--case-production-statements_0_fail.sv:25:10: Syntax error: mismatched input &#39;2&#39; expecting {&#39;virtual&#39;, &#39;type&#39;, &#39;enum&#39;, &#39;struct&#39;, &#39;union&#39;, &#39;string&#39;, &#39;chandle&#39;, &#39;event&#39;, &#39;byte&#39;, &#39;shortint&#39;, &#39;int&#39;, &#39;longint&#39;, &#39;integer&#39;, &#39;time&#39;, &#39;bit&#39;, &#39;logic&#39;, &#39;reg&#39;, &#39;shortreal&#39;, &#39;real&#39;, &#39;realtime&#39;, &#39;void&#39;, DOLLAR_UNIT, &#39;endsequence&#39;, &#39;this&#39;, &#39;randomize&#39;, &#39;sample&#39;, Escaped_identifier, Simple_identifier},</pre>
+      <pre>          2 : second;</pre>
+      <pre>          ^--.</pre>
+      <pre>[SNT:PA0207] /__w/sv-tests/sv-tests/tests/chapter-18/18.17.3--case-production-statements_0_fail.sv:26:10: Syntax error: extraneous input &#39;default&#39; expecting {Pound_Pound_delay, Pound_delay, ATSTAR, AT_PARENS_STAR, &#39;;&#39;, &#39;type&#39;, &#39;local&#39;, &#39;super&#39;, &#39;endfunction&#39;, &#39;{&#39;, &#39;-&gt;&#39;, &#39;if&#39;, &#39;foreach&#39;, &#39;byte&#39;, &#39;shortint&#39;, &#39;int&#39;, &#39;longint&#39;, &#39;integer&#39;, &#39;time&#39;, &#39;void&#39;, &#39;$&#39;, &#39;++&#39;, &#39;--&#39;, DOLLAR_UNIT, &#39;(*&#39;, &#39;assert&#39;, &#39;assume&#39;, &#39;cover&#39;, &#39;expect&#39;, &#39;disable&#39;, &#39;##&#39;, &#39;#&#39;, &#39;begin&#39;, &#39;case&#39;, &#39;for&#39;, &#39;assign&#39;, &#39;deassign&#39;, &#39;force&#39;, &#39;release&#39;, &#39;fork&#39;, &#39;repeat&#39;, &#39;@&#39;, &#39;return&#39;, &#39;break&#39;, &#39;continue&#39;, &#39;wait&#39;, &#39;wait_order&#39;, &#39;unique&#39;, &#39;unique0&#39;, &#39;priority&#39;, &#39;casez&#39;, &#39;casex&#39;, &#39;randcase&#39;, &#39;forever&#39;, &#39;while&#39;, &#39;do&#39;, &#39;restrict&#39;, &#39;&#39;&#39;, &#39;randsequence&#39;, &#39;this&#39;, DOLLAR_ROOT, &#39;randomize&#39;, &#39;sample&#39;, &#39;-&gt;&gt;&#39;, Escaped_identifier, Simple_identifier, SURELOG_MACRO_NOT_DEFINED},</pre>
+      <pre>          default : third;</pre>
+      <pre>          ^--.</pre>
+      <pre>[SNT:PA0207] /__w/sv-tests/sv-tests/tests/chapter-18/18.17.3--case-production-statements_0_fail.sv:27:6: Syntax error: extraneous input &#39;endcase&#39; expecting {Pound_Pound_delay, Pound_delay, ATSTAR, AT_PARENS_STAR, &#39;;&#39;, &#39;type&#39;, &#39;local&#39;, &#39;super&#39;, &#39;endfunction&#39;, &#39;{&#39;, &#39;-&gt;&#39;, &#39;if&#39;, &#39;foreach&#39;, &#39;byte&#39;, &#39;shortint&#39;, &#39;int&#39;, &#39;longint&#39;, &#39;integer&#39;, &#39;time&#39;, &#39;void&#39;, &#39;$&#39;, &#39;++&#39;, &#39;--&#39;, DOLLAR_UNIT, &#39;(*&#39;, &#39;assert&#39;, &#39;assume&#39;, &#39;cover&#39;, &#39;expect&#39;, &#39;disable&#39;, &#39;##&#39;, &#39;#&#39;, &#39;begin&#39;, &#39;case&#39;, &#39;for&#39;, &#39;assign&#39;, &#39;deassign&#39;, &#39;force&#39;, &#39;release&#39;, &#39;fork&#39;, &#39;repeat&#39;, &#39;@&#39;, &#39;return&#39;, &#39;break&#39;, &#39;continue&#39;, &#39;wait&#39;, &#39;wait_order&#39;, &#39;unique&#39;, &#39;unique0&#39;, &#39;priority&#39;, &#39;casez&#39;, &#39;casex&#39;, &#39;randcase&#39;, &#39;forever&#39;, &#39;while&#39;, &#39;do&#39;, &#39;restrict&#39;, &#39;&#39;&#39;, &#39;randsequence&#39;, &#39;this&#39;, DOLLAR_ROOT, &#39;randomize&#39;, &#39;sample&#39;, &#39;-&gt;&gt;&#39;, Escaped_identifier, Simple_identifier, SURELOG_MACRO_NOT_DEFINED},</pre>
+      <pre>      endcase;</pre>
+      <pre>      ^--.</pre>
+      <pre>[SNT:PA0207] /__w/sv-tests/sv-tests/tests/chapter-18/18.17.3--case-production-statements_0_fail.sv:28:18: Syntax error: no viable alternative at input &#39;{ x =&#39;,</pre>
+      <pre>      zero2 : { x = 0; };</pre>
+      <pre>                  ^--.</pre>
+      <pre>[SNT:PA0207] /__w/sv-tests/sv-tests/tests/chapter-18/18.17.3--case-production-statements_0_fail.sv:28:23: Syntax error: extraneous input &#39;}&#39; expecting {Pound_Pound_delay, Pound_delay, ATSTAR, AT_PARENS_STAR, &#39;;&#39;, &#39;type&#39;, &#39;local&#39;, &#39;super&#39;, &#39;endfunction&#39;, &#39;{&#39;, &#39;-&gt;&#39;, &#39;if&#39;, &#39;foreach&#39;, &#39;byte&#39;, &#39;shortint&#39;, &#39;int&#39;, &#39;longint&#39;, &#39;integer&#39;, &#39;time&#39;, &#39;void&#39;, &#39;$&#39;, &#39;++&#39;, &#39;--&#39;, DOLLAR_UNIT, &#39;(*&#39;, &#39;assert&#39;, &#39;assume&#39;, &#39;cover&#39;, &#39;expect&#39;, &#39;disable&#39;, &#39;##&#39;, &#39;#&#39;, &#39;begin&#39;, &#39;case&#39;, &#39;for&#39;, &#39;assign&#39;, &#39;deassign&#39;, &#39;force&#39;, &#39;release&#39;, &#39;fork&#39;, &#39;repeat&#39;, &#39;@&#39;, &#39;return&#39;, &#39;break&#39;, &#39;continue&#39;, &#39;wait&#39;, &#39;wait_order&#39;, &#39;unique&#39;, &#39;unique0&#39;, &#39;priority&#39;, &#39;casez&#39;, &#39;casex&#39;, &#39;randcase&#39;, &#39;forever&#39;, &#39;while&#39;, &#39;do&#39;, &#39;restrict&#39;, &#39;&#39;&#39;, &#39;randsequence&#39;, &#39;this&#39;, DOLLAR_ROOT, &#39;randomize&#39;, &#39;sample&#39;, &#39;-&gt;&gt;&#39;, Escaped_identifier, Simple_identifier, SURELOG_MACRO_NOT_DEFINED},</pre>
+      <pre>      zero2 : { x = 0; };</pre>
+      <pre>                       ^--.</pre>
+      <pre>[SNT:PA0207] /__w/sv-tests/sv-tests/tests/chapter-18/18.17.3--case-production-statements_0_fail.sv:29:18: Syntax error: no viable alternative at input &#39;{ x =&#39;,</pre>
+      <pre>      first : { x = 10; };</pre>
+      <pre>                  ^--.</pre>
+      <pre>[SNT:PA0207] /__w/sv-tests/sv-tests/tests/chapter-18/18.17.3--case-production-statements_0_fail.sv:29:24: Syntax error: extraneous input &#39;}&#39; expecting {Pound_Pound_delay, Pound_delay, ATSTAR, AT_PARENS_STAR, &#39;;&#39;, &#39;type&#39;, &#39;local&#39;, &#39;super&#39;, &#39;endfunction&#39;, &#39;{&#39;, &#39;-&gt;&#39;, &#39;if&#39;, &#39;foreach&#39;, &#39;byte&#39;, &#39;shortint&#39;, &#39;int&#39;, &#39;longint&#39;, &#39;integer&#39;, &#39;time&#39;, &#39;void&#39;, &#39;$&#39;, &#39;++&#39;, &#39;--&#39;, DOLLAR_UNIT, &#39;(*&#39;, &#39;assert&#39;, &#39;assume&#39;, &#39;cover&#39;, &#39;expect&#39;, &#39;disable&#39;, &#39;##&#39;, &#39;#&#39;, &#39;begin&#39;, &#39;case&#39;, &#39;for&#39;, &#39;assign&#39;, &#39;deassign&#39;, &#39;force&#39;, &#39;release&#39;, &#39;fork&#39;, &#39;repeat&#39;, &#39;@&#39;, &#39;return&#39;, &#39;break&#39;, &#39;continue&#39;, &#39;wait&#39;, &#39;wait_order&#39;, &#39;unique&#39;, &#39;unique0&#39;, &#39;priority&#39;, &#39;casez&#39;, &#39;casex&#39;, &#39;randcase&#39;, &#39;forever&#39;, &#39;while&#39;, &#39;do&#39;, &#39;restrict&#39;, &#39;&#39;&#39;, &#39;randsequence&#39;, &#39;this&#39;, DOLLAR_ROOT, &#39;randomize&#39;, &#39;sample&#39;, &#39;-&gt;&gt;&#39;, Escaped_identifier, Simple_identifier, SURELOG_MACRO_NOT_DEFINED},</pre>
+      <pre>      first : { x = 10; };</pre>
+      <pre>                        ^--.</pre>
+      <pre>[SNT:PA0207] /__w/sv-tests/sv-tests/tests/chapter-18/18.17.3--case-production-statements_0_fail.sv:30:19: Syntax error: no viable alternative at input &#39;{ x =&#39;,</pre>
+      <pre>      second : { x = 2; };</pre>
+      <pre>                   ^--.</pre>
+      <pre>No config file</pre>
+      <pre>Lint finished with 1 error(s).</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

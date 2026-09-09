@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-vlg_con_tri_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/con_tri.v.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/con_tri.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:27:09</dd></div>
+        <div><dt>time elapsed</dt><dd>0.012s</dd></div>
+        <div><dt>ram usage</dt><dd>22484 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpzo8oko4i/formatted/con_tri.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpzo8oko4i/formatted/con_tri.v</pre>
+      <pre>formatted/con_tri.v:41:7: error: expected a declaration name</pre>
+      <pre>  sel = 0;</pre>
+      <pre>      ^</pre>
+      <pre>formatted/con_tri.v:42:3: error: expected member</pre>
+      <pre>  #1 if (out !== 2&#39;b00) begin$display (&#34;FAILED -- sel==%b, out==%b, v0==%b&#34;, sel, out, v0);</pre>
+      <pre>  ^</pre>
+      <pre>formatted/con_tri.v:43:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/con_tri.v:44:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/con_tri.v:42:39: note: last complete block started here</pre>
+      <pre>  #1 if (out !== 2&#39;b00) begin$display (&#34;FAILED -- sel==%b, out==%b, v0==%b&#34;, sel, out, v0);</pre>
+      <pre>                                      ^</pre>
+      <pre>formatted/con_tri.v:42:90: note: and ended here</pre>
+      <pre>  #1 if (out !== 2&#39;b00) begin$display (&#34;FAILED -- sel==%b, out==%b, v0==%b&#34;, sel, out, v0);</pre>
+      <pre>                                                                                         ^</pre>
+      <pre>formatted/con_tri.v:45:11: error: expected a declaration name</pre>
+      <pre>      sel = 1;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/con_tri.v:46:3: error: expected member</pre>
+      <pre>  #1 if (out !== 2&#39;b01) begin$display (&#34;FAILED -- sel==%b, out==%b&#34;, sel, out);</pre>
+      <pre>  ^</pre>
+      <pre>formatted/con_tri.v:47:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/con_tri.v:48:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/con_tri.v:46:39: note: last complete block started here</pre>
+      <pre>  #1 if (out !== 2&#39;b01) begin$display (&#34;FAILED -- sel==%b, out==%b&#34;, sel, out);</pre>
+      <pre>                                      ^</pre>
+      <pre>formatted/con_tri.v:46:78: note: and ended here</pre>
+      <pre>  #1 if (out !== 2&#39;b01) begin$display (&#34;FAILED -- sel==%b, out==%b&#34;, sel, out);</pre>
+      <pre>                                                                             ^</pre>
+      <pre>formatted/con_tri.v:49:11: error: expected a declaration name</pre>
+      <pre>      sel = 2;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/con_tri.v:50:3: error: expected member</pre>
+      <pre>  #1 if (out !== 2&#39;b10) begin$display (&#34;FAILED -- sel==%b, out==%b&#34;, sel, out);</pre>
+      <pre>  ^</pre>
+      <pre>formatted/con_tri.v:51:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/con_tri.v:52:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/con_tri.v:50:39: note: last complete block started here</pre>
+      <pre>  #1 if (out !== 2&#39;b10) begin$display (&#34;FAILED -- sel==%b, out==%b&#34;, sel, out);</pre>
+      <pre>                                      ^</pre>
+      <pre>formatted/con_tri.v:50:78: note: and ended here</pre>
+      <pre>  #1 if (out !== 2&#39;b10) begin$display (&#34;FAILED -- sel==%b, out==%b&#34;, sel, out);</pre>
+      <pre>                                                                             ^</pre>
+      <pre>formatted/con_tri.v:53:11: error: expected a declaration name</pre>
+      <pre>      sel = 3;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/con_tri.v:54:3: error: expected member</pre>
+      <pre>  #1 if (out !== 2&#39;b11) begin$display (&#34;FAILED -- sel==%b, out==%b&#34;, sel, out);</pre>
+      <pre>  ^</pre>
+      <pre>formatted/con_tri.v:55:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/con_tri.v:56:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/con_tri.v:54:39: note: last complete block started here</pre>
+      <pre>  #1 if (out !== 2&#39;b11) begin$display (&#34;FAILED -- sel==%b, out==%b&#34;, sel, out);</pre>
+      <pre>                                      ^</pre>
+      <pre>formatted/con_tri.v:54:78: note: and ended here</pre>
+      <pre>  #1 if (out !== 2&#39;b11) begin$display (&#34;FAILED -- sel==%b, out==%b&#34;, sel, out);</pre>
+      <pre>                                                                             ^</pre>
+      <pre>formatted/con_tri.v:58:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end // initial begin</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/con_tri.v:54:39: note: last complete block started here</pre>
+      <pre>  #1 if (out !== 2&#39;b11) begin$display (&#34;FAILED -- sel==%b, out==%b&#34;, sel, out);</pre>
+      <pre>                                      ^</pre>
+      <pre>formatted/con_tri.v:54:78: note: and ended here</pre>
+      <pre>  #1 if (out !== 2&#39;b11) begin$display (&#34;FAILED -- sel==%b, out==%b&#34;, sel, out);</pre>
+      <pre>                                                                             ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

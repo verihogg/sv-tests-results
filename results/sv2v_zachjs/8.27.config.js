@@ -1,1 +1,0 @@
-config_loader_data['sv2v_zachjs/8.27'] = [["","forward_declaration",0,"logs/Sv2v_zachjs/chapter-8/8.27--forward_declaration.sv.log.html","tests/chapter-8/8.27--forward_declaration.sv.html"]]

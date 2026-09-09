@@ -1,1 +1,0 @@
-config_loader_data['yosys/9.3.5'] = [["","statement_labels_seq",0,"logs/Yosys/chapter-9/9.3.5--statement_labels_seq.sv.log.html","tests/chapter-9/9.3.5--statement_labels_seq.sv.html"]]

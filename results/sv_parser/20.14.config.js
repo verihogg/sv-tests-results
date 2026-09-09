@@ -1,1 +1,0 @@
-config_loader_data['sv_parser/20.14'] = [["","coverage_routines",1,"logs/sv_parser/chapter-20/20.14--coverage.sv.log.html","tests/chapter-20/20.14--coverage.sv.html"]]

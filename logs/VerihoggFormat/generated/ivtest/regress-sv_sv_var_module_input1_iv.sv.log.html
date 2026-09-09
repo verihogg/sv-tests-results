@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-sv_sv_var_module_input1_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/sv_var_module_input1.v.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/sv_var_module_input1.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:32:08</dd></div>
+        <div><dt>time elapsed</dt><dd>0.013s</dd></div>
+        <div><dt>ram usage</dt><dd>24032 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp9rj7hkr7/formatted/sv_var_module_input1.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmp9rj7hkr7/formatted/sv_var_module_input1.v</pre>
+      <pre>formatted/sv_var_module_input1.v:4:19: error: expected a declaration name</pre>
+      <pre>               exp) \</pre>
+      <pre>                  ^</pre>
+      <pre>formatted/sv_var_module_input1.v:4:19: error: unexpected &#39;)&#39; delimiter</pre>
+      <pre>               exp) \</pre>
+      <pre>                  ^</pre>
+      <pre>formatted/sv_var_module_input1.v:4:21: error: macro operators may only be used within a macro definition</pre>
+      <pre>               exp) \</pre>
+      <pre>                    ^</pre>
+      <pre>formatted/sv_var_module_input1.v:5:2: error: member not allowed at compilation unit scope</pre>
+      <pre> if (val !== exp) begin\</pre>
+      <pre> ^~~~~~~~~~~~~~~~~~~~~~~</pre>
+      <pre>formatted/sv_var_module_input1.v:5:24: error: macro operators may only be used within a macro definition</pre>
+      <pre> if (val !== exp) begin\</pre>
+      <pre>                       ^</pre>
+      <pre>formatted/sv_var_module_input1.v:7:70: error: macro operators may only be used within a macro definition</pre>
+      <pre>                                                          `__LINE__, `&#34; val `&#34;, val,</pre>
+      <pre>                                                                     ^~</pre>
+      <pre>formatted/sv_var_module_input1.v:7:77: error: macro operators may only be used within a macro definition</pre>
+      <pre>                                                          `__LINE__, `&#34; val `&#34;, val,</pre>
+      <pre>                                                                            ^~</pre>
+      <pre>formatted/sv_var_module_input1.v:8:65: error: macro operators may only be used within a macro definition</pre>
+      <pre>                                                          exp); \</pre>
+      <pre>                                                                ^</pre>
+      <pre>formatted/sv_var_module_input1.v:9:9: error: expected a declaration name</pre>
+      <pre> failed = 1&#39;b1; \</pre>
+      <pre>        ^</pre>
+      <pre>formatted/sv_var_module_input1.v:9:17: error: macro operators may only be used within a macro definition</pre>
+      <pre> failed = 1&#39;b1; \</pre>
+      <pre>                ^</pre>
+      <pre>formatted/sv_var_module_input1.v:20:7: error: expected &#39;)&#39;</pre>
+      <pre>      `check (x, VAL_X)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_var_module_input1.v:3:19: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (val,</pre>
+      <pre>                  ^</pre>
+      <pre>formatted/sv_var_module_input1.v:20:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (x, VAL_X)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_var_module_input1.v:3:15: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (val,</pre>
+      <pre>              ^</pre>
+      <pre>formatted/sv_var_module_input1.v:20:16: error: expected &#39;)&#39;</pre>
+      <pre>      `check (x, VAL_X)</pre>
+      <pre>               ^</pre>
+      <pre>formatted/sv_var_module_input1.v:20:14: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (x, VAL_X)</pre>
+      <pre>             ^</pre>
+      <pre>formatted/sv_var_module_input1.v:20:23: error: expected &#39;;&#39;</pre>
+      <pre>      `check (x, VAL_X)</pre>
+      <pre>                      ^</pre>
+      <pre>formatted/sv_var_module_input1.v:21:7: error: expected &#39;)&#39;</pre>
+      <pre>      `check (y, VAL_Y)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_var_module_input1.v:3:19: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (val,</pre>
+      <pre>                  ^</pre>
+      <pre>formatted/sv_var_module_input1.v:21:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (y, VAL_Y)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_var_module_input1.v:3:15: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (val,</pre>
+      <pre>              ^</pre>
+      <pre>formatted/sv_var_module_input1.v:21:16: error: expected &#39;)&#39;</pre>
+      <pre>      `check (y, VAL_Y)</pre>
+      <pre>               ^</pre>
+      <pre>formatted/sv_var_module_input1.v:21:14: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (y, VAL_Y)</pre>
+      <pre>             ^</pre>
+      <pre>formatted/sv_var_module_input1.v:21:23: error: expected &#39;;&#39;</pre>
+      <pre>      `check (y, VAL_Y)</pre>
+      <pre>                      ^</pre>
+      <pre>formatted/sv_var_module_input1.v:22:7: error: expected &#39;)&#39;</pre>
+      <pre>      `check (z, VAL_Z)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_var_module_input1.v:3:19: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (val,</pre>
+      <pre>                  ^</pre>
+      <pre>formatted/sv_var_module_input1.v:22:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (z, VAL_Z)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_var_module_input1.v:3:15: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (val,</pre>
+      <pre>              ^</pre>
+      <pre>formatted/sv_var_module_input1.v:22:16: error: expected &#39;)&#39;</pre>
+      <pre>      `check (z, VAL_Z)</pre>
+      <pre>               ^</pre>
+      <pre>formatted/sv_var_module_input1.v:22:14: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (z, VAL_Z)</pre>
+      <pre>             ^</pre>
+      <pre>formatted/sv_var_module_input1.v:22:23: error: expected &#39;;&#39;</pre>
+      <pre>      `check (z, VAL_Z)</pre>
+      <pre>                      ^</pre>
+      <pre>formatted/sv_var_module_input1.v:23:7: error: expected &#39;)&#39;</pre>
+      <pre>      `check (w, VAL_W)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_var_module_input1.v:3:19: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (val,</pre>
+      <pre>                  ^</pre>
+      <pre>formatted/sv_var_module_input1.v:23:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (w, VAL_W)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_var_module_input1.v:3:15: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (val,</pre>
+      <pre>              ^</pre>
+      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

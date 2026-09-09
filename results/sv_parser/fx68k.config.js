@@ -1,1 +1,0 @@
-config_loader_data['sv_parser/fx68k'] = [["cores","fx68k",1,"logs/sv_parser/generated/fx68k/fx68k.sv.log.html","third_party/cores/fx68k/fx68k.sv.html"]]

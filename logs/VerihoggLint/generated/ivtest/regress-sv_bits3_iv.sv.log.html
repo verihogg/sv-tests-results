@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-lint/tree/9eea937fde4f2d3e21e4d6eff1ce0bbdb5d6078f" target="_blank"><h1>VerihoggLint</h1></a>
+        <h2>regress-sv_bits3_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/tima/git/verihogg/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/home/tima/git/verihogg/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>elaboration</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/bits3.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/bits3.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 15:55:48</dd></div>
+        <div><dt>time elapsed</dt><dd>0.214s</dd></div>
+        <div><dt>ram usage</dt><dd>32900 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-lint -nobuiltin -I/home/tima/git/verihogg/sv-tests/third_party/tools/icarus/ivtest -I/home/tima/git/verihogg/sv-tests/third_party/tools/icarus/ivtest/ivltests <a href="../../../../third_party/tools/icarus/ivtest/ivltests/bits3.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/bits3.v</a></pre>
+      <pre>[ERR:UH0700] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/bits3.v.html#l-8" target="file-frame">third_party/tools/icarus/ivtest/ivltests/bits3.v:8:13</a>: Unsupported expression &#34;&lt;n&lt;&gt; u&lt;740&gt; t&lt;Struct_keyword&gt; p&lt;741&gt; l&lt;8:13&gt; el&lt;8:19&gt;&gt;   if ($bits(type) !== value) begin \&#34;.</pre>
+      <pre>[ERR:UH0700] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/bits3.v.html#l-8" target="file-frame">third_party/tools/icarus/ivtest/ivltests/bits3.v:8:20</a>: Unsupported expression &#34;&lt;n&lt;&gt; u&lt;742&gt; t&lt;Packed_keyword&gt; p&lt;757&gt; s&lt;749&gt; l&lt;8:20&gt; el&lt;8:26&gt;&gt;   if ($bits(type) !== value) begin \&#34;.</pre>
+      <pre>[ERR:UH0700] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/bits3.v.html#l-8" target="file-frame">third_party/tools/icarus/ivtest/ivltests/bits3.v:8:29</a>: Unsupported expression &#34;&lt;n&lt;&gt; u&lt;745&gt; t&lt;Data_type_or_void&gt; p&lt;749&gt; c&lt;744&gt; s&lt;748&gt; l&lt;8:29&gt; el&lt;8:32&gt;&gt;   if ($bits(type) !== value) begin \&#34;.</pre>
+      <pre>[ERR:UH0700] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/bits3.v.html#l-8" target="file-frame">third_party/tools/icarus/ivtest/ivltests/bits3.v:8:36</a>: Unsupported expression &#34;&lt;n&lt;&gt; u&lt;752&gt; t&lt;Data_type_or_void&gt; p&lt;756&gt; c&lt;751&gt; s&lt;755&gt; l&lt;8:36&gt; el&lt;8:44&gt;&gt;   if ($bits(type) !== value) begin \&#34;.</pre>
+      <pre>[ERR:UH0700] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/bits3.v.html#l-9" target="file-frame">third_party/tools/icarus/ivtest/ivltests/bits3.v:9:90</a>: Unsupported expression &#34;&lt;n&lt;&gt; u&lt;793&gt; t&lt;Struct_keyword&gt; p&lt;794&gt; l&lt;9:90&gt; el&lt;9:96&gt;&gt;     $display(&#34;FAILED: $bits(&#34;, `&#34;type`&#34;, &#34;) is %0d&#34;, $bits(type), &#34; expected %0d&#34;, value); \&#34;.</pre>
+      <pre>[ERR:UH0700] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/bits3.v.html#l-9" target="file-frame">third_party/tools/icarus/ivtest/ivltests/bits3.v:9:97</a>: Unsupported expression &#34;&lt;n&lt;&gt; u&lt;795&gt; t&lt;Packed_keyword&gt; p&lt;810&gt; s&lt;802&gt; l&lt;9:97&gt; el&lt;9:103&gt;&gt;     $display(&#34;FAILED: $bits(&#34;, `&#34;type`&#34;, &#34;) is %0d&#34;, $bits(type), &#34; expected %0d&#34;, value); \&#34;.</pre>
+      <pre>[ERR:UH0700] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/bits3.v.html#l-9" target="file-frame">third_party/tools/icarus/ivtest/ivltests/bits3.v:9:106</a>: Unsupported expression &#34;&lt;n&lt;&gt; u&lt;798&gt; t&lt;Data_type_or_void&gt; p&lt;802&gt; c&lt;797&gt; s&lt;801&gt; l&lt;9:106&gt; el&lt;9:109&gt;&gt;     $display(&#34;FAILED: $bits(&#34;, `&#34;type`&#34;, &#34;) is %0d&#34;, $bits(type), &#34; expected %0d&#34;, value); \&#34;.</pre>
+      <pre>[ERR:UH0700] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/bits3.v.html#l-9" target="file-frame">third_party/tools/icarus/ivtest/ivltests/bits3.v:9:113</a>: Unsupported expression &#34;&lt;n&lt;&gt; u&lt;805&gt; t&lt;Data_type_or_void&gt; p&lt;809&gt; c&lt;804&gt; s&lt;808&gt; l&lt;9:113&gt; el&lt;9:121&gt;&gt;     $display(&#34;FAILED: $bits(&#34;, `&#34;type`&#34;, &#34;) is %0d&#34;, $bits(type), &#34; expected %0d&#34;, value); \&#34;.</pre>
+      <pre>No config file</pre>
+      <pre>Lint finished with 1 error(s).</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

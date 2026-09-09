@@ -1,0 +1,1 @@
+config_loader_data['verihoggformat/9.6.3'] = [["","disable_fork",1,"logs/VerihoggFormat/chapter-9/9.6.3--disable_fork.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-9/9.6.3--disable_fork.sv.html"]]

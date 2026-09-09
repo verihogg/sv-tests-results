@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-lint/tree/9eea937fde4f2d3e21e4d6eff1ce0bbdb5d6078f" target="_blank"><h1>VerihoggLintLax</h1></a>
+        <h2>regress-sv_packed_dims_invalid_class_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 1)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/tima/git/verihogg/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/home/tima/git/verihogg/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>elaboration</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/packed_dims_invalid_class.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/packed_dims_invalid_class.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 16:58:10</dd></div>
+        <div><dt>time elapsed</dt><dd>0.028s</dd></div>
+        <div><dt>ram usage</dt><dd>19520 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-lint -nobuiltin -I/home/tima/git/verihogg/sv-tests/third_party/tools/icarus/ivtest -I/home/tima/git/verihogg/sv-tests/third_party/tools/icarus/ivtest/ivltests <a href="../../../../third_party/tools/icarus/ivtest/ivltests/packed_dims_invalid_class.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/packed_dims_invalid_class.v</a></pre>
+      <pre>[SNT:PA0207] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/packed_dims_invalid_class.v.html#l-5" target="file-frame">third_party/tools/icarus/ivtest/ivltests/packed_dims_invalid_class.v:5:18</a>: Syntax error: missing &#39;.&#39; at &#39;T2&#39;,</pre>
+      <pre>typedef logic [0] T2;</pre>
+      <pre>                  ^--.</pre>
+      <pre>[SNT:PA0207] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/packed_dims_invalid_class.v.html#l-5" target="file-frame">third_party/tools/icarus/ivtest/ivltests/packed_dims_invalid_class.v:5:20</a>: Syntax error: missing {&#39;this&#39;, &#39;randomize&#39;, &#39;sample&#39;, Escaped_identifier, Simple_identifier} at &#39;;&#39;,</pre>
+      <pre>typedef logic [0] T2;</pre>
+      <pre>                    ^--.</pre>
+      <pre>[SNT:PA0207] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/packed_dims_invalid_class.v.html#l-6" target="file-frame">third_party/tools/icarus/ivtest/ivltests/packed_dims_invalid_class.v:6:19</a>: Syntax error: missing &#39;.&#39; at &#39;T3&#39;,</pre>
+      <pre>typedef logic [-1] T3;</pre>
+      <pre>                   ^--.</pre>
+      <pre>[SNT:PA0207] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/packed_dims_invalid_class.v.html#l-6" target="file-frame">third_party/tools/icarus/ivtest/ivltests/packed_dims_invalid_class.v:6:21</a>: Syntax error: missing {&#39;this&#39;, &#39;randomize&#39;, &#39;sample&#39;, Escaped_identifier, Simple_identifier} at &#39;;&#39;,</pre>
+      <pre>typedef logic [-1] T3;</pre>
+      <pre>                     ^--.</pre>
+      <pre>[SNT:PA0207] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/packed_dims_invalid_class.v.html#l-7" target="file-frame">third_party/tools/icarus/ivtest/ivltests/packed_dims_invalid_class.v:7:18</a>: Syntax error: missing &#39;.&#39; at &#39;T4&#39;,</pre>
+      <pre>typedef logic [$] T4;</pre>
+      <pre>                  ^--.</pre>
+      <pre>[SNT:PA0207] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/packed_dims_invalid_class.v.html#l-7" target="file-frame">third_party/tools/icarus/ivtest/ivltests/packed_dims_invalid_class.v:7:20</a>: Syntax error: missing {&#39;this&#39;, &#39;randomize&#39;, &#39;sample&#39;, Escaped_identifier, Simple_identifier} at &#39;;&#39;,</pre>
+      <pre>typedef logic [$] T4;</pre>
+      <pre>                    ^--.</pre>
+      <pre>[SNT:PA0207] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/packed_dims_invalid_class.v.html#l-10" target="file-frame">third_party/tools/icarus/ivtest/ivltests/packed_dims_invalid_class.v:10:9</a>: Syntax error: mismatched input &#39;]&#39; expecting &#39;:&#39;,</pre>
+      <pre>	logic [$] a;</pre>
+      <pre>         ^--.</pre>
+      <pre>[SNT:PA0207] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/packed_dims_invalid_class.v.html#l-12" target="file-frame">third_party/tools/icarus/ivtest/ivltests/packed_dims_invalid_class.v:12:6</a>: Syntax error: mismatched input &#39;]&#39; expecting &#39;:&#39;,</pre>
+      <pre>	T1 [$] c;</pre>
+      <pre>      ^--.</pre>
+      <pre>[SNT:PA0207] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/packed_dims_invalid_class.v.html#l-14" target="file-frame">third_party/tools/icarus/ivtest/ivltests/packed_dims_invalid_class.v:14:9</a>: Syntax error: mismatched input &#39;]&#39; expecting &#39;:&#39;,</pre>
+      <pre>	logic [0] d;</pre>
+      <pre>         ^--.</pre>
+      <pre>[SNT:PA0207] <a href="../../../../third_party/tools/icarus/ivtest/ivltests/packed_dims_invalid_class.v.html#l-16" target="file-frame">third_party/tools/icarus/ivtest/ivltests/packed_dims_invalid_class.v:16:6</a>: Syntax error: mismatched input &#39;]&#39; expecting &#39;:&#39;,</pre>
+      <pre>	T2 [0] f;</pre>
+      <pre>      ^--.</pre>
+      <pre>No config file</pre>
+      <pre>Lint finished with 1 error(s).</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

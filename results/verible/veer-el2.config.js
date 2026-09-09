@@ -1,1 +1,0 @@
-config_loader_data['verible/veer-el2'] = [["cores","veer-el2",1,"logs/Verible/generated/veer-config/veer-el2_synth/veer-el2_synth.sv.log.html","third_party/cores/veer-el2/design/include/el2_def.sv.html"]]

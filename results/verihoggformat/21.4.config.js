@@ -1,0 +1,1 @@
+config_loader_data['verihoggformat/21.4'] = [["","readmemb_task",1,"logs/VerihoggFormat/chapter-21/21.4--readmemb.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-21/21.4--readmemb.sv.html"],["","readmemh_task",1,"logs/VerihoggFormat/chapter-21/21.4--readmemh.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-21/21.4--readmemh.sv.html"]]

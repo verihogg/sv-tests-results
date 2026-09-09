@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-vlg_pr2172606_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/pr2172606.v.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/pr2172606.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:27:20</dd></div>
+        <div><dt>time elapsed</dt><dd>0.012s</dd></div>
+        <div><dt>ram usage</dt><dd>22456 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp4i9a8zp7/formatted/pr2172606.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmp4i9a8zp7/formatted/pr2172606.v</pre>
+      <pre>formatted/pr2172606.v:15:14: error: expected a declaration name</pre>
+      <pre>  mode       = 1&#39;b0;</pre>
+      <pre>             ^</pre>
+      <pre>formatted/pr2172606.v:16:14: error: expected a declaration name</pre>
+      <pre>  local_out  = 1&#39;b0;</pre>
+      <pre>             ^</pre>
+      <pre>formatted/pr2172606.v:18:3: error: expected member</pre>
+      <pre>  #1 if (out1 !== local_out) begin$display (&#34;FAILED test 1, expected %b, got %b&#34;, local_out, out1);</pre>
+      <pre>  ^</pre>
+      <pre>formatted/pr2172606.v:19:18: error: expected a declaration name</pre>
+      <pre>  passed         = 1&#39;b0;</pre>
+      <pre>                 ^</pre>
+      <pre>formatted/pr2172606.v:20:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end local_out  = 1&#39;b1;</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/pr2172606.v:18:44: note: last complete block started here</pre>
+      <pre>  #1 if (out1 !== local_out) begin$display (&#34;FAILED test 1, expected %b, got %b&#34;, local_out, out1);</pre>
+      <pre>                                           ^</pre>
+      <pre>formatted/pr2172606.v:18:98: note: and ended here</pre>
+      <pre>  #1 if (out1 !== local_out) begin$display (&#34;FAILED test 1, expected %b, got %b&#34;, local_out, out1);</pre>
+      <pre>                                                                                                 ^</pre>
+      <pre>formatted/pr2172606.v:20:18: error: expected a declaration name</pre>
+      <pre>  end local_out  = 1&#39;b1;</pre>
+      <pre>                 ^</pre>
+      <pre>formatted/pr2172606.v:22:3: error: expected member</pre>
+      <pre>  #1 if (out1 !== local_out) begin$display (&#34;FAILED test 1, expected %b, got %b&#34;, local_out, out1);</pre>
+      <pre>  ^</pre>
+      <pre>formatted/pr2172606.v:23:18: error: expected a declaration name</pre>
+      <pre>  passed         = 1&#39;b0;</pre>
+      <pre>                 ^</pre>
+      <pre>formatted/pr2172606.v:24:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end local_out  = 1&#39;bx;</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/pr2172606.v:22:44: note: last complete block started here</pre>
+      <pre>  #1 if (out1 !== local_out) begin$display (&#34;FAILED test 1, expected %b, got %b&#34;, local_out, out1);</pre>
+      <pre>                                           ^</pre>
+      <pre>formatted/pr2172606.v:22:98: note: and ended here</pre>
+      <pre>  #1 if (out1 !== local_out) begin$display (&#34;FAILED test 1, expected %b, got %b&#34;, local_out, out1);</pre>
+      <pre>                                                                                                 ^</pre>
+      <pre>formatted/pr2172606.v:24:18: error: expected a declaration name</pre>
+      <pre>  end local_out  = 1&#39;bx;</pre>
+      <pre>                 ^</pre>
+      <pre>formatted/pr2172606.v:24:24: error: expected a declaration name</pre>
+      <pre>  end local_out  = 1&#39;bx;</pre>
+      <pre>                       ^</pre>
+      <pre>formatted/pr2172606.v:26:3: error: expected member</pre>
+      <pre>  #1 if (out1 !== local_out) begin$display (&#34;FAILED test 1, expected %b, got %b&#34;, local_out, out1);</pre>
+      <pre>  ^</pre>
+      <pre>formatted/pr2172606.v:27:18: error: expected a declaration name</pre>
+      <pre>  passed         = 1&#39;b0;</pre>
+      <pre>                 ^</pre>
+      <pre>formatted/pr2172606.v:28:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end local_out  = 1&#39;bz;</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/pr2172606.v:26:44: note: last complete block started here</pre>
+      <pre>  #1 if (out1 !== local_out) begin$display (&#34;FAILED test 1, expected %b, got %b&#34;, local_out, out1);</pre>
+      <pre>                                           ^</pre>
+      <pre>formatted/pr2172606.v:26:98: note: and ended here</pre>
+      <pre>  #1 if (out1 !== local_out) begin$display (&#34;FAILED test 1, expected %b, got %b&#34;, local_out, out1);</pre>
+      <pre>                                                                                                 ^</pre>
+      <pre>formatted/pr2172606.v:28:18: error: expected a declaration name</pre>
+      <pre>  end local_out  = 1&#39;bz;</pre>
+      <pre>                 ^</pre>
+      <pre>formatted/pr2172606.v:28:24: error: expected a declaration name</pre>
+      <pre>  end local_out  = 1&#39;bz;</pre>
+      <pre>                       ^</pre>
+      <pre>formatted/pr2172606.v:30:3: error: expected member</pre>
+      <pre>  #1 if (out1 !== 1&#39;b1) begin$display (&#34;FAILED test 1, expected 1&#39;b1, got %b&#34;, out1);</pre>
+      <pre>  ^</pre>
+      <pre>formatted/pr2172606.v:31:10: error: expected a declaration name</pre>
+      <pre>  passed = 1&#39;b0;</pre>
+      <pre>         ^</pre>
+      <pre>formatted/pr2172606.v:32:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/pr2172606.v:30:39: note: last complete block started here</pre>
+      <pre>  #1 if (out1 !== 1&#39;b1) begin$display (&#34;FAILED test 1, expected 1&#39;b1, got %b&#34;, out1);</pre>
+      <pre>                                      ^</pre>
+      <pre>formatted/pr2172606.v:30:84: note: and ended here</pre>
+      <pre>  #1 if (out1 !== 1&#39;b1) begin$display (&#34;FAILED test 1, expected 1&#39;b1, got %b&#34;, out1);</pre>
+      <pre>                                                                                   ^</pre>
+      <pre>formatted/pr2172606.v:33:19: error: expected member</pre>
+      <pre>      if (passed) $display (&#34;PASSED&#34;);</pre>
+      <pre>                  ^</pre>
+      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

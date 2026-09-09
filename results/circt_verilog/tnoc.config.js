@@ -1,1 +1,0 @@
-config_loader_data['circt_verilog/tnoc'] = [["cores","TNoC",0,"logs/circt_verilog/generated/tnoc/tnoc.sv.log.html","third_party/cores/tnoc/rtl/bcm/tbcm_counter.sv.html"]]

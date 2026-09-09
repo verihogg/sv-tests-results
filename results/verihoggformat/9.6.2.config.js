@@ -1,0 +1,1 @@
+config_loader_data['verihoggformat/9.6.2'] = [["","disable",1,"logs/VerihoggFormat/chapter-9/9.6.2--disable.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-9/9.6.2--disable.sv.html"],["","disable_other",1,"logs/VerihoggFormat/chapter-9/9.6.2--disable_other.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-9/9.6.2--disable_other.sv.html"]]

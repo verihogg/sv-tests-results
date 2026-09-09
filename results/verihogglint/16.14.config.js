@@ -1,0 +1,1 @@
+config_loader_data['verihogglint/16.14'] = [["","assume_property_test",1,"logs/VerihoggLint/chapter-16/16.14--assume-property.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-16/16.14--assume-property.sv.html"]]

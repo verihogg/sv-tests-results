@@ -1,1 +1,0 @@
-config_loader_data['verilator/6.13'] = [["","void",1,"logs/Verilator/chapter-6/6.13--void.sv.log.html","tests/chapter-6/6.13--void.sv.html"]]

@@ -1,1 +1,0 @@
-config_loader_data['circt_verilog/7.10.2.2'] = [["","insert",1,"logs/circt_verilog/chapter-7/queues/insert.sv.log.html","tests/chapter-7/queues/insert.sv.html"]]

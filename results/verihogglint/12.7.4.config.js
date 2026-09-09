@@ -1,0 +1,1 @@
+config_loader_data['verihogglint/12.7.4'] = [["","while_loop",1,"logs/VerihoggLint/chapter-12/12.7.4--while.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-12/12.7.4--while.sv.html"]]

@@ -1,0 +1,1 @@
+config_loader_data['verihogglintlax/5.13'] = [["","builtin-methods-string",1,"logs/VerihoggLintLax/chapter-5/5.13-builtin-methods-strings.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-5/5.13-builtin-methods-strings.sv.html"]]

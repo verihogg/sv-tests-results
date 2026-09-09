@@ -1,0 +1,1 @@
+config_loader_data['verihogglint/6.16.13'] = [["","string_octtoa",1,"logs/VerihoggLint/chapter-6/6.16.13--string_octtoa.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-6/6.16.13--string_octtoa.sv.html"]]

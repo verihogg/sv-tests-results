@@ -1,1 +1,0 @@
-config_loader_data['verible/tnoc'] = [["cores","TNoC",1,"logs/Verible/generated/tnoc/tnoc.sv.log.html","third_party/cores/tnoc/rtl/bcm/tbcm_counter.sv.html"]]

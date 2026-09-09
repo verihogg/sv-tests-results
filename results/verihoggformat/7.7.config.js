@@ -1,0 +1,1 @@
+config_loader_data['verihoggformat/7.7'] = [["","unpacked-arrays-as-arguments-to-subroutines",1,"logs/VerihoggFormat/chapter-7/arrays/unpacked/subroutines.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-7/arrays/unpacked/subroutines.sv.html"]]

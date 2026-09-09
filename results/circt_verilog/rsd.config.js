@@ -1,1 +1,0 @@
-config_loader_data['circt_verilog/rsd'] = [["cores","rsd",0,"logs/circt_verilog/generated/rsd/rsd.sv.log.html","tests/generated/rsd/rsd.sv.html"]]

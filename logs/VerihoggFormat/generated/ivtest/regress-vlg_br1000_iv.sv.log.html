@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-vlg_br1000_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/br1000.v.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/br1000.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:30:50</dd></div>
+        <div><dt>time elapsed</dt><dd>0.011s</dd></div>
+        <div><dt>ram usage</dt><dd>19940 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp3i67dyjd/formatted/br1000.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmp3i67dyjd/formatted/br1000.v</pre>
+      <pre>formatted/br1000.v:8:28: error: expected &#39;)&#39;</pre>
+      <pre>  always @ *beginfor (i = 0;</pre>
+      <pre>                           ^</pre>
+      <pre>formatted/br1000.v:8:22: note: to match this &#39;(&#39;</pre>
+      <pre>  always @ *beginfor (i = 0;</pre>
+      <pre>                     ^</pre>
+      <pre>formatted/br1000.v:9:5: error: expected a declaration name</pre>
+      <pre>  i &lt; 4;</pre>
+      <pre>    ^</pre>
+      <pre>formatted/br1000.v:10:5: error: expected a declaration name</pre>
+      <pre>  i = i + 1) beginb [i] = a [i];</pre>
+      <pre>    ^</pre>
+      <pre>formatted/br1000.v:10:9: error: expected a declaration name</pre>
+      <pre>  i = i + 1) beginb [i] = a [i];</pre>
+      <pre>        ^</pre>
+      <pre>formatted/br1000.v:10:12: error: unexpected &#39;)&#39; delimiter</pre>
+      <pre>  i = i + 1) beginb [i] = a [i];</pre>
+      <pre>           ^</pre>
+      <pre>formatted/br1000.v:10:25: error: expected a declaration name</pre>
+      <pre>  i = i + 1) beginb [i] = a [i];</pre>
+      <pre>                        ^</pre>
+      <pre>formatted/br1000.v:10:32: error: expected a declaration name</pre>
+      <pre>  i = i + 1) beginb [i] = a [i];</pre>
+      <pre>                               ^</pre>
+      <pre>formatted/br1000.v:11:3: error: expected member</pre>
+      <pre>  $display (&#34;process 1 : %0d %b&#34;, i, b);</pre>
+      <pre>  ^~~~~~~~</pre>
+      <pre>formatted/br1000.v:12:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/br1000.v:10:29: note: last complete block started here</pre>
+      <pre>  i = i + 1) beginb [i] = a [i];</pre>
+      <pre>                            ^</pre>
+      <pre>formatted/br1000.v:10:31: note: and ended here</pre>
+      <pre>  i = i + 1) beginb [i] = a [i];</pre>
+      <pre>                              ^</pre>
+      <pre>formatted/br1000.v:13:7: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>      end</pre>
+      <pre>      ^~~</pre>
+      <pre>formatted/br1000.v:10:29: note: last complete block started here</pre>
+      <pre>  i = i + 1) beginb [i] = a [i];</pre>
+      <pre>                            ^</pre>
+      <pre>formatted/br1000.v:10:31: note: and ended here</pre>
+      <pre>  i = i + 1) beginb [i] = a [i];</pre>
+      <pre>                              ^</pre>
+      <pre>formatted/br1000.v:14:31: error: expected &#39;)&#39;</pre>
+      <pre>      always @*beginfor (i = 0;</pre>
+      <pre>                              ^</pre>
+      <pre>formatted/br1000.v:14:25: note: to match this &#39;(&#39;</pre>
+      <pre>      always @*beginfor (i = 0;</pre>
+      <pre>                        ^</pre>
+      <pre>formatted/br1000.v:15:5: error: expected a declaration name</pre>
+      <pre>  i &lt; 4;</pre>
+      <pre>    ^</pre>
+      <pre>formatted/br1000.v:16:5: error: expected a declaration name</pre>
+      <pre>  i = i + 1) begind [i] = c [i];</pre>
+      <pre>    ^</pre>
+      <pre>formatted/br1000.v:16:9: error: expected a declaration name</pre>
+      <pre>  i = i + 1) begind [i] = c [i];</pre>
+      <pre>        ^</pre>
+      <pre>formatted/br1000.v:16:12: error: unexpected &#39;)&#39; delimiter</pre>
+      <pre>  i = i + 1) begind [i] = c [i];</pre>
+      <pre>           ^</pre>
+      <pre>formatted/br1000.v:16:25: error: expected a declaration name</pre>
+      <pre>  i = i + 1) begind [i] = c [i];</pre>
+      <pre>                        ^</pre>
+      <pre>formatted/br1000.v:16:32: error: expected a declaration name</pre>
+      <pre>  i = i + 1) begind [i] = c [i];</pre>
+      <pre>                               ^</pre>
+      <pre>formatted/br1000.v:17:3: error: expected member</pre>
+      <pre>  $display (&#34;process 2 : %0d %b&#34;, i, d);</pre>
+      <pre>  ^~~~~~~~</pre>
+      <pre>formatted/br1000.v:18:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/br1000.v:16:29: note: last complete block started here</pre>
+      <pre>  i = i + 1) begind [i] = c [i];</pre>
+      <pre>                            ^</pre>
+      <pre>formatted/br1000.v:16:31: note: and ended here</pre>
+      <pre>  i = i + 1) begind [i] = c [i];</pre>
+      <pre>                              ^</pre>
+      <pre>formatted/br1000.v:19:7: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>      end</pre>
+      <pre>      ^~~</pre>
+      <pre>formatted/br1000.v:16:29: note: last complete block started here</pre>
+      <pre>  i = i + 1) begind [i] = c [i];</pre>
+      <pre>                            ^</pre>
+      <pre>formatted/br1000.v:16:31: note: and ended here</pre>
+      <pre>  i = i + 1) begind [i] = c [i];</pre>
+      <pre>                              ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

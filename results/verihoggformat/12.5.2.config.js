@@ -1,0 +1,1 @@
+config_loader_data['verihoggformat/12.5.2'] = [["","case_constant",0,"logs/VerihoggFormat/chapter-12/12.5.2--case_const.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-12/12.5.2--case_const.sv.html"]]

@@ -1,1 +1,0 @@
-config_loader_data['synligyosys/8.26.3'] = [["","type_access_extends",1,"logs/SynligYosys/chapter-8/8.26.3--type_access_extends.sv.log.html","tests/chapter-8/8.26.3--type_access_extends.sv.html"]]

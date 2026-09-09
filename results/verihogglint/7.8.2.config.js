@@ -1,0 +1,1 @@
+config_loader_data['verihogglint/7.8.2'] = [["","associative-arrays-string",1,"logs/VerihoggLint/chapter-7/arrays/associative/string.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-7/arrays/associative/string.sv.html"]]

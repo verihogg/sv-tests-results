@@ -1,0 +1,1 @@
+config_loader_data['verihoggformat/8.21'] = [["","abstract_class",1,"logs/VerihoggFormat/chapter-8/8.21--abstract_class.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-8/8.21--abstract_class.sv.html"]]

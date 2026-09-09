@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-sv_br_gh365_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/br_gh365.v.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/br_gh365.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:27:17</dd></div>
+        <div><dt>time elapsed</dt><dd>0.010s</dd></div>
+        <div><dt>ram usage</dt><dd>20496 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp_xek81nj/formatted/br_gh365.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmp_xek81nj/formatted/br_gh365.v</pre>
+      <pre>formatted/br_gh365.v:13:30: error: expected &#39;;&#39;</pre>
+      <pre>  always @ *begincase (state) IDLE : state_txt = &#34;IDLE&#34;;</pre>
+      <pre>                             ^</pre>
+      <pre>formatted/br_gh365.v:13:36: error: expected a declaration name</pre>
+      <pre>  always @ *begincase (state) IDLE : state_txt = &#34;IDLE&#34;;</pre>
+      <pre>                                   ^</pre>
+      <pre>formatted/br_gh365.v:13:48: error: expected a declaration name</pre>
+      <pre>  always @ *begincase (state) IDLE : state_txt = &#34;IDLE&#34;;</pre>
+      <pre>                                               ^</pre>
+      <pre>formatted/br_gh365.v:14:9: error: expected a declaration name</pre>
+      <pre>  RESET : state_txt    = &#34;RST&#34;;</pre>
+      <pre>        ^</pre>
+      <pre>formatted/br_gh365.v:14:24: error: expected a declaration name</pre>
+      <pre>  RESET : state_txt    = &#34;RST&#34;;</pre>
+      <pre>                       ^</pre>
+      <pre>formatted/br_gh365.v:15:9: error: expected a declaration name</pre>
+      <pre>  START : state_txt    = &#34;STRT&#34;;</pre>
+      <pre>        ^</pre>
+      <pre>formatted/br_gh365.v:15:24: error: expected a declaration name</pre>
+      <pre>  START : state_txt    = &#34;STRT&#34;;</pre>
+      <pre>                       ^</pre>
+      <pre>formatted/br_gh365.v:16:11: error: expected a declaration name</pre>
+      <pre>  WAITFOR : state_txt  = &#34;WAIT&#34;;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/br_gh365.v:16:24: error: expected a declaration name</pre>
+      <pre>  WAITFOR : state_txt  = &#34;WAIT&#34;;</pre>
+      <pre>                       ^</pre>
+      <pre>formatted/br_gh365.v:17:3: error: unexpected &#39;endcase&#39; delimiter</pre>
+      <pre>  endcase</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/br_gh365.v:13:23: note: last complete block started here</pre>
+      <pre>  always @ *begincase (state) IDLE : state_txt = &#34;IDLE&#34;;</pre>
+      <pre>                      ^</pre>
+      <pre>formatted/br_gh365.v:13:29: note: and ended here</pre>
+      <pre>  always @ *begincase (state) IDLE : state_txt = &#34;IDLE&#34;;</pre>
+      <pre>                            ^</pre>
+      <pre>formatted/br_gh365.v:19:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/br_gh365.v:13:23: note: last complete block started here</pre>
+      <pre>  always @ *begincase (state) IDLE : state_txt = &#34;IDLE&#34;;</pre>
+      <pre>                      ^</pre>
+      <pre>formatted/br_gh365.v:13:29: note: and ended here</pre>
+      <pre>  always @ *begincase (state) IDLE : state_txt = &#34;IDLE&#34;;</pre>
+      <pre>                            ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

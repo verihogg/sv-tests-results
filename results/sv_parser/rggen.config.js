@@ -1,1 +1,0 @@
-config_loader_data['sv_parser/rggen'] = [["cores","RgGen",1,"logs/sv_parser/generated/rggen/rggen.sv.log.html","third_party/cores/rggen-sv-rtl/rggen_rtl_pkg.sv.html"]]

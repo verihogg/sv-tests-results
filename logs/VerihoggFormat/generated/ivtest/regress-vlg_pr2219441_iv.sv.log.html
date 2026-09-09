@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-vlg_pr2219441_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/pr2219441.v.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/pr2219441.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:30:55</dd></div>
+        <div><dt>time elapsed</dt><dd>0.012s</dd></div>
+        <div><dt>ram usage</dt><dd>22244 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpdam7c43r/formatted/pr2219441.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpdam7c43r/formatted/pr2219441.v</pre>
+      <pre>formatted/pr2219441.v:19:5: error: expected a declaration name</pre>
+      <pre>  A = 2&#39;b10;</pre>
+      <pre>    ^</pre>
+      <pre>formatted/pr2219441.v:20:3: error: expected member</pre>
+      <pre>  #1 if (Z !== 2&#39;b10) begin$display (&#34;FAILED: selected, expected 2&#39;b10, got %b&#34;, Z);</pre>
+      <pre>  ^</pre>
+      <pre>formatted/pr2219441.v:21:11: error: expected a declaration name</pre>
+      <pre>  passed  = 1&#39;b0;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/pr2219441.v:22:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end A   = 2&#39;b01;</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/pr2219441.v:20:37: note: last complete block started here</pre>
+      <pre>  #1 if (Z !== 2&#39;b10) begin$display (&#34;FAILED: selected, expected 2&#39;b10, got %b&#34;, Z);</pre>
+      <pre>                                    ^</pre>
+      <pre>formatted/pr2219441.v:20:83: note: and ended here</pre>
+      <pre>  #1 if (Z !== 2&#39;b10) begin$display (&#34;FAILED: selected, expected 2&#39;b10, got %b&#34;, Z);</pre>
+      <pre>                                                                                  ^</pre>
+      <pre>formatted/pr2219441.v:22:11: error: expected a declaration name</pre>
+      <pre>  end A   = 2&#39;b01;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/pr2219441.v:23:3: error: expected member</pre>
+      <pre>  #1 if (Z !== 2&#39;b01) begin$display (&#34;FAILED: selected, expected 2&#39;b01, got %b&#34;, Z);</pre>
+      <pre>  ^</pre>
+      <pre>formatted/pr2219441.v:24:12: error: expected a declaration name</pre>
+      <pre>  passed   = 1&#39;b0;</pre>
+      <pre>           ^</pre>
+      <pre>formatted/pr2219441.v:25:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end sel  = 2&#39;b00;</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/pr2219441.v:23:37: note: last complete block started here</pre>
+      <pre>  #1 if (Z !== 2&#39;b01) begin$display (&#34;FAILED: selected, expected 2&#39;b01, got %b&#34;, Z);</pre>
+      <pre>                                    ^</pre>
+      <pre>formatted/pr2219441.v:23:83: note: and ended here</pre>
+      <pre>  #1 if (Z !== 2&#39;b01) begin$display (&#34;FAILED: selected, expected 2&#39;b01, got %b&#34;, Z);</pre>
+      <pre>                                                                                  ^</pre>
+      <pre>formatted/pr2219441.v:25:12: error: expected a declaration name</pre>
+      <pre>  end sel  = 2&#39;b00;</pre>
+      <pre>           ^</pre>
+      <pre>formatted/pr2219441.v:26:3: error: expected member</pre>
+      <pre>  #1 if (Z !== 2&#39;bzz) begin$display (&#34;FAILED: deselected, expected 2&#39;bzz, got %b&#34;, Z);</pre>
+      <pre>  ^</pre>
+      <pre>formatted/pr2219441.v:27:10: error: expected a declaration name</pre>
+      <pre>  passed = 1&#39;b0;</pre>
+      <pre>         ^</pre>
+      <pre>formatted/pr2219441.v:28:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/pr2219441.v:26:37: note: last complete block started here</pre>
+      <pre>  #1 if (Z !== 2&#39;bzz) begin$display (&#34;FAILED: deselected, expected 2&#39;bzz, got %b&#34;, Z);</pre>
+      <pre>                                    ^</pre>
+      <pre>formatted/pr2219441.v:26:85: note: and ended here</pre>
+      <pre>  #1 if (Z !== 2&#39;bzz) begin$display (&#34;FAILED: deselected, expected 2&#39;bzz, got %b&#34;, Z);</pre>
+      <pre>                                                                                    ^</pre>
+      <pre>formatted/pr2219441.v:29:19: error: expected member</pre>
+      <pre>      if (passed) $display (&#34;PASSED&#34;);</pre>
+      <pre>                  ^</pre>
+      <pre>formatted/pr2219441.v:30:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/pr2219441.v:29:10: note: last complete block started here</pre>
+      <pre>      if (passed) $display (&#34;PASSED&#34;);</pre>
+      <pre>         ^</pre>
+      <pre>formatted/pr2219441.v:29:17: note: and ended here</pre>
+      <pre>      if (passed) $display (&#34;PASSED&#34;);</pre>
+      <pre>                ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

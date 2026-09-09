@@ -1,0 +1,1 @@
+config_loader_data['verihoggformat/7.9.11'] = [["","associative-arrays-literals",1,"logs/VerihoggFormat/chapter-7/arrays/associative/literals.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-7/arrays/associative/literals.sv.html"]]

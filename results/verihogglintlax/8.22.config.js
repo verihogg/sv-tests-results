@@ -1,0 +1,1 @@
+config_loader_data['verihogglintlax/8.22'] = [["","dynamic_method_lookup",1,"logs/VerihoggLintLax/chapter-8/8.22--dynamic_method_lookup.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-8/8.22--dynamic_method_lookup.sv.html"]]

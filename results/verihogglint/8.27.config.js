@@ -1,0 +1,1 @@
+config_loader_data['verihogglint/8.27'] = [["","forward_declaration",1,"logs/VerihoggLint/chapter-8/8.27--forward_declaration.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-8/8.27--forward_declaration.sv.html"]]

@@ -1,0 +1,1 @@
+config_loader_data['verihogglintlax/6.9.1'] = [["","logic_vector",1,"logs/VerihoggLintLax/chapter-6/6.9.1--logic_vector.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-6/6.9.1--logic_vector.sv.html"]]

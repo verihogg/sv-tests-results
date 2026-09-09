@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-sv_br979_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/br979.v.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/br979.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:26:33</dd></div>
+        <div><dt>time elapsed</dt><dd>0.010s</dd></div>
+        <div><dt>ram usage</dt><dd>20300 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp64cpovn9/formatted/br979.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmp64cpovn9/formatted/br979.v</pre>
+      <pre>formatted/br979.v:7:3: error: expected a declaration name</pre>
+      <pre>  `my_macro (0, 1)</pre>
+      <pre>  ^</pre>
+      <pre>formatted/br979.v:1:70: note: expanded from macro &#39;my_macro&#39;</pre>
+      <pre>`define my_macro (a, b) localparam `` i `` a `` b `` j = 8&#39;h`` a `` b;</pre>
+      <pre>                                                                     ^</pre>
+      <pre>formatted/br979.v:7:3: error: expected member</pre>
+      <pre>  `my_macro (0, 1)</pre>
+      <pre>  ^~~~~~~~~</pre>
+      <pre>formatted/br979.v:1:18: note: expanded from macro &#39;my_macro&#39;</pre>
+      <pre>`define my_macro (a, b) localparam `` i `` a `` b `` j = 8&#39;h`` a `` b;</pre>
+      <pre>                 ^</pre>
+      <pre>formatted/br979.v:7:3: error: expected &#39;;&#39;</pre>
+      <pre>  `my_macro (0, 1)</pre>
+      <pre>  ^</pre>
+      <pre>formatted/br979.v:1:45: note: expanded from macro &#39;my_macro&#39;</pre>
+      <pre>`define my_macro (a, b) localparam `` i `` a `` b `` j = 8&#39;h`` a `` b;</pre>
+      <pre>                                            ^</pre>
+      <pre>formatted/br979.v:7:3: error: expected &#39;;&#39;</pre>
+      <pre>  `my_macro (0, 1)</pre>
+      <pre>  ^</pre>
+      <pre>formatted/br979.v:1:65: note: expanded from macro &#39;my_macro&#39;</pre>
+      <pre>`define my_macro (a, b) localparam `` i `` a `` b `` j = 8&#39;h`` a `` b;</pre>
+      <pre>                                                                ^</pre>
+      <pre>formatted/br979.v:7:13: error: expected member</pre>
+      <pre>  `my_macro (0, 1)</pre>
+      <pre>            ^</pre>
+      <pre>formatted/br979.v:8:3: error: expected a declaration name</pre>
+      <pre>  `my_macro (2, 3)</pre>
+      <pre>  ^</pre>
+      <pre>formatted/br979.v:1:70: note: expanded from macro &#39;my_macro&#39;</pre>
+      <pre>`define my_macro (a, b) localparam `` i `` a `` b `` j = 8&#39;h`` a `` b;</pre>
+      <pre>                                                                     ^</pre>
+      <pre>formatted/br979.v:8:3: error: expected &#39;;&#39;</pre>
+      <pre>  `my_macro (2, 3)</pre>
+      <pre>  ^</pre>
+      <pre>formatted/br979.v:1:45: note: expanded from macro &#39;my_macro&#39;</pre>
+      <pre>`define my_macro (a, b) localparam `` i `` a `` b `` j = 8&#39;h`` a `` b;</pre>
+      <pre>                                            ^</pre>
+      <pre>formatted/br979.v:8:3: error: expected &#39;;&#39;</pre>
+      <pre>  `my_macro (2, 3)</pre>
+      <pre>  ^</pre>
+      <pre>formatted/br979.v:1:65: note: expanded from macro &#39;my_macro&#39;</pre>
+      <pre>`define my_macro (a, b) localparam `` i `` a `` b `` j = 8&#39;h`` a `` b;</pre>
+      <pre>                                                                ^</pre>
+      <pre>formatted/br979.v:8:13: error: expected member</pre>
+      <pre>  `my_macro (2, 3)</pre>
+      <pre>            ^</pre>
+      <pre>formatted/br979.v:9:3: error: expected a declaration name</pre>
+      <pre>  `my_macro (4, 5)</pre>
+      <pre>  ^</pre>
+      <pre>formatted/br979.v:1:70: note: expanded from macro &#39;my_macro&#39;</pre>
+      <pre>`define my_macro (a, b) localparam `` i `` a `` b `` j = 8&#39;h`` a `` b;</pre>
+      <pre>                                                                     ^</pre>
+      <pre>formatted/br979.v:9:3: error: expected &#39;;&#39;</pre>
+      <pre>  `my_macro (4, 5)</pre>
+      <pre>  ^</pre>
+      <pre>formatted/br979.v:1:45: note: expanded from macro &#39;my_macro&#39;</pre>
+      <pre>`define my_macro (a, b) localparam `` i `` a `` b `` j = 8&#39;h`` a `` b;</pre>
+      <pre>                                            ^</pre>
+      <pre>formatted/br979.v:9:3: error: expected &#39;;&#39;</pre>
+      <pre>  `my_macro (4, 5)</pre>
+      <pre>  ^</pre>
+      <pre>formatted/br979.v:1:65: note: expanded from macro &#39;my_macro&#39;</pre>
+      <pre>`define my_macro (a, b) localparam `` i `` a `` b `` j = 8&#39;h`` a `` b;</pre>
+      <pre>                                                                ^</pre>
+      <pre>formatted/br979.v:9:13: error: expected member</pre>
+      <pre>  `my_macro (4, 5)</pre>
+      <pre>            ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

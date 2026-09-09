@@ -1,1 +1,0 @@
-config_loader_data['moore/rsd'] = [["cores","rsd",0,"logs/moore/generated/rsd/rsd.sv.log.html","tests/generated/rsd/rsd.sv.html"]]

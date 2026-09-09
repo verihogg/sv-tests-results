@@ -1,1 +1,0 @@
-config_loader_data['sv2v_zachjs/8.20'] = [["","virtual_method",0,"logs/Sv2v_zachjs/chapter-8/8.20--virtual_method.sv.log.html","tests/chapter-8/8.20--virtual_method.sv.html"]]

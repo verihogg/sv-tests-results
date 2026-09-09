@@ -1,0 +1,1 @@
+config_loader_data['verihogglint/8.26.7'] = [["","partial_implementation",1,"logs/VerihoggLint/chapter-8/8.26.7--partial_implementation.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-8/8.26.7--partial_implementation.sv.html"]]

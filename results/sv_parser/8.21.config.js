@@ -1,1 +1,0 @@
-config_loader_data['sv_parser/8.21'] = [["","abstract_class",1,"logs/sv_parser/chapter-8/8.21--abstract_class.sv.log.html","tests/chapter-8/8.21--abstract_class.sv.html"]]

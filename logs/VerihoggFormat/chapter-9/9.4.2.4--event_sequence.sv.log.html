@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>event_sequence</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>sequence event test</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>9.4.2.4</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/tests/chapter-9<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd><em></em></dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../__w/sv-tests/sv-tests/tests/chapter-9/9.4.2.4--event_sequence.sv.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/tests/chapter-9/9.4.2.4--event_sequence.sv</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:22:30</dd></div>
+        <div><dt>time elapsed</dt><dd>0.011s</dd></div>
+        <div><dt>ram usage</dt><dd>20408 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/tests/chapter-9 /__w/sv-tests/sv-tests/out/tmp/tmpf3c40o2v/formatted/9.4.2.4--event_sequence.sv</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpf3c40o2v/formatted/9.4.2.4--event_sequence.sv</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:19:37: error: expected &#39;;&#39;</pre>
+      <pre>  endsequence initial beginforkbegin@seq y = 1;</pre>
+      <pre>                                    ^</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:20:3: error: expected member</pre>
+      <pre>  $display (&#34;:assert:(True)&#34;);</pre>
+      <pre>  ^~~~~~~~</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:21:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:17:71: note: last complete block started here</pre>
+      <pre>); logic a = 0; logic b = 0; logic c = 0; logic y = 0; logic clk = 0; sequence seq;</pre>
+      <pre>                                                                      ^</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:19:3: note: and ended here</pre>
+      <pre>  endsequence initial beginforkbegin@seq y = 1;</pre>
+      <pre>  ^</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:22:14: error: expected a declaration name</pre>
+      <pre>      begina = 1;</pre>
+      <pre>             ^</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:23:3: error: expected member</pre>
+      <pre>  #10clk  = 1;</pre>
+      <pre>  ^</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:23:11: error: expected a declaration name</pre>
+      <pre>  #10clk  = 1;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:24:3: error: expected member</pre>
+      <pre>  #10clk  = 0;</pre>
+      <pre>  ^</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:24:11: error: expected a declaration name</pre>
+      <pre>  #10clk  = 0;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:25:11: error: expected a declaration name</pre>
+      <pre>  b       = 1;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:26:3: error: expected member</pre>
+      <pre>  #10clk  = 1;</pre>
+      <pre>  ^</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:26:11: error: expected a declaration name</pre>
+      <pre>  #10clk  = 1;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:27:3: error: expected member</pre>
+      <pre>  #10clk  = 0;</pre>
+      <pre>  ^</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:27:11: error: expected a declaration name</pre>
+      <pre>  #10clk  = 0;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:28:11: error: expected a declaration name</pre>
+      <pre>  c       = 1;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:29:3: error: expected member</pre>
+      <pre>  #10clk  = 1;</pre>
+      <pre>  ^</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:29:11: error: expected a declaration name</pre>
+      <pre>  #10clk  = 1;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:30:3: error: expected member</pre>
+      <pre>  #10clk  = 0;</pre>
+      <pre>  ^</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:30:11: error: expected a declaration name</pre>
+      <pre>  #10clk  = 0;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:31:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:17:71: note: last complete block started here</pre>
+      <pre>); logic a = 0; logic b = 0; logic c = 0; logic y = 0; logic clk = 0; sequence seq;</pre>
+      <pre>                                                                      ^</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:19:3: note: and ended here</pre>
+      <pre>  endsequence initial beginforkbegin@seq y = 1;</pre>
+      <pre>  ^</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:32:7: error: unexpected &#39;join&#39; delimiter</pre>
+      <pre>      join</pre>
+      <pre>      ^~~~</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:17:71: note: last complete block started here</pre>
+      <pre>); logic a = 0; logic b = 0; logic c = 0; logic y = 0; logic clk = 0; sequence seq;</pre>
+      <pre>                                                                      ^</pre>
+      <pre>formatted/9.4.2.4--event_sequence.sv:19:3: note: and ended here</pre>
+      <pre>  endsequence initial beginforkbegin@seq y = 1;</pre>
+      <pre>  ^</pre>
+      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

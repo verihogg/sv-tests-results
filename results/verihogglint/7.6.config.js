@@ -1,0 +1,1 @@
+config_loader_data['verihogglint/7.6'] = [["","array-unpacked-assignments",1,"logs/VerihoggLint/chapter-7/arrays/unpacked/assignments.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-7/arrays/unpacked/assignments.sv.html"]]

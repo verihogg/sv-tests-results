@@ -1,1 +1,0 @@
-config_loader_data['yosys/rsd'] = [["cores","rsd",0,"logs/Yosys/generated/rsd/rsd.sv.log.html","tests/generated/rsd/rsd.sv.html"]]

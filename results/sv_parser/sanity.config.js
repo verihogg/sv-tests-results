@@ -1,1 +1,0 @@
-config_loader_data['sv_parser/sanity'] = [["","sanity",1,"logs/sv_parser/sanity.sv.log.html","tests/sanity.sv.html"]]

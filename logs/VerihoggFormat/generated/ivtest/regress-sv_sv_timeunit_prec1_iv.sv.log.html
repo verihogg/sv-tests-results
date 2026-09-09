@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-sv_sv_timeunit_prec1_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/sv_timeunit_prec1.v.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/sv_timeunit_prec1.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:27:27</dd></div>
+        <div><dt>time elapsed</dt><dd>0.014s</dd></div>
+        <div><dt>ram usage</dt><dd>28580 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpcaedxl8m/formatted/sv_timeunit_prec1.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpcaedxl8m/formatted/sv_timeunit_prec1.v</pre>
+      <pre>formatted/sv_timeunit_prec1.v:98:7: error: expected member</pre>
+      <pre>      $display (&#34;FAILED: saf at 11us, expected 1&#39;b0, got %b.&#34;, saf);</pre>
+      <pre>      ^~~~~~~~</pre>
+      <pre>formatted/sv_timeunit_prec1.v:99:12: error: expected a declaration name</pre>
+      <pre>      pass = 1&#39;b0;</pre>
+      <pre>           ^</pre>
+      <pre>formatted/sv_timeunit_prec1.v:103:7: error: expected member</pre>
+      <pre>      $display (&#34;FAILED: fast at 11us, expected 1&#39;b1, got %b.&#34;, fast);</pre>
+      <pre>      ^~~~~~~~</pre>
+      <pre>formatted/sv_timeunit_prec1.v:104:12: error: expected a declaration name</pre>
+      <pre>      pass = 1&#39;b0;</pre>
+      <pre>           ^</pre>
+      <pre>formatted/sv_timeunit_prec1.v:108:7: error: expected member</pre>
+      <pre>      $display (&#34;FAILED: fast_g at 11us, expected 1&#39;b1, got %b.&#34;, fast_g);</pre>
+      <pre>      ^~~~~~~~</pre>
+      <pre>formatted/sv_timeunit_prec1.v:109:12: error: expected a declaration name</pre>
+      <pre>      pass = 1&#39;b0;</pre>
+      <pre>           ^</pre>
+      <pre>formatted/sv_timeunit_prec1.v:111:3: error: expected member</pre>
+      <pre>  #88 // 99 us</pre>
+      <pre>  ^</pre>
+      <pre>formatted/sv_timeunit_prec1.v:113:8: error: expected a declaration name</pre>
+      <pre>  pass = 1&#39;b0;</pre>
+      <pre>       ^</pre>
+      <pre>formatted/sv_timeunit_prec1.v:114:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/sv_timeunit_prec1.v:112:36: note: last complete block started here</pre>
+      <pre>  if (slow !== 1&#39;b0) begin$display (&#34;FAILED: slow at 99us, expected 1&#39;b0, got %b.&#34;, slow);</pre>
+      <pre>                                   ^</pre>
+      <pre>formatted/sv_timeunit_prec1.v:112:89: note: and ended here</pre>
+      <pre>  if (slow !== 1&#39;b0) begin$display (&#34;FAILED: slow at 99us, expected 1&#39;b0, got %b.&#34;, slow);</pre>
+      <pre>                                                                                        ^</pre>
+      <pre>formatted/sv_timeunit_prec1.v:116:8: error: expected a declaration name</pre>
+      <pre>  pass = 1&#39;b0;</pre>
+      <pre>       ^</pre>
+      <pre>formatted/sv_timeunit_prec1.v:117:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/sv_timeunit_prec1.v:115:39: note: last complete block started here</pre>
+      <pre>      if (saf !== 1&#39;b0) begin$display (&#34;FAILED: saf at 99us, expected 1&#39;b0, got %b.&#34;, saf);</pre>
+      <pre>                                      ^</pre>
+      <pre>formatted/sv_timeunit_prec1.v:115:90: note: and ended here</pre>
+      <pre>      if (saf !== 1&#39;b0) begin$display (&#34;FAILED: saf at 99us, expected 1&#39;b0, got %b.&#34;, saf);</pre>
+      <pre>                                                                                         ^</pre>
+      <pre>formatted/sv_timeunit_prec1.v:119:8: error: expected a declaration name</pre>
+      <pre>  pass = 1&#39;b0;</pre>
+      <pre>       ^</pre>
+      <pre>formatted/sv_timeunit_prec1.v:120:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/sv_timeunit_prec1.v:118:40: note: last complete block started here</pre>
+      <pre>      if (fast !== 1&#39;b1) begin$display (&#34;FAILED: fast at 99us, expected 1&#39;b1, got %b.&#34;, fast);</pre>
+      <pre>                                       ^</pre>
+      <pre>formatted/sv_timeunit_prec1.v:118:93: note: and ended here</pre>
+      <pre>      if (fast !== 1&#39;b1) begin$display (&#34;FAILED: fast at 99us, expected 1&#39;b1, got %b.&#34;, fast);</pre>
+      <pre>                                                                                            ^</pre>
+      <pre>formatted/sv_timeunit_prec1.v:122:8: error: expected a declaration name</pre>
+      <pre>  pass = 1&#39;b0;</pre>
+      <pre>       ^</pre>
+      <pre>formatted/sv_timeunit_prec1.v:123:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/sv_timeunit_prec1.v:121:42: note: last complete block started here</pre>
+      <pre>      if (fast_g !== 1&#39;b1) begin$display (&#34;FAILED: fast_g at 99us, expected 1&#39;b1, got %b.&#34;, fast_g);</pre>
+      <pre>                                         ^</pre>
+      <pre>formatted/sv_timeunit_prec1.v:121:99: note: and ended here</pre>
+      <pre>      if (fast_g !== 1&#39;b1) begin$display (&#34;FAILED: fast_g at 99us, expected 1&#39;b1, got %b.&#34;, fast_g);</pre>
+      <pre>                                                                                                  ^</pre>
+      <pre>formatted/sv_timeunit_prec1.v:126:8: error: expected a declaration name</pre>
+      <pre>  pass = 1&#39;b0;</pre>
+      <pre>       ^</pre>
+      <pre>formatted/sv_timeunit_prec1.v:127:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/sv_timeunit_prec1.v:125:36: note: last complete block started here</pre>
+      <pre>  if (slow !== 1&#39;b1) begin$display (&#34;FAILED: slow at 101us, expected 1&#39;b1, got %b.&#34;, slow);</pre>
+      <pre>                                   ^</pre>
+      <pre>formatted/sv_timeunit_prec1.v:125:90: note: and ended here</pre>
+      <pre>  if (slow !== 1&#39;b1) begin$display (&#34;FAILED: slow at 101us, expected 1&#39;b1, got %b.&#34;, slow);</pre>
+      <pre>                                                                                         ^</pre>
+      <pre>formatted/sv_timeunit_prec1.v:129:8: error: expected a declaration name</pre>
+      <pre>  pass = 1&#39;b0;</pre>
+      <pre>       ^</pre>
+      <pre>formatted/sv_timeunit_prec1.v:130:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/sv_timeunit_prec1.v:128:39: note: last complete block started here</pre>
+      <pre>      if (saf !== 1&#39;b1) begin$display (&#34;FAILED: saf at 101us, expected 1&#39;b1, got %b.&#34;, saf);</pre>
+      <pre>                                      ^</pre>
+      <pre>formatted/sv_timeunit_prec1.v:128:91: note: and ended here</pre>
+      <pre>      if (saf !== 1&#39;b1) begin$display (&#34;FAILED: saf at 101us, expected 1&#39;b1, got %b.&#34;, saf);</pre>
+      <pre>                                                                                          ^</pre>
+      <pre>formatted/sv_timeunit_prec1.v:132:8: error: expected a declaration name</pre>
+      <pre>  pass = 1&#39;b0;</pre>
+      <pre>       ^</pre>
+      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

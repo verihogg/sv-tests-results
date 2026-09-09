@@ -1,1 +1,0 @@
-config_loader_data['sv2v_zachjs/tnoc'] = [["cores","TNoC",0,"logs/Sv2v_zachjs/generated/tnoc/tnoc.sv.log.html","third_party/cores/tnoc/rtl/bcm/tbcm_counter.sv.html"]]

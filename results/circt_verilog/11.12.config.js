@@ -1,1 +1,0 @@
-config_loader_data['circt_verilog/11.12'] = [["","let_construct",1,"logs/circt_verilog/chapter-11/11.12--let_construct.sv.log.html","tests/chapter-11/11.12--let_construct.sv.html"]]

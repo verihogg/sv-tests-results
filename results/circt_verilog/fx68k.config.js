@@ -1,1 +1,0 @@
-config_loader_data['circt_verilog/fx68k'] = [["cores","fx68k",0,"logs/circt_verilog/generated/fx68k/fx68k.sv.log.html","third_party/cores/fx68k/fx68k.sv.html"]]

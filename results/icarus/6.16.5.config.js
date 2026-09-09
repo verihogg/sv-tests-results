@@ -1,1 +1,0 @@
-config_loader_data['icarus/6.16.5'] = [["","string_tolower",0,"logs/Icarus/chapter-6/6.16.5--string_tolower.sv.log.html","tests/chapter-6/6.16.5--string_tolower.sv.html"]]

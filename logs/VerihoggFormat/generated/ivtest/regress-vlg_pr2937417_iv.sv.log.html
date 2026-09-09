@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-vlg_pr2937417_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/pr2937417.v.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/pr2937417.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:26:38</dd></div>
+        <div><dt>time elapsed</dt><dd>0.012s</dd></div>
+        <div><dt>ram usage</dt><dd>24824 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpdts6pvof/formatted/pr2937417.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpdts6pvof/formatted/pr2937417.v</pre>
+      <pre>formatted/pr2937417.v:19:3: error: expected member</pre>
+      <pre>  #1a = 1&#39;b0;</pre>
+      <pre>  ^</pre>
+      <pre>formatted/pr2937417.v:19:7: error: expected a declaration name</pre>
+      <pre>  #1a = 1&#39;b0;</pre>
+      <pre>      ^</pre>
+      <pre>formatted/pr2937417.v:20:3: error: expected member</pre>
+      <pre>  #1 if (x !== 1&#39;b0 || y !==</pre>
+      <pre>  ^</pre>
+      <pre>formatted/pr2937417.v:22:12: error: expected a declaration name</pre>
+      <pre>  pass     = 1&#39;b0;</pre>
+      <pre>           ^</pre>
+      <pre>formatted/pr2937417.v:23:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end #1a  = 1&#39;b1;</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/pr2937417.v:21:30: note: last complete block started here</pre>
+      <pre>         1&#39;b0) begin$display (&#34;Failed same value, expected 1&#39;b0, 1&#39;b0, got %b %b&#34;, x, y);</pre>
+      <pre>                             ^</pre>
+      <pre>formatted/pr2937417.v:21:88: note: and ended here</pre>
+      <pre>         1&#39;b0) begin$display (&#34;Failed same value, expected 1&#39;b0, 1&#39;b0, got %b %b&#34;, x, y);</pre>
+      <pre>                                                                                       ^</pre>
+      <pre>formatted/pr2937417.v:23:12: error: expected a declaration name</pre>
+      <pre>  end #1a  = 1&#39;b1;</pre>
+      <pre>           ^</pre>
+      <pre>formatted/pr2937417.v:24:3: error: expected member</pre>
+      <pre>  #1 if (x !== 1&#39;b1 || y !==</pre>
+      <pre>  ^</pre>
+      <pre>formatted/pr2937417.v:26:19: error: expected a declaration name</pre>
+      <pre>  pass            = 1&#39;b0;</pre>
+      <pre>                  ^</pre>
+      <pre>formatted/pr2937417.v:27:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/pr2937417.v:25:30: note: last complete block started here</pre>
+      <pre>         1&#39;b1) begin$display (&#34;Failed same value, expected 1&#39;b1, 1&#39;b1, got %b %b&#34;, x, y);</pre>
+      <pre>                             ^</pre>
+      <pre>formatted/pr2937417.v:25:88: note: and ended here</pre>
+      <pre>         1&#39;b1) begin$display (&#34;Failed same value, expected 1&#39;b1, 1&#39;b1, got %b %b&#34;, x, y);</pre>
+      <pre>                                                                                       ^</pre>
+      <pre>formatted/pr2937417.v:29:15: error: expected a declaration name</pre>
+      <pre>  #1 force a  = 1&#39;bx;</pre>
+      <pre>              ^</pre>
+      <pre>formatted/pr2937417.v:29:21: error: expected a declaration name</pre>
+      <pre>  #1 force a  = 1&#39;bx;</pre>
+      <pre>                    ^</pre>
+      <pre>formatted/pr2937417.v:30:3: error: expected member</pre>
+      <pre>  #1 if (x !== 1&#39;bx || y !==</pre>
+      <pre>  ^</pre>
+      <pre>formatted/pr2937417.v:32:8: error: expected a declaration name</pre>
+      <pre>  pass = 1&#39;b0;</pre>
+      <pre>       ^</pre>
+      <pre>formatted/pr2937417.v:33:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/pr2937417.v:31:30: note: last complete block started here</pre>
+      <pre>         1&#39;bx) begin$display (&#34;Failed driver value, expected 1&#39;bx, 1&#39;bx, got %b %b&#34;, x, y);</pre>
+      <pre>                             ^</pre>
+      <pre>formatted/pr2937417.v:31:90: note: and ended here</pre>
+      <pre>         1&#39;bx) begin$display (&#34;Failed driver value, expected 1&#39;bx, 1&#39;bx, got %b %b&#34;, x, y);</pre>
+      <pre>                                                                                         ^</pre>
+      <pre>formatted/pr2937417.v:34:19: error: expected a declaration name</pre>
+      <pre>      #1 release a;</pre>
+      <pre>                  ^</pre>
+      <pre>formatted/pr2937417.v:35:5: error: expected a declaration name</pre>
+      <pre>  a = 1&#39;b0;</pre>
+      <pre>    ^</pre>
+      <pre>formatted/pr2937417.v:36:3: error: expected member</pre>
+      <pre>  #1 if (x !== 1&#39;b0 || y !==</pre>
+      <pre>  ^</pre>
+      <pre>formatted/pr2937417.v:38:12: error: expected a declaration name</pre>
+      <pre>  pass     = 1&#39;b0;</pre>
+      <pre>           ^</pre>
+      <pre>formatted/pr2937417.v:39:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/pr2937417.v:37:30: note: last complete block started here</pre>
+      <pre>         1&#39;b0) begin$display (&#34;Failed driver value, expected 1&#39;b0, 1&#39;b0, got %b %b&#34;, x, y);</pre>
+      <pre>                             ^</pre>
+      <pre>formatted/pr2937417.v:37:90: note: and ended here</pre>
+      <pre>         1&#39;b0) begin$display (&#34;Failed driver value, expected 1&#39;b0, 1&#39;b0, got %b %b&#34;, x, y);</pre>
+      <pre>                                                                                         ^</pre>
+      <pre>formatted/pr2937417.v:41:8: error: expected a declaration name</pre>
+      <pre>  #1a  = 1&#39;bz;</pre>
+      <pre>       ^</pre>
+      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

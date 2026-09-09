@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-synth_blocksynth3_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/blocksynth3.v.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/blocksynth3.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:26:27</dd></div>
+        <div><dt>time elapsed</dt><dd>0.011s</dd></div>
+        <div><dt>ram usage</dt><dd>22560 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpwy08s6rd/formatted/blocksynth3.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpwy08s6rd/formatted/blocksynth3.v</pre>
+      <pre>formatted/blocksynth3.v:13:17: error: expected a declaration name</pre>
+      <pre>    2&#39;b00 : out = 2&#39;b11;</pre>
+      <pre>                ^</pre>
+      <pre>formatted/blocksynth3.v:13:24: error: expected &#39;:&#39;</pre>
+      <pre>    2&#39;b00 : out = 2&#39;b11;</pre>
+      <pre>                       ^</pre>
+      <pre>formatted/blocksynth3.v:14:17: error: expected a declaration name</pre>
+      <pre>    2&#39;b01 : out = 2&#39;b10;</pre>
+      <pre>                ^</pre>
+      <pre>formatted/blocksynth3.v:14:24: error: expected &#39;:&#39;</pre>
+      <pre>    2&#39;b01 : out = 2&#39;b10;</pre>
+      <pre>                       ^</pre>
+      <pre>formatted/blocksynth3.v:15:17: error: expected a declaration name</pre>
+      <pre>    2&#39;b10 : out = 2&#39;b01;</pre>
+      <pre>                ^</pre>
+      <pre>formatted/blocksynth3.v:15:24: error: expected &#39;:&#39;</pre>
+      <pre>    2&#39;b10 : out = 2&#39;b01;</pre>
+      <pre>                       ^</pre>
+      <pre>formatted/blocksynth3.v:21:8: error: expected a declaration name</pre>
+      <pre>  flag = 1&#39;b0;</pre>
+      <pre>       ^</pre>
+      <pre>formatted/blocksynth3.v:22:26: error: expected a declaration name</pre>
+      <pre>  if (out == 2&#39;b00) flag = 1&#39;b1;</pre>
+      <pre>                         ^</pre>
+      <pre>formatted/blocksynth3.v:23:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/blocksynth3.v:22:6: note: last complete block started here</pre>
+      <pre>  if (out == 2&#39;b00) flag = 1&#39;b1;</pre>
+      <pre>     ^</pre>
+      <pre>formatted/blocksynth3.v:22:19: note: and ended here</pre>
+      <pre>  if (out == 2&#39;b00) flag = 1&#39;b1;</pre>
+      <pre>                  ^</pre>
+      <pre>formatted/blocksynth3.v:26:51: error: expected &#39;)&#39;</pre>
+      <pre>  (*ivl_synthesis_off *) initial beginfor (idx = 0;</pre>
+      <pre>                                                  ^</pre>
+      <pre>formatted/blocksynth3.v:26:43: note: to match this &#39;(&#39;</pre>
+      <pre>  (*ivl_synthesis_off *) initial beginfor (idx = 0;</pre>
+      <pre>                                          ^</pre>
+      <pre>formatted/blocksynth3.v:27:7: error: expected a declaration name</pre>
+      <pre>  idx &lt; 7;</pre>
+      <pre>      ^</pre>
+      <pre>formatted/blocksynth3.v:28:7: error: expected a declaration name</pre>
+      <pre>  idx = idx + 1) beginsel = idx [1 : 0];</pre>
+      <pre>      ^</pre>
+      <pre>formatted/blocksynth3.v:28:13: error: expected a declaration name</pre>
+      <pre>  idx = idx + 1) beginsel = idx [1 : 0];</pre>
+      <pre>            ^</pre>
+      <pre>formatted/blocksynth3.v:28:16: error: unexpected &#39;)&#39; delimiter</pre>
+      <pre>  idx = idx + 1) beginsel = idx [1 : 0];</pre>
+      <pre>               ^</pre>
+      <pre>formatted/blocksynth3.v:28:27: error: expected a declaration name</pre>
+      <pre>  idx = idx + 1) beginsel = idx [1 : 0];</pre>
+      <pre>                          ^</pre>
+      <pre>formatted/blocksynth3.v:28:40: error: expected a declaration name</pre>
+      <pre>  idx = idx + 1) beginsel = idx [1 : 0];</pre>
+      <pre>                                       ^</pre>
+      <pre>formatted/blocksynth3.v:29:3: error: expected member</pre>
+      <pre>  #1 if (out !== ~sel) begin$display (&#34;FAILED -- sel=%b, out=%b, flag=%b&#34;, sel, out, flag);</pre>
+      <pre>  ^</pre>
+      <pre>formatted/blocksynth3.v:30:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/blocksynth3.v:31:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/blocksynth3.v:29:38: note: last complete block started here</pre>
+      <pre>  #1 if (out !== ~sel) begin$display (&#34;FAILED -- sel=%b, out=%b, flag=%b&#34;, sel, out, flag);</pre>
+      <pre>                                     ^</pre>
+      <pre>formatted/blocksynth3.v:29:90: note: and ended here</pre>
+      <pre>  #1 if (out !== ~sel) begin$display (&#34;FAILED -- sel=%b, out=%b, flag=%b&#34;, sel, out, flag);</pre>
+      <pre>                                                                                         ^</pre>
+      <pre>formatted/blocksynth3.v:32:12: error: expected a declaration name</pre>
+      <pre>      test = (out == 2&#39;b00) ? 1&#39;b1 : 1&#39;b0;</pre>
+      <pre>           ^</pre>
+      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

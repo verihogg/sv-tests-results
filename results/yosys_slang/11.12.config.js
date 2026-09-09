@@ -1,1 +1,0 @@
-config_loader_data['yosys_slang/11.12'] = [["","let_construct",0,"logs/yosys_slang/chapter-11/11.12--let_construct.sv.log.html","tests/chapter-11/11.12--let_construct.sv.html"]]

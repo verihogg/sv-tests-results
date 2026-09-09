@@ -1,1 +1,0 @@
-config_loader_data['yosys/6.6.2'] = [["","net_uwire",0,"logs/Yosys/generated/nets/6.6.2--net_uwire.sv.log.html","tests/generated/nets/6.6.2--net_uwire.sv.html"]]

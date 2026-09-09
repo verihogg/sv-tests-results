@@ -1,1 +1,0 @@
-config_loader_data['moore_parse/6.16.7'] = [["","string_icompare",1,"logs/moore_parse/chapter-6/6.16.7--string_icompare.sv.log.html","tests/chapter-6/6.16.7--string_icompare.sv.html"]]

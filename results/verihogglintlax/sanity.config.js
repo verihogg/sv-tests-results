@@ -1,0 +1,1 @@
+config_loader_data['verihogglintlax/sanity'] = [["","sanity",0,"logs/VerihoggLintLax/sanity.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/sanity.sv.html"]]

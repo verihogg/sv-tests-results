@@ -1,1 +1,0 @@
-config_loader_data['moore_parse/8.20'] = [["","virtual_method",1,"logs/moore_parse/chapter-8/8.20--virtual_method.sv.log.html","tests/chapter-8/8.20--virtual_method.sv.html"]]

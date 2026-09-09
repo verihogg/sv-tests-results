@@ -1,1 +1,0 @@
-config_loader_data['verilator/10.6.1'] = [["","assign_deassign",1,"logs/Verilator/chapter-10/10.6.1--assign-deassign.sv.log.html","tests/chapter-10/10.6.1--assign-deassign.sv.html"]]

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-sv_sv_assign_pattern_expand_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/sv_assign_pattern_expand.v.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/sv_assign_pattern_expand.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:27:07</dd></div>
+        <div><dt>time elapsed</dt><dd>0.014s</dd></div>
+        <div><dt>ram usage</dt><dd>24472 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpjmq3yzcr/formatted/sv_assign_pattern_expand.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpjmq3yzcr/formatted/sv_assign_pattern_expand.v</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:16:50: error: expected identifier</pre>
+      <pre>                                            d [0], tmp); \</pre>
+      <pre>                                                 ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:16:55: error: expected &#39;;&#39;</pre>
+      <pre>                                            d [0], tmp); \</pre>
+      <pre>                                                      ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:16:55: error: unexpected &#39;)&#39; delimiter</pre>
+      <pre>                                            d [0], tmp); \</pre>
+      <pre>                                                      ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:16:47: note: last complete block started here</pre>
+      <pre>                                            d [0], tmp); \</pre>
+      <pre>                                              ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:16:49: note: and ended here</pre>
+      <pre>                                            d [0], tmp); \</pre>
+      <pre>                                                ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:16:58: error: macro operators may only be used within a macro definition</pre>
+      <pre>                                            d [0], tmp); \</pre>
+      <pre>                                                         ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:17:9: error: expected a declaration name</pre>
+      <pre> failed = 1&#39;b1; \</pre>
+      <pre>        ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:17:17: error: macro operators may only be used within a macro definition</pre>
+      <pre> failed = 1&#39;b1; \</pre>
+      <pre>                ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:19:5: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>    end</pre>
+      <pre>    ^~~</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:16:47: note: last complete block started here</pre>
+      <pre>                                            d [0], tmp); \</pre>
+      <pre>                                              ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:16:49: note: and ended here</pre>
+      <pre>                                            d [0], tmp); \</pre>
+      <pre>                                                ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:28:7: error: expected &#39;;&#39;</pre>
+      <pre>      `check (x)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:9:21: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (expr) \</pre>
+      <pre>                    ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:29:7: error: expected &#39;,&#39;</pre>
+      <pre>      `check (16&#39;sh8000)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:9:21: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (expr) \</pre>
+      <pre>                    ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:29:7: error: expected &#39;)&#39;</pre>
+      <pre>      `check (16&#39;sh8000)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:10:12: note: expanded from macro &#39;check&#39;</pre>
+      <pre> d =&#39;{expr};</pre>
+      <pre>           ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:28:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (x)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:15:11: note: expanded from macro &#39;check&#39;</pre>
+      <pre> $display (&#34;FAILED: `%s`, got %0d, expected %0d&#34;, `&#34; expr `&#34;,</pre>
+      <pre>          ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:32:7: error: expected &#39;,&#39;</pre>
+      <pre>      `check (8&#39;hff)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:9:21: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (expr) \</pre>
+      <pre>                    ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:32:7: error: expected &#39;)&#39;</pre>
+      <pre>      `check (8&#39;hff)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:10:12: note: expanded from macro &#39;check&#39;</pre>
+      <pre> d =&#39;{expr};</pre>
+      <pre>           ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:29:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (16&#39;sh8000)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:15:11: note: expanded from macro &#39;check&#39;</pre>
+      <pre> $display (&#34;FAILED: `%s`, got %0d, expected %0d&#34;, `&#34; expr `&#34;,</pre>
+      <pre>          ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:33:7: error: expected &#39;,&#39;</pre>
+      <pre>      `check (y)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:9:21: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (expr) \</pre>
+      <pre>                    ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:33:7: error: expected &#39;)&#39;</pre>
+      <pre>      `check (y)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:10:12: note: expanded from macro &#39;check&#39;</pre>
+      <pre> d =&#39;{expr};</pre>
+      <pre>           ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:32:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (8&#39;hff)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:15:11: note: expanded from macro &#39;check&#39;</pre>
+      <pre> $display (&#34;FAILED: `%s`, got %0d, expected %0d&#34;, `&#34; expr `&#34;,</pre>
+      <pre>          ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:36:7: error: expected &#39;,&#39;</pre>
+      <pre>      `check (1&#39;b1 + 1&#39;b1)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:9:21: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (expr) \</pre>
+      <pre>                    ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:36:7: error: expected &#39;)&#39;</pre>
+      <pre>      `check (1&#39;b1 + 1&#39;b1)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:10:12: note: expanded from macro &#39;check&#39;</pre>
+      <pre> d =&#39;{expr};</pre>
+      <pre>           ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:33:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (y)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:15:11: note: expanded from macro &#39;check&#39;</pre>
+      <pre> $display (&#34;FAILED: `%s`, got %0d, expected %0d&#34;, `&#34; expr `&#34;,</pre>
+      <pre>          ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:37:7: error: expected &#39;,&#39;</pre>
+      <pre>      `check (1&#39;sb1 + 1&#39;sb1)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:9:21: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (expr) \</pre>
+      <pre>                    ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:37:7: error: expected &#39;)&#39;</pre>
+      <pre>      `check (1&#39;sb1 + 1&#39;sb1)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:10:12: note: expanded from macro &#39;check&#39;</pre>
+      <pre> d =&#39;{expr};</pre>
+      <pre>           ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:36:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (1&#39;b1 + 1&#39;b1)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:15:11: note: expanded from macro &#39;check&#39;</pre>
+      <pre> $display (&#34;FAILED: `%s`, got %0d, expected %0d&#34;, `&#34; expr `&#34;,</pre>
+      <pre>          ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:37:29: error: expected &#39;,&#39;</pre>
+      <pre>      `check (1&#39;sb1 + 1&#39;sb1)</pre>
+      <pre>                            ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:41:12: error: expected &#39;)&#39;</pre>
+      <pre>        end</pre>
+      <pre>           ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:37:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (1&#39;sb1 + 1&#39;sb1)</pre>
+      <pre>      ^</pre>
+      <pre>formatted/sv_assign_pattern_expand.v:15:11: note: expanded from macro &#39;check&#39;</pre>
+      <pre> $display (&#34;FAILED: `%s`, got %0d, expected %0d&#34;, `&#34; expr `&#34;,</pre>
+      <pre>          ^</pre>
+      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+config_loader_data['verihoggformat/6.19'] = [["","enum_anon",1,"logs/VerihoggFormat/chapter-6/6.19--enum_anon.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-6/6.19--enum_anon.sv.html"],["","enum_xx",1,"logs/VerihoggFormat/chapter-6/6.19--enum_xx.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-6/6.19--enum_xx.sv.html"]]

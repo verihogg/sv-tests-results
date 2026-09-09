@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-vlg_timescale1_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/timescale1.v.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/timescale1.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:26:24</dd></div>
+        <div><dt>time elapsed</dt><dd>0.012s</dd></div>
+        <div><dt>ram usage</dt><dd>22628 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpubp14zxj/formatted/timescale1.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpubp14zxj/formatted/timescale1.v</pre>
+      <pre>formatted/timescale1.v:63:7: error: expected member</pre>
+      <pre>      $display (&#34;FAILED&#34;);</pre>
+      <pre>      ^~~~~~~~</pre>
+      <pre>formatted/timescale1.v:64:7: error: expected member</pre>
+      <pre>      $finish;</pre>
+      <pre>      ^~~~~~~</pre>
+      <pre>formatted/timescale1.v:66:3: error: expected member</pre>
+      <pre>  #10 if (slow !== 1&#39;b0) begin$display (&#34;FAILED&#34;);</pre>
+      <pre>  ^</pre>
+      <pre>formatted/timescale1.v:67:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/timescale1.v:68:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/timescale1.v:66:40: note: last complete block started here</pre>
+      <pre>  #10 if (slow !== 1&#39;b0) begin$display (&#34;FAILED&#34;);</pre>
+      <pre>                                       ^</pre>
+      <pre>formatted/timescale1.v:66:49: note: and ended here</pre>
+      <pre>  #10 if (slow !== 1&#39;b0) begin$display (&#34;FAILED&#34;);</pre>
+      <pre>                                                ^</pre>
+      <pre>formatted/timescale1.v:70:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/timescale1.v:71:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/timescale1.v:69:40: note: last complete block started here</pre>
+      <pre>      if (fast !== 1&#39;b1) begin$display (&#34;FAILED&#34;);</pre>
+      <pre>                                       ^</pre>
+      <pre>formatted/timescale1.v:69:49: note: and ended here</pre>
+      <pre>      if (fast !== 1&#39;b1) begin$display (&#34;FAILED&#34;);</pre>
+      <pre>                                                ^</pre>
+      <pre>formatted/timescale1.v:73:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/timescale1.v:74:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/timescale1.v:72:44: note: last complete block started here</pre>
+      <pre>      #80 if (slow !== 1&#39;b0) begin$display (&#34;FAILED&#34;);</pre>
+      <pre>                                           ^</pre>
+      <pre>formatted/timescale1.v:72:53: note: and ended here</pre>
+      <pre>      #80 if (slow !== 1&#39;b0) begin$display (&#34;FAILED&#34;);</pre>
+      <pre>                                                    ^</pre>
+      <pre>formatted/timescale1.v:76:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/timescale1.v:77:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/timescale1.v:75:40: note: last complete block started here</pre>
+      <pre>      if (fast !== 1&#39;b1) begin$display (&#34;FAILED&#34;);</pre>
+      <pre>                                       ^</pre>
+      <pre>formatted/timescale1.v:75:49: note: and ended here</pre>
+      <pre>      if (fast !== 1&#39;b1) begin$display (&#34;FAILED&#34;);</pre>
+      <pre>                                                ^</pre>
+      <pre>formatted/timescale1.v:79:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/timescale1.v:80:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/timescale1.v:78:44: note: last complete block started here</pre>
+      <pre>      #10 if (slow !== 1&#39;b1) begin$display (&#34;FAILED&#34;);</pre>
+      <pre>                                           ^</pre>
+      <pre>formatted/timescale1.v:78:53: note: and ended here</pre>
+      <pre>      #10 if (slow !== 1&#39;b1) begin$display (&#34;FAILED&#34;);</pre>
+      <pre>                                                    ^</pre>
+      <pre>formatted/timescale1.v:82:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/timescale1.v:83:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/timescale1.v:81:40: note: last complete block started here</pre>
+      <pre>      if (fast !== 1&#39;b1) begin$display (&#34;FAILED&#34;);</pre>
+      <pre>                                       ^</pre>
+      <pre>formatted/timescale1.v:81:49: note: and ended here</pre>
+      <pre>      if (fast !== 1&#39;b1) begin$display (&#34;FAILED&#34;);</pre>
+      <pre>                                                ^</pre>
+      <pre>formatted/timescale1.v:85:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end // initial begin</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/timescale1.v:81:40: note: last complete block started here</pre>
+      <pre>      if (fast !== 1&#39;b1) begin$display (&#34;FAILED&#34;);</pre>
+      <pre>                                       ^</pre>
+      <pre>formatted/timescale1.v:81:49: note: and ended here</pre>
+      <pre>      if (fast !== 1&#39;b1) begin$display (&#34;FAILED&#34;);</pre>
+      <pre>                                                ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

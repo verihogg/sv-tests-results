@@ -1,0 +1,1 @@
+config_loader_data['verihogglint/11.11'] = [["","min_max_avg_delay",1,"logs/VerihoggLint/chapter-11/11.11--min_max_avg_delay.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-11/11.11--min_max_avg_delay.sv.html"]]

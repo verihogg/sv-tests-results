@@ -1,1 +1,0 @@
-config_loader_data['synligyosys/7.10.5'] = [["","bounded-queues",0,"logs/SynligYosys/chapter-7/queues/bounded.sv.log.html","tests/chapter-7/queues/bounded.sv.html"]]

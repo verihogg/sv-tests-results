@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>casez</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>A module testing casez statement</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>12.5.1</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/tests/chapter-12<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>parsing elaboration</dd></div>
+        <div><dt>results group</dt><dd><em></em></dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../__w/sv-tests/sv-tests/tests/chapter-12/12.5.1--casez.sv.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/tests/chapter-12/12.5.1--casez.sv</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:17:59</dd></div>
+        <div><dt>time elapsed</dt><dd>0.011s</dd></div>
+        <div><dt>ram usage</dt><dd>20200 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/tests/chapter-12 /__w/sv-tests/sv-tests/out/tmp/tmpv50fnbwm/formatted/12.5.1--casez.sv</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpv50fnbwm/formatted/12.5.1--casez.sv</pre>
+      <pre>formatted/12.5.1--casez.sv:16:27: error: expected &#39;;&#39;</pre>
+      <pre>  always @ *begincasez (a) 4&#39;b1zzz : b = 1;</pre>
+      <pre>                          ^</pre>
+      <pre>formatted/12.5.1--casez.sv:16:36: error: expected a declaration name</pre>
+      <pre>  always @ *begincasez (a) 4&#39;b1zzz : b = 1;</pre>
+      <pre>                                   ^</pre>
+      <pre>formatted/12.5.1--casez.sv:16:40: error: expected a declaration name</pre>
+      <pre>  always @ *begincasez (a) 4&#39;b1zzz : b = 1;</pre>
+      <pre>                                       ^</pre>
+      <pre>formatted/12.5.1--casez.sv:17:3: error: expected member</pre>
+      <pre>  4&#39;b01z ? : b  = 2;</pre>
+      <pre>  ^</pre>
+      <pre>formatted/12.5.1--casez.sv:17:10: error: expected a declaration name</pre>
+      <pre>  4&#39;b01z ? : b  = 2;</pre>
+      <pre>         ^</pre>
+      <pre>formatted/12.5.1--casez.sv:17:17: error: expected a declaration name</pre>
+      <pre>  4&#39;b01z ? : b  = 2;</pre>
+      <pre>                ^</pre>
+      <pre>formatted/12.5.1--casez.sv:18:3: error: expected member</pre>
+      <pre>  4&#39;b001z : b   = 3;</pre>
+      <pre>  ^</pre>
+      <pre>formatted/12.5.1--casez.sv:18:11: error: expected a declaration name</pre>
+      <pre>  4&#39;b001z : b   = 3;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/12.5.1--casez.sv:18:17: error: expected a declaration name</pre>
+      <pre>  4&#39;b001z : b   = 3;</pre>
+      <pre>                ^</pre>
+      <pre>formatted/12.5.1--casez.sv:19:3: error: expected member</pre>
+      <pre>  4&#39;b0001 : b   = 4;</pre>
+      <pre>  ^</pre>
+      <pre>formatted/12.5.1--casez.sv:19:17: error: expected a declaration name</pre>
+      <pre>  4&#39;b0001 : b   = 4;</pre>
+      <pre>                ^</pre>
+      <pre>formatted/12.5.1--casez.sv:20:3: error: expected member</pre>
+      <pre>  default b     = 0;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/12.5.1--casez.sv:20:17: error: expected a declaration name</pre>
+      <pre>  default b     = 0;</pre>
+      <pre>                ^</pre>
+      <pre>formatted/12.5.1--casez.sv:21:3: error: unexpected &#39;endcase&#39; delimiter</pre>
+      <pre>  endcase</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/12.5.1--casez.sv:16:24: note: last complete block started here</pre>
+      <pre>  always @ *begincasez (a) 4&#39;b1zzz : b = 1;</pre>
+      <pre>                       ^</pre>
+      <pre>formatted/12.5.1--casez.sv:16:26: note: and ended here</pre>
+      <pre>  always @ *begincasez (a) 4&#39;b1zzz : b = 1;</pre>
+      <pre>                         ^</pre>
+      <pre>formatted/12.5.1--casez.sv:22:7: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>      end</pre>
+      <pre>      ^~~</pre>
+      <pre>formatted/12.5.1--casez.sv:16:24: note: last complete block started here</pre>
+      <pre>  always @ *begincasez (a) 4&#39;b1zzz : b = 1;</pre>
+      <pre>                       ^</pre>
+      <pre>formatted/12.5.1--casez.sv:16:26: note: and ended here</pre>
+      <pre>  always @ *begincasez (a) 4&#39;b1zzz : b = 1;</pre>
+      <pre>                         ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

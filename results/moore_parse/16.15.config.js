@@ -1,1 +1,0 @@
-config_loader_data['moore_parse/16.15'] = [["","property_disable_iff_test",0,"logs/moore_parse/chapter-16/16.15--property-disable-iff.sv.log.html","tests/chapter-16/16.15--property-disable-iff.sv.html"]]

@@ -1,0 +1,1 @@
+config_loader_data['verihogglintlax/7.8.7'] = [["","associative-arrays-allocating-elements",1,"logs/VerihoggLintLax/chapter-7/arrays/associative/alloc.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-7/arrays/associative/alloc.sv.html"]]

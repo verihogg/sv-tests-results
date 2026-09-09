@@ -1,0 +1,1 @@
+config_loader_data['verihoggformat/8.15'] = [["","super",1,"logs/VerihoggFormat/chapter-8/8.15--super.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-8/8.15--super.sv.html"],["","super-def-new",1,"logs/VerihoggFormat/chapter-8/8.15--super-default-new.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-8/8.15--super-default-new.sv.html"]]

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-vlg_talu_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/talu.v.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/talu.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:27:29</dd></div>
+        <div><dt>time elapsed</dt><dd>0.014s</dd></div>
+        <div><dt>ram usage</dt><dd>28400 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp48uuha3r/formatted/talu.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmp48uuha3r/formatted/talu.v</pre>
+      <pre>formatted/talu.v:34:8: error: expected a declaration name</pre>
+      <pre>  op   = &#39;b01;</pre>
+      <pre>       ^</pre>
+      <pre>formatted/talu.v:35:8: error: expected a declaration name</pre>
+      <pre>  cin  = &#39;b0;</pre>
+      <pre>       ^</pre>
+      <pre>formatted/talu.v:36:8: error: expected a declaration name</pre>
+      <pre>  a    = &#39;h01;</pre>
+      <pre>       ^</pre>
+      <pre>formatted/talu.v:37:8: error: expected a declaration name</pre>
+      <pre>  b    = &#39;h01;</pre>
+      <pre>       ^</pre>
+      <pre>formatted/talu.v:38:3: error: expected member</pre>
+      <pre>  #2 if ({cout, aluout} != 9&#39;h103) begin$display ($time, &#34; FAILED %b  %b %h %h  %b %h&#34;, op, cin, a,</pre>
+      <pre>  ^</pre>
+      <pre>formatted/talu.v:40:11: error: expected a declaration name</pre>
+      <pre>  error   = 1;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/talu.v:41:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/talu.v:38:50: note: last complete block started here</pre>
+      <pre>  #2 if ({cout, aluout} != 9&#39;h103) begin$display ($time, &#34; FAILED %b  %b %h %h  %b %h&#34;, op, cin, a,</pre>
+      <pre>                                                 ^</pre>
+      <pre>formatted/talu.v:39:66: note: and ended here</pre>
+      <pre>                                                  b, cout, aluout);</pre>
+      <pre>                                                                 ^</pre>
+      <pre>formatted/talu.v:44:7: error: expected a declaration name</pre>
+      <pre>  op  = &#39;b10;</pre>
+      <pre>      ^</pre>
+      <pre>formatted/talu.v:45:11: error: expected a declaration name</pre>
+      <pre>  cin     = &#39;b0;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/talu.v:46:11: error: expected a declaration name</pre>
+      <pre>  a       = &#39;h16;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/talu.v:47:11: error: expected a declaration name</pre>
+      <pre>  b       = &#39;h0F;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/talu.v:47:17: error: expected a declaration name</pre>
+      <pre>  b       = &#39;h0F;</pre>
+      <pre>                ^</pre>
+      <pre>formatted/talu.v:48:3: error: expected member</pre>
+      <pre>  #2 if ({cout, aluout} != 9&#39;h006) begin$display ($time, &#34; FAILED %b  %b %h %h  %b %h&#34;, op, cin, a,</pre>
+      <pre>  ^</pre>
+      <pre>formatted/talu.v:50:11: error: expected a declaration name</pre>
+      <pre>  error   = 1;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/talu.v:51:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end op  = &#39;b10;</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/talu.v:48:50: note: last complete block started here</pre>
+      <pre>  #2 if ({cout, aluout} != 9&#39;h006) begin$display ($time, &#34; FAILED %b  %b %h %h  %b %h&#34;, op, cin, a,</pre>
+      <pre>                                                 ^</pre>
+      <pre>formatted/talu.v:49:66: note: and ended here</pre>
+      <pre>                                                  b, cout, aluout);</pre>
+      <pre>                                                                 ^</pre>
+      <pre>formatted/talu.v:51:11: error: expected a declaration name</pre>
+      <pre>  end op  = &#39;b10;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/talu.v:52:11: error: expected a declaration name</pre>
+      <pre>  cin     = &#39;b0;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/talu.v:53:11: error: expected a declaration name</pre>
+      <pre>  a       = &#39;h28;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/talu.v:54:11: error: expected a declaration name</pre>
+      <pre>  b       = &#39;hf7;</pre>
+      <pre>          ^</pre>
+      <pre>formatted/talu.v:54:17: error: expected a declaration name</pre>
+      <pre>  b       = &#39;hf7;</pre>
+      <pre>                ^</pre>
+      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

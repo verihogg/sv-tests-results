@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-synth_case4_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/case4.v.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/case4.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:30:53</dd></div>
+        <div><dt>time elapsed</dt><dd>0.011s</dd></div>
+        <div><dt>ram usage</dt><dd>21960 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp_26myrap/formatted/case4.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmp_26myrap/formatted/case4.v</pre>
+      <pre>formatted/case4.v:10:55: error: expected &#39;;&#39;</pre>
+      <pre>  (*ivl_combinational *) always @(val) begincase (val) 8&#39;h2a : out = 8&#39;h40;</pre>
+      <pre>                                                      ^</pre>
+      <pre>formatted/case4.v:10:62: error: expected a declaration name</pre>
+      <pre>  (*ivl_combinational *) always @(val) begincase (val) 8&#39;h2a : out = 8&#39;h40;</pre>
+      <pre>                                                             ^</pre>
+      <pre>formatted/case4.v:10:68: error: expected a declaration name</pre>
+      <pre>  (*ivl_combinational *) always @(val) begincase (val) 8&#39;h2a : out = 8&#39;h40;</pre>
+      <pre>                                                                   ^</pre>
+      <pre>formatted/case4.v:11:3: error: expected member</pre>
+      <pre>  8&#39;h1f : out    = 8&#39;h20;</pre>
+      <pre>  ^</pre>
+      <pre>formatted/case4.v:11:9: error: expected a declaration name</pre>
+      <pre>  8&#39;h1f : out    = 8&#39;h20;</pre>
+      <pre>        ^</pre>
+      <pre>formatted/case4.v:11:18: error: expected a declaration name</pre>
+      <pre>  8&#39;h1f : out    = 8&#39;h20;</pre>
+      <pre>                 ^</pre>
+      <pre>formatted/case4.v:12:3: error: expected member</pre>
+      <pre>  default : out  = 8&#39;h04;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/case4.v:12:18: error: expected a declaration name</pre>
+      <pre>  default : out  = 8&#39;h04;</pre>
+      <pre>                 ^</pre>
+      <pre>formatted/case4.v:13:3: error: unexpected &#39;endcase&#39; delimiter</pre>
+      <pre>  endcase</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>formatted/case4.v:10:50: note: last complete block started here</pre>
+      <pre>  (*ivl_combinational *) always @(val) begincase (val) 8&#39;h2a : out = 8&#39;h40;</pre>
+      <pre>                                                 ^</pre>
+      <pre>formatted/case4.v:10:54: note: and ended here</pre>
+      <pre>  (*ivl_combinational *) always @(val) begincase (val) 8&#39;h2a : out = 8&#39;h40;</pre>
+      <pre>                                                     ^</pre>
+      <pre>formatted/case4.v:14:7: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>      end</pre>
+      <pre>      ^~~</pre>
+      <pre>formatted/case4.v:10:50: note: last complete block started here</pre>
+      <pre>  (*ivl_combinational *) always @(val) begincase (val) 8&#39;h2a : out = 8&#39;h40;</pre>
+      <pre>                                                 ^</pre>
+      <pre>formatted/case4.v:10:54: note: and ended here</pre>
+      <pre>  (*ivl_combinational *) always @(val) begincase (val) 8&#39;h2a : out = 8&#39;h40;</pre>
+      <pre>                                                     ^</pre>
+      <pre>formatted/case4.v:16:51: error: expected &#39;)&#39;</pre>
+      <pre>  (*ivl_synthesis_off *) initial beginfor (idx = 0;</pre>
+      <pre>                                                  ^</pre>
+      <pre>formatted/case4.v:16:43: note: to match this &#39;(&#39;</pre>
+      <pre>  (*ivl_synthesis_off *) initial beginfor (idx = 0;</pre>
+      <pre>                                          ^</pre>
+      <pre>formatted/case4.v:17:7: error: expected a declaration name</pre>
+      <pre>  idx &lt; 256;</pre>
+      <pre>      ^</pre>
+      <pre>formatted/case4.v:18:7: error: expected a declaration name</pre>
+      <pre>  idx = idx + 1) beginval &lt;= idx;</pre>
+      <pre>      ^</pre>
+      <pre>formatted/case4.v:18:13: error: expected a declaration name</pre>
+      <pre>  idx = idx + 1) beginval &lt;= idx;</pre>
+      <pre>            ^</pre>
+      <pre>formatted/case4.v:18:16: error: unexpected &#39;)&#39; delimiter</pre>
+      <pre>  idx = idx + 1) beginval &lt;= idx;</pre>
+      <pre>               ^</pre>
+      <pre>formatted/case4.v:18:27: error: expected a declaration name</pre>
+      <pre>  idx = idx + 1) beginval &lt;= idx;</pre>
+      <pre>                          ^</pre>
+      <pre>formatted/case4.v:18:33: error: expected a declaration name</pre>
+      <pre>  idx = idx + 1) beginval &lt;= idx;</pre>
+      <pre>                                ^</pre>
+      <pre>formatted/case4.v:19:3: error: expected member</pre>
+      <pre>  #1;</pre>
+      <pre>  ^</pre>
+      <pre>formatted/case4.v:24:11: error: expected member</pre>
+      <pre>          $display (&#34;FAILED -- val=%h, out=%h (%b)&#34;, val, out, out);</pre>
+      <pre>          ^~~~~~~~</pre>
+      <pre>formatted/case4.v:25:11: error: expected member</pre>
+      <pre>          $finish;</pre>
+      <pre>          ^~~~~~~</pre>
+      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

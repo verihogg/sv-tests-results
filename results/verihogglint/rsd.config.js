@@ -1,0 +1,1 @@
+config_loader_data['verihogglint/rsd'] = [["cores","rsd",0,"logs/VerihoggLint/generated/rsd/rsd.sv.log.html","tests/generated/rsd/rsd.sv.html"]]

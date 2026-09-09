@@ -1,0 +1,1 @@
+config_loader_data['verihoggformat/10.6.2'] = [["","force_release",1,"logs/VerihoggFormat/chapter-10/10.6.2--force-release.sv.log.html","../../../../../__w/sv-tests/sv-tests/tests/chapter-10/10.6.2--force-release.sv.html"]]

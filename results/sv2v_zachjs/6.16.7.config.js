@@ -1,1 +1,0 @@
-config_loader_data['sv2v_zachjs/6.16.7'] = [["","string_icompare",1,"logs/Sv2v_zachjs/chapter-6/6.16.7--string_icompare.sv.log.html","tests/chapter-6/6.16.7--string_icompare.sv.html"]]

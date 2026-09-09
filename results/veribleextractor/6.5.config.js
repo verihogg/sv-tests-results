@@ -1,1 +1,0 @@
-config_loader_data['veribleextractor/6.5'] = [["","variable_assignment",1,"logs/VeribleExtractor/chapter-6/6.5--variable_assignment.sv.log.html","tests/chapter-6/6.5--variable_assignment.sv.html"]]

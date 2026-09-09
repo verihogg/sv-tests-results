@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>pragma-directive</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Try to set a pragma</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>5.6.4</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/tests/chapter-5<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>parsing elaboration</dd></div>
+        <div><dt>results group</dt><dd><em></em></dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../__w/sv-tests/sv-tests/tests/chapter-5/5.6.4--compiler-directives-pragma.sv.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/tests/chapter-5/5.6.4--compiler-directives-pragma.sv</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:17:51</dd></div>
+        <div><dt>time elapsed</dt><dd>0.010s</dd></div>
+        <div><dt>ram usage</dt><dd>18340 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/tests/chapter-5 /__w/sv-tests/sv-tests/out/tmp/tmpl8o2v8vf/formatted/5.6.4--compiler-directives-pragma.sv</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpl8o2v8vf/formatted/5.6.4--compiler-directives-pragma.sv</pre>
+      <pre>formatted/5.6.4--compiler-directives-pragma.sv:16:16: warning: expected pragma protect keyword [-Wexpected-protect-keyword]</pre>
+      <pre>`pragma protect</pre>
+      <pre>               ^</pre>
+      <pre>formatted/5.6.4--compiler-directives-pragma.sv:18:16: warning: expected pragma protect keyword [-Wexpected-protect-keyword]</pre>
+      <pre>`pragma protect</pre>
+      <pre>               ^</pre>
+      <pre>formatted/5.6.4--compiler-directives-pragma.sv:19:5: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>    end</pre>
+      <pre>    ^~~</pre>
+      <pre>formatted/5.6.4--compiler-directives-pragma.sv:14:11: note: last complete block started here</pre>
+      <pre>module ts (</pre>
+      <pre>          ^</pre>
+      <pre>formatted/5.6.4--compiler-directives-pragma.sv:15:1: note: and ended here</pre>
+      <pre>);</pre>
+      <pre>^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

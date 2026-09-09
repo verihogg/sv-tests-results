@@ -1,1 +1,0 @@
-config_loader_data['veribleextractor/9.6.1'] = [["","wait_fork",1,"logs/VeribleExtractor/chapter-9/9.6.1--wait_fork.sv.log.html","tests/chapter-9/9.6.1--wait_fork.sv.html"]]

@@ -1,0 +1,1 @@
+config_loader_data['verihogglintlax/rggen'] = [["cores","RgGen",1,"logs/VerihoggLintLax/generated/rggen/rggen.sv.log.html","third_party/cores/rggen-sv-rtl/rggen_rtl_pkg.sv.html"]]

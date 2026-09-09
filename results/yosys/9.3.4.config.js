@@ -1,1 +1,0 @@
-config_loader_data['yosys/9.3.4'] = [["","block_names_seq",1,"logs/Yosys/chapter-9/9.3.4--block_names_seq.sv.log.html","tests/chapter-9/9.3.4--block_names_seq.sv.html"]]

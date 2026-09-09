@@ -1,1 +1,0 @@
-config_loader_data['yosys_slang/fx68k'] = [["cores","fx68k",1,"logs/yosys_slang/generated/fx68k/fx68k.sv.log.html","third_party/cores/fx68k/fx68k.sv.html"]]

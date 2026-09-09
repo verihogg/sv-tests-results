@@ -1,1 +1,0 @@
-config_loader_data['surelog/8.27'] = [["","forward_declaration",1,"logs/Surelog/chapter-8/8.27--forward_declaration.sv.log.html","tests/chapter-8/8.27--forward_declaration.sv.html"]]

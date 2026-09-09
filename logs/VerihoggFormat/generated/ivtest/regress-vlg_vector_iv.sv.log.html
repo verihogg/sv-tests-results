@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-vlg_vector_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/vector.v.html" target="file-frame">../../../../../__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests/vector.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-08 07:27:32</dd></div>
+        <div><dt>time elapsed</dt><dd>0.011s</dd></div>
+        <div><dt>ram usage</dt><dd>20412 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpdujpt3xn/formatted/vector.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpdujpt3xn/formatted/vector.v</pre>
+      <pre>formatted/vector.v:34:10: error: expected a declaration name</pre>
+      <pre>  foo04  = 0;</pre>
+      <pre>         ^</pre>
+      <pre>formatted/vector.v:35:10: error: expected a declaration name</pre>
+      <pre>  foo51  = 0;</pre>
+      <pre>         ^</pre>
+      <pre>formatted/vector.v:36:10: error: expected a declaration name</pre>
+      <pre>  foo15  = 0;</pre>
+      <pre>         ^</pre>
+      <pre>formatted/vector.v:37:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/vector.v:29:5: note: last complete block started here</pre>
+      <pre>    begin</pre>
+      <pre>    ^</pre>
+      <pre>formatted/vector.v:32:5: note: and ended here</pre>
+      <pre>    end</pre>
+      <pre>    ^</pre>
+      <pre>formatted/vector.v:39:10: error: expected a declaration name</pre>
+      <pre>  foo04  &lt;= foo04 + 1;</pre>
+      <pre>         ^</pre>
+      <pre>formatted/vector.v:39:19: error: expected a declaration name</pre>
+      <pre>  foo04  &lt;= foo04 + 1;</pre>
+      <pre>                  ^</pre>
+      <pre>formatted/vector.v:40:10: error: expected a declaration name</pre>
+      <pre>  foo51  &lt;= foo51 + 1;</pre>
+      <pre>         ^</pre>
+      <pre>formatted/vector.v:40:19: error: expected a declaration name</pre>
+      <pre>  foo51  &lt;= foo51 + 1;</pre>
+      <pre>                  ^</pre>
+      <pre>formatted/vector.v:41:10: error: expected a declaration name</pre>
+      <pre>  foo15  &lt;= foo15 + 1;</pre>
+      <pre>         ^</pre>
+      <pre>formatted/vector.v:41:19: error: expected a declaration name</pre>
+      <pre>  foo15  &lt;= foo15 + 1;</pre>
+      <pre>                  ^</pre>
+      <pre>formatted/vector.v:42:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/vector.v:29:5: note: last complete block started here</pre>
+      <pre>    begin</pre>
+      <pre>    ^</pre>
+      <pre>formatted/vector.v:32:5: note: and ended here</pre>
+      <pre>    end</pre>
+      <pre>    ^</pre>
+      <pre>formatted/vector.v:44:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/vector.v:43:35: note: last complete block started here</pre>
+      <pre>      always @(foo40) begin$write (&#34;foo40=%8d\n&#34;, foo40);</pre>
+      <pre>                                  ^</pre>
+      <pre>formatted/vector.v:43:56: note: and ended here</pre>
+      <pre>      always @(foo40) begin$write (&#34;foo40=%8d\n&#34;, foo40);</pre>
+      <pre>                                                       ^</pre>
+      <pre>formatted/vector.v:46:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/vector.v:45:35: note: last complete block started here</pre>
+      <pre>      always @(foo04) begin$write (&#34;               foo04=%8d\n&#34;, foo04);</pre>
+      <pre>                                  ^</pre>
+      <pre>formatted/vector.v:45:71: note: and ended here</pre>
+      <pre>      always @(foo04) begin$write (&#34;               foo04=%8d\n&#34;, foo04);</pre>
+      <pre>                                                                      ^</pre>
+      <pre>formatted/vector.v:48:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/vector.v:47:35: note: last complete block started here</pre>
+      <pre>      always @(foo51) begin$write (&#34;                              foo51=%8d\n&#34;, foo51);</pre>
+      <pre>                                  ^</pre>
+      <pre>formatted/vector.v:47:86: note: and ended here</pre>
+      <pre>      always @(foo51) begin$write (&#34;                              foo51=%8d\n&#34;, foo51);</pre>
+      <pre>                                                                                     ^</pre>
+      <pre>formatted/vector.v:51:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>formatted/vector.v:49:35: note: last complete block started here</pre>
+      <pre>      always @(foo15) begin$write (&#34;                                             foo15=%8d\n&#34;,</pre>
+      <pre>                                  ^</pre>
+      <pre>formatted/vector.v:50:41: note: and ended here</pre>
+      <pre>                                   foo15);</pre>
+      <pre>                                        ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

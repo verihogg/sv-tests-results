@@ -1,1 +1,0 @@
-config_loader_data['moore/8.25.1'] = [["","parametrized_class_scope_resolution",0,"logs/moore/chapter-8/8.25.1--parametrized_class_scope_resolution.sv.log.html","tests/chapter-8/8.25.1--parametrized_class_scope_resolution.sv.html"]]

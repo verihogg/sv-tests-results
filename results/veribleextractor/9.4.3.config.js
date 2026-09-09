@@ -1,1 +1,0 @@
-config_loader_data['veribleextractor/9.4.3'] = [["","event_sequence_controls",1,"logs/VeribleExtractor/chapter-9/9.4.3--event_sequence_controls.sv.log.html","tests/chapter-9/9.4.3--event_sequence_controls.sv.html"]]

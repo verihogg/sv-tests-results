@@ -1,1 +1,0 @@
-config_loader_data['circt_verilog/7.8.4'] = [["","associative-arrays-integral",1,"logs/circt_verilog/chapter-7/arrays/associative/integral.sv.log.html","tests/chapter-7/arrays/associative/integral.sv.html"]]
