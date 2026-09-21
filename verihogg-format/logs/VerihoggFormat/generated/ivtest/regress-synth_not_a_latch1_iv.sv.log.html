@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-synth_not_a_latch1_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/not_a_latch1.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/not_a_latch1.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-21 21:25:27</dd></div>
+        <div><dt>time elapsed</dt><dd>0.015s</dd></div>
+        <div><dt>ram usage</dt><dd>22504 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpzl5vl8p_/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpzl5vl8p_/formatted/not_a_latch1.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpzl5vl8p_/comparison/not_a_latch1.v</pre>
+      <pre>comparison/not_a_latch1.v:9:13: error: expected a declaration name</pre>
+      <pre>      out1  = in;</pre>
+      <pre>            ^</pre>
+      <pre>comparison/not_a_latch1.v:9:17: error: expected a declaration name</pre>
+      <pre>      out1  = in;</pre>
+      <pre>                ^</pre>
+      <pre>comparison/not_a_latch1.v:10:13: error: expected a declaration name</pre>
+      <pre>      out2  = in;</pre>
+      <pre>            ^</pre>
+      <pre>comparison/not_a_latch1.v:10:17: error: expected a declaration name</pre>
+      <pre>      out2  = in;</pre>
+      <pre>                ^</pre>
+      <pre>comparison/not_a_latch1.v:14:12: error: expected a declaration name</pre>
+      <pre>      out2 = ~in;</pre>
+      <pre>           ^</pre>
+      <pre>comparison/not_a_latch1.v:14:17: error: expected a declaration name</pre>
+      <pre>      out2 = ~in;</pre>
+      <pre>                ^</pre>
+      <pre>comparison/not_a_latch1.v:16:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/not_a_latch1.v:13:5: note: last complete block started here</pre>
+      <pre>    begin</pre>
+      <pre>    ^</pre>
+      <pre>comparison/not_a_latch1.v:15:5: note: and ended here</pre>
+      <pre>    end</pre>
+      <pre>    ^</pre>
+      <pre>comparison/not_a_latch1.v:29:8: error: expected a declaration name</pre>
+      <pre>  load = 1;</pre>
+      <pre>       ^</pre>
+      <pre>comparison/not_a_latch1.v:30:3: error: expected member</pre>
+      <pre>  #1;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/not_a_latch1.v:33:7: error: expected member</pre>
+      <pre>      $display (&#34;FAILED -- load=%b, val=%b, out1=%b, out2=%b&#34;, load, val, out1, out2);</pre>
+      <pre>      ^~~~~~~~</pre>
+      <pre>comparison/not_a_latch1.v:34:7: error: expected member</pre>
+      <pre>      $finish;</pre>
+      <pre>      ^~~~~~~</pre>
+      <pre>comparison/not_a_latch1.v:36:3: error: unexpected identifier &#39;val&#39;; did you mean &#39;var&#39;?</pre>
+      <pre>  val = 1;</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/not_a_latch1.v:36:7: error: expected a declaration name</pre>
+      <pre>  val = 1;</pre>
+      <pre>      ^</pre>
+      <pre>comparison/not_a_latch1.v:37:3: error: expected member</pre>
+      <pre>  #1;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/not_a_latch1.v:40:7: error: expected member</pre>
+      <pre>      $display (&#34;FAILED -- load=%b, val=%b, out1=%b, out2=%b&#34;, load, val, out1, out2);</pre>
+      <pre>      ^~~~~~~~</pre>
+      <pre>comparison/not_a_latch1.v:41:7: error: expected member</pre>
+      <pre>      $finish;</pre>
+      <pre>      ^~~~~~~</pre>
+      <pre>comparison/not_a_latch1.v:43:8: error: expected a declaration name</pre>
+      <pre>  load = 0;</pre>
+      <pre>       ^</pre>
+      <pre>comparison/not_a_latch1.v:44:3: error: expected member</pre>
+      <pre>  #1;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/not_a_latch1.v:47:7: error: expected member</pre>
+      <pre>      $display (&#34;FAILED -- load=%b, val=%b, out1=%b, out2=%b&#34;, load, val, out1, out2);</pre>
+      <pre>      ^~~~~~~~</pre>
+      <pre>comparison/not_a_latch1.v:48:7: error: expected member</pre>
+      <pre>      $finish;</pre>
+      <pre>      ^~~~~~~</pre>
+      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

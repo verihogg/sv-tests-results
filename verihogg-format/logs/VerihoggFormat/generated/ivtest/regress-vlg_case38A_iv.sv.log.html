@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-vlg_case38A_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/case3.8A.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/case3.8A.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-21 21:26:20</dd></div>
+        <div><dt>time elapsed</dt><dd>0.014s</dd></div>
+        <div><dt>ram usage</dt><dd>20540 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpbvf8jtxq/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpbvf8jtxq/formatted/case3.8A.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpbvf8jtxq/comparison/case3.8A.v</pre>
+      <pre>comparison/case3.8A.v:39:9: error: expected a declaration name</pre>
+      <pre>  val1  = 3&#39;b001;</pre>
+      <pre>        ^</pre>
+      <pre>comparison/case3.8A.v:40:9: error: expected a declaration name</pre>
+      <pre>  val2  = 3&#39;b011;</pre>
+      <pre>        ^</pre>
+      <pre>comparison/case3.8A.v:41:3: error: expected member</pre>
+      <pre>  #1 if (result !== 1) begin$display (&#34;FAILED case 3.8A - case (expr) lab2: &#34;);</pre>
+      <pre>  ^</pre>
+      <pre>comparison/case3.8A.v:42:13: error: expected a declaration name</pre>
+      <pre>  error     = 1;</pre>
+      <pre>            ^</pre>
+      <pre>comparison/case3.8A.v:43:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end val1  = 3&#39;b111;        // Should get no-action - expr = 3&#39;b011</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/case3.8A.v:41:38: note: last complete block started here</pre>
+      <pre>  #1 if (result !== 1) begin$display (&#34;FAILED case 3.8A - case (expr) lab2: &#34;);</pre>
+      <pre>                                     ^</pre>
+      <pre>comparison/case3.8A.v:41:78: note: and ended here</pre>
+      <pre>  #1 if (result !== 1) begin$display (&#34;FAILED case 3.8A - case (expr) lab2: &#34;);</pre>
+      <pre>                                                                             ^</pre>
+      <pre>comparison/case3.8A.v:43:13: error: expected a declaration name</pre>
+      <pre>  end val1  = 3&#39;b111;        // Should get no-action - expr = 3&#39;b011</pre>
+      <pre>            ^</pre>
+      <pre>comparison/case3.8A.v:44:3: error: expected member</pre>
+      <pre>  #1 if (result !== 1) begin$display (&#34;FAILED case 3.8A - case (expr) lab1: &#34;);</pre>
+      <pre>  ^</pre>
+      <pre>comparison/case3.8A.v:45:9: error: expected a declaration name</pre>
+      <pre>  error = 1;</pre>
+      <pre>        ^</pre>
+      <pre>comparison/case3.8A.v:46:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/case3.8A.v:44:38: note: last complete block started here</pre>
+      <pre>  #1 if (result !== 1) begin$display (&#34;FAILED case 3.8A - case (expr) lab1: &#34;);</pre>
+      <pre>                                     ^</pre>
+      <pre>comparison/case3.8A.v:44:78: note: and ended here</pre>
+      <pre>  #1 if (result !== 1) begin$display (&#34;FAILED case 3.8A - case (expr) lab1: &#34;);</pre>
+      <pre>                                                                             ^</pre>
+      <pre>comparison/case3.8A.v:47:23: error: expected member</pre>
+      <pre>      if (error == 0) $display (&#34;PASSED&#34;);</pre>
+      <pre>                      ^</pre>
+      <pre>comparison/case3.8A.v:48:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/case3.8A.v:47:10: note: last complete block started here</pre>
+      <pre>      if (error == 0) $display (&#34;PASSED&#34;);</pre>
+      <pre>         ^</pre>
+      <pre>comparison/case3.8A.v:47:21: note: and ended here</pre>
+      <pre>      if (error == 0) $display (&#34;PASSED&#34;);</pre>
+      <pre>                    ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

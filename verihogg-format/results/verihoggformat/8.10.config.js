@@ -1,0 +1,1 @@
+config_loader_data['verihoggformat/8.10'] = [["","static_methods",1,"logs/VerihoggFormat/chapter-8/8.10--static_methods.sv.log.html","tests/chapter-8/8.10--static_methods.sv.html"]]

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-vlg_escape2b_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/escape2b.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/escape2b.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-21 21:30:08</dd></div>
+        <div><dt>time elapsed</dt><dd>0.013s</dd></div>
+        <div><dt>ram usage</dt><dd>19788 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmprp3b5_xx/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmprp3b5_xx/formatted/escape2b.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmprp3b5_xx/comparison/escape2b.v</pre>
+      <pre>comparison/escape2b.v:3:7: error: expected &#39;,&#39;</pre>
+      <pre>\6Y_A,</pre>
+      <pre>      ^</pre>
+      <pre>comparison/escape2b.v:7:7: error: expected &#39;,&#39;</pre>
+      <pre>\6Y_B,</pre>
+      <pre>      ^</pre>
+      <pre>comparison/escape2b.v:18:3: error: expected a declaration name</pre>
+      <pre>  output  \6Y_A;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/escape2b.v:19:3: error: expected a declaration name</pre>
+      <pre>  input   VCC;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/escape2b.v:22:3: error: expected a declaration name</pre>
+      <pre>  output  \6Y_B;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/escape2b.v:23:3: error: expected a declaration name</pre>
+      <pre>  input   \6A_C;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/escape2b.v:24:3: error: expected a declaration name</pre>
+      <pre>  output  \6Y_C;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/escape2b.v:25:3: error: expected a declaration name</pre>
+      <pre>  input   \6A_D;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/escape2b.v:26:3: error: expected a declaration name</pre>
+      <pre>  output  \6Y_D;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/escape2b.v:27:3: error: expected a declaration name</pre>
+      <pre>  input   \6A_E;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/escape2b.v:28:3: error: expected a declaration name</pre>
+      <pre>  output  \6Y_E;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/escape2b.v:29:3: error: expected a declaration name</pre>
+      <pre>  assign \6Y_A  = ~\6A_A;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/escape2b.v:29:26: error: expected &#39;;&#39;</pre>
+      <pre>  assign \6Y_A  = ~\6A_A;</pre>
+      <pre>                         ^</pre>
+      <pre>comparison/escape2b.v:30:26: error: expected &#39;;&#39;</pre>
+      <pre>  assign \6Y_B  = ~\6A_B;</pre>
+      <pre>                         ^</pre>
+      <pre>comparison/escape2b.v:31:26: error: expected &#39;;&#39;</pre>
+      <pre>  assign \6Y_C  = ~\6A_C;</pre>
+      <pre>                         ^</pre>
+      <pre>comparison/escape2b.v:32:26: error: expected &#39;;&#39;</pre>
+      <pre>  assign \6Y_D  = ~\6A_D;</pre>
+      <pre>                         ^</pre>
+      <pre>comparison/escape2b.v:33:26: error: expected &#39;;&#39;</pre>
+      <pre>  assign \6Y_E  = ~\6A_E;</pre>
+      <pre>                         ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

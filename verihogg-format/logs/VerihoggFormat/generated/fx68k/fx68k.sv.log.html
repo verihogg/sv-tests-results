@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>fx68k</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Full fx68k core test</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>fx68k</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/tests/generated/fx68k<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>parsing elaboration</dd></div>
+        <div><dt>results group</dt><dd>cores</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/cores/fx68k/fx68k.sv.html" target="file-frame">third_party/cores/fx68k/fx68k.sv</a><li>
+            <li><a href="../../../../third_party/cores/fx68k/fx68kAlu.sv.html" target="file-frame">third_party/cores/fx68k/fx68kAlu.sv</a><li>
+            <li><a href="../../../../third_party/cores/fx68k/uaddrPla.sv.html" target="file-frame">third_party/cores/fx68k/uaddrPla.sv</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-21 21:25:04</dd></div>
+        <div><dt>time elapsed</dt><dd>0.813s</dd></div>
+        <div><dt>ram usage</dt><dd>120516 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmphh1vp7av/formatted/. -I/__w/sv-tests/sv-tests/tests/generated/fx68k -I/__w/sv-tests/sv-tests/third_party/cores/fx68k /__w/sv-tests/sv-tests/out/tmp/tmphh1vp7av/formatted/fx68k.sv /__w/sv-tests/sv-tests/out/tmp/tmphh1vp7av/formatted/fx68kAlu.sv /__w/sv-tests/sv-tests/out/tmp/tmphh1vp7av/formatted/uaddrPla.sv</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmphh1vp7av/comparison/fx68k.sv</pre>
+      <pre>comparison/fx68k.sv:698:47: error: expected &#39;;&#39;</pre>
+      <pre>              always_comb beginif (inExcept01) begin</pre>
+      <pre>                                              ^</pre>
+      <pre>comparison/fx68k.sv:700:48: error: expected a declaration name</pre>
+      <pre>          if (tvnLatch == TVN_SPURIOUS) tvnMux = {9&#39;b0,</pre>
+      <pre>                                               ^</pre>
+      <pre>comparison/fx68k.sv:703:11: error: expected member</pre>
+      <pre>          else if (tvnLatch == TVN_AUTOVEC) tvnMux = {9&#39;b0, 2&#39;b11, pswI, 2&#39;b00};                                // Set TVN PLA decoder</pre>
+      <pre>          ^~~~</pre>
+      <pre>comparison/fx68k.sv:703:52: error: expected a declaration name</pre>
+      <pre>          else if (tvnLatch == TVN_AUTOVEC) tvnMux = {9&#39;b0, 2&#39;b11, pswI, 2&#39;b00};                                // Set TVN PLA decoder</pre>
+      <pre>                                                   ^</pre>
+      <pre>comparison/fx68k.sv:704:11: error: expected member</pre>
+      <pre>          else if (tvnLatch == TVN_INTERRUPT) tvnMux = {6&#39;b0, Ird [7 : 0], 2&#39;b00};                                      // Interrupt vector was read and transferred to IRD</pre>
+      <pre>          ^~~~</pre>
+      <pre>comparison/fx68k.sv:704:54: error: expected a declaration name</pre>
+      <pre>          else if (tvnLatch == TVN_INTERRUPT) tvnMux = {6&#39;b0, Ird [7 : 0], 2&#39;b00};                                      // Interrupt vector was read and transferred to IRD</pre>
+      <pre>                                                     ^</pre>
+      <pre>comparison/fx68k.sv:705:11: error: expected member</pre>
+      <pre>          else tvnMux = {10&#39;b0, tvnLatch, 2&#39;b00};</pre>
+      <pre>          ^~~~</pre>
+      <pre>comparison/fx68k.sv:705:23: error: expected a declaration name</pre>
+      <pre>          else tvnMux = {10&#39;b0, tvnLatch, 2&#39;b00};</pre>
+      <pre>                      ^</pre>
+      <pre>comparison/fx68k.sv:707:7: error: expected member</pre>
+      <pre>      else tvnMux = {8&#39;h0, Irdecod.macroTvn, 2&#39;b00};</pre>
+      <pre>      ^~~~</pre>
+      <pre>comparison/fx68k.sv:707:19: error: expected a declaration name</pre>
+      <pre>      else tvnMux = {8&#39;h0, Irdecod.macroTvn, 2&#39;b00};</pre>
+      <pre>                  ^</pre>
+      <pre>comparison/fx68k.sv:708:5: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>    end</pre>
+      <pre>    ^~~</pre>
+      <pre>comparison/fx68k.sv:698:48: note: last complete block started here</pre>
+      <pre>              always_comb beginif (inExcept01) begin</pre>
+      <pre>                                               ^</pre>
+      <pre>comparison/fx68k.sv:706:9: note: and ended here</pre>
+      <pre>        end</pre>
+      <pre>        ^</pre>
+      <pre>comparison/fx68k.sv:997:5: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>    end</pre>
+      <pre>    ^~~</pre>
+      <pre>comparison/fx68k.sv:996:70: note: last complete block started here</pre>
+      <pre>          always_comb beginIrdecod.rxIsMovem = lineOnehot [4] &amp; ~ird [8] &amp; ~Irdecod.implicitSp;</pre>
+      <pre>                                                                     ^</pre>
+      <pre>comparison/fx68k.sv:996:72: note: and ended here</pre>
+      <pre>          always_comb beginIrdecod.rxIsMovem = lineOnehot [4] &amp; ~ird [8] &amp; ~Irdecod.implicitSp;</pre>
+      <pre>                                                                       ^</pre>
+      <pre>comparison/fx68k.sv:1029:17: error: expected &#39;,&#39;</pre>
+      <pre>      endcaseend</pre>
+      <pre>                ^</pre>
+      <pre>comparison/fx68k.sv:1035:97: error: expected &#39;:&#39;</pre>
+      <pre>      wire xIsScc                             = (ird [7 : 6] == 2&#39;b11) &amp; (ird [5 : 3] != 3&#39;b001);</pre>
+      <pre>                                                                                                ^</pre>
+      <pre>comparison/fx68k.sv:1036:7: error: expected case item</pre>
+      <pre>      wire xStaticMem                                    = (ird [11 : 8] == 4&#39;b1000) &amp; (ird [5 : 4] == 2&#39;b00);        // Static bit to mem</pre>
+      <pre>      ^~~~</pre>
+      <pre>comparison/fx68k.sv:1036:110: error: expected &#39;:&#39;</pre>
+      <pre>      wire xStaticMem                                    = (ird [11 : 8] == 4&#39;b1000) &amp; (ird [5 : 4] == 2&#39;b00);        // Static bit to mem</pre>
+      <pre>                                                                                                             ^</pre>
+      <pre>comparison/fx68k.sv:1111:79: error: expected &#39;endcase&#39;</pre>
+      <pre>                  ((lineOnehot [2] | lineOnehot [3]) &amp; ird [8 : 6] == 3&#39;b001);        // MOVEA</pre>
+      <pre>                                                                              ^</pre>
+      <pre>comparison/fx68k.sv:1021:14: note: to match this &#39;case&#39;</pre>
+      <pre>      unique case (1&#39;b1)</pre>
+      <pre>             ^</pre>
+      <pre>comparison/fx68k.sv:1287:37: error: expected &#39;:&#39;</pre>
+      <pre>                      dbdIdle = 1&#39;b1;</pre>
+      <pre>                                    ^</pre>
+      <pre>comparison/fx68k.sv:1287:38: error: expected &#39;endcase&#39;</pre>
+      <pre>                      dbdIdle = 1&#39;b1;</pre>
+      <pre>                                     ^</pre>
+      <pre>comparison/fx68k.sv:1280:30: note: to match this &#39;case&#39;</pre>
+      <pre>                      unique case (1&#39;b1) ryl2Dbd : dbdMux = regs68L [actualRy];</pre>
+      <pre>                             ^</pre>
+      <pre>comparison/fx68k.sv:1289:19: error: unexpected &#39;endcase&#39; delimiter</pre>
+      <pre>                  endcase</pre>
+      <pre>                  ^~~~~~~</pre>
+      <pre>comparison/fx68k.sv:1277:21: note: last complete block started here</pre>
+      <pre>                    begin</pre>
+      <pre>                    ^</pre>
+      <pre>comparison/fx68k.sv:1288:21: note: and ended here</pre>
+      <pre>                    end</pre>
+      <pre>                    ^</pre>
+      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

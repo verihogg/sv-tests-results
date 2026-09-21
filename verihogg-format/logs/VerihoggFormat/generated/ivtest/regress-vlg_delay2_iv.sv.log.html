@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-vlg_delay2_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/delay2.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/delay2.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-21 21:25:43</dd></div>
+        <div><dt>time elapsed</dt><dd>0.015s</dd></div>
+        <div><dt>ram usage</dt><dd>24516 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmp1_t3hq7r/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp1_t3hq7r/formatted/delay2.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmp1_t3hq7r/comparison/delay2.v</pre>
+      <pre>comparison/delay2.v:16:3: error: expected member</pre>
+      <pre>  #79APAD = 25&#39;h1555555;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/delay2.v:16:11: error: expected a declaration name</pre>
+      <pre>  #79APAD = 25&#39;h1555555;</pre>
+      <pre>          ^</pre>
+      <pre>comparison/delay2.v:17:3: error: expected member</pre>
+      <pre>  #19 if (AIN !== 25&#39;h1ffffff) begin$display (&#34;FAILED --  APAD=%b, AIN=%b, time=%0t&#34;, APAD, AIN,</pre>
+      <pre>  ^</pre>
+      <pre>comparison/delay2.v:19:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>comparison/delay2.v:20:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/delay2.v:17:46: note: last complete block started here</pre>
+      <pre>  #19 if (AIN !== 25&#39;h1ffffff) begin$display (&#34;FAILED --  APAD=%b, AIN=%b, time=%0t&#34;, APAD, AIN,</pre>
+      <pre>                                             ^</pre>
+      <pre>comparison/delay2.v:18:52: note: and ended here</pre>
+      <pre>                                              $time);</pre>
+      <pre>                                                   ^</pre>
+      <pre>comparison/delay2.v:23:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>comparison/delay2.v:24:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/delay2.v:21:49: note: last complete block started here</pre>
+      <pre>      #2 if (AIN !== 25&#39;h1555555) begin$display (&#34;FAILED --  APAD=%b, AIN=%b, time=%0t&#34;, APAD, AIN,</pre>
+      <pre>                                                ^</pre>
+      <pre>comparison/delay2.v:22:55: note: and ended here</pre>
+      <pre>                                                 $time);</pre>
+      <pre>                                                      ^</pre>
+      <pre>comparison/delay2.v:25:15: error: expected a declaration name</pre>
+      <pre>      #79APAD = 25&#39;h0aaaaaa;</pre>
+      <pre>              ^</pre>
+      <pre>comparison/delay2.v:25:28: error: expected a declaration name</pre>
+      <pre>      #79APAD = 25&#39;h0aaaaaa;</pre>
+      <pre>                           ^</pre>
+      <pre>comparison/delay2.v:26:3: error: expected member</pre>
+      <pre>  #19 if (AIN !== 25&#39;h1555555) begin$display (&#34;FAILED --  APAD=%b, AIN=%b, time=%0t&#34;, APAD, AIN,</pre>
+      <pre>  ^</pre>
+      <pre>comparison/delay2.v:28:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>comparison/delay2.v:29:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/delay2.v:26:46: note: last complete block started here</pre>
+      <pre>  #19 if (AIN !== 25&#39;h1555555) begin$display (&#34;FAILED --  APAD=%b, AIN=%b, time=%0t&#34;, APAD, AIN,</pre>
+      <pre>                                             ^</pre>
+      <pre>comparison/delay2.v:27:52: note: and ended here</pre>
+      <pre>                                              $time);</pre>
+      <pre>                                                   ^</pre>
+      <pre>comparison/delay2.v:32:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>comparison/delay2.v:33:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/delay2.v:30:49: note: last complete block started here</pre>
+      <pre>      #2 if (AIN !== 25&#39;h0aaaaaa) begin$display (&#34;FAILED --  APAD=%b, AIN=%b, time=%0t&#34;, APAD, AIN,</pre>
+      <pre>                                                ^</pre>
+      <pre>comparison/delay2.v:31:55: note: and ended here</pre>
+      <pre>                                                 $time);</pre>
+      <pre>                                                      ^</pre>
+      <pre>comparison/delay2.v:34:15: error: expected a declaration name</pre>
+      <pre>      #79APAD = 25&#39;h1555555;</pre>
+      <pre>              ^</pre>
+      <pre>comparison/delay2.v:35:3: error: expected member</pre>
+      <pre>  #19 if (AIN !== 25&#39;h0aaaaaa) begin$display (&#34;FAILED --  APAD=%b, AIN=%b, time=%0t&#34;, APAD, AIN,</pre>
+      <pre>  ^</pre>
+      <pre>comparison/delay2.v:37:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>comparison/delay2.v:38:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/delay2.v:35:46: note: last complete block started here</pre>
+      <pre>  #19 if (AIN !== 25&#39;h0aaaaaa) begin$display (&#34;FAILED --  APAD=%b, AIN=%b, time=%0t&#34;, APAD, AIN,</pre>
+      <pre>                                             ^</pre>
+      <pre>comparison/delay2.v:36:52: note: and ended here</pre>
+      <pre>                                              $time);</pre>
+      <pre>                                                   ^</pre>
+      <pre>comparison/delay2.v:41:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>comparison/delay2.v:42:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/delay2.v:39:49: note: last complete block started here</pre>
+      <pre>      #2 if (AIN !== 25&#39;h1555555) begin$display (&#34;FAILED --  APAD=%b, AIN=%b, time=%0t&#34;, APAD, AIN,</pre>
+      <pre>                                                ^</pre>
+      <pre>comparison/delay2.v:40:55: note: and ended here</pre>
+      <pre>                                                 $time);</pre>
+      <pre>                                                      ^</pre>
+      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

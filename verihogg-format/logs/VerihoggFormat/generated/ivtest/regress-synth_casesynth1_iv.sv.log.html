@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-synth_casesynth1_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/casesynth1.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/casesynth1.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-21 21:26:16</dd></div>
+        <div><dt>time elapsed</dt><dd>0.018s</dd></div>
+        <div><dt>ram usage</dt><dd>22756 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmp0vfc21yw/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp0vfc21yw/formatted/casesynth1.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmp0vfc21yw/comparison/casesynth1.v</pre>
+      <pre>comparison/casesynth1.v:25:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/casesynth1.v:24:65: note: last complete block started here</pre>
+      <pre>  (*ivl_synthesis_on *) always @(posedge clk or posedge rst) if (rst) beginout &lt;= 0;</pre>
+      <pre>                                                                ^</pre>
+      <pre>comparison/casesynth1.v:24:69: note: and ended here</pre>
+      <pre>  (*ivl_synthesis_on *) always @(posedge clk or posedge rst) if (rst) beginout &lt;= 0;</pre>
+      <pre>                                                                    ^</pre>
+      <pre>comparison/casesynth1.v:26:30: error: expected a declaration name</pre>
+      <pre>      else if (set) beginout &lt;= load;</pre>
+      <pre>                             ^</pre>
+      <pre>comparison/casesynth1.v:26:37: error: expected a declaration name</pre>
+      <pre>      else if (set) beginout &lt;= load;</pre>
+      <pre>                                    ^</pre>
+      <pre>comparison/casesynth1.v:27:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/casesynth1.v:26:15: note: last complete block started here</pre>
+      <pre>      else if (set) beginout &lt;= load;</pre>
+      <pre>              ^</pre>
+      <pre>comparison/casesynth1.v:26:19: note: and ended here</pre>
+      <pre>      else if (set) beginout &lt;= load;</pre>
+      <pre>                  ^</pre>
+      <pre>comparison/casesynth1.v:28:51: error: expected a declaration name</pre>
+      <pre>      else case (op) 2&#39;b01 :  /* increment */ out &lt;= out + 1;</pre>
+      <pre>                                                  ^</pre>
+      <pre>comparison/casesynth1.v:28:61: error: expected &#39;:&#39;</pre>
+      <pre>      else case (op) 2&#39;b01 :  /* increment */ out &lt;= out + 1;</pre>
+      <pre>                                                            ^</pre>
+      <pre>comparison/casesynth1.v:29:33: error: expected a declaration name</pre>
+      <pre>  2&#39;b10 :  /* decrement */ out  &lt;= out - 1;</pre>
+      <pre>                                ^</pre>
+      <pre>comparison/casesynth1.v:29:43: error: expected &#39;:&#39;</pre>
+      <pre>  2&#39;b10 :  /* decrement */ out  &lt;= out - 1;</pre>
+      <pre>                                          ^</pre>
+      <pre>comparison/casesynth1.v:30:33: error: expected a declaration name</pre>
+      <pre>  2&#39;b11 :  /* Invert    */ out  &lt;= ~out;</pre>
+      <pre>                                ^</pre>
+      <pre>comparison/casesynth1.v:30:40: error: expected &#39;:&#39;</pre>
+      <pre>  2&#39;b11 :  /* Invert    */ out  &lt;= ~out;</pre>
+      <pre>                                       ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

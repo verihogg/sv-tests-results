@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-synth_if_part_no_else_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/if_part_no_else.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/if_part_no_else.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-21 21:25:21</dd></div>
+        <div><dt>time elapsed</dt><dd>0.016s</dd></div>
+        <div><dt>ram usage</dt><dd>22540 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmp8j5cacpt/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp8j5cacpt/formatted/if_part_no_else.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmp8j5cacpt/comparison/if_part_no_else.v</pre>
+      <pre>comparison/if_part_no_else.v:10:12: error: unexpected identifier &#39;foo&#39;; did you mean &#39;for&#39;?</pre>
+      <pre>  if (en0) foo [0] = in0;</pre>
+      <pre>           ^~~</pre>
+      <pre>comparison/if_part_no_else.v:10:15: error: expected &#39;(&#39;</pre>
+      <pre>  if (en0) foo [0] = in0;</pre>
+      <pre>              ^</pre>
+      <pre>comparison/if_part_no_else.v:10:20: error: expected data type (implicit type name not allowed)</pre>
+      <pre>  if (en0) foo [0] = in0;</pre>
+      <pre>                   ^</pre>
+      <pre>comparison/if_part_no_else.v:11:3: error: expected expression</pre>
+      <pre>  if (en1) foo [1] = in1;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/if_part_no_else.v:11:12: error: unexpected identifier &#39;foo&#39;; did you mean &#39;for&#39;?</pre>
+      <pre>  if (en1) foo [1] = in1;</pre>
+      <pre>           ^~~</pre>
+      <pre>comparison/if_part_no_else.v:11:15: error: expected &#39;(&#39;</pre>
+      <pre>  if (en1) foo [1] = in1;</pre>
+      <pre>              ^</pre>
+      <pre>comparison/if_part_no_else.v:11:20: error: expected data type (implicit type name not allowed)</pre>
+      <pre>  if (en1) foo [1] = in1;</pre>
+      <pre>                   ^</pre>
+      <pre>comparison/if_part_no_else.v:12:3: error: expected expression</pre>
+      <pre>  end</pre>
+      <pre>  ^</pre>
+      <pre>comparison/if_part_no_else.v:12:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/if_part_no_else.v:11:16: note: last complete block started here</pre>
+      <pre>  if (en1) foo [1] = in1;</pre>
+      <pre>               ^</pre>
+      <pre>comparison/if_part_no_else.v:11:18: note: and ended here</pre>
+      <pre>  if (en1) foo [1] = in1;</pre>
+      <pre>                 ^</pre>
+      <pre>comparison/if_part_no_else.v:35:7: error: expected a declaration name</pre>
+      <pre>  en0 = 1;</pre>
+      <pre>      ^</pre>
+      <pre>comparison/if_part_no_else.v:36:3: error: expected member</pre>
+      <pre>  #1 if (foo !== 2&#39;b01) begin$display (&#34;FAILED -- foo=%b, in=%b%b, en=%b%b&#34;, foo, in1, in0, en1,</pre>
+      <pre>  ^</pre>
+      <pre>comparison/if_part_no_else.v:38:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>comparison/if_part_no_else.v:39:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end en0  = 0;</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/if_part_no_else.v:36:39: note: last complete block started here</pre>
+      <pre>  #1 if (foo !== 2&#39;b01) begin$display (&#34;FAILED -- foo=%b, in=%b%b, en=%b%b&#34;, foo, in1, in0, en1,</pre>
+      <pre>                                      ^</pre>
+      <pre>comparison/if_part_no_else.v:37:43: note: and ended here</pre>
+      <pre>                                       en0);</pre>
+      <pre>                                          ^</pre>
+      <pre>comparison/if_part_no_else.v:39:12: error: expected a declaration name</pre>
+      <pre>  end en0  = 0;</pre>
+      <pre>           ^</pre>
+      <pre>comparison/if_part_no_else.v:40:12: error: expected a declaration name</pre>
+      <pre>  en1      = 1;</pre>
+      <pre>           ^</pre>
+      <pre>comparison/if_part_no_else.v:41:3: error: expected member</pre>
+      <pre>  #1 if (foo !== 2&#39;b10) begin$display (&#34;FAILED -- foo=%b, in=%b%b, en=%b%b&#34;, foo, in1, in0, en1,</pre>
+      <pre>  ^</pre>
+      <pre>comparison/if_part_no_else.v:43:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>comparison/if_part_no_else.v:44:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end en0  = 1;</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/if_part_no_else.v:41:39: note: last complete block started here</pre>
+      <pre>  #1 if (foo !== 2&#39;b10) begin$display (&#34;FAILED -- foo=%b, in=%b%b, en=%b%b&#34;, foo, in1, in0, en1,</pre>
+      <pre>                                      ^</pre>
+      <pre>comparison/if_part_no_else.v:42:43: note: and ended here</pre>
+      <pre>                                       en0);</pre>
+      <pre>                                          ^</pre>
+      <pre>comparison/if_part_no_else.v:44:12: error: expected a declaration name</pre>
+      <pre>  end en0  = 1;</pre>
+      <pre>           ^</pre>
+      <pre>comparison/if_part_no_else.v:45:12: error: expected a declaration name</pre>
+      <pre>  en1      = 1;</pre>
+      <pre>           ^</pre>
+      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

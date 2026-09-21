@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-synth_conditsynth1_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/conditsynth1.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/conditsynth1.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-21 21:25:36</dd></div>
+        <div><dt>time elapsed</dt><dd>0.015s</dd></div>
+        <div><dt>ram usage</dt><dd>24288 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmp9mpdkc4h/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp9mpdkc4h/formatted/conditsynth1.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmp9mpdkc4h/comparison/conditsynth1.v</pre>
+      <pre>comparison/conditsynth1.v:5:10: error: expected a declaration name</pre>
+      <pre>  up     = 0;</pre>
+      <pre>         ^</pre>
+      <pre>comparison/conditsynth1.v:6:10: error: expected a declaration name</pre>
+      <pre>  down   = 0;</pre>
+      <pre>         ^</pre>
+      <pre>comparison/conditsynth1.v:7:10: error: expected a declaration name</pre>
+      <pre>  clr    = 1;</pre>
+      <pre>         ^</pre>
+      <pre>comparison/conditsynth1.v:8:3: error: expected member</pre>
+      <pre>  #1clk  = 1;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/conditsynth1.v:8:10: error: expected a declaration name</pre>
+      <pre>  #1clk  = 1;</pre>
+      <pre>         ^</pre>
+      <pre>comparison/conditsynth1.v:9:3: error: expected member</pre>
+      <pre>  #1clk  = 0;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/conditsynth1.v:9:10: error: expected a declaration name</pre>
+      <pre>  #1clk  = 0;</pre>
+      <pre>         ^</pre>
+      <pre>comparison/conditsynth1.v:12:7: error: expected member</pre>
+      <pre>      $display (&#34;FAILED&#34;);</pre>
+      <pre>      ^~~~~~~~</pre>
+      <pre>comparison/conditsynth1.v:13:7: error: expected member</pre>
+      <pre>      $finish;</pre>
+      <pre>      ^~~~~~~</pre>
+      <pre>comparison/conditsynth1.v:15:10: error: expected a declaration name</pre>
+      <pre>  up     = 1;</pre>
+      <pre>         ^</pre>
+      <pre>comparison/conditsynth1.v:16:10: error: expected a declaration name</pre>
+      <pre>  clr    = 0;</pre>
+      <pre>         ^</pre>
+      <pre>comparison/conditsynth1.v:17:3: error: expected member</pre>
+      <pre>  #1clk  = 1;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/conditsynth1.v:17:10: error: expected a declaration name</pre>
+      <pre>  #1clk  = 1;</pre>
+      <pre>         ^</pre>
+      <pre>comparison/conditsynth1.v:18:3: error: expected member</pre>
+      <pre>  #1clk  = 0;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/conditsynth1.v:18:10: error: expected a declaration name</pre>
+      <pre>  #1clk  = 0;</pre>
+      <pre>         ^</pre>
+      <pre>comparison/conditsynth1.v:19:3: error: expected member</pre>
+      <pre>  #1clk  = 1;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/conditsynth1.v:19:10: error: expected a declaration name</pre>
+      <pre>  #1clk  = 1;</pre>
+      <pre>         ^</pre>
+      <pre>comparison/conditsynth1.v:20:3: error: expected member</pre>
+      <pre>  #1clk  = 0;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/conditsynth1.v:20:10: error: expected a declaration name</pre>
+      <pre>  #1clk  = 0;</pre>
+      <pre>         ^</pre>
+      <pre>comparison/conditsynth1.v:23:7: error: expected member</pre>
+      <pre>      $display (&#34;FAILED&#34;);</pre>
+      <pre>      ^~~~~~~~</pre>
+      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

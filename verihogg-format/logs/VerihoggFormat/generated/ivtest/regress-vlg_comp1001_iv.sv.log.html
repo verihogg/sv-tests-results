@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-vlg_comp1001_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/comp1001.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/comp1001.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-21 21:31:05</dd></div>
+        <div><dt>time elapsed</dt><dd>54.060s</dd></div>
+        <div><dt>ram usage</dt><dd>7092384 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpl2joincd/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpl2joincd/formatted/comp1001.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpl2joincd/comparison/comp1001.v</pre>
+      <pre>comparison/comp1001.v:310:22: error: expected &#39;;&#39;</pre>
+      <pre>      r32   = 32&#39;h3e6 d;</pre>
+      <pre>                     ^</pre>
+      <pre>comparison/comp1001.v:311:22: error: expected &#39;;&#39;</pre>
+      <pre>      r33   = 32&#39;h6e1 d;</pre>
+      <pre>                     ^</pre>
+      <pre>comparison/comp1001.v:326:22: error: expected &#39;;&#39;</pre>
+      <pre>      r48   = 32&#39;h3e4 b;</pre>
+      <pre>                     ^</pre>
+      <pre>comparison/comp1001.v:364:22: error: expected &#39;;&#39;</pre>
+      <pre>      r86   = 32&#39;h3e6 c;</pre>
+      <pre>                     ^</pre>
+      <pre>comparison/comp1001.v:994:87: error: expected &#39;)&#39;</pre>
+      <pre>                                                  ((6&#39;h11 % 4&#39;h1) / (10&#39;h37a / 30&#39;h1e1 c))) *</pre>
+      <pre>                                                                                      ^</pre>
+      <pre>comparison/comp1001.v:994:69: note: to match this &#39;(&#39;</pre>
+      <pre>                                                  ((6&#39;h11 % 4&#39;h1) / (10&#39;h37a / 30&#39;h1e1 c))) *</pre>
+      <pre>                                                                    ^</pre>
+      <pre>comparison/comp1001.v:994:89: error: expected &#39;;&#39;</pre>
+      <pre>                                                  ((6&#39;h11 % 4&#39;h1) / (10&#39;h37a / 30&#39;h1e1 c))) *</pre>
+      <pre>                                                                                        ^</pre>
+      <pre>comparison/comp1001.v:995:56: error: expected &#39;;&#39;</pre>
+      <pre>                                                 9&#39;h1b6) != ((&amp;((8&#39;h22 === 2&#39;h1))) * $stime)))))) *</pre>
+      <pre>                                                       ^</pre>
+      <pre>comparison/comp1001.v:995:93: error: expected &#39;;&#39;</pre>
+      <pre>                                                 9&#39;h1b6) != ((&amp;((8&#39;h22 === 2&#39;h1))) * $stime)))))) *</pre>
+      <pre>                                                                                            ^</pre>
+      <pre>comparison/comp1001.v:996:50: error: expected &#39;;&#39;</pre>
+      <pre>                                         13&#39;h1daa))) * r192)) === 26&#39;h5f03)))));</pre>
+      <pre>                                                 ^</pre>
+      <pre>comparison/comp1001.v:996:60: error: expected &#39;;&#39;</pre>
+      <pre>                                         13&#39;h1daa))) * r192)) === 26&#39;h5f03)))));</pre>
+      <pre>                                                           ^</pre>
+      <pre>comparison/comp1001.v:996:75: error: expected &#39;;&#39;</pre>
+      <pre>                                         13&#39;h1daa))) * r192)) === 26&#39;h5f03)))));</pre>
+      <pre>                                                                          ^</pre>
+      <pre>comparison/comp1001.v:1311:21: error: expected &#39;)&#39;</pre>
+      <pre>      r44 = (24&#39;h2e9 a * (((((|(((r29 &amp; r182) == r131))) / (15&#39;h6295 | 3&#39;h7)) &gt; 14&#39;had2) &amp; r100) &amp;</pre>
+      <pre>                    ^</pre>
+      <pre>comparison/comp1001.v:1311:13: note: to match this &#39;(&#39;</pre>
+      <pre>      r44 = (24&#39;h2e9 a * (((((|(((r29 &amp; r182) == r131))) / (15&#39;h6295 | 3&#39;h7)) &gt; 14&#39;had2) &amp; r100) &amp;</pre>
+      <pre>            ^</pre>
+      <pre>comparison/comp1001.v:1314:59: error: expected &#39;)&#39;</pre>
+      <pre>                               r170) === ((r216 &amp;&amp; 20&#39;h7e5 a) ||</pre>
+      <pre>                                                          ^</pre>
+      <pre>comparison/comp1001.v:1314:43: note: to match this &#39;(&#39;</pre>
+      <pre>                               r170) === ((r216 &amp;&amp; 20&#39;h7e5 a) ||</pre>
+      <pre>                                          ^</pre>
+      <pre>comparison/comp1001.v:1314:61: error: expected &#39;;&#39;</pre>
+      <pre>                               r170) === ((r216 &amp;&amp; 20&#39;h7e5 a) ||</pre>
+      <pre>                                                            ^</pre>
+      <pre>comparison/comp1001.v:1316:49: error: expected &#39;;&#39;</pre>
+      <pre>                                           r213))) || 15&#39;h789)) &amp;&amp; (r59 !== 8&#39;hfc))));</pre>
+      <pre>                                                ^</pre>
+      <pre>comparison/comp1001.v:1316:83: error: expected &#39;;&#39;</pre>
+      <pre>                                           r213))) || 15&#39;h789)) &amp;&amp; (r59 !== 8&#39;hfc))));</pre>
+      <pre>                                                                                  ^</pre>
+      <pre>comparison/comp1001.v:1622:21: error: expected &#39;)&#39;</pre>
+      <pre>      r35 = (31&#39;h1e3 a * 13&#39;h289);</pre>
+      <pre>                    ^</pre>
+      <pre>comparison/comp1001.v:1622:13: note: to match this &#39;(&#39;</pre>
+      <pre>      r35 = (31&#39;h1e3 a * 13&#39;h289);</pre>
+      <pre>            ^</pre>
+      <pre>comparison/comp1001.v:1622:33: error: expected &#39;;&#39;</pre>
+      <pre>      r35 = (31&#39;h1e3 a * 13&#39;h289);</pre>
+      <pre>                                ^</pre>
+      <pre>comparison/comp1001.v:1811:62: error: expected &#39;)&#39;</pre>
+      <pre>              (-(((3&#39;h7 | ((((((-(27&#39;h237d)) != (|((|(25&#39;h1e5 a))))) ^</pre>
+      <pre>                                                             ^</pre>
+      <pre>comparison/comp1001.v:1811:54: note: to match this &#39;(&#39;</pre>
+      <pre>              (-(((3&#39;h7 | ((((((-(27&#39;h237d)) != (|((|(25&#39;h1e5 a))))) ^</pre>
+      <pre>                                                     ^</pre>
+      <pre>comparison/comp1001.v:1811:64: error: expected &#39;;&#39;</pre>
+      <pre>              (-(((3&#39;h7 | ((((((-(27&#39;h237d)) != (|((|(25&#39;h1e5 a))))) ^</pre>
+      <pre>                                                               ^</pre>
+      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

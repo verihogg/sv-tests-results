@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-vlg_always_star_array_lval_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/always_star_array_lval.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/always_star_array_lval.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-21 21:30:11</dd></div>
+        <div><dt>time elapsed</dt><dd>0.015s</dd></div>
+        <div><dt>ram usage</dt><dd>21996 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmp99p2uil1/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp99p2uil1/formatted/always_star_array_lval.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmp99p2uil1/comparison/always_star_array_lval.v</pre>
+      <pre>comparison/always_star_array_lval.v:11:3: error: unexpected identifier &#39;Reg&#39;; did you mean &#39;reg&#39;?</pre>
+      <pre>  Reg [1]  = Val1;</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/always_star_array_lval.v:11:12: error: expected a declaration name</pre>
+      <pre>  Reg [1]  = Val1;</pre>
+      <pre>           ^</pre>
+      <pre>comparison/always_star_array_lval.v:11:18: error: expected a declaration name</pre>
+      <pre>  Reg [1]  = Val1;</pre>
+      <pre>                 ^</pre>
+      <pre>comparison/always_star_array_lval.v:12:3: error: unexpected identifier &#39;Reg&#39;; did you mean &#39;reg&#39;?</pre>
+      <pre>  Reg [2]  = Val2;</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/always_star_array_lval.v:12:12: error: expected a declaration name</pre>
+      <pre>  Reg [2]  = Val2;</pre>
+      <pre>           ^</pre>
+      <pre>comparison/always_star_array_lval.v:12:18: error: expected a declaration name</pre>
+      <pre>  Reg [2]  = Val2;</pre>
+      <pre>                 ^</pre>
+      <pre>comparison/always_star_array_lval.v:13:3: error: unexpected identifier &#39;Reg&#39;; did you mean &#39;reg&#39;?</pre>
+      <pre>  Reg [3]  = Val3;</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/always_star_array_lval.v:13:12: error: expected a declaration name</pre>
+      <pre>  Reg [3]  = Val3;</pre>
+      <pre>           ^</pre>
+      <pre>comparison/always_star_array_lval.v:13:18: error: expected a declaration name</pre>
+      <pre>  Reg [3]  = Val3;</pre>
+      <pre>                 ^</pre>
+      <pre>comparison/always_star_array_lval.v:14:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/always_star_array_lval.v:13:7: note: last complete block started here</pre>
+      <pre>  Reg [3]  = Val3;</pre>
+      <pre>      ^</pre>
+      <pre>comparison/always_star_array_lval.v:13:9: note: and ended here</pre>
+      <pre>  Reg [3]  = Val3;</pre>
+      <pre>        ^</pre>
+      <pre>comparison/always_star_array_lval.v:16:3: error: expected member</pre>
+      <pre>  #1 $display (&#34;%0d %0d %0d %0d&#34;, Reg [0], Reg [1], Reg [2], Reg [3]);</pre>
+      <pre>  ^</pre>
+      <pre>comparison/always_star_array_lval.v:17:8: error: expected a declaration name</pre>
+      <pre>  Val0 = 4;</pre>
+      <pre>       ^</pre>
+      <pre>comparison/always_star_array_lval.v:18:3: error: expected member</pre>
+      <pre>  #1 $display (&#34;%0d %0d %0d %0d&#34;, Reg [0], Reg [1], Reg [2], Reg [3]);</pre>
+      <pre>  ^</pre>
+      <pre>comparison/always_star_array_lval.v:19:8: error: expected a declaration name</pre>
+      <pre>  Val1 = 5;</pre>
+      <pre>       ^</pre>
+      <pre>comparison/always_star_array_lval.v:20:3: error: expected member</pre>
+      <pre>  #1 $display (&#34;%0d %0d %0d %0d&#34;, Reg [0], Reg [1], Reg [2], Reg [3]);</pre>
+      <pre>  ^</pre>
+      <pre>comparison/always_star_array_lval.v:21:8: error: expected a declaration name</pre>
+      <pre>  Val2 = 6;</pre>
+      <pre>       ^</pre>
+      <pre>comparison/always_star_array_lval.v:22:3: error: expected member</pre>
+      <pre>  #1 $display (&#34;%0d %0d %0d %0d&#34;, Reg [0], Reg [1], Reg [2], Reg [3]);</pre>
+      <pre>  ^</pre>
+      <pre>comparison/always_star_array_lval.v:23:8: error: expected a declaration name</pre>
+      <pre>  Val3 = 7;</pre>
+      <pre>       ^</pre>
+      <pre>comparison/always_star_array_lval.v:24:3: error: expected member</pre>
+      <pre>  #1 $display (&#34;%0d %0d %0d %0d&#34;, Reg [0], Reg [1], Reg [2], Reg [3]);</pre>
+      <pre>  ^</pre>
+      <pre>comparison/always_star_array_lval.v:25:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/always_star_array_lval.v:13:7: note: last complete block started here</pre>
+      <pre>  Reg [3]  = Val3;</pre>
+      <pre>      ^</pre>
+      <pre>comparison/always_star_array_lval.v:13:9: note: and ended here</pre>
+      <pre>  Reg [3]  = Val3;</pre>
+      <pre>        ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

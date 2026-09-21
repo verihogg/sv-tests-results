@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-vlg_pr1693921_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr1693921.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr1693921.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-21 21:31:15</dd></div>
+        <div><dt>time elapsed</dt><dd>0.014s</dd></div>
+        <div><dt>ram usage</dt><dd>20244 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpmx9x4dvl/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpmx9x4dvl/formatted/pr1693921.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpmx9x4dvl/comparison/pr1693921.v</pre>
+      <pre>comparison/pr1693921.v:15:9: error: expected a declaration name</pre>
+      <pre>  shift = 1;</pre>
+      <pre>        ^</pre>
+      <pre>comparison/pr1693921.v:16:3: error: expected member</pre>
+      <pre>  #1 if (rs !== 4&#39;b0100 || ls !== 4&#39;b0010 || tr !==</pre>
+      <pre>  ^</pre>
+      <pre>comparison/pr1693921.v:18:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>comparison/pr1693921.v:19:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/pr1693921.v:17:27: note: last complete block started here</pre>
+      <pre>         0) begin$display (&#34;FAILED  -- shift=%d, rs=%b, ls=%b&#34;, shift, rs, ls);</pre>
+      <pre>                          ^</pre>
+      <pre>comparison/pr1693921.v:17:78: note: and ended here</pre>
+      <pre>         0) begin$display (&#34;FAILED  -- shift=%d, rs=%b, ls=%b&#34;, shift, rs, ls);</pre>
+      <pre>                                                                             ^</pre>
+      <pre>comparison/pr1693921.v:20:13: error: expected a declaration name</pre>
+      <pre>      shift = 2;</pre>
+      <pre>            ^</pre>
+      <pre>comparison/pr1693921.v:21:3: error: expected member</pre>
+      <pre>  #1 if (rs !== 4&#39;b0010 || ls !== 4&#39;b0100 || tr !==</pre>
+      <pre>  ^</pre>
+      <pre>comparison/pr1693921.v:23:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>comparison/pr1693921.v:24:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/pr1693921.v:22:27: note: last complete block started here</pre>
+      <pre>         1) begin$display (&#34;FAILED  -- shift=%d, rs=%b, ls=%b&#34;, shift, rs, ls);</pre>
+      <pre>                          ^</pre>
+      <pre>comparison/pr1693921.v:22:78: note: and ended here</pre>
+      <pre>         1) begin$display (&#34;FAILED  -- shift=%d, rs=%b, ls=%b&#34;, shift, rs, ls);</pre>
+      <pre>                                                                             ^</pre>
+      <pre>comparison/pr1693921.v:26:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end // initial begin</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/pr1693921.v:22:27: note: last complete block started here</pre>
+      <pre>         1) begin$display (&#34;FAILED  -- shift=%d, rs=%b, ls=%b&#34;, shift, rs, ls);</pre>
+      <pre>                          ^</pre>
+      <pre>comparison/pr1693921.v:22:78: note: and ended here</pre>
+      <pre>         1) begin$display (&#34;FAILED  -- shift=%d, rs=%b, ls=%b&#34;, shift, rs, ls);</pre>
+      <pre>                                                                             ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

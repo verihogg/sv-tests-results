@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-vlg_string13_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/string13.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/string13.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-21 21:26:13</dd></div>
+        <div><dt>time elapsed</dt><dd>0.021s</dd></div>
+        <div><dt>ram usage</dt><dd>26748 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpu4a0_1_x/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpu4a0_1_x/formatted/string13.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpu4a0_1_x/comparison/string13.v</pre>
+      <pre>comparison/string13.v:6:19: error: expected a declaration name</pre>
+      <pre>               exp) \</pre>
+      <pre>                  ^</pre>
+      <pre>comparison/string13.v:6:19: error: unexpected &#39;)&#39; delimiter</pre>
+      <pre>               exp) \</pre>
+      <pre>                  ^</pre>
+      <pre>comparison/string13.v:6:21: error: macro operators may only be used within a macro definition</pre>
+      <pre>               exp) \</pre>
+      <pre>                    ^</pre>
+      <pre>comparison/string13.v:7:23: error: macro operators may only be used within a macro definition</pre>
+      <pre> if (val != exp) begin\</pre>
+      <pre>                      ^</pre>
+      <pre>comparison/string13.v:9:80: error: macro operators may only be used within a macro definition</pre>
+      <pre>                                                         `__LINE__, exp, val); \</pre>
+      <pre>                                                                               ^</pre>
+      <pre>comparison/string13.v:10:9: error: expected a declaration name</pre>
+      <pre> failed = 1&#39;b1; \</pre>
+      <pre>        ^</pre>
+      <pre>comparison/string13.v:10:17: error: macro operators may only be used within a macro definition</pre>
+      <pre> failed = 1&#39;b1; \</pre>
+      <pre>                ^</pre>
+      <pre>comparison/string13.v:23:7: error: expected &#39;)&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>      ^</pre>
+      <pre>comparison/string13.v:5:19: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (val,</pre>
+      <pre>                  ^</pre>
+      <pre>comparison/string13.v:23:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>      ^</pre>
+      <pre>comparison/string13.v:5:15: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (val,</pre>
+      <pre>              ^</pre>
+      <pre>comparison/string13.v:23:16: error: expected &#39;)&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>               ^</pre>
+      <pre>comparison/string13.v:23:14: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>             ^</pre>
+      <pre>comparison/string13.v:25:7: error: expected &#39;)&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>      ^</pre>
+      <pre>comparison/string13.v:5:19: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (val,</pre>
+      <pre>                  ^</pre>
+      <pre>comparison/string13.v:25:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>      ^</pre>
+      <pre>comparison/string13.v:5:15: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (val,</pre>
+      <pre>              ^</pre>
+      <pre>comparison/string13.v:25:16: error: expected &#39;)&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>               ^</pre>
+      <pre>comparison/string13.v:25:14: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>             ^</pre>
+      <pre>comparison/string13.v:28:7: error: expected &#39;)&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>      ^</pre>
+      <pre>comparison/string13.v:5:19: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (val,</pre>
+      <pre>                  ^</pre>
+      <pre>comparison/string13.v:28:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>      ^</pre>
+      <pre>comparison/string13.v:5:15: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (val,</pre>
+      <pre>              ^</pre>
+      <pre>comparison/string13.v:28:16: error: expected &#39;)&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>               ^</pre>
+      <pre>comparison/string13.v:28:14: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>             ^</pre>
+      <pre>comparison/string13.v:31:7: error: expected &#39;)&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>      ^</pre>
+      <pre>comparison/string13.v:5:19: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (val,</pre>
+      <pre>                  ^</pre>
+      <pre>comparison/string13.v:31:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>      ^</pre>
+      <pre>comparison/string13.v:5:15: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (val,</pre>
+      <pre>              ^</pre>
+      <pre>comparison/string13.v:31:16: error: expected &#39;)&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>               ^</pre>
+      <pre>comparison/string13.v:31:14: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>             ^</pre>
+      <pre>comparison/string13.v:34:7: error: expected &#39;)&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>      ^</pre>
+      <pre>comparison/string13.v:5:19: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (val,</pre>
+      <pre>                  ^</pre>
+      <pre>comparison/string13.v:34:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>      ^</pre>
+      <pre>comparison/string13.v:5:15: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (val,</pre>
+      <pre>              ^</pre>
+      <pre>comparison/string13.v:34:16: error: expected &#39;)&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>               ^</pre>
+      <pre>comparison/string13.v:34:14: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>             ^</pre>
+      <pre>comparison/string13.v:37:7: error: expected &#39;)&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>      ^</pre>
+      <pre>comparison/string13.v:5:19: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (val,</pre>
+      <pre>                  ^</pre>
+      <pre>comparison/string13.v:37:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>      ^</pre>
+      <pre>comparison/string13.v:5:15: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (val,</pre>
+      <pre>              ^</pre>
+      <pre>comparison/string13.v:37:16: error: expected &#39;)&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>               ^</pre>
+      <pre>comparison/string13.v:37:14: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>             ^</pre>
+      <pre>comparison/string13.v:39:7: error: expected &#39;)&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>      ^</pre>
+      <pre>comparison/string13.v:5:19: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (val,</pre>
+      <pre>                  ^</pre>
+      <pre>comparison/string13.v:39:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (s, &#34;:00610062:610062: a b:a b:&#34;)</pre>
+      <pre>      ^</pre>
+      <pre>comparison/string13.v:5:15: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (val,</pre>
+      <pre>              ^</pre>
+      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

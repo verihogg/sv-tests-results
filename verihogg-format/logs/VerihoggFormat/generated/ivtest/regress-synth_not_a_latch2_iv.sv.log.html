@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-synth_not_a_latch2_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/not_a_latch2.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/not_a_latch2.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-21 21:31:20</dd></div>
+        <div><dt>time elapsed</dt><dd>0.017s</dd></div>
+        <div><dt>ram usage</dt><dd>24100 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpo1umx494/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpo1umx494/formatted/not_a_latch2.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpo1umx494/comparison/not_a_latch2.v</pre>
+      <pre>comparison/not_a_latch2.v:11:11: error: expected a declaration name</pre>
+      <pre>  bar_nxt = bar;</pre>
+      <pre>          ^</pre>
+      <pre>comparison/not_a_latch2.v:11:13: error: unexpected identifier &#39;bar&#39;; did you mean &#39;var&#39;?</pre>
+      <pre>  bar_nxt = bar;</pre>
+      <pre>            ^~~</pre>
+      <pre>comparison/not_a_latch2.v:11:16: error: expected a declaration name</pre>
+      <pre>  bar_nxt = bar;</pre>
+      <pre>               ^</pre>
+      <pre>comparison/not_a_latch2.v:14:16: error: expected a declaration name</pre>
+      <pre>      foo_nxt  = data;</pre>
+      <pre>               ^</pre>
+      <pre>comparison/not_a_latch2.v:14:22: error: expected a declaration name</pre>
+      <pre>      foo_nxt  = data;</pre>
+      <pre>                     ^</pre>
+      <pre>comparison/not_a_latch2.v:15:16: error: expected a declaration name</pre>
+      <pre>      bar_nxt  = 1;</pre>
+      <pre>               ^</pre>
+      <pre>comparison/not_a_latch2.v:19:15: error: expected a declaration name</pre>
+      <pre>      bar_nxt = 0;</pre>
+      <pre>              ^</pre>
+      <pre>comparison/not_a_latch2.v:21:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/not_a_latch2.v:18:5: note: last complete block started here</pre>
+      <pre>    begin</pre>
+      <pre>    ^</pre>
+      <pre>comparison/not_a_latch2.v:20:5: note: and ended here</pre>
+      <pre>    end</pre>
+      <pre>    ^</pre>
+      <pre>comparison/not_a_latch2.v:23:3: error: unexpected identifier &#39;bar&#39;; did you mean &#39;var&#39;?</pre>
+      <pre>  bar &lt;= bar_nxt;</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/not_a_latch2.v:23:7: error: expected a declaration name</pre>
+      <pre>  bar &lt;= bar_nxt;</pre>
+      <pre>      ^</pre>
+      <pre>comparison/not_a_latch2.v:23:17: error: expected a declaration name</pre>
+      <pre>  bar &lt;= bar_nxt;</pre>
+      <pre>                ^</pre>
+      <pre>comparison/not_a_latch2.v:24:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/not_a_latch2.v:22:15: note: last complete block started here</pre>
+      <pre>      always @(posedge clk) beginfoo &lt;= foo_nxt;</pre>
+      <pre>              ^</pre>
+      <pre>comparison/not_a_latch2.v:22:27: note: and ended here</pre>
+      <pre>      always @(posedge clk) beginfoo &lt;= foo_nxt;</pre>
+      <pre>                          ^</pre>
+      <pre>comparison/not_a_latch2.v:38:10: error: expected a declaration name</pre>
+      <pre>  load   = 1;</pre>
+      <pre>         ^</pre>
+      <pre>comparison/not_a_latch2.v:39:10: error: expected a declaration name</pre>
+      <pre>  drain  = 0;</pre>
+      <pre>         ^</pre>
+      <pre>comparison/not_a_latch2.v:40:10: error: expected a declaration name</pre>
+      <pre>  data   = 1;</pre>
+      <pre>         ^</pre>
+      <pre>comparison/not_a_latch2.v:41:3: error: expected member</pre>
+      <pre>  #1clk  = 1;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/not_a_latch2.v:41:10: error: expected a declaration name</pre>
+      <pre>  #1clk  = 1;</pre>
+      <pre>         ^</pre>
+      <pre>comparison/not_a_latch2.v:42:3: error: expected member</pre>
+      <pre>  #1clk  = 0;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/not_a_latch2.v:42:10: error: expected a declaration name</pre>
+      <pre>  #1clk  = 0;</pre>
+      <pre>         ^</pre>
+      <pre>comparison/not_a_latch2.v:43:3: error: expected member</pre>
+      <pre>  $display (&#34;%0t: load=%b, drain=%b, data=%b: foo=%b, bar=%b&#34;, $time, load, drain, data, foo, bar);</pre>
+      <pre>  ^~~~~~~~</pre>
+      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

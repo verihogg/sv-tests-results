@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-vlg_comp1000_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/comp1000.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/comp1000.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-21 21:29:54</dd></div>
+        <div><dt>time elapsed</dt><dd>185.294s</dd></div>
+        <div><dt>ram usage</dt><dd>30995920 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpdzmqvbrs/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpdzmqvbrs/formatted/comp1000.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpdzmqvbrs/comparison/comp1000.v</pre>
+      <pre>comparison/comp1000.v:350:22: error: expected &#39;;&#39;</pre>
+      <pre>      r72   = 32&#39;h5e8 b;</pre>
+      <pre>                     ^</pre>
+      <pre>comparison/comp1000.v:577:57: error: expected &#39;)&#39;</pre>
+      <pre>                    r255) &lt; ((|((r12 | ((r255 % (30&#39;h5e7 b &gt;= 11&#39;h753)) &lt;</pre>
+      <pre>                                                        ^</pre>
+      <pre>comparison/comp1000.v:577:49: note: to match this &#39;(&#39;</pre>
+      <pre>                    r255) &lt; ((|((r12 | ((r255 % (30&#39;h5e7 b &gt;= 11&#39;h753)) &lt;</pre>
+      <pre>                                                ^</pre>
+      <pre>comparison/comp1000.v:577:70: error: expected &#39;;&#39;</pre>
+      <pre>                    r255) &lt; ((|((r12 | ((r255 % (30&#39;h5e7 b &gt;= 11&#39;h753)) &lt;</pre>
+      <pre>                                                                     ^</pre>
+      <pre>comparison/comp1000.v:578:81: error: expected &#39;;&#39;</pre>
+      <pre>                                        ((~(29&#39;hc71)) || (20&#39;h1ffc &lt;= 17&#39;h7cc5)))))) !==</pre>
+      <pre>                                                                                ^</pre>
+      <pre>comparison/comp1000.v:583:74: error: expected &#39;;&#39;</pre>
+      <pre>                               (r0 &lt; ((!(10&#39;h336)) % (10&#39;h149 / 3&#39;h4))))))) ||</pre>
+      <pre>                                                                         ^</pre>
+      <pre>comparison/comp1000.v:584:37: error: expected &#39;;&#39;</pre>
+      <pre>                  (r184 &lt;= 26&#39;h55e8))) ? 5&#39;h17 : (&amp;((1&#39;h0 &gt;= r248)))))) + r191) | r65));</pre>
+      <pre>                                    ^</pre>
+      <pre>comparison/comp1000.v:584:69: error: expected &#39;;&#39;</pre>
+      <pre>                  (r184 &lt;= 26&#39;h55e8))) ? 5&#39;h17 : (&amp;((1&#39;h0 &gt;= r248)))))) + r191) | r65));</pre>
+      <pre>                                                                    ^</pre>
+      <pre>comparison/comp1000.v:584:79: error: expected &#39;;&#39;</pre>
+      <pre>                  (r184 &lt;= 26&#39;h55e8))) ? 5&#39;h17 : (&amp;((1&#39;h0 &gt;= r248)))))) + r191) | r65));</pre>
+      <pre>                                                                              ^</pre>
+      <pre>comparison/comp1000.v:584:86: error: expected &#39;;&#39;</pre>
+      <pre>                  (r184 &lt;= 26&#39;h55e8))) ? 5&#39;h17 : (&amp;((1&#39;h0 &gt;= r248)))))) + r191) | r65));</pre>
+      <pre>                                                                                     ^</pre>
+      <pre>comparison/comp1000.v:652:46: error: expected &#39;)&#39;</pre>
+      <pre>                                 (((&amp;(26&#39;h6e6 c)) == 28&#39;h21af) !== 8&#39;h6f)) % (4&#39;h4 &gt;= r168)))))) !=</pre>
+      <pre>                                             ^</pre>
+      <pre>comparison/comp1000.v:652:38: note: to match this &#39;(&#39;</pre>
+      <pre>                                 (((&amp;(26&#39;h6e6 c)) == 28&#39;h21af) !== 8&#39;h6f)) % (4&#39;h4 &gt;= r168)))))) !=</pre>
+      <pre>                                     ^</pre>
+      <pre>comparison/comp1000.v:652:48: error: expected &#39;;&#39;</pre>
+      <pre>                                 (((&amp;(26&#39;h6e6 c)) == 28&#39;h21af) !== 8&#39;h6f)) % (4&#39;h4 &gt;= r168)))))) !=</pre>
+      <pre>                                               ^</pre>
+      <pre>comparison/comp1000.v:652:62: error: expected &#39;;&#39;</pre>
+      <pre>                                 (((&amp;(26&#39;h6e6 c)) == 28&#39;h21af) !== 8&#39;h6f)) % (4&#39;h4 &gt;= r168)))))) !=</pre>
+      <pre>                                                             ^</pre>
+      <pre>comparison/comp1000.v:652:73: error: expected &#39;;&#39;</pre>
+      <pre>                                 (((&amp;(26&#39;h6e6 c)) == 28&#39;h21af) !== 8&#39;h6f)) % (4&#39;h4 &gt;= r168)))))) !=</pre>
+      <pre>                                                                        ^</pre>
+      <pre>comparison/comp1000.v:652:92: error: expected &#39;;&#39;</pre>
+      <pre>                                 (((&amp;(26&#39;h6e6 c)) == 28&#39;h21af) !== 8&#39;h6f)) % (4&#39;h4 &gt;= r168)))))) !=</pre>
+      <pre>                                                                                           ^</pre>
+      <pre>comparison/comp1000.v:653:65: error: expected &#39;;&#39;</pre>
+      <pre>                    (((~(r31)) &amp;&amp; ((+(r130)) / r96)) &gt; 19&#39;h1be5)) /</pre>
+      <pre>                                                                ^</pre>
+      <pre>comparison/comp1000.v:658:41: error: expected &#39;;&#39;</pre>
+      <pre>                          (&amp;(4&#39;h4)))))))))))));</pre>
+      <pre>                                        ^</pre>
+      <pre>comparison/comp1000.v:778:64: error: expected &#39;)&#39;</pre>
+      <pre>      r246 = ($stime / ((|($stime)) / ((!((+(r215)))) &amp; 20&#39;h3e0 e)));</pre>
+      <pre>                                                               ^</pre>
+      <pre>comparison/comp1000.v:778:39: note: to match this &#39;(&#39;</pre>
+      <pre>      r246 = ($stime / ((|($stime)) / ((!((+(r215)))) &amp; 20&#39;h3e0 e)));</pre>
+      <pre>                                      ^</pre>
+      <pre>comparison/comp1000.v:778:66: error: expected &#39;;&#39;</pre>
+      <pre>      r246 = ($stime / ((|($stime)) / ((!((+(r215)))) &amp; 20&#39;h3e0 e)));</pre>
+      <pre>                                                                 ^</pre>
+      <pre>comparison/comp1000.v:1095:28: error: expected &#39;)&#39;</pre>
+      <pre>      r19 = (r85 | (24&#39;h5e3 d ^ (^((r246 == (18&#39;h6068 &amp; (&amp;(r152))))))));</pre>
+      <pre>                           ^</pre>
+      <pre>comparison/comp1000.v:1095:20: note: to match this &#39;(&#39;</pre>
+      <pre>      r19 = (r85 | (24&#39;h5e3 d ^ (^((r246 == (18&#39;h6068 &amp; (&amp;(r152))))))));</pre>
+      <pre>                   ^</pre>
+      <pre>comparison/comp1000.v:1095:70: error: expected &#39;;&#39;</pre>
+      <pre>      r19 = (r85 | (24&#39;h5e3 d ^ (^((r246 == (18&#39;h6068 &amp; (&amp;(r152))))))));</pre>
+      <pre>                                                                     ^</pre>
+      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-sv_br_gh72a_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/br_gh72a.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/br_gh72a.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-21 21:25:09</dd></div>
+        <div><dt>time elapsed</dt><dd>0.013s</dd></div>
+        <div><dt>ram usage</dt><dd>22508 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmp4ul0v6rt/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp4ul0v6rt/formatted/br_gh72a.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmp4ul0v6rt/comparison/br_gh72a.v</pre>
+      <pre>comparison/br_gh72a.v:6:7: error: expected &#39;;&#39;</pre>
+      <pre>      `macro1 () // Works</pre>
+      <pre>      ^</pre>
+      <pre>comparison/br_gh72a.v:2:27: note: expanded from macro &#39;macro1&#39;</pre>
+      <pre>`define macro1 (arg1 = d1) $display (`&#34; arg1 `&#34;);</pre>
+      <pre>                          ^</pre>
+      <pre>comparison/br_gh72a.v:6:16: error: expected expression</pre>
+      <pre>      `macro1 () // Works</pre>
+      <pre>               ^</pre>
+      <pre>comparison/br_gh72a.v:7:7: error: expected &#39;;&#39;</pre>
+      <pre>      `macro1 (1) // Works</pre>
+      <pre>      ^</pre>
+      <pre>comparison/br_gh72a.v:2:27: note: expanded from macro &#39;macro1&#39;</pre>
+      <pre>`define macro1 (arg1 = d1) $display (`&#34; arg1 `&#34;);</pre>
+      <pre>                          ^</pre>
+      <pre>comparison/br_gh72a.v:8:7: error: expected &#39;;&#39;</pre>
+      <pre>      `macro2 () // Cause wrong number of arguments error</pre>
+      <pre>      ^</pre>
+      <pre>comparison/br_gh72a.v:3:38: note: expanded from macro &#39;macro2&#39;</pre>
+      <pre>`define macro2 (arg1 = d1, arg2 = d2) $display (`&#34; arg1 arg2 `&#34;);</pre>
+      <pre>                                     ^</pre>
+      <pre>comparison/br_gh72a.v:8:16: error: expected expression</pre>
+      <pre>      `macro2 () // Cause wrong number of arguments error</pre>
+      <pre>               ^</pre>
+      <pre>comparison/br_gh72a.v:9:7: error: expected &#39;;&#39;</pre>
+      <pre>      `macro2 (1) // Cause wrong number of arguments error</pre>
+      <pre>      ^</pre>
+      <pre>comparison/br_gh72a.v:3:38: note: expanded from macro &#39;macro2&#39;</pre>
+      <pre>`define macro2 (arg1 = d1, arg2 = d2) $display (`&#34; arg1 arg2 `&#34;);</pre>
+      <pre>                                     ^</pre>
+      <pre>comparison/br_gh72a.v:10:7: error: expected &#39;;&#39;</pre>
+      <pre>      `macro2 (1, 2) // Works</pre>
+      <pre>      ^</pre>
+      <pre>comparison/br_gh72a.v:3:38: note: expanded from macro &#39;macro2&#39;</pre>
+      <pre>`define macro2 (arg1 = d1, arg2 = d2) $display (`&#34; arg1 arg2 `&#34;);</pre>
+      <pre>                                     ^</pre>
+      <pre>comparison/br_gh72a.v:10:17: error: expected &#39;)&#39;</pre>
+      <pre>      `macro2 (1, 2) // Works</pre>
+      <pre>                ^</pre>
+      <pre>comparison/br_gh72a.v:10:15: note: to match this &#39;(&#39;</pre>
+      <pre>      `macro2 (1, 2) // Works</pre>
+      <pre>              ^</pre>
+      <pre>comparison/br_gh72a.v:11:7: error: expected &#39;)&#39;</pre>
+      <pre>      `macro2 (,) // Works</pre>
+      <pre>      ^</pre>
+      <pre>comparison/br_gh72a.v:3:26: note: expanded from macro &#39;macro2&#39;</pre>
+      <pre>`define macro2 (arg1 = d1, arg2 = d2) $display (`&#34; arg1 arg2 `&#34;);</pre>
+      <pre>                         ^</pre>
+      <pre>comparison/br_gh72a.v:11:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `macro2 (,) // Works</pre>
+      <pre>      ^</pre>
+      <pre>comparison/br_gh72a.v:3:16: note: expanded from macro &#39;macro2&#39;</pre>
+      <pre>`define macro2 (arg1 = d1, arg2 = d2) $display (`&#34; arg1 arg2 `&#34;);</pre>
+      <pre>               ^</pre>
+      <pre>comparison/br_gh72a.v:11:7: error: expected &#39;;&#39;</pre>
+      <pre>      `macro2 (,) // Works</pre>
+      <pre>      ^</pre>
+      <pre>comparison/br_gh72a.v:3:37: note: expanded from macro &#39;macro2&#39;</pre>
+      <pre>`define macro2 (arg1 = d1, arg2 = d2) $display (`&#34; arg1 arg2 `&#34;);</pre>
+      <pre>                                    ^</pre>
+      <pre>comparison/br_gh72a.v:11:16: error: expected expression</pre>
+      <pre>      `macro2 (,) // Works</pre>
+      <pre>               ^</pre>
+      <pre>comparison/br_gh72a.v:12:7: error: expected &#39;)&#39;</pre>
+      <pre>      `macro2 (1,) // Works</pre>
+      <pre>      ^</pre>
+      <pre>comparison/br_gh72a.v:3:26: note: expanded from macro &#39;macro2&#39;</pre>
+      <pre>`define macro2 (arg1 = d1, arg2 = d2) $display (`&#34; arg1 arg2 `&#34;);</pre>
+      <pre>                         ^</pre>
+      <pre>comparison/br_gh72a.v:12:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `macro2 (1,) // Works</pre>
+      <pre>      ^</pre>
+      <pre>comparison/br_gh72a.v:3:16: note: expanded from macro &#39;macro2&#39;</pre>
+      <pre>`define macro2 (arg1 = d1, arg2 = d2) $display (`&#34; arg1 arg2 `&#34;);</pre>
+      <pre>               ^</pre>
+      <pre>comparison/br_gh72a.v:12:7: error: expected &#39;;&#39;</pre>
+      <pre>      `macro2 (1,) // Works</pre>
+      <pre>      ^</pre>
+      <pre>comparison/br_gh72a.v:3:37: note: expanded from macro &#39;macro2&#39;</pre>
+      <pre>`define macro2 (arg1 = d1, arg2 = d2) $display (`&#34; arg1 arg2 `&#34;);</pre>
+      <pre>                                    ^</pre>
+      <pre>comparison/br_gh72a.v:12:17: error: expected &#39;)&#39;</pre>
+      <pre>      `macro2 (1,) // Works</pre>
+      <pre>                ^</pre>
+      <pre>comparison/br_gh72a.v:12:15: note: to match this &#39;(&#39;</pre>
+      <pre>      `macro2 (1,) // Works</pre>
+      <pre>              ^</pre>
+      <pre>comparison/br_gh72a.v:13:7: error: expected &#39;)&#39;</pre>
+      <pre>      `macro2 (1, 2) // Works</pre>
+      <pre>      ^</pre>
+      <pre>comparison/br_gh72a.v:3:26: note: expanded from macro &#39;macro2&#39;</pre>
+      <pre>`define macro2 (arg1 = d1, arg2 = d2) $display (`&#34; arg1 arg2 `&#34;);</pre>
+      <pre>                         ^</pre>
+      <pre>comparison/br_gh72a.v:13:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `macro2 (1, 2) // Works</pre>
+      <pre>      ^</pre>
+      <pre>comparison/br_gh72a.v:3:16: note: expanded from macro &#39;macro2&#39;</pre>
+      <pre>`define macro2 (arg1 = d1, arg2 = d2) $display (`&#34; arg1 arg2 `&#34;);</pre>
+      <pre>               ^</pre>
+      <pre>comparison/br_gh72a.v:13:7: error: expected &#39;;&#39;</pre>
+      <pre>      `macro2 (1, 2) // Works</pre>
+      <pre>      ^</pre>
+      <pre>comparison/br_gh72a.v:3:37: note: expanded from macro &#39;macro2&#39;</pre>
+      <pre>`define macro2 (arg1 = d1, arg2 = d2) $display (`&#34; arg1 arg2 `&#34;);</pre>
+      <pre>                                    ^</pre>
+      <pre>comparison/br_gh72a.v:13:17: error: expected &#39;)&#39;</pre>
+      <pre>      `macro2 (1, 2) // Works</pre>
+      <pre>                ^</pre>
+      <pre>comparison/br_gh72a.v:13:15: note: to match this &#39;(&#39;</pre>
+      <pre>      `macro2 (1, 2) // Works</pre>
+      <pre>              ^</pre>
+      <pre>comparison/br_gh72a.v:14:7: error: expected &#39;)&#39;</pre>
+      <pre>      `macro2 (, 2) // Works</pre>
+      <pre>      ^</pre>
+      <pre>comparison/br_gh72a.v:3:26: note: expanded from macro &#39;macro2&#39;</pre>
+      <pre>`define macro2 (arg1 = d1, arg2 = d2) $display (`&#34; arg1 arg2 `&#34;);</pre>
+      <pre>                         ^</pre>
+      <pre>comparison/br_gh72a.v:14:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `macro2 (, 2) // Works</pre>
+      <pre>      ^</pre>
+      <pre>comparison/br_gh72a.v:3:16: note: expanded from macro &#39;macro2&#39;</pre>
+      <pre>`define macro2 (arg1 = d1, arg2 = d2) $display (`&#34; arg1 arg2 `&#34;);</pre>
+      <pre>               ^</pre>
+      <pre>comparison/br_gh72a.v:14:7: error: expected &#39;;&#39;</pre>
+      <pre>      `macro2 (, 2) // Works</pre>
+      <pre>      ^</pre>
+      <pre>comparison/br_gh72a.v:3:37: note: expanded from macro &#39;macro2&#39;</pre>
+      <pre>`define macro2 (arg1 = d1, arg2 = d2) $display (`&#34; arg1 arg2 `&#34;);</pre>
+      <pre>                                    ^</pre>
+      <pre>comparison/br_gh72a.v:14:16: error: expected expression</pre>
+      <pre>      `macro2 (, 2) // Works</pre>
+      <pre>               ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

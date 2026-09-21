@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-vlg_parameter_1bit_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/parameter_1bit.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/parameter_1bit.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-21 21:31:16</dd></div>
+        <div><dt>time elapsed</dt><dd>0.015s</dd></div>
+        <div><dt>ram usage</dt><dd>22328 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmphqaqchx5/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmphqaqchx5/formatted/parameter_1bit.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmphqaqchx5/comparison/parameter_1bit.v</pre>
+      <pre>comparison/parameter_1bit.v:6:16: error: unexpected identifier &#39;val&#39;; did you mean &#39;var&#39;?</pre>
+      <pre>               val) \</pre>
+      <pre>               ^~~</pre>
+      <pre>comparison/parameter_1bit.v:6:19: error: expected a declaration name</pre>
+      <pre>               val) \</pre>
+      <pre>                  ^</pre>
+      <pre>comparison/parameter_1bit.v:6:19: error: unexpected &#39;)&#39; delimiter</pre>
+      <pre>               val) \</pre>
+      <pre>                  ^</pre>
+      <pre>comparison/parameter_1bit.v:2:14: note: last complete block started here</pre>
+      <pre>module test #(</pre>
+      <pre>             ^</pre>
+      <pre>comparison/parameter_1bit.v:4:28: note: and ended here</pre>
+      <pre>parameter [0 : 0] P = 2&#39;b11); reg failed = 1&#39;b0;</pre>
+      <pre>                           ^</pre>
+      <pre>comparison/parameter_1bit.v:6:21: error: macro operators may only be used within a macro definition</pre>
+      <pre>               val) \</pre>
+      <pre>                    ^</pre>
+      <pre>comparison/parameter_1bit.v:7:25: error: macro operators may only be used within a macro definition</pre>
+      <pre> if (expr !== val) begin\</pre>
+      <pre>                        ^</pre>
+      <pre>comparison/parameter_1bit.v:9:60: error: macro operators may only be used within a macro definition</pre>
+      <pre>                                                           `&#34; expr `&#34;, val,</pre>
+      <pre>                                                           ^~</pre>
+      <pre>comparison/parameter_1bit.v:9:68: error: macro operators may only be used within a macro definition</pre>
+      <pre>                                                           `&#34; expr `&#34;, val,</pre>
+      <pre>                                                                   ^~</pre>
+      <pre>comparison/parameter_1bit.v:10:67: error: macro operators may only be used within a macro definition</pre>
+      <pre>                                                           expr); \</pre>
+      <pre>                                                                  ^</pre>
+      <pre>comparison/parameter_1bit.v:11:9: error: expected a declaration name</pre>
+      <pre> failed = 1&#39;b1; \</pre>
+      <pre>        ^</pre>
+      <pre>comparison/parameter_1bit.v:11:17: error: macro operators may only be used within a macro definition</pre>
+      <pre> failed = 1&#39;b1; \</pre>
+      <pre>                ^</pre>
+      <pre>comparison/parameter_1bit.v:16:7: error: expected &#39;)&#39;</pre>
+      <pre>      `check ($bits (P), 1);</pre>
+      <pre>      ^</pre>
+      <pre>comparison/parameter_1bit.v:5:20: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (expr,</pre>
+      <pre>                   ^</pre>
+      <pre>comparison/parameter_1bit.v:16:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check ($bits (P), 1);</pre>
+      <pre>      ^</pre>
+      <pre>comparison/parameter_1bit.v:5:15: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (expr,</pre>
+      <pre>              ^</pre>
+      <pre>comparison/parameter_1bit.v:16:24: error: expected &#39;)&#39;</pre>
+      <pre>      `check ($bits (P), 1);</pre>
+      <pre>                       ^</pre>
+      <pre>comparison/parameter_1bit.v:16:14: note: to match this &#39;(&#39;</pre>
+      <pre>      `check ($bits (P), 1);</pre>
+      <pre>             ^</pre>
+      <pre>comparison/parameter_1bit.v:17:7: error: expected &#39;)&#39;</pre>
+      <pre>      `check (P + 1&#39;b1, 1&#39;b0);</pre>
+      <pre>      ^</pre>
+      <pre>comparison/parameter_1bit.v:5:20: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (expr,</pre>
+      <pre>                   ^</pre>
+      <pre>comparison/parameter_1bit.v:17:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (P + 1&#39;b1, 1&#39;b0);</pre>
+      <pre>      ^</pre>
+      <pre>comparison/parameter_1bit.v:5:15: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (expr,</pre>
+      <pre>              ^</pre>
+      <pre>comparison/parameter_1bit.v:17:23: error: expected &#39;)&#39;</pre>
+      <pre>      `check (P + 1&#39;b1, 1&#39;b0);</pre>
+      <pre>                      ^</pre>
+      <pre>comparison/parameter_1bit.v:17:14: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (P + 1&#39;b1, 1&#39;b0);</pre>
+      <pre>             ^</pre>
+      <pre>comparison/parameter_1bit.v:18:7: error: expected &#39;)&#39;</pre>
+      <pre>      `check (P, 1&#39;b1);</pre>
+      <pre>      ^</pre>
+      <pre>comparison/parameter_1bit.v:5:20: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (expr,</pre>
+      <pre>                   ^</pre>
+      <pre>comparison/parameter_1bit.v:18:7: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (P, 1&#39;b1);</pre>
+      <pre>      ^</pre>
+      <pre>comparison/parameter_1bit.v:5:15: note: expanded from macro &#39;check&#39;</pre>
+      <pre>`define check (expr,</pre>
+      <pre>              ^</pre>
+      <pre>comparison/parameter_1bit.v:18:16: error: expected &#39;)&#39;</pre>
+      <pre>      `check (P, 1&#39;b1);</pre>
+      <pre>               ^</pre>
+      <pre>comparison/parameter_1bit.v:18:14: note: to match this &#39;(&#39;</pre>
+      <pre>      `check (P, 1&#39;b1);</pre>
+      <pre>             ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

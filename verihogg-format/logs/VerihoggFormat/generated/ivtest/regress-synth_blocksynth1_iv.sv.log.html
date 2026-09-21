@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-synth_blocksynth1_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/blocksynth1.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/blocksynth1.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-21 21:25:25</dd></div>
+        <div><dt>time elapsed</dt><dd>0.016s</dd></div>
+        <div><dt>ram usage</dt><dd>22272 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpoadht8t0/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpoadht8t0/formatted/blocksynth1.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpoadht8t0/comparison/blocksynth1.v</pre>
+      <pre>comparison/blocksynth1.v:11:68: error: expected &#39;;&#39;</pre>
+      <pre>  (*ivl_synthesis_on, ivl_combinational *) always @*begincase (sel) 2&#39;b00 : out = 2&#39;b11;</pre>
+      <pre>                                                                   ^</pre>
+      <pre>comparison/blocksynth1.v:11:81: error: expected a declaration name</pre>
+      <pre>  (*ivl_synthesis_on, ivl_combinational *) always @*begincase (sel) 2&#39;b00 : out = 2&#39;b11;</pre>
+      <pre>                                                                                ^</pre>
+      <pre>comparison/blocksynth1.v:12:3: error: expected member</pre>
+      <pre>  2&#39;b01 : out   = 2&#39;b10;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/blocksynth1.v:12:17: error: expected a declaration name</pre>
+      <pre>  2&#39;b01 : out   = 2&#39;b10;</pre>
+      <pre>                ^</pre>
+      <pre>comparison/blocksynth1.v:13:3: error: expected member</pre>
+      <pre>  2&#39;b10 : out   = 2&#39;b01;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/blocksynth1.v:13:17: error: expected a declaration name</pre>
+      <pre>  2&#39;b10 : out   = 2&#39;b01;</pre>
+      <pre>                ^</pre>
+      <pre>comparison/blocksynth1.v:14:3: error: expected member</pre>
+      <pre>  2&#39;b11 : out   = 2&#39;b00;</pre>
+      <pre>  ^</pre>
+      <pre>comparison/blocksynth1.v:14:17: error: expected a declaration name</pre>
+      <pre>  2&#39;b11 : out   = 2&#39;b00;</pre>
+      <pre>                ^</pre>
+      <pre>comparison/blocksynth1.v:15:3: error: unexpected &#39;endcase&#39; delimiter</pre>
+      <pre>  endcase // case(sel)</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>comparison/blocksynth1.v:11:63: note: last complete block started here</pre>
+      <pre>  (*ivl_synthesis_on, ivl_combinational *) always @*begincase (sel) 2&#39;b00 : out = 2&#39;b11;</pre>
+      <pre>                                                              ^</pre>
+      <pre>comparison/blocksynth1.v:11:67: note: and ended here</pre>
+      <pre>  (*ivl_synthesis_on, ivl_combinational *) always @*begincase (sel) 2&#39;b00 : out = 2&#39;b11;</pre>
+      <pre>                                                                  ^</pre>
+      <pre>comparison/blocksynth1.v:19:9: error: expected a declaration name</pre>
+      <pre>  flag  = 1&#39;b0;</pre>
+      <pre>        ^</pre>
+      <pre>comparison/blocksynth1.v:20:26: error: expected a declaration name</pre>
+      <pre>  if (out == 2&#39;b00) flag = 1&#39;b1; else flag = 1&#39;b0;</pre>
+      <pre>                         ^</pre>
+      <pre>comparison/blocksynth1.v:20:34: error: expected member</pre>
+      <pre>  if (out == 2&#39;b00) flag = 1&#39;b1; else flag = 1&#39;b0;</pre>
+      <pre>                                 ^~~~</pre>
+      <pre>comparison/blocksynth1.v:20:44: error: expected a declaration name</pre>
+      <pre>  if (out == 2&#39;b00) flag = 1&#39;b1; else flag = 1&#39;b0;</pre>
+      <pre>                                           ^</pre>
+      <pre>comparison/blocksynth1.v:21:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/blocksynth1.v:20:6: note: last complete block started here</pre>
+      <pre>  if (out == 2&#39;b00) flag = 1&#39;b1; else flag = 1&#39;b0;</pre>
+      <pre>     ^</pre>
+      <pre>comparison/blocksynth1.v:20:19: note: and ended here</pre>
+      <pre>  if (out == 2&#39;b00) flag = 1&#39;b1; else flag = 1&#39;b0;</pre>
+      <pre>                  ^</pre>
+      <pre>comparison/blocksynth1.v:24:51: error: expected &#39;)&#39;</pre>
+      <pre>  (*ivl_synthesis_off *) initial beginfor (idx = 0;</pre>
+      <pre>                                                  ^</pre>
+      <pre>comparison/blocksynth1.v:24:43: note: to match this &#39;(&#39;</pre>
+      <pre>  (*ivl_synthesis_off *) initial beginfor (idx = 0;</pre>
+      <pre>                                          ^</pre>
+      <pre>comparison/blocksynth1.v:25:7: error: expected a declaration name</pre>
+      <pre>  idx &lt; 7;</pre>
+      <pre>      ^</pre>
+      <pre>comparison/blocksynth1.v:26:7: error: expected a declaration name</pre>
+      <pre>  idx = idx + 1) beginsel = idx [1 : 0];</pre>
+      <pre>      ^</pre>
+      <pre>comparison/blocksynth1.v:26:13: error: expected a declaration name</pre>
+      <pre>  idx = idx + 1) beginsel = idx [1 : 0];</pre>
+      <pre>            ^</pre>
+      <pre>comparison/blocksynth1.v:26:16: error: unexpected &#39;)&#39; delimiter</pre>
+      <pre>  idx = idx + 1) beginsel = idx [1 : 0];</pre>
+      <pre>               ^</pre>
+      <pre>comparison/blocksynth1.v:26:27: error: expected a declaration name</pre>
+      <pre>  idx = idx + 1) beginsel = idx [1 : 0];</pre>
+      <pre>                          ^</pre>
+      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

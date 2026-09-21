@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>simple_usb_phy_tests</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Tests imported from yosys</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>yosys</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/yosys/tests/simple<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>parsing elaboration</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../tests/generated/yosys/simple_usb_phy_tests.sv.html" target="file-frame">tests/generated/yosys/simple_usb_phy_tests.sv</a><li>
+            <li><a href="../../../../third_party/tools/yosys/tests/simple/usb_phy_tests.v.html" target="file-frame">third_party/tools/yosys/tests/simple/usb_phy_tests.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-21 21:31:57</dd></div>
+        <div><dt>time elapsed</dt><dd>0.021s</dd></div>
+        <div><dt>ram usage</dt><dd>19864 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpfkjlntgb/formatted/third_party/tools/yosys/tests/simple -I/__w/sv-tests/sv-tests/out/tmp/tmpfkjlntgb/formatted/tests/generated/yosys -I/__w/sv-tests/sv-tests/third_party/tools/yosys/tests/simple -I/__w/sv-tests/sv-tests/tests/generated/yosys /__w/sv-tests/sv-tests/out/tmp/tmpfkjlntgb/formatted/tests/generated/yosys/simple_usb_phy_tests.sv /__w/sv-tests/sv-tests/out/tmp/tmpfkjlntgb/formatted/third_party/tools/yosys/tests/simple/usb_phy_tests.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpfkjlntgb/comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v:17:34: error: expected a declaration name</pre>
+      <pre>      if (rx_en) dpll_next_state = 2&#39;h0; else dpll_next_state = 2&#39;h1;</pre>
+      <pre>                                 ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v:17:40: error: expected &#39;:&#39;</pre>
+      <pre>      if (rx_en) dpll_next_state = 2&#39;h0; else dpll_next_state = 2&#39;h1;</pre>
+      <pre>                                       ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v:17:41: error: expected &#39;endcase&#39;</pre>
+      <pre>      if (rx_en) dpll_next_state = 2&#39;h0; else dpll_next_state = 2&#39;h1;</pre>
+      <pre>                                        ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v:15:3: note: to match this &#39;case&#39;</pre>
+      <pre>  case (dpll_state)</pre>
+      <pre>  ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v:17:63: error: expected a declaration name</pre>
+      <pre>      if (rx_en) dpll_next_state = 2&#39;h0; else dpll_next_state = 2&#39;h1;</pre>
+      <pre>                                                              ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v:18:5: error: expected member</pre>
+      <pre>    2&#39;h1 :</pre>
+      <pre>    ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v:20:15: error: expected a declaration name</pre>
+      <pre>        fs_ce = 1&#39;b1;</pre>
+      <pre>              ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v:21:36: error: expected a declaration name</pre>
+      <pre>        if (rx_en) dpll_next_state = 2&#39;h3; else dpll_next_state = 2&#39;h2;</pre>
+      <pre>                                   ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v:21:44: error: expected member</pre>
+      <pre>        if (rx_en) dpll_next_state = 2&#39;h3; else dpll_next_state = 2&#39;h2;</pre>
+      <pre>                                           ^~~~</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v:21:65: error: expected a declaration name</pre>
+      <pre>        if (rx_en) dpll_next_state = 2&#39;h3; else dpll_next_state = 2&#39;h2;</pre>
+      <pre>                                                                ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v:23:5: error: expected member</pre>
+      <pre>    2&#39;h2 :</pre>
+      <pre>    ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v:24:34: error: expected a declaration name</pre>
+      <pre>      if (rx_en) dpll_next_state = 2&#39;h0; else dpll_next_state = 2&#39;h3;</pre>
+      <pre>                                 ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v:24:42: error: expected member</pre>
+      <pre>      if (rx_en) dpll_next_state = 2&#39;h0; else dpll_next_state = 2&#39;h3;</pre>
+      <pre>                                         ^~~~</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v:24:63: error: expected a declaration name</pre>
+      <pre>      if (rx_en) dpll_next_state = 2&#39;h0; else dpll_next_state = 2&#39;h3;</pre>
+      <pre>                                                              ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v:25:5: error: expected member</pre>
+      <pre>    2&#39;h3 :</pre>
+      <pre>    ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v:26:34: error: expected a declaration name</pre>
+      <pre>      if (rx_en) dpll_next_state = 2&#39;h0; else dpll_next_state = 2&#39;h0;</pre>
+      <pre>                                 ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v:26:42: error: expected member</pre>
+      <pre>      if (rx_en) dpll_next_state = 2&#39;h0; else dpll_next_state = 2&#39;h0;</pre>
+      <pre>                                         ^~~~</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v:26:63: error: expected a declaration name</pre>
+      <pre>      if (rx_en) dpll_next_state = 2&#39;h0; else dpll_next_state = 2&#39;h0;</pre>
+      <pre>                                                              ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v:27:3: error: unexpected &#39;endcase&#39; delimiter</pre>
+      <pre>  endcase</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v:26:10: note: last complete block started here</pre>
+      <pre>      if (rx_en) dpll_next_state = 2&#39;h0; else dpll_next_state = 2&#39;h0;</pre>
+      <pre>         ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v:26:16: note: and ended here</pre>
+      <pre>      if (rx_en) dpll_next_state = 2&#39;h0; else dpll_next_state = 2&#39;h0;</pre>
+      <pre>               ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v:28:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v:26:10: note: last complete block started here</pre>
+      <pre>      if (rx_en) dpll_next_state = 2&#39;h0; else dpll_next_state = 2&#39;h0;</pre>
+      <pre>         ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/usb_phy_tests.v:26:16: note: and ended here</pre>
+      <pre>      if (rx_en) dpll_next_state = 2&#39;h0; else dpll_next_state = 2&#39;h0;</pre>
+      <pre>               ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

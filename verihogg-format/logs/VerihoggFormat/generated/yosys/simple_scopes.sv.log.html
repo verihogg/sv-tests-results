@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>simple_scopes</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Tests imported from yosys</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>yosys</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/yosys/tests/simple<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>parsing elaboration</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../tests/generated/yosys/simple_scopes.sv.html" target="file-frame">tests/generated/yosys/simple_scopes.sv</a><li>
+            <li><a href="../../../../third_party/tools/yosys/tests/simple/scopes.v.html" target="file-frame">third_party/tools/yosys/tests/simple/scopes.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-21 21:32:00</dd></div>
+        <div><dt>time elapsed</dt><dd>0.022s</dd></div>
+        <div><dt>ram usage</dt><dd>22200 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmphq7t62pa/formatted/third_party/tools/yosys/tests/simple -I/__w/sv-tests/sv-tests/out/tmp/tmphq7t62pa/formatted/tests/generated/yosys -I/__w/sv-tests/sv-tests/third_party/tools/yosys/tests/simple -I/__w/sv-tests/sv-tests/tests/generated/yosys /__w/sv-tests/sv-tests/out/tmp/tmphq7t62pa/formatted/tests/generated/yosys/simple_scopes.sv /__w/sv-tests/sv-tests/out/tmp/tmphq7t62pa/formatted/third_party/tools/yosys/tests/simple/scopes.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmphq7t62pa/comparison/third_party/tools/yosys/tests/simple/scopes.v</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/scopes.v:49:5: error: expected a declaration name</pre>
+      <pre>  y = func_02 (33, 44);</pre>
+      <pre>    ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/scopes.v:54:8: error: expected a declaration name</pre>
+      <pre>    y  = x;</pre>
+      <pre>       ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/scopes.v:54:11: error: expected a declaration name</pre>
+      <pre>    y  = x;</pre>
+      <pre>          ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/scopes.v:55:8: error: expected a declaration name</pre>
+      <pre>    y  = y + k;</pre>
+      <pre>       ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/scopes.v:55:12: error: expected a declaration name</pre>
+      <pre>    y  = y + k;</pre>
+      <pre>           ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/scopes.v:55:15: error: expected a declaration name</pre>
+      <pre>    y  = y + k;</pre>
+      <pre>              ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/scopes.v:56:8: error: expected a declaration name</pre>
+      <pre>    x  = y;</pre>
+      <pre>       ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/scopes.v:56:11: error: expected a declaration name</pre>
+      <pre>    x  = y;</pre>
+      <pre>          ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/scopes.v:58:6: error: expected a declaration name</pre>
+      <pre>  x  = func_01 (y, x);</pre>
+      <pre>     ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/scopes.v:59:6: error: expected a declaration name</pre>
+      <pre>  y  = func_02 (y, x);</pre>
+      <pre>     ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/scopes.v:60:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/scopes.v:59:16: note: last complete block started here</pre>
+      <pre>  y  = func_02 (y, x);</pre>
+      <pre>               ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/scopes.v:59:21: note: and ended here</pre>
+      <pre>  y  = func_02 (y, x);</pre>
+      <pre>                    ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

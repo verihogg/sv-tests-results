@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-synth_for_loop_synth_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/for_loop_synth.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/for_loop_synth.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-21 21:31:20</dd></div>
+        <div><dt>time elapsed</dt><dd>0.016s</dd></div>
+        <div><dt>ram usage</dt><dd>21856 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpgl5ei19i/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpgl5ei19i/formatted/for_loop_synth.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpgl5ei19i/comparison/for_loop_synth.v</pre>
+      <pre>comparison/for_loop_synth.v:10:28: error: expected &#39;)&#39;</pre>
+      <pre>  always @ *beginfor (j = 0;</pre>
+      <pre>                           ^</pre>
+      <pre>comparison/for_loop_synth.v:10:22: note: to match this &#39;(&#39;</pre>
+      <pre>  always @ *beginfor (j = 0;</pre>
+      <pre>                     ^</pre>
+      <pre>comparison/for_loop_synth.v:11:5: error: expected a declaration name</pre>
+      <pre>  j &lt; inputs;</pre>
+      <pre>    ^</pre>
+      <pre>comparison/for_loop_synth.v:11:13: error: expected a declaration name</pre>
+      <pre>  j &lt; inputs;</pre>
+      <pre>            ^</pre>
+      <pre>comparison/for_loop_synth.v:12:15: error: expected a declaration name</pre>
+      <pre>  j           = j + 1) beginif (I [j]) Q [j] = ~D [j];</pre>
+      <pre>              ^</pre>
+      <pre>comparison/for_loop_synth.v:12:19: error: expected a declaration name</pre>
+      <pre>  j           = j + 1) beginif (I [j]) Q [j] = ~D [j];</pre>
+      <pre>                  ^</pre>
+      <pre>comparison/for_loop_synth.v:12:22: error: unexpected &#39;)&#39; delimiter</pre>
+      <pre>  j           = j + 1) beginif (I [j]) Q [j] = ~D [j];</pre>
+      <pre>                     ^</pre>
+      <pre>comparison/for_loop_synth.v:12:39: error: expected &#39;;&#39;</pre>
+      <pre>  j           = j + 1) beginif (I [j]) Q [j] = ~D [j];</pre>
+      <pre>                                      ^</pre>
+      <pre>comparison/for_loop_synth.v:12:46: error: expected a declaration name</pre>
+      <pre>  j           = j + 1) beginif (I [j]) Q [j] = ~D [j];</pre>
+      <pre>                                             ^</pre>
+      <pre>comparison/for_loop_synth.v:12:54: error: expected a declaration name</pre>
+      <pre>  j           = j + 1) beginif (I [j]) Q [j] = ~D [j];</pre>
+      <pre>                                                     ^</pre>
+      <pre>comparison/for_loop_synth.v:13:3: error: expected member</pre>
+      <pre>  else Q [j]  = D [j];</pre>
+      <pre>  ^~~~</pre>
+      <pre>comparison/for_loop_synth.v:13:15: error: expected a declaration name</pre>
+      <pre>  else Q [j]  = D [j];</pre>
+      <pre>              ^</pre>
+      <pre>comparison/for_loop_synth.v:13:22: error: expected a declaration name</pre>
+      <pre>  else Q [j]  = D [j];</pre>
+      <pre>                     ^</pre>
+      <pre>comparison/for_loop_synth.v:14:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/for_loop_synth.v:13:19: note: last complete block started here</pre>
+      <pre>  else Q [j]  = D [j];</pre>
+      <pre>                  ^</pre>
+      <pre>comparison/for_loop_synth.v:13:21: note: and ended here</pre>
+      <pre>  else Q [j]  = D [j];</pre>
+      <pre>                    ^</pre>
+      <pre>comparison/for_loop_synth.v:15:7: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>      end</pre>
+      <pre>      ^~~</pre>
+      <pre>comparison/for_loop_synth.v:13:19: note: last complete block started here</pre>
+      <pre>  else Q [j]  = D [j];</pre>
+      <pre>                  ^</pre>
+      <pre>comparison/for_loop_synth.v:13:21: note: and ended here</pre>
+      <pre>  else Q [j]  = D [j];</pre>
+      <pre>                    ^</pre>
+      <pre>comparison/for_loop_synth.v:26:5: error: expected a declaration name</pre>
+      <pre>  I = 0;</pre>
+      <pre>    ^</pre>
+      <pre>comparison/for_loop_synth.v:27:3: error: expected member</pre>
+      <pre>  #1 if (Q !== 8&#39;h00) begin$display (&#34;FAILED -- Q=%b, D=%b, I=%b&#34;, Q, D, I);</pre>
+      <pre>  ^</pre>
+      <pre>comparison/for_loop_synth.v:28:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>comparison/for_loop_synth.v:29:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end D  = &#39;h55;</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/for_loop_synth.v:27:37: note: last complete block started here</pre>
+      <pre>  #1 if (Q !== 8&#39;h00) begin$display (&#34;FAILED -- Q=%b, D=%b, I=%b&#34;, Q, D, I);</pre>
+      <pre>                                    ^</pre>
+      <pre>comparison/for_loop_synth.v:27:75: note: and ended here</pre>
+      <pre>  #1 if (Q !== 8&#39;h00) begin$display (&#34;FAILED -- Q=%b, D=%b, I=%b&#34;, Q, D, I);</pre>
+      <pre>                                                                          ^</pre>
+      <pre>comparison/for_loop_synth.v:29:10: error: expected a declaration name</pre>
+      <pre>  end D  = &#39;h55;</pre>
+      <pre>         ^</pre>
+      <pre>comparison/for_loop_synth.v:30:10: error: expected a declaration name</pre>
+      <pre>  I      = &#39;h55;</pre>
+      <pre>         ^</pre>
+      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

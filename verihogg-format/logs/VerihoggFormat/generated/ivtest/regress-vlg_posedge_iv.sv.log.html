@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-vlg_posedge_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/posedge.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/posedge.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-21 21:30:04</dd></div>
+        <div><dt>time elapsed</dt><dd>0.013s</dd></div>
+        <div><dt>ram usage</dt><dd>20080 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmp_ebtruhk/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp_ebtruhk/formatted/posedge.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmp_ebtruhk/comparison/posedge.v</pre>
+      <pre>comparison/posedge.v:34:3: error: unexpected identifier &#39;event_1&#39;; did you mean &#39;event&#39;?</pre>
+      <pre>  event_1 = 1&#39;b0;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>comparison/posedge.v:34:11: error: expected a declaration name</pre>
+      <pre>  event_1 = 1&#39;b0;</pre>
+      <pre>          ^</pre>
+      <pre>comparison/posedge.v:35:3: error: expected member</pre>
+      <pre>  #1 if (flag1 !== 1&#39;b1) begin$display (&#34;FAILED -- 1-&gt;0 DID trigger flag1&#34;);</pre>
+      <pre>  ^</pre>
+      <pre>comparison/posedge.v:36:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>comparison/posedge.v:37:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/posedge.v:35:40: note: last complete block started here</pre>
+      <pre>  #1 if (flag1 !== 1&#39;b1) begin$display (&#34;FAILED -- 1-&gt;0 DID trigger flag1&#34;);</pre>
+      <pre>                                       ^</pre>
+      <pre>comparison/posedge.v:35:75: note: and ended here</pre>
+      <pre>  #1 if (flag1 !== 1&#39;b1) begin$display (&#34;FAILED -- 1-&gt;0 DID trigger flag1&#34;);</pre>
+      <pre>                                                                          ^</pre>
+      <pre>comparison/posedge.v:39:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/posedge.v:35:40: note: last complete block started here</pre>
+      <pre>  #1 if (flag1 !== 1&#39;b1) begin$display (&#34;FAILED -- 1-&gt;0 DID trigger flag1&#34;);</pre>
+      <pre>                                       ^</pre>
+      <pre>comparison/posedge.v:35:75: note: and ended here</pre>
+      <pre>  #1 if (flag1 !== 1&#39;b1) begin$display (&#34;FAILED -- 1-&gt;0 DID trigger flag1&#34;);</pre>
+      <pre>                                                                          ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>regress-vlg_assign_delay_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/assign_delay.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/assign_delay.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-21 21:29:59</dd></div>
+        <div><dt>time elapsed</dt><dd>0.012s</dd></div>
+        <div><dt>ram usage</dt><dd>20256 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmp5zwd3r82/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp5zwd3r82/formatted/assign_delay.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmp5zwd3r82/comparison/assign_delay.v</pre>
+      <pre>comparison/assign_delay.v:34:3: error: expected member</pre>
+      <pre>  #6 if (a !== 1) begin$display (&#34;FAILED -- a is %b, should be 1&#34;, a);</pre>
+      <pre>  ^</pre>
+      <pre>comparison/assign_delay.v:35:3: error: expected member</pre>
+      <pre>  $finish;</pre>
+      <pre>  ^~~~~~~</pre>
+      <pre>comparison/assign_delay.v:36:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/assign_delay.v:34:33: note: last complete block started here</pre>
+      <pre>  #6 if (a !== 1) begin$display (&#34;FAILED -- a is %b, should be 1&#34;, a);</pre>
+      <pre>                                ^</pre>
+      <pre>comparison/assign_delay.v:34:69: note: and ended here</pre>
+      <pre>  #6 if (a !== 1) begin$display (&#34;FAILED -- a is %b, should be 1&#34;, a);</pre>
+      <pre>                                                                    ^</pre>
+      <pre>comparison/assign_delay.v:38:3: error: unexpected &#39;end&#39; delimiter</pre>
+      <pre>  end</pre>
+      <pre>  ^~~</pre>
+      <pre>comparison/assign_delay.v:34:33: note: last complete block started here</pre>
+      <pre>  #6 if (a !== 1) begin$display (&#34;FAILED -- a is %b, should be 1&#34;, a);</pre>
+      <pre>                                ^</pre>
+      <pre>comparison/assign_delay.v:34:69: note: and ended here</pre>
+      <pre>  #6 if (a !== 1) begin$display (&#34;FAILED -- a is %b, should be 1&#34;, a);</pre>
+      <pre>                                                                    ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

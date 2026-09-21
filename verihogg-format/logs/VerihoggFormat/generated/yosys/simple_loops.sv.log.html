@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+        <h2>simple_loops</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Tests imported from yosys</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>yosys</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/__w/sv-tests/sv-tests/third_party/tools/yosys/tests/simple<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>parsing elaboration</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../tests/generated/yosys/simple_loops.sv.html" target="file-frame">tests/generated/yosys/simple_loops.sv</a><li>
+            <li><a href="../../../../third_party/tools/yosys/tests/simple/loops.v.html" target="file-frame">third_party/tools/yosys/tests/simple/loops.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-09-21 21:31:48</dd></div>
+        <div><dt>time elapsed</dt><dd>0.025s</dd></div>
+        <div><dt>ram usage</dt><dd>25928 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmp9oyog_35/formatted/third_party/tools/yosys/tests/simple -I/__w/sv-tests/sv-tests/out/tmp/tmp9oyog_35/formatted/tests/generated/yosys -I/__w/sv-tests/sv-tests/third_party/tools/yosys/tests/simple -I/__w/sv-tests/sv-tests/tests/generated/yosys /__w/sv-tests/sv-tests/out/tmp/tmp9oyog_35/formatted/tests/generated/yosys/simple_loops.sv /__w/sv-tests/sv-tests/out/tmp/tmp9oyog_35/formatted/third_party/tools/yosys/tests/simple/loops.v</pre>
+      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmp9oyog_35/comparison/third_party/tools/yosys/tests/simple/loops.v</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/loops.v:29:30: error: expected a declaration name</pre>
+      <pre>  keysched_round_i           = addroundkey_round;</pre>
+      <pre>                             ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/loops.v:29:49: error: expected a declaration name</pre>
+      <pre>  keysched_round_i           = addroundkey_round;</pre>
+      <pre>                                                ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/loops.v:30:30: error: expected a declaration name</pre>
+      <pre>  round_data_var             = addroundkey_data_reg;</pre>
+      <pre>                             ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/loops.v:30:52: error: expected a declaration name</pre>
+      <pre>  round_data_var             = addroundkey_data_reg;</pre>
+      <pre>                                                   ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/loops.v:31:30: error: expected a declaration name</pre>
+      <pre>  next_addroundkey_data_reg  = addroundkey_data_reg;</pre>
+      <pre>                             ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/loops.v:31:52: error: expected a declaration name</pre>
+      <pre>  next_addroundkey_data_reg  = addroundkey_data_reg;</pre>
+      <pre>                                                   ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/loops.v:32:30: error: expected a declaration name</pre>
+      <pre>  next_addroundkey_ready_o   = 0;</pre>
+      <pre>                             ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/loops.v:33:30: error: expected a declaration name</pre>
+      <pre>  next_addroundkey_round     = addroundkey_round;</pre>
+      <pre>                             ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/loops.v:33:49: error: expected a declaration name</pre>
+      <pre>  next_addroundkey_round     = addroundkey_round;</pre>
+      <pre>                                                ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/loops.v:34:77: error: expected a declaration name</pre>
+      <pre>  if (addroundkey_round == 1 || addroundkey_round == 0) keysched_last_key_i = key_i;</pre>
+      <pre>                                                                            ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/loops.v:34:84: error: expected a declaration name</pre>
+      <pre>  if (addroundkey_round == 1 || addroundkey_round == 0) keysched_last_key_i = key_i;</pre>
+      <pre>                                                                                   ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/loops.v:35:3: error: expected member</pre>
+      <pre>  else keysched_last_key_i = keysched_new_key_o;</pre>
+      <pre>  ^~~~</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/loops.v:35:28: error: expected a declaration name</pre>
+      <pre>  else keysched_last_key_i = keysched_new_key_o;</pre>
+      <pre>                           ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/loops.v:35:48: error: expected a declaration name</pre>
+      <pre>  else keysched_last_key_i = keysched_new_key_o;</pre>
+      <pre>                                               ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/loops.v:38:34: error: expected a declaration name</pre>
+      <pre>      data_var                   = addroundkey_data_i;</pre>
+      <pre>                                 ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/loops.v:38:54: error: expected a declaration name</pre>
+      <pre>      data_var                   = addroundkey_data_i;</pre>
+      <pre>                                                     ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/loops.v:39:34: error: expected a declaration name</pre>
+      <pre>      round_key_var              = key_i;</pre>
+      <pre>                                 ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/loops.v:39:41: error: expected a declaration name</pre>
+      <pre>      round_key_var              = key_i;</pre>
+      <pre>                                        ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/loops.v:40:34: error: expected a declaration name</pre>
+      <pre>      round_data_var             = round_key_var ^ data_var;</pre>
+      <pre>                                 ^</pre>
+      <pre>comparison/third_party/tools/yosys/tests/simple/loops.v:40:50: error: expected a declaration name</pre>
+      <pre>      round_data_var             = round_key_var ^ data_var;</pre>
+      <pre>                                                 ^</pre>
+      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>
