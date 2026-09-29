@@ -5,15 +5,16 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-passed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-warning">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>typedef_test_24</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-warning">
       <dl>
         <div><dt>description</dt><dd>Test</dd></div>
         <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
-        <div><dt>tags</dt><dd>6.18 uvm-req</dd></div>
+        <div><dt>warnings</dt><dd>2</dd></div>
+        <div><dt>tags</dt><dd>uvm-req 6.18</dd></div>
         <div>
           <dt>incdirs</dt>
           <dd><ul>
@@ -31,14 +32,16 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:24:43</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 15:44:30</dd></div>
         <div><dt>time elapsed</dt><dd>0.011s</dd></div>
-        <div><dt>ram usage</dt><dd>17972 KB</dd></div>
+        <div><dt>ram usage</dt><dd>17896 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpegefw0u4/formatted/. -I/__w/sv-tests/sv-tests/tests/generic/typedef /__w/sv-tests/sv-tests/out/tmp/tmpegefw0u4/formatted/typedef_test_24.sv</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmp32yafda4/formatted/. -I/__w/sv-tests/sv-tests/tests/generic/typedef /__w/sv-tests/sv-tests/out/tmp/tmp32yafda4/formatted/typedef_test_24.sv</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmp32yafda4/formatted/typedef_test_24.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmp32yafda4/formatted/typedef_test_24.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]</pre>
       <pre>CST verification passed</pre>
       <pre></pre>
     </section>

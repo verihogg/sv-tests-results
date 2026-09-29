@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="../../../log.css">
   </head>
   <body>
-    <header class="test-passed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-warning">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>unary_op_dec_sim</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-warning">
       <dl>
         <div><dt>description</dt><dd>-- operator simulation test</dd></div>
         <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>warnings</dt><dd>1</dd></div>
         <div><dt>tags</dt><dd>11.4.2</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -31,14 +32,15 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:15:51</dd></div>
-        <div><dt>time elapsed</dt><dd>0.011s</dd></div>
-        <div><dt>ram usage</dt><dd>18640 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 15:34:28</dd></div>
+        <div><dt>time elapsed</dt><dd>0.013s</dd></div>
+        <div><dt>ram usage</dt><dd>18148 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmppb1ey2o1/formatted/. -I/__w/sv-tests/sv-tests/tests/chapter-11 /__w/sv-tests/sv-tests/out/tmp/tmppb1ey2o1/formatted/11.4.2--unary_op_dec-sim.sv</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpui6_na05/formatted/. -I/__w/sv-tests/sv-tests/tests/chapter-11 /__w/sv-tests/sv-tests/out/tmp/tmpui6_na05/formatted/11.4.2--unary_op_dec-sim.sv</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmpui6_na05/formatted/11.4.2--unary_op_dec-sim.sv: cannot annotate SystemVerilog line (unsupported token kind DoubleMinus); original text preserved [invalid-annotation]</pre>
       <pre>CST verification passed</pre>
       <pre></pre>
     </section>

@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-warning">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>casez_pattern</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-warning">
       <dl>
         <div><dt>description</dt><dd>A module testing pattern matching in casez statements</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>warnings</dt><dd>3</dd></div>
         <div><dt>tags</dt><dd>12.6.1</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -31,24 +32,18 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:15:56</dd></div>
-        <div><dt>time elapsed</dt><dd>0.012s</dd></div>
-        <div><dt>ram usage</dt><dd>20192 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 15:34:32</dd></div>
+        <div><dt>time elapsed</dt><dd>0.015s</dd></div>
+        <div><dt>ram usage</dt><dd>20456 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpght64xwb/formatted/. -I/__w/sv-tests/sv-tests/tests/chapter-12 /__w/sv-tests/sv-tests/out/tmp/tmpght64xwb/formatted/12.6.1--casez_pattern.sv</pre>
-      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpght64xwb/comparison/12.6.1--casez_pattern.sv</pre>
-      <pre>comparison/12.6.1--casez_pattern.sv:26:35: error: expected &#39;,&#39;</pre>
-      <pre>      matches tagged a&#39;{.v, 4&#39;bzz0 ? } : $display (&#34;a %d&#34;, v);</pre>
-      <pre>                                  ^</pre>
-      <pre>comparison/12.6.1--casez_pattern.sv:29:20: warning: vector literal too large for the given number of bits (8 bits needed) [-Wvector-overflow]</pre>
-      <pre>      tagged c&#39;{4&#39;hz00 ? ,.v} : $display (&#34;c %d&#34;, v);</pre>
-      <pre>                   ^</pre>
-      <pre>comparison/12.6.1--casez_pattern.sv:29:23: error: expected &#39;,&#39;</pre>
-      <pre>      tagged c&#39;{4&#39;hz00 ? ,.v} : $display (&#34;c %d&#34;, v);</pre>
-      <pre>                      ^</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmptj6gpa71/formatted/. -I/__w/sv-tests/sv-tests/tests/chapter-12 /__w/sv-tests/sv-tests/out/tmp/tmptj6gpa71/formatted/12.6.1--casez_pattern.sv</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmptj6gpa71/formatted/12.6.1--casez_pattern.sv: unsupported SystemVerilog construct &#39;struct&#39;; original text preserved [unsupported-construct]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmptj6gpa71/formatted/12.6.1--casez_pattern.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmptj6gpa71/formatted/12.6.1--casez_pattern.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]</pre>
+      <pre>CST verification passed</pre>
       <pre></pre>
     </section>
   </body>

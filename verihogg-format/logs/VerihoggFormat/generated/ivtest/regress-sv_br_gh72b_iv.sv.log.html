@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-warning">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>regress-sv_br_gh72b_iv</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-warning">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>warnings</dt><dd>1</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,33 +33,16 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:25:48</dd></div>
-        <div><dt>time elapsed</dt><dd>0.012s</dd></div>
-        <div><dt>ram usage</dt><dd>20480 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 15:45:39</dd></div>
+        <div><dt>time elapsed</dt><dd>0.013s</dd></div>
+        <div><dt>ram usage</dt><dd>20272 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmprpikmnaw/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmprpikmnaw/formatted/br_gh72b.v</pre>
-      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmprpikmnaw/comparison/br_gh72b.v</pre>
-      <pre>comparison/br_gh72b.v:6:7: error: expected &#39;;&#39;</pre>
-      <pre>      `macro1 (1)</pre>
-      <pre>      ^</pre>
-      <pre>comparison/br_gh72b.v:2:22: note: expanded from macro &#39;macro1&#39;</pre>
-      <pre>`define macro1 (arg1) $display (`&#34; arg1 `&#34;);</pre>
-      <pre>                     ^</pre>
-      <pre>comparison/br_gh72b.v:7:7: error: expected &#39;;&#39;</pre>
-      <pre>      `macro2 (1, 2)</pre>
-      <pre>      ^</pre>
-      <pre>comparison/br_gh72b.v:3:33: note: expanded from macro &#39;macro2&#39;</pre>
-      <pre>`define macro2 (arg1 = d1, arg2) $display (`&#34; arg1 arg2 `&#34;);</pre>
-      <pre>                                ^</pre>
-      <pre>comparison/br_gh72b.v:7:17: error: expected &#39;)&#39;</pre>
-      <pre>      `macro2 (1, 2)</pre>
-      <pre>                ^</pre>
-      <pre>comparison/br_gh72b.v:7:15: note: to match this &#39;(&#39;</pre>
-      <pre>      `macro2 (1, 2)</pre>
-      <pre>              ^</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmp53rrwi1v/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp53rrwi1v/formatted/br_gh72b.v</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmp53rrwi1v/formatted/br_gh72b.v: formatting would move a macro invocation to another source line; original text preserved [macro-line-number]</pre>
+      <pre>CST verification passed</pre>
       <pre></pre>
     </section>
   </body>

@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-passed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-warning">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>regress-sv_sv_class19_iv</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-warning">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
         <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>warnings</dt><dd>5</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,14 +33,19 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:26:18</dd></div>
-        <div><dt>time elapsed</dt><dd>0.016s</dd></div>
-        <div><dt>ram usage</dt><dd>20352 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 15:46:10</dd></div>
+        <div><dt>time elapsed</dt><dd>0.017s</dd></div>
+        <div><dt>ram usage</dt><dd>20540 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpfgkbkazm/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpfgkbkazm/formatted/sv_class19.v</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmp7l37j8ph/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp7l37j8ph/formatted/sv_class19.v</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmp7l37j8ph/formatted/sv_class19.v: unsupported SystemVerilog construct &#39;static&#39;; original text preserved [unsupported-construct]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmp7l37j8ph/formatted/sv_class19.v: cannot annotate SystemVerilog line (unsupported token kind ProgramKeyword); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmp7l37j8ph/formatted/sv_class19.v: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmp7l37j8ph/formatted/sv_class19.v: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmp7l37j8ph/formatted/sv_class19.v: cannot annotate SystemVerilog line (unsupported token kind EndProgramKeyword); original text preserved [invalid-annotation]</pre>
       <pre>CST verification passed</pre>
       <pre></pre>
     </section>

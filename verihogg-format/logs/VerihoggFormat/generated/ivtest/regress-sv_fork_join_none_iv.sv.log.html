@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-warning">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>regress-sv_fork_join_none_iv</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-warning">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>warnings</dt><dd>1</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,63 +33,16 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:26:25</dd></div>
-        <div><dt>time elapsed</dt><dd>0.012s</dd></div>
-        <div><dt>ram usage</dt><dd>20476 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 15:46:16</dd></div>
+        <div><dt>time elapsed</dt><dd>0.014s</dd></div>
+        <div><dt>ram usage</dt><dd>20588 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmp5g0fvcz9/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp5g0fvcz9/formatted/fork_join_none.v</pre>
-      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmp5g0fvcz9/comparison/fork_join_none.v</pre>
-      <pre>comparison/fork_join_none.v:18:3: error: expected member</pre>
-      <pre>  #10 if (flag != 10) begin$display (&#34;FAILED -- flag=%d (s.b. 10)&#34;, flag);</pre>
-      <pre>  ^</pre>
-      <pre>comparison/fork_join_none.v:19:3: error: expected member</pre>
-      <pre>  $finish;</pre>
-      <pre>  ^~~~~~~</pre>
-      <pre>comparison/fork_join_none.v:20:3: error: unexpected &#39;end&#39; delimiter</pre>
-      <pre>  end</pre>
-      <pre>  ^~~</pre>
-      <pre>comparison/fork_join_none.v:18:37: note: last complete block started here</pre>
-      <pre>  #10 if (flag != 10) begin$display (&#34;FAILED -- flag=%d (s.b. 10)&#34;, flag);</pre>
-      <pre>                                    ^</pre>
-      <pre>comparison/fork_join_none.v:18:73: note: and ended here</pre>
-      <pre>  #10 if (flag != 10) begin$display (&#34;FAILED -- flag=%d (s.b. 10)&#34;, flag);</pre>
-      <pre>                                                                        ^</pre>
-      <pre>comparison/fork_join_none.v:22:3: error: expected member</pre>
-      <pre>  $finish;</pre>
-      <pre>  ^~~~~~~</pre>
-      <pre>comparison/fork_join_none.v:23:3: error: unexpected &#39;end&#39; delimiter</pre>
-      <pre>  end</pre>
-      <pre>  ^~~</pre>
-      <pre>comparison/fork_join_none.v:21:41: note: last complete block started here</pre>
-      <pre>      #10 if (flag != 20) begin$display (&#34;FAILED -- flag=%d (s.b. 20)&#34;, flag);</pre>
-      <pre>                                        ^</pre>
-      <pre>comparison/fork_join_none.v:21:77: note: and ended here</pre>
-      <pre>      #10 if (flag != 20) begin$display (&#34;FAILED -- flag=%d (s.b. 20)&#34;, flag);</pre>
-      <pre>                                                                            ^</pre>
-      <pre>comparison/fork_join_none.v:25:3: error: expected member</pre>
-      <pre>  $finish;</pre>
-      <pre>  ^~~~~~~</pre>
-      <pre>comparison/fork_join_none.v:26:3: error: unexpected &#39;end&#39; delimiter</pre>
-      <pre>  end</pre>
-      <pre>  ^~~</pre>
-      <pre>comparison/fork_join_none.v:24:41: note: last complete block started here</pre>
-      <pre>      #10 if (flag != 30) begin$display (&#34;FAILED -- flag=%d (s.b. 30)&#34;, flag);</pre>
-      <pre>                                        ^</pre>
-      <pre>comparison/fork_join_none.v:24:77: note: and ended here</pre>
-      <pre>      #10 if (flag != 30) begin$display (&#34;FAILED -- flag=%d (s.b. 30)&#34;, flag);</pre>
-      <pre>                                                                            ^</pre>
-      <pre>comparison/fork_join_none.v:28:3: error: unexpected &#39;end&#39; delimiter</pre>
-      <pre>  end</pre>
-      <pre>  ^~~</pre>
-      <pre>comparison/fork_join_none.v:24:41: note: last complete block started here</pre>
-      <pre>      #10 if (flag != 30) begin$display (&#34;FAILED -- flag=%d (s.b. 30)&#34;, flag);</pre>
-      <pre>                                        ^</pre>
-      <pre>comparison/fork_join_none.v:24:77: note: and ended here</pre>
-      <pre>      #10 if (flag != 30) begin$display (&#34;FAILED -- flag=%d (s.b. 30)&#34;, flag);</pre>
-      <pre>                                                                            ^</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpomdh6hf4/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpomdh6hf4/formatted/fork_join_none.v</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmpomdh6hf4/formatted/fork_join_none.v: unsupported SystemVerilog construct &#39;end&#39;; original text preserved [unsupported-construct]</pre>
+      <pre>CST verification passed</pre>
       <pre></pre>
     </section>
   </body>

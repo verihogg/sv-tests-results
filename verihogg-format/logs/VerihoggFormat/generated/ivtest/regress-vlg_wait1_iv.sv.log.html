@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-warning">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>regress-vlg_wait1_iv</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-warning">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>warnings</dt><dd>1</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,54 +33,16 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:25:25</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 15:45:15</dd></div>
         <div><dt>time elapsed</dt><dd>0.013s</dd></div>
-        <div><dt>ram usage</dt><dd>20468 KB</dd></div>
+        <div><dt>ram usage</dt><dd>20692 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmp74a6lb4g/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp74a6lb4g/formatted/wait1.v</pre>
-      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmp74a6lb4g/comparison/wait1.v</pre>
-      <pre>comparison/wait1.v:20:36: error: expected &#39;;&#39;</pre>
-      <pre>  initial #1 beginif (foo !== 1&#39;b0) begin$display (&#34;FAILED -- foo before wait is %b&#34;, foo);</pre>
-      <pre>                                   ^</pre>
-      <pre>comparison/wait1.v:21:3: error: expected member</pre>
-      <pre>  $finish;</pre>
-      <pre>  ^~~~~~~</pre>
-      <pre>comparison/wait1.v:22:3: error: unexpected &#39;end&#39; delimiter</pre>
-      <pre>  end</pre>
-      <pre>  ^~~</pre>
-      <pre>comparison/wait1.v:20:51: note: last complete block started here</pre>
-      <pre>  initial #1 beginif (foo !== 1&#39;b0) begin$display (&#34;FAILED -- foo before wait is %b&#34;, foo);</pre>
-      <pre>                                                  ^</pre>
-      <pre>comparison/wait1.v:20:90: note: and ended here</pre>
-      <pre>  initial #1 beginif (foo !== 1&#39;b0) begin$display (&#34;FAILED -- foo before wait is %b&#34;, foo);</pre>
-      <pre>                                                                                         ^</pre>
-      <pre>comparison/wait1.v:28:7: error: expected member</pre>
-      <pre>      $display (&#34;FAILED -- foo after wait is %b&#34;, foo);</pre>
-      <pre>      ^~~~~~~~</pre>
-      <pre>comparison/wait1.v:29:7: error: expected member</pre>
-      <pre>      $finish;</pre>
-      <pre>      ^~~~~~~</pre>
-      <pre>comparison/wait1.v:33:7: error: expected member</pre>
-      <pre>      $display (&#34;FAILED -- $time after wait is %t&#34;, $time);</pre>
-      <pre>      ^~~~~~~~</pre>
-      <pre>comparison/wait1.v:34:7: error: expected member</pre>
-      <pre>      $finish;</pre>
-      <pre>      ^~~~~~~</pre>
-      <pre>comparison/wait1.v:36:3: error: expected member</pre>
-      <pre>  $display (&#34;PASSED&#34;);</pre>
-      <pre>  ^~~~~~~~</pre>
-      <pre>comparison/wait1.v:37:3: error: unexpected &#39;end&#39; delimiter</pre>
-      <pre>  end</pre>
-      <pre>  ^~~</pre>
-      <pre>comparison/wait1.v:32:5: note: last complete block started here</pre>
-      <pre>    begin</pre>
-      <pre>    ^</pre>
-      <pre>comparison/wait1.v:35:5: note: and ended here</pre>
-      <pre>    end</pre>
-      <pre>    ^</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmp9y5t43mk/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp9y5t43mk/formatted/wait1.v</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmp9y5t43mk/formatted/wait1.v: unsupported SystemVerilog construct &#39;end&#39;; original text preserved [unsupported-construct]</pre>
+      <pre>CST verification passed</pre>
       <pre></pre>
     </section>
   </body>

@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="../../../log.css">
   </head>
   <body>
-    <header class="test-passed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-warning">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>package_decl</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-warning">
       <dl>
         <div><dt>description</dt><dd>package declaration test</dd></div>
         <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>warnings</dt><dd>3</dd></div>
         <div><dt>tags</dt><dd>uvm-req 26.2</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -31,14 +32,17 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:24:30</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 15:44:16</dd></div>
         <div><dt>time elapsed</dt><dd>0.011s</dd></div>
-        <div><dt>ram usage</dt><dd>18236 KB</dd></div>
+        <div><dt>ram usage</dt><dd>17980 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpdap9rxgn/formatted/. -I/__w/sv-tests/sv-tests/tests/chapter-26 /__w/sv-tests/sv-tests/out/tmp/tmpdap9rxgn/formatted/26.2--package-decl.sv</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmp73wnasxk/formatted/. -I/__w/sv-tests/sv-tests/tests/chapter-26 /__w/sv-tests/sv-tests/out/tmp/tmp73wnasxk/formatted/26.2--package-decl.sv</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmp73wnasxk/formatted/26.2--package-decl.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmp73wnasxk/formatted/26.2--package-decl.sv: cannot annotate SystemVerilog line (unsupported token kind ReturnKeyword); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmp73wnasxk/formatted/26.2--package-decl.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]</pre>
       <pre>CST verification passed</pre>
       <pre></pre>
     </section>

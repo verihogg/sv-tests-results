@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-warning">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>regress-vlg_pr2202846a_iv</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-warning">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>warnings</dt><dd>5</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,76 +33,20 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:31:18</dd></div>
-        <div><dt>time elapsed</dt><dd>0.014s</dd></div>
-        <div><dt>ram usage</dt><dd>21828 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 15:47:12</dd></div>
+        <div><dt>time elapsed</dt><dd>0.015s</dd></div>
+        <div><dt>ram usage</dt><dd>20056 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmptkuxcv6e/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmptkuxcv6e/formatted/pr2202846a.v</pre>
-      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmptkuxcv6e/comparison/pr2202846a.v</pre>
-      <pre>comparison/pr2202846a.v:17:31: error: expected expression</pre>
-      <pre>        {20&#39;b1111_1111_0011_ ???? _ ???? , 3&#39;b??? , 1&#39;b1}     : s = 1&#39;b1;</pre>
-      <pre>                              ^</pre>
-      <pre>comparison/pr2202846a.v:17:32: error: expected expression</pre>
-      <pre>        {20&#39;b1111_1111_0011_ ???? _ ???? , 3&#39;b??? , 1&#39;b1}     : s = 1&#39;b1;</pre>
-      <pre>                               ^</pre>
-      <pre>comparison/pr2202846a.v:17:33: error: expected expression</pre>
-      <pre>        {20&#39;b1111_1111_0011_ ???? _ ???? , 3&#39;b??? , 1&#39;b1}     : s = 1&#39;b1;</pre>
-      <pre>                                ^</pre>
-      <pre>comparison/pr2202846a.v:17:38: error: expected expression</pre>
-      <pre>        {20&#39;b1111_1111_0011_ ???? _ ???? , 3&#39;b??? , 1&#39;b1}     : s = 1&#39;b1;</pre>
-      <pre>                                     ^</pre>
-      <pre>comparison/pr2202846a.v:17:39: error: expected expression</pre>
-      <pre>        {20&#39;b1111_1111_0011_ ???? _ ???? , 3&#39;b??? , 1&#39;b1}     : s = 1&#39;b1;</pre>
-      <pre>                                      ^</pre>
-      <pre>comparison/pr2202846a.v:17:40: error: expected expression</pre>
-      <pre>        {20&#39;b1111_1111_0011_ ???? _ ???? , 3&#39;b??? , 1&#39;b1}     : s = 1&#39;b1;</pre>
-      <pre>                                       ^</pre>
-      <pre>comparison/pr2202846a.v:17:42: error: expected expression</pre>
-      <pre>        {20&#39;b1111_1111_0011_ ???? _ ???? , 3&#39;b??? , 1&#39;b1}     : s = 1&#39;b1;</pre>
-      <pre>                                         ^</pre>
-      <pre>comparison/pr2202846a.v:18:31: error: expected expression</pre>
-      <pre>        {20&#39;b1111_1111_0010_ ???? _ ???? , 3&#39;b??? , 1&#39;b1}     : g = 1&#39;b1;</pre>
-      <pre>                              ^</pre>
-      <pre>comparison/pr2202846a.v:18:32: error: expected expression</pre>
-      <pre>        {20&#39;b1111_1111_0010_ ???? _ ???? , 3&#39;b??? , 1&#39;b1}     : g = 1&#39;b1;</pre>
-      <pre>                               ^</pre>
-      <pre>comparison/pr2202846a.v:18:33: error: expected expression</pre>
-      <pre>        {20&#39;b1111_1111_0010_ ???? _ ???? , 3&#39;b??? , 1&#39;b1}     : g = 1&#39;b1;</pre>
-      <pre>                                ^</pre>
-      <pre>comparison/pr2202846a.v:18:38: error: expected expression</pre>
-      <pre>        {20&#39;b1111_1111_0010_ ???? _ ???? , 3&#39;b??? , 1&#39;b1}     : g = 1&#39;b1;</pre>
-      <pre>                                     ^</pre>
-      <pre>comparison/pr2202846a.v:18:39: error: expected expression</pre>
-      <pre>        {20&#39;b1111_1111_0010_ ???? _ ???? , 3&#39;b??? , 1&#39;b1}     : g = 1&#39;b1;</pre>
-      <pre>                                      ^</pre>
-      <pre>comparison/pr2202846a.v:18:40: error: expected expression</pre>
-      <pre>        {20&#39;b1111_1111_0010_ ???? _ ???? , 3&#39;b??? , 1&#39;b1}     : g = 1&#39;b1;</pre>
-      <pre>                                       ^</pre>
-      <pre>comparison/pr2202846a.v:18:42: error: expected expression</pre>
-      <pre>        {20&#39;b1111_1111_0010_ ???? _ ???? , 3&#39;b??? , 1&#39;b1}     : g = 1&#39;b1;</pre>
-      <pre>                                         ^</pre>
-      <pre>comparison/pr2202846a.v:19:35: error: expected expression</pre>
-      <pre>        {{r14 [31 : 21], 9&#39;b0_01 ?? _ ???? }, 3&#39;b??? , 1&#39;b? } : a = 1&#39;b1;</pre>
-      <pre>                                  ^</pre>
-      <pre>comparison/pr2202846a.v:19:40: error: expected expression</pre>
-      <pre>        {{r14 [31 : 21], 9&#39;b0_01 ?? _ ???? }, 3&#39;b??? , 1&#39;b? } : a = 1&#39;b1;</pre>
-      <pre>                                       ^</pre>
-      <pre>comparison/pr2202846a.v:19:41: error: expected expression</pre>
-      <pre>        {{r14 [31 : 21], 9&#39;b0_01 ?? _ ???? }, 3&#39;b??? , 1&#39;b? } : a = 1&#39;b1;</pre>
-      <pre>                                        ^</pre>
-      <pre>comparison/pr2202846a.v:19:42: error: expected expression</pre>
-      <pre>        {{r14 [31 : 21], 9&#39;b0_01 ?? _ ???? }, 3&#39;b??? , 1&#39;b? } : a = 1&#39;b1;</pre>
-      <pre>                                         ^</pre>
-      <pre>comparison/pr2202846a.v:19:44: error: expected expression</pre>
-      <pre>        {{r14 [31 : 21], 9&#39;b0_01 ?? _ ???? }, 3&#39;b??? , 1&#39;b? } : a = 1&#39;b1;</pre>
-      <pre>                                           ^</pre>
-      <pre>comparison/pr2202846a.v:20:33: error: expected expression</pre>
-      <pre>        {{r14 [31 : 21], 9&#39;b1_ ???? _ ???? }, 3&#39;b??? , 1&#39;b? } : a = 1&#39;b1;</pre>
-      <pre>                                ^</pre>
-      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmp5nmn1r4i/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp5nmn1r4i/formatted/pr2202846a.v</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmp5nmn1r4i/formatted/pr2202846a.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmp5nmn1r4i/formatted/pr2202846a.v: cannot annotate SystemVerilog line (based literal wildcard is not supported); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmp5nmn1r4i/formatted/pr2202846a.v: cannot annotate SystemVerilog line (based literal wildcard is not supported); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmp5nmn1r4i/formatted/pr2202846a.v: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmp5nmn1r4i/formatted/pr2202846a.v: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]</pre>
+      <pre>CST verification passed</pre>
       <pre></pre>
     </section>
   </body>

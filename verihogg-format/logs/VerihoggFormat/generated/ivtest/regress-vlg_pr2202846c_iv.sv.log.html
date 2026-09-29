@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-warning">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>regress-vlg_pr2202846c_iv</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-warning">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>warnings</dt><dd>8</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,94 +33,23 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:25:40</dd></div>
-        <div><dt>time elapsed</dt><dd>0.016s</dd></div>
-        <div><dt>ram usage</dt><dd>22520 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 15:45:30</dd></div>
+        <div><dt>time elapsed</dt><dd>0.021s</dd></div>
+        <div><dt>ram usage</dt><dd>22620 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmp8hcipghe/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp8hcipghe/formatted/pr2202846c.v</pre>
-      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmp8hcipghe/comparison/pr2202846c.v</pre>
-      <pre>comparison/pr2202846c.v:12:17: error: expected expression</pre>
-      <pre>        6&#39;b01_ ?? 10 : result = 1;</pre>
-      <pre>                ^</pre>
-      <pre>comparison/pr2202846c.v:12:30: error: expected &#39;:&#39;</pre>
-      <pre>        6&#39;b01_ ?? 10 : result = 1;</pre>
-      <pre>                             ^</pre>
-      <pre>comparison/pr2202846c.v:12:34: error: expected &#39;:&#39;</pre>
-      <pre>        6&#39;b01_ ?? 10 : result = 1;</pre>
-      <pre>                                 ^</pre>
-      <pre>comparison/pr2202846c.v:13:22: error: expected &#39;,&#39;</pre>
-      <pre>        {2&#39;b10, 4&#39;b?? 10}          : result = 2;</pre>
-      <pre>                     ^</pre>
-      <pre>comparison/pr2202846c.v:18:31: error: expected &#39;,&#39;</pre>
-      <pre>        {expr [1], 1&#39;bx, 4&#39;b?? 01} : result = 3;</pre>
-      <pre>                              ^</pre>
-      <pre>comparison/pr2202846c.v:32:8: error: expected a declaration name</pre>
-      <pre>  cond = 6&#39;bxx_xxxx;</pre>
-      <pre>       ^</pre>
-      <pre>comparison/pr2202846c.v:32:20: error: expected a declaration name</pre>
-      <pre>  cond = 6&#39;bxx_xxxx;</pre>
-      <pre>                   ^</pre>
-      <pre>comparison/pr2202846c.v:33:3: error: expected member</pre>
-      <pre>  #1 if (result != 1) begin$display (&#34;Failed case expr 1a test, got expr %0d&#34;, result);</pre>
-      <pre>  ^</pre>
-      <pre>comparison/pr2202846c.v:34:13: error: expected a declaration name</pre>
-      <pre>  pass      = 1&#39;b0;</pre>
-      <pre>            ^</pre>
-      <pre>comparison/pr2202846c.v:35:3: error: unexpected &#39;end&#39; delimiter</pre>
-      <pre>  end cond  = 6&#39;b10_zz10;</pre>
-      <pre>  ^~~</pre>
-      <pre>comparison/pr2202846c.v:33:37: note: last complete block started here</pre>
-      <pre>  #1 if (result != 1) begin$display (&#34;Failed case expr 1a test, got expr %0d&#34;, result);</pre>
-      <pre>                                    ^</pre>
-      <pre>comparison/pr2202846c.v:33:86: note: and ended here</pre>
-      <pre>  #1 if (result != 1) begin$display (&#34;Failed case expr 1a test, got expr %0d&#34;, result);</pre>
-      <pre>                                                                                     ^</pre>
-      <pre>comparison/pr2202846c.v:35:13: error: expected a declaration name</pre>
-      <pre>  end cond  = 6&#39;b10_zz10;</pre>
-      <pre>            ^</pre>
-      <pre>comparison/pr2202846c.v:35:25: error: expected a declaration name</pre>
-      <pre>  end cond  = 6&#39;b10_zz10;</pre>
-      <pre>                        ^</pre>
-      <pre>comparison/pr2202846c.v:36:3: error: expected member</pre>
-      <pre>  #1 if (result != 2) begin$display (&#34;Failed case expr 2 test, got expr %0d&#34;, result);</pre>
-      <pre>  ^</pre>
-      <pre>comparison/pr2202846c.v:37:13: error: expected a declaration name</pre>
-      <pre>  pass      = 1&#39;b0;</pre>
-      <pre>            ^</pre>
-      <pre>comparison/pr2202846c.v:38:3: error: unexpected &#39;end&#39; delimiter</pre>
-      <pre>  end cond  = 6&#39;b0x_zz01;</pre>
-      <pre>  ^~~</pre>
-      <pre>comparison/pr2202846c.v:36:37: note: last complete block started here</pre>
-      <pre>  #1 if (result != 2) begin$display (&#34;Failed case expr 2 test, got expr %0d&#34;, result);</pre>
-      <pre>                                    ^</pre>
-      <pre>comparison/pr2202846c.v:36:85: note: and ended here</pre>
-      <pre>  #1 if (result != 2) begin$display (&#34;Failed case expr 2 test, got expr %0d&#34;, result);</pre>
-      <pre>                                                                                    ^</pre>
-      <pre>comparison/pr2202846c.v:38:13: error: expected a declaration name</pre>
-      <pre>  end cond  = 6&#39;b0x_zz01;</pre>
-      <pre>            ^</pre>
-      <pre>comparison/pr2202846c.v:38:25: error: expected a declaration name</pre>
-      <pre>  end cond  = 6&#39;b0x_zz01;</pre>
-      <pre>                        ^</pre>
-      <pre>comparison/pr2202846c.v:39:3: error: expected member</pre>
-      <pre>  #1 if (result != 3) begin$display (&#34;Failed case expr 3 test, got expr %0d&#34;, result);</pre>
-      <pre>  ^</pre>
-      <pre>comparison/pr2202846c.v:40:13: error: expected a declaration name</pre>
-      <pre>  pass      = 1&#39;b0;</pre>
-      <pre>            ^</pre>
-      <pre>comparison/pr2202846c.v:41:3: error: unexpected &#39;end&#39; delimiter</pre>
-      <pre>  end cond  = 6&#39;b11_1111;</pre>
-      <pre>  ^~~</pre>
-      <pre>comparison/pr2202846c.v:39:37: note: last complete block started here</pre>
-      <pre>  #1 if (result != 3) begin$display (&#34;Failed case expr 3 test, got expr %0d&#34;, result);</pre>
-      <pre>                                    ^</pre>
-      <pre>comparison/pr2202846c.v:39:85: note: and ended here</pre>
-      <pre>  #1 if (result != 3) begin$display (&#34;Failed case expr 3 test, got expr %0d&#34;, result);</pre>
-      <pre>                                                                                    ^</pre>
-      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpkcmezaln/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpkcmezaln/formatted/pr2202846c.v</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmpkcmezaln/formatted/pr2202846c.v: unsupported SystemVerilog construct &#39;end&#39;; original text preserved [unsupported-construct]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmpkcmezaln/formatted/pr2202846c.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmpkcmezaln/formatted/pr2202846c.v: cannot annotate SystemVerilog line (based literal wildcard is not supported); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmpkcmezaln/formatted/pr2202846c.v: cannot annotate SystemVerilog line (based literal wildcard is not supported); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmpkcmezaln/formatted/pr2202846c.v: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmpkcmezaln/formatted/pr2202846c.v: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmpkcmezaln/formatted/pr2202846c.v: cannot annotate SystemVerilog line (based literal wildcard is not supported); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmpkcmezaln/formatted/pr2202846c.v: cannot annotate SystemVerilog line (unsupported token kind DefaultKeyword); original text preserved [invalid-annotation]</pre>
+      <pre>CST verification passed</pre>
       <pre></pre>
     </section>
   </body>

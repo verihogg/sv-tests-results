@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-warning">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>simple_module_scope_case</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-warning">
       <dl>
         <div><dt>description</dt><dd>Tests imported from yosys</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>warnings</dt><dd>1</dd></div>
         <div><dt>tags</dt><dd>yosys</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,45 +33,16 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:31:51</dd></div>
-        <div><dt>time elapsed</dt><dd>0.019s</dd></div>
-        <div><dt>ram usage</dt><dd>17916 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 15:47:46</dd></div>
+        <div><dt>time elapsed</dt><dd>0.021s</dd></div>
+        <div><dt>ram usage</dt><dd>17880 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmp5dc7yz33/formatted/third_party/tools/yosys/tests/simple -I/__w/sv-tests/sv-tests/out/tmp/tmp5dc7yz33/formatted/tests/generated/yosys -I/__w/sv-tests/sv-tests/third_party/tools/yosys/tests/simple -I/__w/sv-tests/sv-tests/tests/generated/yosys /__w/sv-tests/sv-tests/out/tmp/tmp5dc7yz33/formatted/tests/generated/yosys/simple_module_scope_case.sv /__w/sv-tests/sv-tests/out/tmp/tmp5dc7yz33/formatted/third_party/tools/yosys/tests/simple/module_scope_case.v</pre>
-      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmp5dc7yz33/comparison/third_party/tools/yosys/tests/simple/module_scope_case.v</pre>
-      <pre>comparison/third_party/tools/yosys/tests/simple/module_scope_case.v:5:48: error: expected &#39;;&#39;</pre>
-      <pre>  always @ *begincase (module_scope_case_top.x) 1 : module_scope_case_top.y = 0;</pre>
-      <pre>                                               ^</pre>
-      <pre>comparison/third_party/tools/yosys/tests/simple/module_scope_case.v:5:77: error: expected a declaration name</pre>
-      <pre>  always @ *begincase (module_scope_case_top.x) 1 : module_scope_case_top.y = 0;</pre>
-      <pre>                                                                            ^</pre>
-      <pre>comparison/third_party/tools/yosys/tests/simple/module_scope_case.v:6:3: error: expected member</pre>
-      <pre>  0 : module_scope_case_top.y = 1;</pre>
-      <pre>  ^</pre>
-      <pre>comparison/third_party/tools/yosys/tests/simple/module_scope_case.v:6:31: error: expected a declaration name</pre>
-      <pre>  0 : module_scope_case_top.y = 1;</pre>
-      <pre>                              ^</pre>
-      <pre>comparison/third_party/tools/yosys/tests/simple/module_scope_case.v:7:3: error: unexpected &#39;endcase&#39; delimiter</pre>
-      <pre>  endcase</pre>
-      <pre>  ^~~~~~~</pre>
-      <pre>comparison/third_party/tools/yosys/tests/simple/module_scope_case.v:5:23: note: last complete block started here</pre>
-      <pre>  always @ *begincase (module_scope_case_top.x) 1 : module_scope_case_top.y = 0;</pre>
-      <pre>                      ^</pre>
-      <pre>comparison/third_party/tools/yosys/tests/simple/module_scope_case.v:5:47: note: and ended here</pre>
-      <pre>  always @ *begincase (module_scope_case_top.x) 1 : module_scope_case_top.y = 0;</pre>
-      <pre>                                              ^</pre>
-      <pre>comparison/third_party/tools/yosys/tests/simple/module_scope_case.v:8:7: error: unexpected &#39;end&#39; delimiter</pre>
-      <pre>      end</pre>
-      <pre>      ^~~</pre>
-      <pre>comparison/third_party/tools/yosys/tests/simple/module_scope_case.v:5:23: note: last complete block started here</pre>
-      <pre>  always @ *begincase (module_scope_case_top.x) 1 : module_scope_case_top.y = 0;</pre>
-      <pre>                      ^</pre>
-      <pre>comparison/third_party/tools/yosys/tests/simple/module_scope_case.v:5:47: note: and ended here</pre>
-      <pre>  always @ *begincase (module_scope_case_top.x) 1 : module_scope_case_top.y = 0;</pre>
-      <pre>                                              ^</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpmjbt_090/formatted/third_party/tools/yosys/tests/simple -I/__w/sv-tests/sv-tests/out/tmp/tmpmjbt_090/formatted/tests/generated/yosys -I/__w/sv-tests/sv-tests/third_party/tools/yosys/tests/simple -I/__w/sv-tests/sv-tests/tests/generated/yosys /__w/sv-tests/sv-tests/out/tmp/tmpmjbt_090/formatted/tests/generated/yosys/simple_module_scope_case.sv /__w/sv-tests/sv-tests/out/tmp/tmpmjbt_090/formatted/third_party/tools/yosys/tests/simple/module_scope_case.v</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmpmjbt_090/formatted/third_party/tools/yosys/tests/simple/module_scope_case.v: unsupported SystemVerilog construct &#39;endcase&#39;; original text preserved [unsupported-construct]</pre>
+      <pre>CST verification passed</pre>
       <pre></pre>
     </section>
   </body>

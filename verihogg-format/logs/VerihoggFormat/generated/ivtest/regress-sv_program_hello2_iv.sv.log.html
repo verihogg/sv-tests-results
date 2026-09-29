@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-passed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-unverified">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>regress-sv_program_hello2_iv</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-unverified">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
         <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>formatter result</dt><dd>Original source rejected by Slang; formatted CST was not compared</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,15 +33,15 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:26:44</dd></div>
-        <div><dt>time elapsed</dt><dd>0.007s</dd></div>
-        <div><dt>ram usage</dt><dd>18376 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 15:46:36</dd></div>
+        <div><dt>time elapsed</dt><dd>0.008s</dd></div>
+        <div><dt>ram usage</dt><dd>18348 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpdp6tbsjg/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpdp6tbsjg/formatted/program_hello2.v</pre>
-      <pre>slang-driver (original) /__w/sv-tests/sv-tests/out/tmp/tmpdp6tbsjg/comparison/program_hello2.v</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpti3wne7g/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpti3wne7g/formatted/program_hello2.v</pre>
+      <pre>slang-driver (original) /__w/sv-tests/sv-tests/out/tmp/tmpti3wne7g/comparison/program_hello2.v</pre>
       <pre>comparison/program_hello2.v:7:4: error: member not allowed in program declaration</pre>
       <pre>   always #1 $finish;</pre>
       <pre>   ^~~~~~~~~~~~~~~~~~</pre>

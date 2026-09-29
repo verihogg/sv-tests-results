@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-passed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-unverified">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>keyword_unique</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-unverified">
       <dl>
         <div><dt>description</dt><dd>The &#39;unique&#39; keyword should be reserved</dd></div>
         <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>formatter result</dt><dd>Original source rejected by Slang; formatted CST was not compared</dd></div>
         <div><dt>tags</dt><dd>5.6.2</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -31,15 +32,15 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:37:56</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 15:55:00</dd></div>
         <div><dt>time elapsed</dt><dd>0.007s</dd></div>
-        <div><dt>ram usage</dt><dd>17536 KB</dd></div>
+        <div><dt>ram usage</dt><dd>17836 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpvsfnbptm/formatted/. -I/__w/sv-tests/sv-tests/tests/generated/keywords /__w/sv-tests/sv-tests/out/tmp/tmpvsfnbptm/formatted/5.6.2--keyword_unique.sv</pre>
-      <pre>slang-driver (original) /__w/sv-tests/sv-tests/out/tmp/tmpvsfnbptm/comparison/5.6.2--keyword_unique.sv</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmptu7azequ/formatted/. -I/__w/sv-tests/sv-tests/tests/generated/keywords /__w/sv-tests/sv-tests/out/tmp/tmptu7azequ/formatted/5.6.2--keyword_unique.sv</pre>
+      <pre>slang-driver (original) /__w/sv-tests/sv-tests/out/tmp/tmptu7azequ/comparison/5.6.2--keyword_unique.sv</pre>
       <pre>comparison/5.6.2--keyword_unique.sv:8:9: error: expected a declaration name</pre>
       <pre>    bit unique;</pre>
       <pre>        ^</pre>

@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-warning">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>scope_resolution</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-warning">
       <dl>
         <div><dt>description</dt><dd>access static method using scope resolution operator</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>warnings</dt><dd>3</dd></div>
         <div><dt>tags</dt><dd>uvm-req 8.23</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -31,27 +32,18 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:24:36</dd></div>
-        <div><dt>time elapsed</dt><dd>0.011s</dd></div>
-        <div><dt>ram usage</dt><dd>20328 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 15:44:23</dd></div>
+        <div><dt>time elapsed</dt><dd>0.013s</dd></div>
+        <div><dt>ram usage</dt><dd>20592 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpnl2au6x2/formatted/. -I/__w/sv-tests/sv-tests/tests/chapter-8 /__w/sv-tests/sv-tests/out/tmp/tmpnl2au6x2/formatted/8.23--scope_resolution.sv</pre>
-      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpnl2au6x2/comparison/8.23--scope_resolution.sv</pre>
-      <pre>comparison/8.23--scope_resolution.sv:23:5: error: expected member</pre>
-      <pre>    $display (test_cls :: next_id ());</pre>
-      <pre>    ^~~~~~~~</pre>
-      <pre>comparison/8.23--scope_resolution.sv:24:5: error: unexpected &#39;end&#39; delimiter</pre>
-      <pre>    end</pre>
-      <pre>    ^~~</pre>
-      <pre>comparison/8.23--scope_resolution.sv:22:31: note: last complete block started here</pre>
-      <pre>        initial begin$display (test_cls :: next_id ());</pre>
-      <pre>                              ^</pre>
-      <pre>comparison/8.23--scope_resolution.sv:22:54: note: and ended here</pre>
-      <pre>        initial begin$display (test_cls :: next_id ());</pre>
-      <pre>                                                     ^</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpq0byxhdn/formatted/. -I/__w/sv-tests/sv-tests/tests/chapter-8 /__w/sv-tests/sv-tests/out/tmp/tmpq0byxhdn/formatted/8.23--scope_resolution.sv</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmpq0byxhdn/formatted/8.23--scope_resolution.sv: unsupported SystemVerilog construct &#39;static&#39;; original text preserved [unsupported-construct]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmpq0byxhdn/formatted/8.23--scope_resolution.sv: cannot annotate SystemVerilog line (unsupported token kind DoubleColon); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmpq0byxhdn/formatted/8.23--scope_resolution.sv: cannot annotate SystemVerilog line (unsupported token kind DoubleColon); original text preserved [invalid-annotation]</pre>
+      <pre>CST verification passed</pre>
       <pre></pre>
     </section>
   </body>

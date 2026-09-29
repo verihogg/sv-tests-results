@@ -5,15 +5,16 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-passed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-warning">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>biquad_example</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-warning">
       <dl>
         <div><dt>description</dt><dd>UVM example - biquad_example</dd></div>
         <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
-        <div><dt>tags</dt><dd>uvm-examples uvm-1.2</dd></div>
+        <div><dt>warnings</dt><dd>15</dd></div>
+        <div><dt>tags</dt><dd>uvm-1.2 uvm-examples</dd></div>
         <div>
           <dt>incdirs</dt>
           <dd><ul>
@@ -37,14 +38,29 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:45:35</dd></div>
-        <div><dt>time elapsed</dt><dd>10.707s</dd></div>
-        <div><dt>ram usage</dt><dd>893040 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 16:03:14</dd></div>
+        <div><dt>time elapsed</dt><dd>11.198s</dd></div>
+        <div><dt>ram usage</dt><dd>892384 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpqr4mrzfy/formatted/uvm-1.2/src -I/__w/sv-tests/sv-tests/out/tmp/tmpqr4mrzfy/formatted/uvm-examples/biquad_example/tb/agents/apb_agent -I/__w/sv-tests/sv-tests/out/tmp/tmpqr4mrzfy/formatted/uvm-examples/biquad_example/tb/agents/signal_agent -I/__w/sv-tests/sv-tests/third_party/tests/uvm-1.2/src -I/__w/sv-tests/sv-tests/third_party/tests/uvm-examples/biquad_example/tb/agents/apb_agent -I/__w/sv-tests/sv-tests/third_party/tests/uvm-examples/biquad_example/tb/agents/signal_agent /__w/sv-tests/sv-tests/out/tmp/tmpqr4mrzfy/formatted/uvm-1.2/src/uvm_pkg.sv /__w/sv-tests/sv-tests/out/tmp/tmpqr4mrzfy/formatted/uvm-examples/biquad_example/tb/agents/signal_agent/signal_if.sv /__w/sv-tests/sv-tests/out/tmp/tmpqr4mrzfy/formatted/uvm-examples/biquad_example/tb/agents/apb_agent/apb_if.sv /__w/sv-tests/sv-tests/out/tmp/tmpqr4mrzfy/formatted/uvm-examples/biquad_example/tb/agents/apb_agent/apb_agent_pkg.sv /__w/sv-tests/sv-tests/out/tmp/tmpqr4mrzfy/formatted/uvm-examples/biquad_example/tb/agents/signal_agent/signal_agent_pkg.sv</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmplj8rnior/formatted/uvm-1.2/src -I/__w/sv-tests/sv-tests/out/tmp/tmplj8rnior/formatted/uvm-examples/biquad_example/tb/agents/apb_agent -I/__w/sv-tests/sv-tests/out/tmp/tmplj8rnior/formatted/uvm-examples/biquad_example/tb/agents/signal_agent -I/__w/sv-tests/sv-tests/third_party/tests/uvm-1.2/src -I/__w/sv-tests/sv-tests/third_party/tests/uvm-examples/biquad_example/tb/agents/apb_agent -I/__w/sv-tests/sv-tests/third_party/tests/uvm-examples/biquad_example/tb/agents/signal_agent /__w/sv-tests/sv-tests/out/tmp/tmplj8rnior/formatted/uvm-1.2/src/uvm_pkg.sv /__w/sv-tests/sv-tests/out/tmp/tmplj8rnior/formatted/uvm-examples/biquad_example/tb/agents/signal_agent/signal_if.sv /__w/sv-tests/sv-tests/out/tmp/tmplj8rnior/formatted/uvm-examples/biquad_example/tb/agents/apb_agent/apb_if.sv /__w/sv-tests/sv-tests/out/tmp/tmplj8rnior/formatted/uvm-examples/biquad_example/tb/agents/apb_agent/apb_agent_pkg.sv /__w/sv-tests/sv-tests/out/tmp/tmplj8rnior/formatted/uvm-examples/biquad_example/tb/agents/signal_agent/signal_agent_pkg.sv</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmplj8rnior/formatted/uvm-1.2/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmplj8rnior/formatted/uvm-1.2/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmplj8rnior/formatted/uvm-examples/biquad_example/tb/agents/signal_agent/signal_if.sv: unsupported SystemVerilog construct &#39;real&#39;; original text preserved [unsupported-construct]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmplj8rnior/formatted/uvm-examples/biquad_example/tb/agents/signal_agent/signal_if.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmplj8rnior/formatted/uvm-examples/biquad_example/tb/agents/signal_agent/signal_if.sv: cannot annotate SystemVerilog line (unsupported token kind EndInterfaceKeyword); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmplj8rnior/formatted/uvm-examples/biquad_example/tb/agents/apb_agent/apb_if.sv: unsupported SystemVerilog construct &#39;property&#39;; original text preserved [unsupported-construct]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmplj8rnior/formatted/uvm-examples/biquad_example/tb/agents/apb_agent/apb_if.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmplj8rnior/formatted/uvm-examples/biquad_example/tb/agents/apb_agent/apb_if.sv: cannot annotate SystemVerilog line (unsupported token kind CoverKeyword); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmplj8rnior/formatted/uvm-examples/biquad_example/tb/agents/apb_agent/apb_if.sv: cannot annotate SystemVerilog line (unsupported token kind EndInterfaceKeyword); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmplj8rnior/formatted/uvm-examples/biquad_example/tb/agents/apb_agent/apb_agent_pkg.sv: unsupported SystemVerilog construct &#39;import&#39;; original text preserved [unsupported-construct]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmplj8rnior/formatted/uvm-examples/biquad_example/tb/agents/apb_agent/apb_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmplj8rnior/formatted/uvm-examples/biquad_example/tb/agents/apb_agent/apb_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmplj8rnior/formatted/uvm-examples/biquad_example/tb/agents/signal_agent/signal_agent_pkg.sv: unsupported SystemVerilog construct &#39;timeunit&#39;; original text preserved [unsupported-construct]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmplj8rnior/formatted/uvm-examples/biquad_example/tb/agents/signal_agent/signal_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmplj8rnior/formatted/uvm-examples/biquad_example/tb/agents/signal_agent/signal_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]</pre>
       <pre>CST verification passed</pre>
       <pre></pre>
     </section>

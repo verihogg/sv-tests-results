@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-warning">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>regress-synth_case6_iv</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-warning">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>warnings</dt><dd>1</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,63 +33,16 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:26:09</dd></div>
-        <div><dt>time elapsed</dt><dd>0.014s</dd></div>
-        <div><dt>ram usage</dt><dd>20364 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 15:46:00</dd></div>
+        <div><dt>time elapsed</dt><dd>0.017s</dd></div>
+        <div><dt>ram usage</dt><dd>20596 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpbxf7vvz3/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpbxf7vvz3/formatted/case6.v</pre>
-      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpbxf7vvz3/comparison/case6.v</pre>
-      <pre>comparison/case6.v:12:12: error: unexpected identifier &#39;foo&#39;; did you mean &#39;for&#39;?</pre>
-      <pre>    1&#39;b1 : foo = 1;</pre>
-      <pre>           ^~~</pre>
-      <pre>comparison/case6.v:12:15: error: expected &#39;(&#39;</pre>
-      <pre>    1&#39;b1 : foo = 1;</pre>
-      <pre>              ^</pre>
-      <pre>comparison/case6.v:13:3: error: expected expression</pre>
-      <pre>  endcase // case(bit)</pre>
-      <pre>  ^</pre>
-      <pre>comparison/case6.v:14:3: error: unexpected &#39;end&#39; delimiter</pre>
-      <pre>  end (*ivl_synthesis_off *)    initial beginbit = 0;</pre>
-      <pre>  ^~~</pre>
-      <pre>comparison/case6.v:15:3: error: expected member</pre>
-      <pre>  #6                            $display (&#34;bit=%b, foo=%b&#34;, bit, foo);</pre>
-      <pre>  ^</pre>
-      <pre>comparison/case6.v:18:7: error: expected member</pre>
-      <pre>      $display (&#34;FAILED&#34;);</pre>
-      <pre>      ^~~~~~~~</pre>
-      <pre>comparison/case6.v:19:7: error: expected member</pre>
-      <pre>      $finish;</pre>
-      <pre>      ^~~~~~~</pre>
-      <pre>comparison/case6.v:21:7: error: expected a declaration name</pre>
-      <pre>  bit &lt;= 1;</pre>
-      <pre>      ^</pre>
-      <pre>comparison/case6.v:22:3: error: expected member</pre>
-      <pre>  #10 $display (&#34;bit=%b, foo=%b&#34;, bit, foo);</pre>
-      <pre>  ^</pre>
-      <pre>comparison/case6.v:25:7: error: expected member</pre>
-      <pre>      $display (&#34;FAILED&#34;);</pre>
-      <pre>      ^~~~~~~~</pre>
-      <pre>comparison/case6.v:26:7: error: expected member</pre>
-      <pre>      $finish;</pre>
-      <pre>      ^~~~~~~</pre>
-      <pre>comparison/case6.v:28:3: error: expected member</pre>
-      <pre>  $display (&#34;PASSED&#34;);</pre>
-      <pre>  ^~~~~~~~</pre>
-      <pre>comparison/case6.v:29:3: error: expected member</pre>
-      <pre>  $finish;</pre>
-      <pre>  ^~~~~~~</pre>
-      <pre>comparison/case6.v:30:3: error: unexpected &#39;end&#39; delimiter</pre>
-      <pre>  end</pre>
-      <pre>  ^~~</pre>
-      <pre>comparison/case6.v:24:5: note: last complete block started here</pre>
-      <pre>    begin</pre>
-      <pre>    ^</pre>
-      <pre>comparison/case6.v:27:5: note: and ended here</pre>
-      <pre>    end</pre>
-      <pre>    ^</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpktm9s03e/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpktm9s03e/formatted/case6.v</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmpktm9s03e/formatted/case6.v: unsupported SystemVerilog construct &#39;end&#39;; original text preserved [unsupported-construct]</pre>
+      <pre>CST verification passed</pre>
       <pre></pre>
     </section>
   </body>

@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-warning">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>regress-vlg_pr985_iv</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-warning">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>warnings</dt><dd>1</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,30 +33,16 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:31:15</dd></div>
-        <div><dt>time elapsed</dt><dd>0.013s</dd></div>
-        <div><dt>ram usage</dt><dd>19876 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 15:47:09</dd></div>
+        <div><dt>time elapsed</dt><dd>0.016s</dd></div>
+        <div><dt>ram usage</dt><dd>20388 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpacitdf8w/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpacitdf8w/formatted/pr985.v</pre>
-      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpacitdf8w/comparison/pr985.v</pre>
-      <pre>comparison/pr985.v:3:5: error: expected member</pre>
-      <pre>    `ADDR_DEC_W&#39;h10    // Device 0 located at address 20xx_xxxxh</pre>
-      <pre>    ^~~~~~~~~~~</pre>
-      <pre>comparison/pr985.v:1:20: note: expanded from macro &#39;ADDR_DEC_W&#39;</pre>
-      <pre>`define ADDR_DEC_W 8                 // Number of bits used to decode.</pre>
-      <pre>                   ^</pre>
-      <pre>comparison/pr985.v:6:1: error: expected a declaration name</pre>
-      <pre>module top (</pre>
-      <pre>^</pre>
-      <pre>comparison/pr985.v:12:31: error: expected expression</pre>
-      <pre>                 `ADDR_DEVICE0,</pre>
-      <pre>                              ^</pre>
-      <pre>comparison/pr985.v:12:31: error: misplaced trailing &#39;,&#39; [-Wmisplaced-trailing-separator]</pre>
-      <pre>                 `ADDR_DEVICE0,</pre>
-      <pre>                              ^</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmphxhy8gll/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmphxhy8gll/formatted/pr985.v</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmphxhy8gll/formatted/pr985.v: formatting would move a macro invocation to another source line; original text preserved [macro-line-number]</pre>
+      <pre>CST verification passed</pre>
       <pre></pre>
     </section>
   </body>

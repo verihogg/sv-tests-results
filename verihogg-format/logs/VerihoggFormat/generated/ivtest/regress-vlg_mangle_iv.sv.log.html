@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-passed">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>regress-vlg_mangle_iv</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-passed">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,21 +32,15 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:25:16</dd></div>
-        <div><dt>time elapsed</dt><dd>0.011s</dd></div>
-        <div><dt>ram usage</dt><dd>18552 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 15:45:05</dd></div>
+        <div><dt>time elapsed</dt><dd>0.012s</dd></div>
+        <div><dt>ram usage</dt><dd>18376 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmp82nj_a7n/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp82nj_a7n/formatted/mangle.v</pre>
-      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmp82nj_a7n/comparison/mangle.v</pre>
-      <pre>comparison/mangle.v:26:15: error: expected &#39;;&#39;</pre>
-      <pre>  reg    \abc;</pre>
-      <pre>              ^</pre>
-      <pre>comparison/mangle.v:27:36: error: expected &#39;;&#39;</pre>
-      <pre>  reg    \`~!-_=+\|[]{};:&#39;&#34;&#34;,./&lt;&gt;?;</pre>
-      <pre>                                   ^</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpvvu6uy9h/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpvvu6uy9h/formatted/mangle.v</pre>
+      <pre>CST verification passed</pre>
       <pre></pre>
     </section>
   </body>

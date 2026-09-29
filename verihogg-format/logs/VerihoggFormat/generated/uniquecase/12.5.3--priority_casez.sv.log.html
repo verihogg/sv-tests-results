@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-passed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-warning">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>priority_casez</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-warning">
       <dl>
         <div><dt>description</dt><dd>casez statement with priority</dd></div>
         <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>warnings</dt><dd>1</dd></div>
         <div><dt>tags</dt><dd>12.5.3</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -31,14 +32,15 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:34:20</dd></div>
-        <div><dt>time elapsed</dt><dd>0.013s</dd></div>
-        <div><dt>ram usage</dt><dd>19680 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 15:51:18</dd></div>
+        <div><dt>time elapsed</dt><dd>0.014s</dd></div>
+        <div><dt>ram usage</dt><dd>20116 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmp4hrjyn1h/formatted/. -I/__w/sv-tests/sv-tests/tests/generated/uniquecase /__w/sv-tests/sv-tests/out/tmp/tmp4hrjyn1h/formatted/12.5.3--priority_casez.sv</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpbyr4cdqw/formatted/. -I/__w/sv-tests/sv-tests/tests/generated/uniquecase /__w/sv-tests/sv-tests/out/tmp/tmpbyr4cdqw/formatted/12.5.3--priority_casez.sv</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmpbyr4cdqw/formatted/12.5.3--priority_casez.sv: unsupported SystemVerilog construct &#39;priority&#39;; original text preserved [unsupported-construct]</pre>
       <pre>CST verification passed</pre>
       <pre></pre>
     </section>

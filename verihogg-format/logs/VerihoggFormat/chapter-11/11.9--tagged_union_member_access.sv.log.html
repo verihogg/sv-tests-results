@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="../../../log.css">
   </head>
   <body>
-    <header class="test-passed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-warning">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>tagged_union_member_access</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-warning">
       <dl>
         <div><dt>description</dt><dd>tagged union member access test</dd></div>
         <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>warnings</dt><dd>4</dd></div>
         <div><dt>tags</dt><dd>11.9</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -31,14 +32,18 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:15:47</dd></div>
-        <div><dt>time elapsed</dt><dd>0.012s</dd></div>
-        <div><dt>ram usage</dt><dd>20468 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 15:34:23</dd></div>
+        <div><dt>time elapsed</dt><dd>0.013s</dd></div>
+        <div><dt>ram usage</dt><dd>20484 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpva4z5_5x/formatted/. -I/__w/sv-tests/sv-tests/tests/chapter-11 /__w/sv-tests/sv-tests/out/tmp/tmpva4z5_5x/formatted/11.9--tagged_union_member_access.sv</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmppzrb1d_v/formatted/. -I/__w/sv-tests/sv-tests/tests/chapter-11 /__w/sv-tests/sv-tests/out/tmp/tmppzrb1d_v/formatted/11.9--tagged_union_member_access.sv</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmppzrb1d_v/formatted/11.9--tagged_union_member_access.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmppzrb1d_v/formatted/11.9--tagged_union_member_access.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmppzrb1d_v/formatted/11.9--tagged_union_member_access.sv: cannot annotate SystemVerilog line (unsupported token kind TaggedKeyword); original text preserved [invalid-annotation]</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmppzrb1d_v/formatted/11.9--tagged_union_member_access.sv: cannot annotate SystemVerilog line (unsupported token kind TaggedKeyword); original text preserved [invalid-annotation]</pre>
       <pre>CST verification passed</pre>
       <pre></pre>
     </section>

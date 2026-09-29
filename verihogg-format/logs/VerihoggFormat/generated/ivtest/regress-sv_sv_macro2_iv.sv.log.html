@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-warning">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>regress-sv_sv_macro2_iv</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-warning">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>warnings</dt><dd>1</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,21 +33,16 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:26:21</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 15:46:12</dd></div>
         <div><dt>time elapsed</dt><dd>0.011s</dd></div>
-        <div><dt>ram usage</dt><dd>18340 KB</dd></div>
+        <div><dt>ram usage</dt><dd>18028 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmp2g91nbad/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp2g91nbad/formatted/sv_macro2.v</pre>
-      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmp2g91nbad/comparison/sv_macro2.v</pre>
-      <pre>comparison/sv_macro2.v:6:17: error: expected &#39;,&#39;</pre>
-      <pre>      $display (`msg (left side, right side));</pre>
-      <pre>                ^</pre>
-      <pre>comparison/sv_macro2.v:1:19: note: expanded from macro &#39;msg&#39;</pre>
-      <pre>`define msg (x, y) `&#34; x : `\`&#34; y `\`&#34; `&#34;</pre>
-      <pre>                  ^</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpwtiaxtgh/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpwtiaxtgh/formatted/sv_macro2.v</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmpwtiaxtgh/formatted/sv_macro2.v: formatting would move a macro invocation to another source line; original text preserved [macro-line-number]</pre>
+      <pre>CST verification passed</pre>
       <pre></pre>
     </section>
   </body>

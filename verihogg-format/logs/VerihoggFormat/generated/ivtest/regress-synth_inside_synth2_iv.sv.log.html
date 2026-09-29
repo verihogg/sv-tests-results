@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-warning">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>regress-synth_inside_synth2_iv</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-warning">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>warnings</dt><dd>1</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,88 +33,16 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:31:10</dd></div>
-        <div><dt>time elapsed</dt><dd>0.016s</dd></div>
-        <div><dt>ram usage</dt><dd>24088 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 15:47:04</dd></div>
+        <div><dt>time elapsed</dt><dd>0.018s</dd></div>
+        <div><dt>ram usage</dt><dd>22516 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpkz9k_ak6/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpkz9k_ak6/formatted/inside_synth2.v</pre>
-      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpkz9k_ak6/comparison/inside_synth2.v</pre>
-      <pre>comparison/inside_synth2.v:4:60: error: expected &#39;;&#39;</pre>
-      <pre>  (*ivl_synthesis_on *) always @(posedge clk) beginif (rst) beginth2 &lt;= 0;</pre>
-      <pre>                                                           ^</pre>
-      <pre>comparison/inside_synth2.v:4:70: error: expected a declaration name</pre>
-      <pre>  (*ivl_synthesis_on *) always @(posedge clk) beginif (rst) beginth2 &lt;= 0;</pre>
-      <pre>                                                                     ^</pre>
-      <pre>comparison/inside_synth2.v:5:10: error: expected a declaration name</pre>
-      <pre>  carry  &lt;= 1;</pre>
-      <pre>         ^</pre>
-      <pre>comparison/inside_synth2.v:6:3: error: unexpected identifier &#39;foo&#39;; did you mean &#39;for&#39;?</pre>
-      <pre>  foo    &lt;= 0;        // This causes foo to be an output to the block.</pre>
-      <pre>  ^~~</pre>
-      <pre>comparison/inside_synth2.v:6:6: error: expected &#39;(&#39;</pre>
-      <pre>  foo    &lt;= 0;        // This causes foo to be an output to the block.</pre>
-      <pre>     ^</pre>
-      <pre>comparison/inside_synth2.v:7:3: error: expected expression</pre>
-      <pre>  end</pre>
-      <pre>  ^</pre>
-      <pre>comparison/inside_synth2.v:7:3: error: unexpected &#39;end&#39; delimiter</pre>
-      <pre>  end</pre>
-      <pre>  ^~~</pre>
-      <pre>comparison/inside_synth2.v:8:27: error: expected &#39;;&#39;</pre>
-      <pre>      else beginif (carry) {carry, th2} &lt;= {1&#39;b0, init};</pre>
-      <pre>                          ^</pre>
-      <pre>comparison/inside_synth2.v:9:3: error: expected member</pre>
-      <pre>  else {carry, th2} &lt;= {1&#39;b0, th2} + 9&#39;h1;</pre>
-      <pre>  ^~~~</pre>
-      <pre>comparison/inside_synth2.v:10:3: error: unexpected &#39;end&#39; delimiter</pre>
-      <pre>  end</pre>
-      <pre>  ^~~</pre>
-      <pre>comparison/inside_synth2.v:8:20: note: last complete block started here</pre>
-      <pre>      else beginif (carry) {carry, th2} &lt;= {1&#39;b0, init};</pre>
-      <pre>                   ^</pre>
-      <pre>comparison/inside_synth2.v:8:26: note: and ended here</pre>
-      <pre>      else beginif (carry) {carry, th2} &lt;= {1&#39;b0, init};</pre>
-      <pre>                         ^</pre>
-      <pre>comparison/inside_synth2.v:11:7: error: unexpected &#39;end&#39; delimiter</pre>
-      <pre>      end</pre>
-      <pre>      ^~~</pre>
-      <pre>comparison/inside_synth2.v:8:20: note: last complete block started here</pre>
-      <pre>      else beginif (carry) {carry, th2} &lt;= {1&#39;b0, init};</pre>
-      <pre>                   ^</pre>
-      <pre>comparison/inside_synth2.v:8:26: note: and ended here</pre>
-      <pre>      else beginif (carry) {carry, th2} &lt;= {1&#39;b0, init};</pre>
-      <pre>                         ^</pre>
-      <pre>comparison/inside_synth2.v:13:9: error: expected a declaration name</pre>
-      <pre>  clk   = 0;</pre>
-      <pre>        ^</pre>
-      <pre>comparison/inside_synth2.v:14:3: error: unexpected identifier &#39;init&#39;; did you mean &#39;int&#39;?</pre>
-      <pre>  init  = 8&#39;hfe;</pre>
-      <pre>  ^~~~</pre>
-      <pre>comparison/inside_synth2.v:14:9: error: expected a declaration name</pre>
-      <pre>  init  = 8&#39;hfe;</pre>
-      <pre>        ^</pre>
-      <pre>comparison/inside_synth2.v:14:16: error: expected a declaration name</pre>
-      <pre>  init  = 8&#39;hfe;</pre>
-      <pre>               ^</pre>
-      <pre>comparison/inside_synth2.v:15:3: error: expected member</pre>
-      <pre>  $monitor (&#34;clk=%b:  rst=%b, th2=%h, carry=%b&#34;, clk, rst, th2, carry);</pre>
-      <pre>  ^~~~~~~~</pre>
-      <pre>comparison/inside_synth2.v:16:3: error: expected member</pre>
-      <pre>  #1clk  = 1;</pre>
-      <pre>  ^</pre>
-      <pre>comparison/inside_synth2.v:16:10: error: expected a declaration name</pre>
-      <pre>  #1clk  = 1;</pre>
-      <pre>         ^</pre>
-      <pre>comparison/inside_synth2.v:17:3: error: expected member</pre>
-      <pre>  #1clk  = 0;</pre>
-      <pre>  ^</pre>
-      <pre>comparison/inside_synth2.v:17:10: error: expected a declaration name</pre>
-      <pre>  #1clk  = 0;</pre>
-      <pre>         ^</pre>
-      <pre>fatal error: too many errors emitted, stopping now [--error-limit=]</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpm6cbqshq/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpm6cbqshq/formatted/inside_synth2.v</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmpm6cbqshq/formatted/inside_synth2.v: unsupported SystemVerilog construct &#39;end&#39;; original text preserved [unsupported-construct]</pre>
+      <pre>CST verification passed</pre>
       <pre></pre>
     </section>
   </body>

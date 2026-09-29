@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-warning">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>regress-vlg_pr1570451_iv</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-warning">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>warnings</dt><dd>1</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,66 +33,16 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:26:27</dd></div>
-        <div><dt>time elapsed</dt><dd>0.014s</dd></div>
-        <div><dt>ram usage</dt><dd>20552 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 15:46:18</dd></div>
+        <div><dt>time elapsed</dt><dd>0.016s</dd></div>
+        <div><dt>ram usage</dt><dd>20548 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpqgrgxw36/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpqgrgxw36/formatted/pr1570451.v</pre>
-      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpqgrgxw36/comparison/pr1570451.v</pre>
-      <pre>comparison/pr1570451.v:24:7: error: expected a declaration name</pre>
-      <pre>  bus = 2&#39;b11;</pre>
-      <pre>      ^</pre>
-      <pre>comparison/pr1570451.v:25:3: error: expected member</pre>
-      <pre>  #4 if (skewed_bus !== 2&#39;b00) begin$display (&#34;FAILED -- changed far too soon&#34;);</pre>
-      <pre>  ^</pre>
-      <pre>comparison/pr1570451.v:26:3: error: expected member</pre>
-      <pre>  $finish;</pre>
-      <pre>  ^~~~~~~</pre>
-      <pre>comparison/pr1570451.v:27:3: error: unexpected &#39;end&#39; delimiter</pre>
-      <pre>  end</pre>
-      <pre>  ^~~</pre>
-      <pre>comparison/pr1570451.v:25:46: note: last complete block started here</pre>
-      <pre>  #4 if (skewed_bus !== 2&#39;b00) begin$display (&#34;FAILED -- changed far too soon&#34;);</pre>
-      <pre>                                             ^</pre>
-      <pre>comparison/pr1570451.v:25:79: note: and ended here</pre>
-      <pre>  #4 if (skewed_bus !== 2&#39;b00) begin$display (&#34;FAILED -- changed far too soon&#34;);</pre>
-      <pre>                                                                              ^</pre>
-      <pre>comparison/pr1570451.v:29:3: error: expected member</pre>
-      <pre>  $finish;</pre>
-      <pre>  ^~~~~~~</pre>
-      <pre>comparison/pr1570451.v:30:3: error: unexpected &#39;end&#39; delimiter</pre>
-      <pre>  end</pre>
-      <pre>  ^~~</pre>
-      <pre>comparison/pr1570451.v:28:50: note: last complete block started here</pre>
-      <pre>      #2 if (skewed_bus !== 2&#39;b01) begin$display (&#34;FAILED -- partial change not right.&#34;);</pre>
-      <pre>                                                 ^</pre>
-      <pre>comparison/pr1570451.v:28:88: note: and ended here</pre>
-      <pre>      #2 if (skewed_bus !== 2&#39;b01) begin$display (&#34;FAILED -- partial change not right.&#34;);</pre>
-      <pre>                                                                                       ^</pre>
-      <pre>comparison/pr1570451.v:32:3: error: expected member</pre>
-      <pre>  $finish;</pre>
-      <pre>  ^~~~~~~</pre>
-      <pre>comparison/pr1570451.v:33:3: error: unexpected &#39;end&#39; delimiter</pre>
-      <pre>  end</pre>
-      <pre>  ^~~</pre>
-      <pre>comparison/pr1570451.v:31:50: note: last complete block started here</pre>
-      <pre>      #5 if (skewed_bus !== 2&#39;b11) begin$display (&#34;FAILED -- final change not right&#34;);</pre>
-      <pre>                                                 ^</pre>
-      <pre>comparison/pr1570451.v:31:85: note: and ended here</pre>
-      <pre>      #5 if (skewed_bus !== 2&#39;b11) begin$display (&#34;FAILED -- final change not right&#34;);</pre>
-      <pre>                                                                                    ^</pre>
-      <pre>comparison/pr1570451.v:35:3: error: unexpected &#39;end&#39; delimiter</pre>
-      <pre>  end</pre>
-      <pre>  ^~~</pre>
-      <pre>comparison/pr1570451.v:31:50: note: last complete block started here</pre>
-      <pre>      #5 if (skewed_bus !== 2&#39;b11) begin$display (&#34;FAILED -- final change not right&#34;);</pre>
-      <pre>                                                 ^</pre>
-      <pre>comparison/pr1570451.v:31:85: note: and ended here</pre>
-      <pre>      #5 if (skewed_bus !== 2&#39;b11) begin$display (&#34;FAILED -- final change not right&#34;);</pre>
-      <pre>                                                                                    ^</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmps5ei7id_/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmps5ei7id_/formatted/pr1570451.v</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmps5ei7id_/formatted/pr1570451.v: unsupported SystemVerilog construct &#39;end&#39;; original text preserved [unsupported-construct]</pre>
+      <pre>CST verification passed</pre>
       <pre></pre>
     </section>
   </body>

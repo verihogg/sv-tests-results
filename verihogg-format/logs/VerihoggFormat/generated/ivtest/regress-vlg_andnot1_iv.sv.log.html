@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-warning">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>regress-vlg_andnot1_iv</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-warning">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>warnings</dt><dd>1</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,27 +33,16 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:25:42</dd></div>
-        <div><dt>time elapsed</dt><dd>0.012s</dd></div>
-        <div><dt>ram usage</dt><dd>20576 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 15:45:32</dd></div>
+        <div><dt>time elapsed</dt><dd>0.016s</dd></div>
+        <div><dt>ram usage</dt><dd>20204 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpci9deuaj/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpci9deuaj/formatted/andnot1.v</pre>
-      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpci9deuaj/comparison/andnot1.v</pre>
-      <pre>comparison/andnot1.v:41:3: error: expected member</pre>
-      <pre>  $display (&#34;PASSED&#34;);</pre>
-      <pre>  ^~~~~~~~</pre>
-      <pre>comparison/andnot1.v:42:3: error: unexpected &#39;end&#39; delimiter</pre>
-      <pre>  end</pre>
-      <pre>  ^~~</pre>
-      <pre>comparison/andnot1.v:30:5: note: last complete block started here</pre>
-      <pre>    begin</pre>
-      <pre>    ^</pre>
-      <pre>comparison/andnot1.v:40:5: note: and ended here</pre>
-      <pre>    end // for (tmp = 0 ;  tmp &lt; 4 ;  tmp = tmp + 1)</pre>
-      <pre>    ^</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmp3tuxxbzh/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp3tuxxbzh/formatted/andnot1.v</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmp3tuxxbzh/formatted/andnot1.v: unsupported SystemVerilog construct &#39;end&#39;; original text preserved [unsupported-construct]</pre>
+      <pre>CST verification passed</pre>
       <pre></pre>
     </section>
   </body>

@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/verihogg/verihogg-format/tree/95ed5ffcca4e3d5c34443e4caf250236ffdc2b93" target="_blank"><h1>VerihoggFormat</h1></a>
+    <header class="test-warning">
+        <a href="https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f" target="_blank"><h1>VerihoggFormat</h1></a>
         <h2>regress-vlg_pr2972866_iv</h2>
     </header>
-    <section class="property-list">
+    <section class="property-list test-warning">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>warnings</dt><dd>1</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,18 +33,16 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-09-21 21:31:13</dd></div>
-        <div><dt>time elapsed</dt><dd>0.013s</dd></div>
-        <div><dt>ram usage</dt><dd>19956 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-09-29 15:47:07</dd></div>
+        <div><dt>time elapsed</dt><dd>0.016s</dd></div>
+        <div><dt>ram usage</dt><dd>20580 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmpy060tm2m/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmpy060tm2m/formatted/pr2972866.v</pre>
-      <pre>slang-driver (formatted) /__w/sv-tests/sv-tests/out/tmp/tmpy060tm2m/comparison/pr2972866.v</pre>
-      <pre>comparison/pr2972866.v:51:16: error: expected path operator (&#39;*&gt;&#39; or &#39;=&gt;&#39;)</pre>
-      <pre>  specify (in += &gt; out) = (0.1 : 0.1 : 0.1, 0.1 : 0.1 : 0.1);</pre>
-      <pre>               ^</pre>
+      <pre>verihogg-format --inplace -I/__w/sv-tests/sv-tests/out/tmp/tmp7o42ft4q/formatted/. -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest -I/__w/sv-tests/sv-tests/third_party/tools/icarus/ivtest/ivltests /__w/sv-tests/sv-tests/out/tmp/tmp7o42ft4q/formatted/pr2972866.v</pre>
+      <pre>Warning in /__w/sv-tests/sv-tests/out/tmp/tmp7o42ft4q/formatted/pr2972866.v: unsupported SystemVerilog construct &#39;buf&#39;; original text preserved [unsupported-construct]</pre>
+      <pre>CST verification passed</pre>
       <pre></pre>
     </section>
   </body>

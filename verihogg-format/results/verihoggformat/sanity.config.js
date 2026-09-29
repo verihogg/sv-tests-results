@@ -1,1 +1,1 @@
-config_loader_data['verihoggformat/sanity'] = [["","sanity",1,"logs/VerihoggFormat/sanity.sv.log.html","tests/sanity.sv.html"]]
+config_loader_data['verihoggformat/sanity'] = [["","sanity",4,"logs/VerihoggFormat/sanity.sv.log.html","tests/sanity.sv.html"]]
