@@ -1,0 +1,30 @@
+name: integer_unsigned_time
+description: time unsigned net test
+tags: 6.11
+files: /home/darya/verilog/sv-tests/tests/generated/integers/6.11--integer_unsigned_time.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/integers
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.0271756649017334
+user_time: 0.0
+system_time: 0.029304999999999998
+ram_usage: 20356
+date_completed: 2026-10-24 23:02:15
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpv4th6kgp/formatted/6.11--integer_unsigned_time.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpv4th6kgp/formatted/6.11--integer_unsigned_time.sv: cannot annotate SystemVerilog line (unsupported token kind TimeKeyword); original text preserved [invalid-annotation]
+CST verification passed

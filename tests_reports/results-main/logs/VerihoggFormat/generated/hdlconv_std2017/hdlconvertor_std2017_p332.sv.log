@@ -1,0 +1,31 @@
+name: hdlconvertor_std2017_p332
+description: Tests imported from hdlconv_std2017
+files: /home/darya/verilog/sv-tests/tests/generated/hdlconv_std2017/hdlconvertor_std2017_p332.sv /home/darya/verilog/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017/p332.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017
+tags: hdlconv_std2017
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.06263422966003418
+user_time: 0.009415999999999999
+system_time: 0.045389
+ram_usage: 20420
+date_completed: 2026-10-24 21:58:32
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpf7r1fwsg/formatted/tests/generated/hdlconv_std2017/hdlconvertor_std2017_p332.sv /home/darya/verilog/sv-tests/out/tmp/tmpf7r1fwsg/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p332.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpf7r1fwsg/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p332.sv: cannot annotate SystemVerilog line (unsupported token kind AutomaticKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpf7r1fwsg/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p332.sv: cannot annotate SystemVerilog line (unsupported token kind DoublePlus); original text preserved [invalid-annotation]
+CST verification passed

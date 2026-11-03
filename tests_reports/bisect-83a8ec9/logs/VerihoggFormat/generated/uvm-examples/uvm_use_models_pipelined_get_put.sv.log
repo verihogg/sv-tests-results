@@ -1,0 +1,55 @@
+name: uvm_use_models_pipelined_get_put
+description: UVM example - uvm_use_models_pipelined_get_put
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_use_models_pipelined_get_put/mbus_slave/mbus_types_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_use_models_pipelined_get_put/pipelined_get_put/mbus_pipelined_agent/mbus_pipelined_agent_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_use_models_pipelined_get_put/mbus_slave/mbus_slave.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_use_models_pipelined_get_put/pipelined_get_put/mbus_pipelined_agent/mbus_pipelined_driver_bfm.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_use_models_pipelined_get_put/pipelined_get_put/top_tb.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_use_models_pipelined_get_put/pipelined_get_put/top_hdl.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_use_models_pipelined_get_put/pipelined_get_put/mbus_pipelined_agent
+tags: uvm-examples uvm
+type: simulation elaboration parsing
+timeout: 900
+unsynthesizable: 1
+simvariants: 
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 26
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 25.765095233917236
+user_time: 1.632515
+system_time: 1.430606
+ram_usage: 1100056
+date_completed: 2026-10-26 14:11:15
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/mbus_slave/mbus_types_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/pipelined_get_put/mbus_pipelined_agent/mbus_pipelined_agent_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/mbus_slave/mbus_slave.sv /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/pipelined_get_put/mbus_pipelined_agent/mbus_pipelined_driver_bfm.sv /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/pipelined_get_put/top_tb.sv /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/pipelined_get_put/top_hdl.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm/src/uvm_pkg.sv: unsupported SystemVerilog construct 'static'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm/src/uvm_pkg.sv: unsupported SystemVerilog construct 'export'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/mbus_slave/mbus_types_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/mbus_slave/mbus_types_pkg.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/mbus_slave/mbus_types_pkg.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/mbus_slave/mbus_types_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/pipelined_get_put/mbus_pipelined_agent/mbus_pipelined_agent_pkg.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/pipelined_get_put/mbus_pipelined_agent/mbus_pipelined_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/pipelined_get_put/mbus_pipelined_agent/mbus_pipelined_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/mbus_slave/mbus_slave.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/mbus_slave/mbus_slave.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/mbus_slave/mbus_slave.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/mbus_slave/mbus_slave.sv: cannot annotate SystemVerilog line (unsupported token kind EndInterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/mbus_slave/mbus_slave.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/mbus_slave/mbus_slave.sv: cannot annotate SystemVerilog line (unsupported token kind EndInterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/mbus_slave/mbus_slave.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/mbus_slave/mbus_slave.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/pipelined_get_put/mbus_pipelined_agent/mbus_pipelined_driver_bfm.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/pipelined_get_put/top_tb.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/pipelined_get_put/top_tb.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/pipelined_get_put/top_tb.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/pipelined_get_put/top_tb.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwu9qvjnr/formatted/uvm-examples/uvm_use_models_pipelined_get_put/pipelined_get_put/top_hdl.sv: cannot annotate SystemVerilog line (unsupported token kind DoubleColon); original text preserved [invalid-annotation]
+CST verification passed

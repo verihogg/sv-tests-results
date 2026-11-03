@@ -1,0 +1,30 @@
+name: regress-vlg_string13_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/string13.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.04554581642150879
+user_time: 0.010581
+system_time: 0.027028
+ram_usage: 27660
+date_completed: 2026-10-26 11:54:22
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmp8baqto7i/formatted/. -I/home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest -I/home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests /home/darya/verilog/sv-tests/out/tmp/tmp8baqto7i/formatted/string13.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp8baqto7i/formatted/string13.v: formatting would move a macro invocation to another source line; original text preserved [macro-line-number]
+CST verification passed

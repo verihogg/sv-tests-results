@@ -1,0 +1,29 @@
+name: ordering-methods-reverse
+description: Test support of reverse method on unpacked arrays
+tags: 7.12.2 7.4.2
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/unpacked/ordering-methods/reverse.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/unpacked/ordering-methods
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03545975685119629
+user_time: 0.013942999999999999
+system_time: 0.016606
+ram_usage: 21584
+date_completed: 2026-10-24 22:48:45
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmplutkxeec/formatted/reverse.sv
+CST verification passed

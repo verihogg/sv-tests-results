@@ -1,0 +1,31 @@
+name: regress-sv_sv_type_param_fail2_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/sv_type_param_fail2.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+should_fail_because: this test was imported from ivtest and is designed to fail
+top_module: 
+timeout: 30
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03252911567687988
+user_time: 0.01582
+system_time: 0.018293999999999998
+ram_usage: 20584
+date_completed: 2026-10-26 11:54:40
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpcu5ja4a2/formatted/. -I/home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest -I/home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests /home/darya/verilog/sv-tests/out/tmp/tmpcu5ja4a2/formatted/sv_type_param_fail2.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpcu5ja4a2/formatted/sv_type_param_fail2.v: unsupported SystemVerilog construct 'defparam'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpcu5ja4a2/formatted/sv_type_param_fail2.v: cannot annotate SystemVerilog line (unsupported token kind TypeKeyword); original text preserved [invalid-annotation]
+CST verification passed

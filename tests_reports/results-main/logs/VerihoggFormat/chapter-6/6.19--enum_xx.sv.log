@@ -1,0 +1,30 @@
+name: enum_xx
+description: enum with x tests
+tags: 6.19
+files: /home/darya/verilog/sv-tests/tests/chapter-6/6.19--enum_xx.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-6
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03406715393066406
+user_time: 0.009992
+system_time: 0.026621
+ram_usage: 20572
+date_completed: 2026-10-24 22:00:56
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpkr7d9fs7/formatted/6.19--enum_xx.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpkr7d9fs7/formatted/6.19--enum_xx.sv: unsupported SystemVerilog construct 'enum'; original text preserved [unsupported-construct]
+CST verification passed

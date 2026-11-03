@@ -1,0 +1,29 @@
+name: lib_display_xc7_projf_bitmap_addr_tb
+description: Tests imported from projf-explore
+files: /home/darya/verilog/sv-tests/tests/generated/projf-explore/lib_display_xc7_projf_bitmap_addr_tb.sv /home/darya/verilog/sv-tests/third_party/tests/projf-explore/lib/display/xc7/bitmap_addr_tb.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/projf-explore/lib/display/xc7
+tags: projf-explore
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.062039852142333984
+user_time: 0.005235
+system_time: 0.048621
+ram_usage: 20588
+date_completed: 2026-10-26 14:52:05
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpay5az9xb/formatted/tests/generated/projf-explore/lib_display_xc7_projf_bitmap_addr_tb.sv /home/darya/verilog/sv-tests/out/tmp/tmpay5az9xb/formatted/third_party/tests/projf-explore/lib/display/xc7/bitmap_addr_tb.sv
+CST verification passed

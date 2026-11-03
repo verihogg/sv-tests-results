@@ -1,0 +1,37 @@
+name: regress-vlg_pv_wr_vec4a_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/pv_wr_vec4a.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 8
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.06126666069030762
+user_time: 0.011465999999999999
+system_time: 0.029498
+ram_usage: 29676
+date_completed: 2026-10-26 14:13:42
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpe78zxkym/formatted/pv_wr_vec4a.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpe78zxkym/formatted/pv_wr_vec4a.v: cannot annotate SystemVerilog line (unsupported token kind PlusColon); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpe78zxkym/formatted/pv_wr_vec4a.v: cannot annotate SystemVerilog line (unsupported token kind PlusColon); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpe78zxkym/formatted/pv_wr_vec4a.v: cannot annotate SystemVerilog line (unsupported token kind PlusColon); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpe78zxkym/formatted/pv_wr_vec4a.v: cannot annotate SystemVerilog line (unsupported token kind PlusColon); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpe78zxkym/formatted/pv_wr_vec4a.v: cannot annotate SystemVerilog line (unsupported token kind PlusColon); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpe78zxkym/formatted/pv_wr_vec4a.v: cannot annotate SystemVerilog line (unsupported token kind PlusColon); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpe78zxkym/formatted/pv_wr_vec4a.v: cannot annotate SystemVerilog line (unsupported token kind PlusColon); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpe78zxkym/formatted/pv_wr_vec4a.v: formatting would move a macro invocation to another source line; original text preserved [macro-line-number]
+CST verification passed

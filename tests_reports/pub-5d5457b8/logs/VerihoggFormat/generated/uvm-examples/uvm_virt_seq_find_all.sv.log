@@ -1,0 +1,35 @@
+name: uvm_virt_seq_find_all
+description: UVM example - uvm_virt_seq_find_all
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm-1.2/src/uvm_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_virt_seq_find_all/simple_ovc/simple_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_virt_seq_find_all/top.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm-1.2/src /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_virt_seq_find_all/simple_ovc
+tags: uvm-examples uvm-1.2
+type: simulation elaboration parsing
+timeout: 900
+unsynthesizable: 1
+simvariants: 
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 6
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 24.460049867630005
+user_time: 1.6787429999999999
+system_time: 0.774119
+ram_usage: 926184
+date_completed: 2026-10-26 11:51:34
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpyxoskwm0/formatted/uvm-1.2/src -I/home/darya/verilog/sv-tests/out/tmp/tmpyxoskwm0/formatted/uvm-examples/uvm_virt_seq_find_all/simple_ovc -I/home/darya/verilog/sv-tests/out/tmp/tmpyxoskwm0/formatted/uvm-examples/uvm_virt_seq_find_all -I/home/darya/verilog/sv-tests/third_party/tests/uvm-1.2/src -I/home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_virt_seq_find_all/simple_ovc -I/home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_virt_seq_find_all /home/darya/verilog/sv-tests/out/tmp/tmpyxoskwm0/formatted/uvm-1.2/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpyxoskwm0/formatted/uvm-examples/uvm_virt_seq_find_all/simple_ovc/simple_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpyxoskwm0/formatted/uvm-examples/uvm_virt_seq_find_all/top.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpyxoskwm0/formatted/uvm-1.2/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpyxoskwm0/formatted/uvm-1.2/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpyxoskwm0/formatted/uvm-examples/uvm_virt_seq_find_all/simple_ovc/simple_pkg.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpyxoskwm0/formatted/uvm-examples/uvm_virt_seq_find_all/simple_ovc/simple_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpyxoskwm0/formatted/uvm-examples/uvm_virt_seq_find_all/simple_ovc/simple_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpyxoskwm0/formatted/uvm-examples/uvm_virt_seq_find_all/top.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+CST verification passed

@@ -1,0 +1,31 @@
+name: iface_class_test_1
+description: Test
+tags: 8.3 8.26
+files: /home/darya/verilog/sv-tests/tests/generic/iface/iface_class_test_1.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generic/iface
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03394818305969238
+user_time: 0.005566
+system_time: 0.028928
+ram_usage: 20572
+date_completed: 2026-10-24 22:01:14
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpf8c7ntr6/formatted/iface_class_test_1.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpf8c7ntr6/formatted/iface_class_test_1.sv: unsupported SystemVerilog construct 'endclass'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpf8c7ntr6/formatted/iface_class_test_1.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+CST verification passed

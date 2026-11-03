@@ -1,0 +1,29 @@
+name: clog2_function
+description: $clog2 test
+tags: 20.8
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-20/20.8--clog2.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-20
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.04522299766540527
+user_time: 0.016402
+system_time: 0.011876
+ram_usage: 20588
+date_completed: 2026-10-26 11:57:59
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpafp36i06/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-20 /home/darya/verilog/sv-tests/out/tmp/tmpafp36i06/formatted/20.8--clog2.sv
+CST verification passed

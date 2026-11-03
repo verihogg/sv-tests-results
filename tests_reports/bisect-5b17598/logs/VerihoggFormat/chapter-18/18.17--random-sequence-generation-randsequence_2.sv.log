@@ -1,0 +1,30 @@
+name: random_sequence_generation_randsequence_2
+description: randsequence test
+type: simulation elaboration parsing
+tags: 18.17
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-18/18.17--random-sequence-generation-randsequence_2.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-18
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03531599044799805
+user_time: 0.011826
+system_time: 0.023934999999999998
+ram_usage: 21360
+date_completed: 2026-10-26 15:01:18
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpgzkh1utj/formatted/18.17--random-sequence-generation-randsequence_2.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpgzkh1utj/formatted/18.17--random-sequence-generation-randsequence_2.sv: unsupported SystemVerilog construct 'randsequence'; original text preserved [unsupported-construct]
+CST verification passed

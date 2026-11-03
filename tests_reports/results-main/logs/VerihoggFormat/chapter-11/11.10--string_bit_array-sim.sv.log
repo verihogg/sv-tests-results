@@ -1,0 +1,29 @@
+name: string_bit_array_sim
+description: string stored in bit array simulation test
+type: simulation elaboration parsing
+tags: 11.10
+files: /home/darya/verilog/sv-tests/tests/chapter-11/11.10--string_bit_array-sim.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-11
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.031116485595703125
+user_time: 0.014898999999999999
+system_time: 0.018977
+ram_usage: 20572
+date_completed: 2026-10-24 21:58:42
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmprg8srxth/formatted/11.10--string_bit_array-sim.sv
+CST verification passed

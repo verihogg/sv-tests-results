@@ -1,0 +1,29 @@
+name: uvm_messaging_example
+description: UVM example - uvm_messaging_example
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_messaging_example/messaging_example.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src
+tags: uvm-examples uvm
+type: simulation elaboration parsing
+timeout: 900
+unsynthesizable: 1
+simvariants: UVM_TESTNAME=message_test
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 24.63183903694153
+user_time: 1.6166179999999999
+system_time: 0.86756
+ram_usage: 1075144
+date_completed: 2026-10-24 20:27:49
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpbkcmeyiu/formatted/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpbkcmeyiu/formatted/uvm-examples/uvm_messaging_example/messaging_example.sv
+CST mismatch between original and formatted: uvm-examples/uvm_messaging_example/messaging_example.sv

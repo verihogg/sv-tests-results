@@ -1,0 +1,30 @@
+name: basic-packed-structures
+description: Test packed structures support
+tags: 7.2.1 7.2 7.1
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-7/structures/packed/basic.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-7/structures/packed
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.04396677017211914
+user_time: 0.028014999999999998
+system_time: 0.009149
+ram_usage: 20384
+date_completed: 2026-10-24 22:48:46
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpyjuajn4y/formatted/basic.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpyjuajn4y/formatted/basic.sv: unsupported SystemVerilog construct 'struct'; original text preserved [unsupported-construct]
+CST verification passed

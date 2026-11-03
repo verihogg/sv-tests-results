@@ -1,0 +1,32 @@
+name: if_pattern
+description: A module testing pattern matching in if statements
+tags: 12.6.2
+files: /home/darya/verilog/sv-tests/tests/chapter-12/12.6.2--if_pattern.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-12
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 3
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03268837928771973
+user_time: 0.009195
+system_time: 0.023614
+ram_usage: 21092
+date_completed: 2026-10-26 12:05:16
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpotl0vl0_/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-12 /home/darya/verilog/sv-tests/out/tmp/tmpotl0vl0_/formatted/12.6.2--if_pattern.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpotl0vl0_/formatted/12.6.2--if_pattern.sv: unsupported SystemVerilog construct 'struct'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpotl0vl0_/formatted/12.6.2--if_pattern.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpotl0vl0_/formatted/12.6.2--if_pattern.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+CST verification passed

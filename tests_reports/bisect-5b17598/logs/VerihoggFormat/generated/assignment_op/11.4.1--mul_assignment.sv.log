@@ -1,0 +1,29 @@
+name: mul_assignment
+description: *= assignment test
+tags: 11.4.1
+files: /home/darya/verilog/sv-tests/tests/generated/assignment_op/11.4.1--mul_assignment.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/assignment_op
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.02955174446105957
+user_time: 0.0
+system_time: 0.029293999999999997
+ram_usage: 20716
+date_completed: 2026-10-26 14:52:21
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpujpzpf18/formatted/11.4.1--mul_assignment.sv
+CST verification passed

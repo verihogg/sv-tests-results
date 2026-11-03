@@ -1,0 +1,29 @@
+name: utd-sv_sparc_exu_rml_inc3
+description: Tests imported from utd-sv
+files: /home/darya/verilog/sv-tests/tests/generated/utd-sv/utd-sv_sparc_exu_rml_inc3.sv /home/darya/verilog/sv-tests/third_party/tests/utd-sv/sparc_exu_rml_inc3.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/utd-sv
+tags: utd-sv
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.0655667781829834
+user_time: 0.007581
+system_time: 0.050468
+ram_usage: 23252
+date_completed: 2026-10-26 14:42:52
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp70r5f1d9/formatted/tests/generated/utd-sv/utd-sv_sparc_exu_rml_inc3.sv /home/darya/verilog/sv-tests/out/tmp/tmp70r5f1d9/formatted/third_party/tests/utd-sv/sparc_exu_rml_inc3.v
+CST verification passed

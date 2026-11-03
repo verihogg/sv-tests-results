@@ -1,0 +1,29 @@
+name: statement_labels_seq
+description: sequential block labels check
+tags: 9.3.5
+files: /home/darya/verilog/sv-tests/tests/chapter-9/9.3.5--statement_labels_seq.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-9
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03504490852355957
+user_time: 0.00195
+system_time: 0.035185
+ram_usage: 20588
+date_completed: 2026-10-24 21:23:15
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpfu6mo6pf/formatted/9.3.5--statement_labels_seq.sv
+CST verification passed

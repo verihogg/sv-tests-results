@@ -1,0 +1,29 @@
+name: asicworld_code_specman_switch_fabric
+description: Tests imported from yosys
+files: /home/darya/verilog/sv-tests/tests/generated/yosys/asicworld_code_specman_switch_fabric.sv /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/asicworld/code_specman_switch_fabric.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/asicworld
+tags: yosys
+results_group: imported
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.07071423530578613
+user_time: 0.019688
+system_time: 0.040692
+ram_usage: 25332
+date_completed: 2026-10-26 14:52:20
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpyx2q23ac/formatted/tests/generated/yosys/asicworld_code_specman_switch_fabric.sv /home/darya/verilog/sv-tests/out/tmp/tmpyx2q23ac/formatted/third_party/tools/yosys/tests/asicworld/code_specman_switch_fabric.v
+CST verification passed

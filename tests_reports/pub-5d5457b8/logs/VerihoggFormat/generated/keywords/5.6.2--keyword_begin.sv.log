@@ -1,0 +1,47 @@
+name: keyword_begin
+description: The 'begin' keyword should be reserved
+should_fail_because: The 'begin' keyword should be reserved
+tags: 5.6.2
+files: /home/darya/verilog/sv-tests/tests/generated/keywords/5.6.2--keyword_begin.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/keywords
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.021211862564086914
+user_time: 0.01287
+system_time: 0.011031
+ram_usage: 20584
+date_completed: 2026-10-26 11:42:16
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmp1yx5ro02/formatted/. -I/home/darya/verilog/sv-tests/tests/generated/keywords /home/darya/verilog/sv-tests/out/tmp/tmp1yx5ro02/formatted/5.6.2--keyword_begin.sv
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmp1yx5ro02/comparison/5.6.2--keyword_begin.sv
+comparison/5.6.2--keyword_begin.sv:8:9: error: expected a declaration name
+    bit begin;
+        ^
+comparison/5.6.2--keyword_begin.sv:9:1: error: unexpected 'endmodule' delimiter
+endmodule
+^~~~~~~~~
+comparison/5.6.2--keyword_begin.sv:7:11: note: last complete block started here
+module top();
+          ^
+comparison/5.6.2--keyword_begin.sv:7:12: note: and ended here
+module top();
+           ^
+comparison/5.6.2--keyword_begin.sv:9:10: error: expected 'end'
+endmodule
+         ^
+comparison/5.6.2--keyword_begin.sv:8:9: note: to match this 'begin'
+    bit begin;
+        ^

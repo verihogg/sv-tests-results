@@ -1,0 +1,35 @@
+name: regress-sv_sv_end_labels_bad_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/sv_end_labels_bad.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+should_fail_because: this test was imported from ivtest and is designed to fail
+top_module: 
+timeout: 30
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.016167640686035156
+user_time: 0.002163
+system_time: 0.014844
+ram_usage: 20588
+date_completed: 2026-10-24 21:20:19
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmptc7kxehc/formatted/sv_end_labels_bad.v
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmptc7kxehc/comparison/sv_end_labels_bad.v
+comparison/sv_end_labels_bad.v:14:10: error: 'dummy_label_bad' doesn't match previous name 'dummy_label'
+   end : dummy_label_bad
+         ^
+comparison/sv_end_labels_bad.v:16:13: error: 'test_bad' doesn't match previous name 'test'
+endmodule : test_bad
+            ^

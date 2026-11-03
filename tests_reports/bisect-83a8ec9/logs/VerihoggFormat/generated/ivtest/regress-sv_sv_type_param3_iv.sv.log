@@ -1,0 +1,31 @@
+name: regress-sv_sv_type_param3_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/sv_type_param3.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.06914949417114258
+user_time: 0.013543999999999999
+system_time: 0.019277
+ram_usage: 21484
+date_completed: 2026-10-26 14:12:40
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpnqrsql1c/formatted/sv_type_param3.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpnqrsql1c/formatted/sv_type_param3.v: cannot annotate SystemVerilog line (unsupported token kind TypeKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpnqrsql1c/formatted/sv_type_param3.v: formatting would move a macro invocation to another source line; original text preserved [macro-line-number]
+CST verification passed

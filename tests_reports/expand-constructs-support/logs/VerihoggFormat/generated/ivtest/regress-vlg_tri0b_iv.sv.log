@@ -1,0 +1,30 @@
+name: regress-vlg_tri0b_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/tri0b.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03223538398742676
+user_time: 0.003145
+system_time: 0.030167999999999997
+ram_usage: 21468
+date_completed: 2026-10-24 21:19:49
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpsm6giaht/formatted/tri0b.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpsm6giaht/formatted/tri0b.v: unsupported SystemVerilog construct 'tri0'; original text preserved [unsupported-construct]
+CST verification passed

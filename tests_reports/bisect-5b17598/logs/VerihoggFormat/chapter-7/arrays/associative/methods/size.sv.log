@@ -1,0 +1,29 @@
+name: associative-arrays-size
+description: Test support of associative arrays methods (size)
+tags: 7.9.1 7.9
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/associative/methods/size.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/associative/methods
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.039908647537231445
+user_time: 0.006169
+system_time: 0.034841
+ram_usage: 21488
+date_completed: 2026-10-26 14:39:03
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp4h95mj06/formatted/size.sv
+CST verification passed

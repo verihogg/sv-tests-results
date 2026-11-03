@@ -1,0 +1,31 @@
+name: class_test_26
+description: Test
+tags: 6.15 8.3
+files: /home/darya/verilog/sv-tests/tests/generic/class/class_test_26.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generic/class
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.029816150665283203
+user_time: 0.0055
+system_time: 0.025536
+ram_usage: 20588
+date_completed: 2026-10-26 11:57:53
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpl83ygpco/formatted/. -I/home/darya/verilog/sv-tests/tests/generic/class /home/darya/verilog/sv-tests/out/tmp/tmpl83ygpco/formatted/class_test_26.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpl83ygpco/formatted/class_test_26.sv: unsupported SystemVerilog construct 'endclass'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpl83ygpco/formatted/class_test_26.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+CST verification passed

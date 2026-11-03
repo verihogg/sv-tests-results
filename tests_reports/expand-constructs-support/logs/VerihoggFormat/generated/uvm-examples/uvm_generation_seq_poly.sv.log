@@ -1,0 +1,29 @@
+name: uvm_generation_seq_poly
+description: UVM example - uvm_generation_seq_poly
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_generation_seq_poly/./common/bus_if.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_generation_seq_poly/./common/dut.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_generation_seq_poly/./common/bus_agent_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_generation_seq_poly/./sequence_library/bus_seq_lib_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_generation_seq_poly/./tests/test_lib_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_generation_seq_poly/./common/top_tb.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src
+tags: uvm-examples uvm
+type: simulation elaboration parsing
+timeout: 900
+unsynthesizable: 1
+simvariants: UVM_TESTNAME=rand_transfer_test
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 26.485528230667114
+user_time: 1.75902
+system_time: 1.200551
+ram_usage: 1100760
+date_completed: 2026-10-24 20:29:15
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpdk7bve9h/formatted/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpdk7bve9h/formatted/uvm-examples/uvm_generation_seq_poly/common/bus_if.sv /home/darya/verilog/sv-tests/out/tmp/tmpdk7bve9h/formatted/uvm-examples/uvm_generation_seq_poly/common/dut.sv /home/darya/verilog/sv-tests/out/tmp/tmpdk7bve9h/formatted/uvm-examples/uvm_generation_seq_poly/common/bus_agent_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpdk7bve9h/formatted/uvm-examples/uvm_generation_seq_poly/sequence_library/bus_seq_lib_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpdk7bve9h/formatted/uvm-examples/uvm_generation_seq_poly/tests/test_lib_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpdk7bve9h/formatted/uvm-examples/uvm_generation_seq_poly/common/top_tb.sv
+CST mismatch between original and formatted: uvm-examples/uvm_generation_seq_poly/common/bus_agent_pkg.sv

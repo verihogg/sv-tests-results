@@ -1,0 +1,29 @@
+name: arith_shift_signed
+description: arithmetic shift operator test
+type: simulation elaboration parsing
+tags: 11.4.10
+files: /home/darya/verilog/sv-tests/tests/chapter-11/11.4.10--arith-shift-signed.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-11
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03634071350097656
+user_time: 0.015508999999999998
+system_time: 0.024361999999999998
+ram_usage: 20716
+date_completed: 2026-10-26 14:53:56
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpt85zn6xt/formatted/11.4.10--arith-shift-signed.sv
+CST verification passed

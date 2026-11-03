@@ -1,0 +1,38 @@
+name: wrong-identifiers
+description: Identifiers that should not be accepted
+should_fail_because: The first character of a simple identifier shall not be a digit or $
+tags: 5.6
+files: /home/darya/verilog/sv-tests/tests/chapter-5/5.6--wrong-identifiers.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-5
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.019496440887451172
+user_time: 0.0
+system_time: 0.021986
+ram_usage: 20716
+date_completed: 2026-10-26 14:56:53
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpi4aitmua/formatted/5.6--wrong-identifiers.sv
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpi4aitmua/comparison/5.6--wrong-identifiers.sv
+comparison/5.6--wrong-identifiers.sv:17:7: error: expected a declaration name
+  reg $dollar;
+      ^
+comparison/5.6--wrong-identifiers.sv:18:7: error: expected a declaration name
+  reg 0number;
+      ^
+comparison/5.6--wrong-identifiers.sv:18:14: error: expected a declaration name
+  reg 0number;
+             ^

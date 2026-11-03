@@ -1,0 +1,106 @@
+name: fx68k
+description: Full fx68k core test
+files: /home/darya/verilog/sv-tests/third_party/cores/fx68k/fx68k.sv /home/darya/verilog/sv-tests/third_party/cores/fx68k/fx68kAlu.sv /home/darya/verilog/sv-tests/third_party/cores/fx68k/uaddrPla.sv
+tags: fx68k
+results_group: cores
+timeout: 100
+incdirs: /home/darya/verilog/sv-tests/tests/generated/fx68k
+top_module: 
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 77
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 3.124203681945801
+user_time: 0.245019
+system_time: 0.14099
+ram_usage: 109928
+date_completed: 2026-10-24 22:51:36
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68kAlu.sv /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv: unsupported SystemVerilog construct 'enum'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv: unsupported SystemVerilog construct 'enum'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv: unsupported SystemVerilog construct 'enum'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv: cannot annotate SystemVerilog line (unsupported token kind DoublePlus); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68k.sv: cannot annotate SystemVerilog line (unsupported token kind DefaultKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68kAlu.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68kAlu.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68kAlu.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68kAlu.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68kAlu.sv: cannot annotate SystemVerilog line (unsupported token kind DefaultKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68kAlu.sv: cannot annotate SystemVerilog line (unsupported token kind DefaultKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68kAlu.sv: cannot annotate SystemVerilog line (unsupported token kind DefaultKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68kAlu.sv: cannot annotate SystemVerilog line (unsupported token kind DefaultKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/fx68kAlu.sv: cannot annotate SystemVerilog line (unsupported token kind DefaultKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: unsupported SystemVerilog construct 'unique'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: cannot annotate SystemVerilog line (unsupported token kind DefaultKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd_kodkcx/formatted/uaddrPla.sv: cannot annotate SystemVerilog line (unsupported token kind DefaultKeyword); original text preserved [invalid-annotation]
+CST verification passed

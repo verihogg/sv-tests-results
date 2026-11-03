@@ -1,0 +1,31 @@
+name: jump_break
+description: A module testing break statement
+tags: 12.8
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-12/12.8--break.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-12
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.028305768966674805
+user_time: 0.010206
+system_time: 0.020585
+ram_usage: 20588
+date_completed: 2026-10-24 21:29:57
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp_9q10zao/formatted/12.8--break.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp_9q10zao/formatted/12.8--break.sv: cannot annotate SystemVerilog line (unsupported token kind DoublePlus); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp_9q10zao/formatted/12.8--break.sv: cannot annotate SystemVerilog line (unsupported token kind BreakKeyword); original text preserved [invalid-annotation]
+CST verification passed

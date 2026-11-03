@@ -1,0 +1,30 @@
+name: integer_unsigned_longint
+description: longint unsigned net test
+tags: 6.11
+files: /home/darya/verilog/sv-tests/tests/generated/integers/6.11--integer_unsigned_longint.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/integers
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.030947446823120117
+user_time: 0.0072759999999999995
+system_time: 0.027684999999999998
+ram_usage: 20572
+date_completed: 2026-10-24 21:58:39
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpkxa4w5vu/formatted/6.11--integer_unsigned_longint.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpkxa4w5vu/formatted/6.11--integer_unsigned_longint.sv: unsupported SystemVerilog construct 'longint'; original text preserved [unsupported-construct]
+CST verification passed

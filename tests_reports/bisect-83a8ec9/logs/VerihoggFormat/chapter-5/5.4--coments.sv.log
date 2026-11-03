@@ -1,0 +1,29 @@
+name: comments
+description: A module testing system verilog comments
+tags: 5.4
+files: /home/darya/verilog/sv-tests/tests/chapter-5/5.4--coments.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-5
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.033699750900268555
+user_time: 0.002676
+system_time: 0.033229999999999996
+ram_usage: 20632
+date_completed: 2026-10-26 14:17:18
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpgo9x17_v/formatted/5.4--coments.sv
+CST verification passed

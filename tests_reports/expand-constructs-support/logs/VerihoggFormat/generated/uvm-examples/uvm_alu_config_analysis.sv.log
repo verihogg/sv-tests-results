@@ -1,0 +1,33 @@
+name: uvm_alu_config_analysis
+description: UVM example - uvm_alu_config_analysis
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_agent_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_monitor_bfm.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_driver_bfm.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_alu_config_analysis/alu/alu_if.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_alu_config_analysis/alu/alu_rtl.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_alu_config_analysis/uvm_tb/alu_tb_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_alu_config_analysis/tb/hdl_top.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_alu_config_analysis/tb/hvl_top.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_alu_config_analysis/agent /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_alu_config_analysis/uvm_tb
+tags: uvm-examples uvm
+type: simulation elaboration parsing
+timeout: 900
+unsynthesizable: 1
+simvariants: UVM_TESTNAME=test_all_parallel
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 4
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 26.70731234550476
+user_time: 1.971241
+system_time: 1.333382
+ram_usage: 1074260
+date_completed: 2026-10-24 20:29:06
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmptp3i4yla/formatted/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmptp3i4yla/formatted/uvm-examples/uvm_alu_config_analysis/agent/alu_agent_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmptp3i4yla/formatted/uvm-examples/uvm_alu_config_analysis/agent/alu_monitor_bfm.sv /home/darya/verilog/sv-tests/out/tmp/tmptp3i4yla/formatted/uvm-examples/uvm_alu_config_analysis/agent/alu_driver_bfm.sv /home/darya/verilog/sv-tests/out/tmp/tmptp3i4yla/formatted/uvm-examples/uvm_alu_config_analysis/alu/alu_if.sv /home/darya/verilog/sv-tests/out/tmp/tmptp3i4yla/formatted/uvm-examples/uvm_alu_config_analysis/alu/alu_rtl.sv /home/darya/verilog/sv-tests/out/tmp/tmptp3i4yla/formatted/uvm-examples/uvm_alu_config_analysis/uvm_tb/alu_tb_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmptp3i4yla/formatted/uvm-examples/uvm_alu_config_analysis/tb/hdl_top.sv /home/darya/verilog/sv-tests/out/tmp/tmptp3i4yla/formatted/uvm-examples/uvm_alu_config_analysis/tb/hvl_top.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmptp3i4yla/formatted/uvm-examples/uvm_alu_config_analysis/agent/alu_monitor_bfm.sv: unsupported SystemVerilog construct 'end'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmptp3i4yla/formatted/uvm-examples/uvm_alu_config_analysis/agent/alu_driver_bfm.sv: unsupported SystemVerilog construct 'end'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmptp3i4yla/formatted/uvm-examples/uvm_alu_config_analysis/alu/alu_if.sv: unsupported SystemVerilog construct 'shortint'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmptp3i4yla/formatted/uvm-examples/uvm_alu_config_analysis/tb/hdl_top.sv: unsupported SystemVerilog construct 'shortint'; original text preserved [unsupported-construct]
+CST verification passed

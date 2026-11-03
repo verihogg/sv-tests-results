@@ -1,0 +1,38 @@
+name: regress-vlg_automatic_error9_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/automatic_error9.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+should_fail_because: this test was imported from ivtest and is designed to fail
+top_module: 
+timeout: 30
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.02059006690979004
+user_time: 0.005092
+system_time: 0.015688
+ram_usage: 20472
+date_completed: 2026-10-26 11:53:42
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpx40ablg8/formatted/. -I/home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest -I/home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests /home/darya/verilog/sv-tests/out/tmp/tmpx40ablg8/formatted/automatic_error9.v
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpx40ablg8/comparison/automatic_error9.v
+comparison/automatic_error9.v:3:6: error: expected a declaration name
+reg  global;
+     ^
+comparison/automatic_error9.v:7:5: error: expected a declaration name
+reg local;
+    ^
+comparison/automatic_error9.v:10:16: error: expected '::'
+  release local;
+               ^

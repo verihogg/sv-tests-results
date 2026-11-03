@@ -1,0 +1,29 @@
+name: memories-read-write
+description: Test memories read-write support
+tags: 7.4.4
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-7/memories/read-write.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-7/memories
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.035930633544921875
+user_time: 0.01116
+system_time: 0.026286999999999998
+ram_usage: 21456
+date_completed: 2026-10-24 22:48:42
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpm4bvtij0/formatted/read-write.sv
+CST verification passed

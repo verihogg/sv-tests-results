@@ -1,0 +1,29 @@
+name: utd-sv_pcx_buf_p1
+description: Tests imported from utd-sv
+files: /home/darya/verilog/sv-tests/tests/generated/utd-sv/utd-sv_pcx_buf_p1.sv /home/darya/verilog/sv-tests/third_party/tests/utd-sv/pcx_buf_p1.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/utd-sv
+tags: utd-sv
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.21834778785705566
+user_time: 0.056770999999999995
+system_time: 0.033132999999999996
+ram_usage: 33736
+date_completed: 2026-10-26 14:02:41
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpr3jxnhhm/formatted/tests/generated/utd-sv/utd-sv_pcx_buf_p1.sv /home/darya/verilog/sv-tests/out/tmp/tmpr3jxnhhm/formatted/third_party/tests/utd-sv/pcx_buf_p1.v
+CST verification passed

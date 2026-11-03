@@ -1,0 +1,35 @@
+name: regress-fsv_pr3015421_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/pr3015421.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+should_fail_because: this test was imported from ivtest and is designed to fail
+top_module: 
+timeout: 30
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.017405033111572266
+user_time: 0.006703
+system_time: 0.011977
+ram_usage: 20584
+date_completed: 2026-10-26 11:54:53
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpl0d054es/formatted/. -I/home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest -I/home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests /home/darya/verilog/sv-tests/out/tmp/tmpl0d054es/formatted/pr3015421.v
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpl0d054es/comparison/pr3015421.v
+comparison/pr3015421.v:11:13: error: expected ';'
+    return 0
+            ^
+comparison/pr3015421.v:15:11: error: expected ';'
+  task foo
+          ^

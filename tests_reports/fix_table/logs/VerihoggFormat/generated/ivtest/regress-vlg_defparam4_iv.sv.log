@@ -1,0 +1,30 @@
+name: regress-vlg_defparam4_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/defparam4.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.044631004333496094
+user_time: 0.01567
+system_time: 0.020974
+ram_usage: 23496
+date_completed: 2026-10-24 23:01:34
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpk93z6_op/formatted/defparam4.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpk93z6_op/formatted/defparam4.v: unsupported SystemVerilog construct 'defparam'; original text preserved [unsupported-construct]
+CST verification passed

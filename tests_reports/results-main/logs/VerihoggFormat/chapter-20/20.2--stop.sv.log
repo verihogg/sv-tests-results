@@ -1,0 +1,29 @@
+name: stop_task
+description: $stop test
+tags: 20.2
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-20/20.2--stop.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-20
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.02790069580078125
+user_time: 0.014008
+system_time: 0.016588
+ram_usage: 20572
+date_completed: 2026-10-24 22:01:15
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpl82r6_pm/formatted/20.2--stop.sv
+CST verification passed

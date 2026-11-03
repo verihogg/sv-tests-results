@@ -1,0 +1,30 @@
+name: constraint_blocks_0
+description: constraint blocks test
+tags: 18.5
+files: /home/darya/verilog/sv-tests/tests/chapter-18/18.5--constraint-blocks_0.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-18
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.030119895935058594
+user_time: 0.0
+system_time: 0.033075
+ram_usage: 20712
+date_completed: 2026-10-26 14:18:57
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpn6yb6zb1/formatted/18.5--constraint-blocks_0.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpn6yb6zb1/formatted/18.5--constraint-blocks_0.sv: unsupported SystemVerilog construct 'rand'; original text preserved [unsupported-construct]
+CST verification passed

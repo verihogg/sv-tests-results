@@ -1,0 +1,29 @@
+name: assign_in_expr_inv
+description: invalid assignment in expression test
+should_fail_because: blocking assignments within expression must be enclosed in parentheses
+tags: 11.3.6
+files: /home/darya/verilog/sv-tests/tests/chapter-11/11.3.6--assign_in_expr_inv.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-11
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.04971718788146973
+user_time: 0.003797
+system_time: 0.043606
+ram_usage: 20640
+date_completed: 2026-10-26 14:14:14
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpldshtnbq/formatted/11.3.6--assign_in_expr_inv.sv
+CST verification passed

@@ -1,0 +1,29 @@
+name: regress-sv_sv_array_cassign_fail4_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/sv_array_cassign_fail4.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+should_fail_because: this test was imported from ivtest and is designed to fail
+top_module: 
+timeout: 30
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03130316734313965
+user_time: 0.0050219999999999996
+system_time: 0.027925
+ram_usage: 20712
+date_completed: 2026-10-26 11:54:52
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpfz9w4pu5/formatted/. -I/home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest -I/home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests /home/darya/verilog/sv-tests/out/tmp/tmpfz9w4pu5/formatted/sv_array_cassign_fail4.v
+CST verification passed

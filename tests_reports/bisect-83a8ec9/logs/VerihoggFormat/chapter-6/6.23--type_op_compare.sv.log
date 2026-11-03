@@ -1,0 +1,38 @@
+name: type_op_compare
+description: type comparison tests
+tags: 6.23
+files: /home/darya/verilog/sv-tests/tests/chapter-6/6.23--type_op_compare.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-6
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 9
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03417611122131348
+user_time: 0.011457
+system_time: 0.022532
+ram_usage: 21448
+date_completed: 2026-10-26 14:16:48
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpcgjmr_8y/formatted/6.23--type_op_compare.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpcgjmr_8y/formatted/6.23--type_op_compare.sv: cannot annotate SystemVerilog line (unsupported token kind TypeKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpcgjmr_8y/formatted/6.23--type_op_compare.sv: cannot annotate SystemVerilog line (unsupported token kind TypeKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpcgjmr_8y/formatted/6.23--type_op_compare.sv: cannot annotate SystemVerilog line (unsupported token kind TypeKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpcgjmr_8y/formatted/6.23--type_op_compare.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpcgjmr_8y/formatted/6.23--type_op_compare.sv: cannot annotate SystemVerilog line (unsupported token kind DefaultKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpcgjmr_8y/formatted/6.23--type_op_compare.sv: cannot annotate SystemVerilog line (unsupported token kind TypeKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpcgjmr_8y/formatted/6.23--type_op_compare.sv: cannot annotate SystemVerilog line (unsupported token kind TypeKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpcgjmr_8y/formatted/6.23--type_op_compare.sv: cannot annotate SystemVerilog line (unsupported token kind TypeKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpcgjmr_8y/formatted/6.23--type_op_compare.sv: cannot annotate SystemVerilog line (unsupported token kind TypeKeyword); original text preserved [invalid-annotation]
+CST verification passed

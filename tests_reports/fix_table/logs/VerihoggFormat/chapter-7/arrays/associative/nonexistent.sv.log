@@ -1,0 +1,29 @@
+name: associative-arrays-access-nonexistent
+description: Test access to nonexistent associative array element
+tags: 7.8.6 7.9.1
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/associative/nonexistent.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/associative
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.04651236534118652
+user_time: 0.006594999999999999
+system_time: 0.03596
+ram_usage: 20640
+date_completed: 2026-10-24 22:48:43
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmptfhbjxle/formatted/nonexistent.sv
+CST verification passed

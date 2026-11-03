@@ -1,0 +1,41 @@
+name: apb_protocol_monitor
+description: UVM example - apb_protocol_monitor
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src
+tags: uvm-examples uvm
+type: simulation elaboration parsing
+timeout: 900
+unsynthesizable: 1
+simvariants: 
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 12
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 22.201688528060913
+user_time: 1.513335
+system_time: 1.170154
+ram_usage: 1075032
+date_completed: 2026-10-24 21:19:28
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpshnq2eq_/formatted/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpshnq2eq_/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpshnq2eq_/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: unsupported SystemVerilog construct 'property'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpshnq2eq_/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: unsupported SystemVerilog construct 'property'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpshnq2eq_/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: unsupported SystemVerilog construct 'property'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpshnq2eq_/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: unsupported SystemVerilog construct 'property'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpshnq2eq_/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: unsupported SystemVerilog construct 'property'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpshnq2eq_/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: unsupported SystemVerilog construct 'property'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpshnq2eq_/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: unsupported SystemVerilog construct 'property'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpshnq2eq_/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: unsupported SystemVerilog construct 'property'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpshnq2eq_/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: unsupported SystemVerilog construct 'property'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpshnq2eq_/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: unsupported SystemVerilog construct 'covergroup'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpshnq2eq_/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: unsupported SystemVerilog construct 'sequence'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpshnq2eq_/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: unsupported SystemVerilog construct 'cover'; original text preserved [unsupported-construct]
+CST verification passed

@@ -1,0 +1,31 @@
+name: array-locator-methods-find-last
+description: Test support of array locator methods
+tags: 7.12.1 7.12 7.10
+type: simulation elaboration parsing
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/associative/locator-methods/find-last.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/associative/locator-methods
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.028235197067260742
+user_time: 0.005626
+system_time: 0.023655
+ram_usage: 21380
+date_completed: 2026-10-26 13:58:58
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpzy87ork9/formatted/find-last.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpzy87ork9/formatted/find-last.sv: cannot annotate SystemVerilog line (unsupported token kind Dollar); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpzy87ork9/formatted/find-last.sv: cannot annotate SystemVerilog line (unsupported token kind WithKeyword); original text preserved [invalid-annotation]
+CST verification passed

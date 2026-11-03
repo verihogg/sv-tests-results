@@ -1,0 +1,30 @@
+name: abstract_class
+description: class extending abstract class
+tags: 8.21
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-8/8.21--abstract_class.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-8
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.029152631759643555
+user_time: 0.0076289999999999995
+system_time: 0.022588
+ram_usage: 20700
+date_completed: 2026-10-24 22:01:16
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpqq05zoo9/formatted/8.21--abstract_class.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpqq05zoo9/formatted/8.21--abstract_class.sv: unsupported SystemVerilog construct 'virtual'; original text preserved [unsupported-construct]
+CST verification passed

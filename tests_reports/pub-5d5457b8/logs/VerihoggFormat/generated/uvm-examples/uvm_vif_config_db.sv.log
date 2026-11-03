@@ -1,0 +1,45 @@
+name: uvm_vif_config_db
+description: UVM example - uvm_vif_config_db
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_vif_config_db/sfr_agent/sfr_agent_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_vif_config_db/sfr_agent/sfr_if.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_vif_config_db/sfr_test_pkg/sfr_test_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_vif_config_db/tb/hdl_top.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_vif_config_db/tb/hvl_top.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_vif_config_db/rtl/sfr_dut.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_vif_config_db/sfr_agent /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_vif_config_db/sfr_test_pkg
+tags: uvm-examples uvm
+type: simulation elaboration parsing
+timeout: 900
+unsynthesizable: 1
+simvariants: UVM_TESTNAME=sfr_test
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 16
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 27.831979990005493
+user_time: 2.253445
+system_time: 1.328592
+ram_usage: 1074824
+date_completed: 2026-10-26 11:48:21
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm/src -I/home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm-examples/uvm_vif_config_db/sfr_agent -I/home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm-examples/uvm_vif_config_db/sfr_test_pkg -I/home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm-examples/uvm_vif_config_db/tb -I/home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm-examples/uvm_vif_config_db/rtl -I/home/darya/verilog/sv-tests/third_party/tests/uvm/src -I/home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_vif_config_db/sfr_agent -I/home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_vif_config_db/sfr_test_pkg -I/home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_vif_config_db/tb -I/home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_vif_config_db/rtl /home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm-examples/uvm_vif_config_db/sfr_agent/sfr_agent_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm-examples/uvm_vif_config_db/sfr_agent/sfr_if.sv /home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm-examples/uvm_vif_config_db/sfr_test_pkg/sfr_test_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm-examples/uvm_vif_config_db/tb/hdl_top.sv /home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm-examples/uvm_vif_config_db/tb/hvl_top.sv /home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm-examples/uvm_vif_config_db/rtl/sfr_dut.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm/src/uvm_pkg.sv: unsupported SystemVerilog construct 'static'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm/src/uvm_pkg.sv: unsupported SystemVerilog construct 'export'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm-examples/uvm_vif_config_db/sfr_agent/sfr_agent_pkg.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm-examples/uvm_vif_config_db/sfr_agent/sfr_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm-examples/uvm_vif_config_db/sfr_agent/sfr_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm-examples/uvm_vif_config_db/sfr_agent/sfr_if.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm-examples/uvm_vif_config_db/sfr_agent/sfr_if.sv: cannot annotate SystemVerilog line (unsupported token kind EndInterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm-examples/uvm_vif_config_db/sfr_test_pkg/sfr_test_pkg.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm-examples/uvm_vif_config_db/sfr_test_pkg/sfr_test_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm-examples/uvm_vif_config_db/sfr_test_pkg/sfr_test_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm-examples/uvm_vif_config_db/tb/hdl_top.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm-examples/uvm_vif_config_db/tb/hvl_top.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp12xdejjy/formatted/uvm-examples/uvm_vif_config_db/rtl/sfr_dut.sv: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+CST verification passed

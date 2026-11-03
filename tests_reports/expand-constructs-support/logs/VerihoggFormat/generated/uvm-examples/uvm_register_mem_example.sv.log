@@ -1,0 +1,29 @@
+name: uvm_register_mem_example
+description: UVM example - uvm_register_mem_example
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_register_mem_example/./dut/timescale.v /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_register_mem_example/./dut/mem_ss.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_register_mem_example/./dut/reg_defs.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_register_mem_example/./agents/ahb_agent/ahb_agent_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_register_mem_example/./register_model/mem_ss_reg_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_register_mem_example/./agents/ahb_agent/ahb_monitor_bfm.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_register_mem_example/./agents/ahb_agent/ahb_if.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_register_mem_example/./agents/ahb_agent/ahb_driver_bfm.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_register_mem_example/./env/mem_ss_env_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_register_mem_example/./sequences/mem_ss_seq_lib_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_register_mem_example/./test/mem_ss_test_lib_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_register_mem_example/./tb/hvl_top.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_register_mem_example/./tb/hdl_top.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_register_mem_example/dut /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_register_mem_example/agents/ahb_agent /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_register_mem_example/register_model /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_register_mem_example/env /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_register_mem_example/sequences /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_register_mem_example/test /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_register_mem_example/utils
+tags: uvm-examples uvm
+type: simulation elaboration parsing
+timeout: 900
+unsynthesizable: 1
+simvariants: UVM_TESTNAME=mem_ss_test
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 29.911036014556885
+user_time: 2.106063
+system_time: 1.3219210000000001
+ram_usage: 1102308
+date_completed: 2026-10-24 20:27:28
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp25o6q6yc/formatted/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmp25o6q6yc/formatted/uvm-examples/uvm_register_mem_example/dut/timescale.v /home/darya/verilog/sv-tests/out/tmp/tmp25o6q6yc/formatted/uvm-examples/uvm_register_mem_example/dut/mem_ss.sv /home/darya/verilog/sv-tests/out/tmp/tmp25o6q6yc/formatted/uvm-examples/uvm_register_mem_example/dut/reg_defs.sv /home/darya/verilog/sv-tests/out/tmp/tmp25o6q6yc/formatted/uvm-examples/uvm_register_mem_example/agents/ahb_agent/ahb_agent_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmp25o6q6yc/formatted/uvm-examples/uvm_register_mem_example/register_model/mem_ss_reg_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmp25o6q6yc/formatted/uvm-examples/uvm_register_mem_example/agents/ahb_agent/ahb_monitor_bfm.sv /home/darya/verilog/sv-tests/out/tmp/tmp25o6q6yc/formatted/uvm-examples/uvm_register_mem_example/agents/ahb_agent/ahb_if.sv /home/darya/verilog/sv-tests/out/tmp/tmp25o6q6yc/formatted/uvm-examples/uvm_register_mem_example/agents/ahb_agent/ahb_driver_bfm.sv /home/darya/verilog/sv-tests/out/tmp/tmp25o6q6yc/formatted/uvm-examples/uvm_register_mem_example/env/mem_ss_env_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmp25o6q6yc/formatted/uvm-examples/uvm_register_mem_example/sequences/mem_ss_seq_lib_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmp25o6q6yc/formatted/uvm-examples/uvm_register_mem_example/test/mem_ss_test_lib_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmp25o6q6yc/formatted/uvm-examples/uvm_register_mem_example/tb/hvl_top.sv /home/darya/verilog/sv-tests/out/tmp/tmp25o6q6yc/formatted/uvm-examples/uvm_register_mem_example/tb/hdl_top.sv
+CST mismatch between original and formatted: uvm-examples/uvm_register_mem_example/sequences/mem_ss_seq_lib_pkg.sv

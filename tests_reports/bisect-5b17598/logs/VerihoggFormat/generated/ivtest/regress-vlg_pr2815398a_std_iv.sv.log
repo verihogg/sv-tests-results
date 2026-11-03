@@ -1,0 +1,32 @@
+name: regress-vlg_pr2815398a_std_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/pr2815398a_std.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 3
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.037627220153808594
+user_time: 0.011078
+system_time: 0.023107
+ram_usage: 25588
+date_completed: 2026-10-26 14:52:37
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpxmxedyol/formatted/pr2815398a_std.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpxmxedyol/formatted/pr2815398a_std.v: cannot annotate SystemVerilog line (unsupported token kind TimeKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpxmxedyol/formatted/pr2815398a_std.v: cannot annotate SystemVerilog line (unsupported token kind TimeKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpxmxedyol/formatted/pr2815398a_std.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+CST verification passed

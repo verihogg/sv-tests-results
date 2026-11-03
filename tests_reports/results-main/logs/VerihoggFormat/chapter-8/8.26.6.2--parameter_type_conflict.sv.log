@@ -1,0 +1,32 @@
+name: parameter_type_conflict
+description: superclass type declaration conflicts must be resolved in subclass
+tags: 8.26.6.2
+files: /home/darya/verilog/sv-tests/tests/chapter-8/8.26.6.2--parameter_type_conflict.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-8
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 3
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.029786348342895508
+user_time: 0.023604
+system_time: 0.0077069999999999994
+ram_usage: 21220
+date_completed: 2026-10-24 22:01:16
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpcvkt6ndo/formatted/8.26.6.2--parameter_type_conflict.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpcvkt6ndo/formatted/8.26.6.2--parameter_type_conflict.sv: unsupported SystemVerilog construct 'pure'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpcvkt6ndo/formatted/8.26.6.2--parameter_type_conflict.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpcvkt6ndo/formatted/8.26.6.2--parameter_type_conflict.sv: cannot annotate SystemVerilog line (unsupported token kind TypeKeyword); original text preserved [invalid-annotation]
+CST verification passed

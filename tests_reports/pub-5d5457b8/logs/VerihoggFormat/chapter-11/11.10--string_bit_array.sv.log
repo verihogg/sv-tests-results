@@ -1,0 +1,29 @@
+name: string_bit_array
+description: string stored in bit array test
+tags: 11.10
+files: /home/darya/verilog/sv-tests/tests/chapter-11/11.10--string_bit_array.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-11
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03046870231628418
+user_time: 0.0022459999999999997
+system_time: 0.029866
+ram_usage: 20456
+date_completed: 2026-10-26 11:55:09
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpy1vne1h5/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-11 /home/darya/verilog/sv-tests/out/tmp/tmpy1vne1h5/formatted/11.10--string_bit_array.sv
+CST verification passed

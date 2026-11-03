@@ -1,0 +1,30 @@
+name: regress-sv_task_nonansi_atom2_fail_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/task_nonansi_atom2_fail.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+should_fail_because: this test was imported from ivtest and is designed to fail
+top_module: 
+timeout: 30
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.028406381607055664
+user_time: 0.002529
+system_time: 0.026865999999999998
+ram_usage: 20632
+date_completed: 2026-10-26 14:53:31
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp2kk8bq57/formatted/task_nonansi_atom2_fail.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp2kk8bq57/formatted/task_nonansi_atom2_fail.v: unsupported SystemVerilog construct 'shortint'; original text preserved [unsupported-construct]
+CST verification passed

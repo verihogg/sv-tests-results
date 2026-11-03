@@ -1,0 +1,36 @@
+name: hdlconvertor_std2017_p179
+description: Tests imported from hdlconv_std2017
+files: /home/darya/verilog/sv-tests/tests/generated/hdlconv_std2017/hdlconvertor_std2017_p179.sv /home/darya/verilog/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017/p179.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017
+tags: hdlconv_std2017
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 7
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.0766746997833252
+user_time: 0.02158
+system_time: 0.035536
+ram_usage: 21388
+date_completed: 2026-10-26 11:55:01
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmp3f458e45/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017 -I/home/darya/verilog/sv-tests/out/tmp/tmp3f458e45/formatted/tests/generated/hdlconv_std2017 -I/home/darya/verilog/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017 -I/home/darya/verilog/sv-tests/tests/generated/hdlconv_std2017 /home/darya/verilog/sv-tests/out/tmp/tmp3f458e45/formatted/tests/generated/hdlconv_std2017/hdlconvertor_std2017_p179.sv /home/darya/verilog/sv-tests/out/tmp/tmp3f458e45/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p179.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp3f458e45/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p179.sv: unsupported SystemVerilog construct 'rand'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp3f458e45/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p179.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp3f458e45/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p179.sv: cannot annotate SystemVerilog line (unsupported token kind ExtendsKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp3f458e45/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p179.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp3f458e45/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p179.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp3f458e45/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p179.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp3f458e45/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p179.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+CST verification passed

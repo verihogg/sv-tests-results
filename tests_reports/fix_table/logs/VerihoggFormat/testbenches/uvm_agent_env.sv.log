@@ -1,0 +1,35 @@
+name: uvm_agent_env
+description: uvm agent + env test
+tags: uvm uvm-agents
+type: simulation elaboration parsing
+timeout: 300
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/tests/testbenches/uvm_agent_env.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src /home/darya/verilog/sv-tests/tests/testbenches
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 6
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 20.775593996047974
+user_time: 1.428453
+system_time: 1.055188
+ram_usage: 1075056
+date_completed: 2026-10-24 23:10:56
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp_ejpydbt/formatted/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmp_ejpydbt/formatted/tests/testbenches/uvm_agent_env.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp_ejpydbt/formatted/third_party/tests/uvm/src/uvm_pkg.sv: unsupported SystemVerilog construct 'static'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp_ejpydbt/formatted/third_party/tests/uvm/src/uvm_pkg.sv: unsupported SystemVerilog construct 'export'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp_ejpydbt/formatted/third_party/tests/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp_ejpydbt/formatted/third_party/tests/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp_ejpydbt/formatted/third_party/tests/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp_ejpydbt/formatted/tests/testbenches/uvm_agent_env.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+CST verification passed

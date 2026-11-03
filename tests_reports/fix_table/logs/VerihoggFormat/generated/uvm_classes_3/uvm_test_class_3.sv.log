@@ -1,0 +1,35 @@
+name: uvm_test_3
+description: uvm_test class test
+tags: uvm uvm-classes
+type: simulation elaboration parsing
+timeout: 300
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/tests/generated/uvm_classes_3/uvm_test_class_3.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src /home/darya/verilog/sv-tests/tests/generated/uvm_classes_3
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 6
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 21.575239896774292
+user_time: 1.457885
+system_time: 0.9879819999999999
+ram_usage: 1075020
+date_completed: 2026-10-24 22:56:16
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpga5tuhhe/formatted/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpga5tuhhe/formatted/tests/generated/uvm_classes_3/uvm_test_class_3.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpga5tuhhe/formatted/third_party/tests/uvm/src/uvm_pkg.sv: unsupported SystemVerilog construct 'static'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpga5tuhhe/formatted/third_party/tests/uvm/src/uvm_pkg.sv: unsupported SystemVerilog construct 'export'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpga5tuhhe/formatted/third_party/tests/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpga5tuhhe/formatted/third_party/tests/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpga5tuhhe/formatted/third_party/tests/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpga5tuhhe/formatted/tests/generated/uvm_classes_3/uvm_test_class_3.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+CST verification passed

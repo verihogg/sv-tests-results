@@ -1,0 +1,29 @@
+name: regress-vlg_comp1001_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/comp1001.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+timeout: 360
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 1.7453358173370361
+user_time: 0.727517
+system_time: 0.056504
+ram_usage: 87012
+date_completed: 2026-10-24 21:58:07
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpoc1bylo7/formatted/comp1001.v
+CST verification passed

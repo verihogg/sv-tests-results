@@ -1,0 +1,30 @@
+name: real
+description: real type tests
+tags: 6.12
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-6/6.12--real.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-6
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.050635337829589844
+user_time: 0.008601
+system_time: 0.022993
+ram_usage: 20588
+date_completed: 2026-10-26 11:57:33
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmp3zpf89xk/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-6 /home/darya/verilog/sv-tests/out/tmp/tmp3zpf89xk/formatted/6.12--real.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp3zpf89xk/formatted/6.12--real.sv: unsupported SystemVerilog construct 'real'; original text preserved [unsupported-construct]
+CST verification passed

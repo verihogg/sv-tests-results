@@ -1,0 +1,31 @@
+name: regress-vlg_pv_wr_vec4_nb_ec_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/pv_wr_vec4_nb_ec.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.05230903625488281
+user_time: 0.012466999999999999
+system_time: 0.026057
+ram_usage: 29680
+date_completed: 2026-10-26 11:53:59
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmp4tjbm0f6/formatted/. -I/home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest -I/home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests /home/darya/verilog/sv-tests/out/tmp/tmp4tjbm0f6/formatted/pv_wr_vec4_nb_ec.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp4tjbm0f6/formatted/pv_wr_vec4_nb_ec.v: unsupported SystemVerilog construct 'event'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp4tjbm0f6/formatted/pv_wr_vec4_nb_ec.v: formatting would move a macro invocation to another source line; original text preserved [macro-line-number]
+CST verification passed

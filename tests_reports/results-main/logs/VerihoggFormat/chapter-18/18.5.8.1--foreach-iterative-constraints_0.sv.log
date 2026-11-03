@@ -1,0 +1,30 @@
+name: foreach_iterative_constraints_0
+description: foreach iterative constraints test
+tags: 18.5.8.1
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-18/18.5.8.1--foreach-iterative-constraints_0.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-18
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.028821229934692383
+user_time: 0.007339999999999999
+system_time: 0.022156
+ram_usage: 20572
+date_completed: 2026-10-24 22:06:01
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpw3uwxt4s/formatted/18.5.8.1--foreach-iterative-constraints_0.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpw3uwxt4s/formatted/18.5.8.1--foreach-iterative-constraints_0.sv: unsupported SystemVerilog construct 'rand'; original text preserved [unsupported-construct]
+CST verification passed

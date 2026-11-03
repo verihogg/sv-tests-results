@@ -1,0 +1,30 @@
+name: memories_simple_sram_byte_en
+description: Tests imported from yosys
+files: /home/darya/verilog/sv-tests/tests/generated/yosys/memories_simple_sram_byte_en.sv /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/memories/simple_sram_byte_en.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/memories
+tags: yosys
+results_group: imported
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.06115436553955078
+user_time: 0.011125
+system_time: 0.045248
+ram_usage: 21348
+date_completed: 2026-10-24 21:56:59
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpkuuizw2u/formatted/tests/generated/yosys/memories_simple_sram_byte_en.sv /home/darya/verilog/sv-tests/out/tmp/tmpkuuizw2u/formatted/third_party/tools/yosys/tests/memories/simple_sram_byte_en.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpkuuizw2u/formatted/third_party/tools/yosys/tests/memories/simple_sram_byte_en.v: cannot annotate SystemVerilog line (unsupported token kind PlusColon); original text preserved [invalid-annotation]
+CST verification passed

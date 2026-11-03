@@ -1,0 +1,30 @@
+name: lib_essential_xc7_projf_async_reset
+description: Tests imported from projf-explore
+files: /home/darya/verilog/sv-tests/tests/generated/projf-explore/lib_essential_xc7_projf_async_reset.sv /home/darya/verilog/sv-tests/third_party/tests/projf-explore/lib/essential/xc7/async_reset.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/projf-explore/lib/essential/xc7
+tags: projf-explore
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.062255144119262695
+user_time: 0.016071
+system_time: 0.040803
+ram_usage: 21212
+date_completed: 2026-10-24 21:19:23
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp3z_2offg/formatted/tests/generated/projf-explore/lib_essential_xc7_projf_async_reset.sv /home/darya/verilog/sv-tests/out/tmp/tmp3z_2offg/formatted/third_party/tests/projf-explore/lib/essential/xc7/async_reset.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp3z_2offg/formatted/third_party/tests/projf-explore/lib/essential/xc7/async_reset.sv: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+CST verification passed

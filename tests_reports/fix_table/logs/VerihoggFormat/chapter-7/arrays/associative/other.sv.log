@@ -1,0 +1,31 @@
+name: associative-arrays-other-types
+description: Test associative arrays support
+tags: 7.8.1
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/associative/other.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/associative
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03861880302429199
+user_time: 0.012905
+system_time: 0.012761999999999999
+ram_usage: 20384
+date_completed: 2026-10-24 22:48:43
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpbnq5r5hk/formatted/other.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpbnq5r5hk/formatted/other.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpbnq5r5hk/formatted/other.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+CST verification passed

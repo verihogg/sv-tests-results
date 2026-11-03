@@ -1,0 +1,30 @@
+name: mailbox_non_blocking
+description: non-blocking mailbox test
+tags: 15.4
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-15/15.4--mailbox-non-blocking.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-15
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.06119513511657715
+user_time: 0.011857
+system_time: 0.042749999999999996
+ram_usage: 21468
+date_completed: 2026-10-26 11:37:54
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpoasjs4vh/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-15 /home/darya/verilog/sv-tests/out/tmp/tmpoasjs4vh/formatted/15.4--mailbox-non-blocking.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpoasjs4vh/formatted/15.4--mailbox-non-blocking.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+CST verification passed

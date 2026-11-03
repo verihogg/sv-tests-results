@@ -1,0 +1,30 @@
+name: priority_case
+description: case statement with priority
+tags: 12.5.3
+files: /home/darya/verilog/sv-tests/tests/generated/uniquecase/12.5.3--priority_case.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/uniquecase
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.0322573184967041
+user_time: 0.010093999999999999
+system_time: 0.023087999999999997
+ram_usage: 20740
+date_completed: 2026-10-24 22:55:09
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpta1i3mjk/formatted/12.5.3--priority_case.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpta1i3mjk/formatted/12.5.3--priority_case.sv: unsupported SystemVerilog construct 'priority'; original text preserved [unsupported-construct]
+CST verification passed

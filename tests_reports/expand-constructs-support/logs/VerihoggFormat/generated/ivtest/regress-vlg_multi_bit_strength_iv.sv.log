@@ -1,0 +1,30 @@
+name: regress-vlg_multi_bit_strength_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/multi_bit_strength.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.031461477279663086
+user_time: 0.008147
+system_time: 0.022647999999999998
+ram_usage: 21340
+date_completed: 2026-10-24 21:20:05
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmppvtqezck/formatted/multi_bit_strength.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmppvtqezck/formatted/multi_bit_strength.v: cannot annotate SystemVerilog line (unsupported token kind Pull1Keyword); original text preserved [invalid-annotation]
+CST verification passed

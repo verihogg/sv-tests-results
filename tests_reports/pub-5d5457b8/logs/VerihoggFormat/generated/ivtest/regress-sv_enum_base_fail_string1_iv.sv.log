@@ -1,0 +1,32 @@
+name: regress-sv_enum_base_fail_string1_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/enum_base_fail_string1.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+should_fail_because: this test was imported from ivtest and is designed to fail
+top_module: 
+timeout: 30
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.016788482666015625
+user_time: 0.002382
+system_time: 0.015135
+ram_usage: 20584
+date_completed: 2026-10-26 11:54:27
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpsxu308gt/formatted/. -I/home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest -I/home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests /home/darya/verilog/sv-tests/out/tmp/tmpsxu308gt/formatted/enum_base_fail_string1.v
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpsxu308gt/comparison/enum_base_fail_string1.v
+comparison/enum_base_fail_string1.v:6:8: error: expected enum base type
+  enum string {
+       ^

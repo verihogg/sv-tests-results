@@ -1,0 +1,29 @@
+name: lib_maths_xc7_projf_clog2_tb
+description: Tests imported from projf-explore
+files: /home/darya/verilog/sv-tests/tests/generated/projf-explore/lib_maths_xc7_projf_clog2_tb.sv /home/darya/verilog/sv-tests/third_party/tests/projf-explore/lib/maths/xc7/clog2_tb.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/projf-explore/lib/maths/xc7
+tags: projf-explore
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.13426423072814941
+user_time: 0.027863
+system_time: 0.020846999999999997
+ram_usage: 21492
+date_completed: 2026-10-26 11:53:08
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmperg3e45f/formatted/third_party/tests/projf-explore/lib/maths/xc7 -I/home/darya/verilog/sv-tests/out/tmp/tmperg3e45f/formatted/tests/generated/projf-explore -I/home/darya/verilog/sv-tests/third_party/tests/projf-explore/lib/maths/xc7 -I/home/darya/verilog/sv-tests/tests/generated/projf-explore /home/darya/verilog/sv-tests/out/tmp/tmperg3e45f/formatted/tests/generated/projf-explore/lib_maths_xc7_projf_clog2_tb.sv /home/darya/verilog/sv-tests/out/tmp/tmperg3e45f/formatted/third_party/tests/projf-explore/lib/maths/xc7/clog2_tb.sv
+CST verification passed

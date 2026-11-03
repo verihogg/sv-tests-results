@@ -1,0 +1,29 @@
+name: utd-sv_cpx_buf_pm
+description: Tests imported from utd-sv
+files: /home/darya/verilog/sv-tests/tests/generated/utd-sv/utd-sv_cpx_buf_pm.sv /home/darya/verilog/sv-tests/third_party/tests/utd-sv/cpx_buf_pm.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/utd-sv
+tags: utd-sv
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.15098047256469727
+user_time: 0.020281999999999998
+system_time: 0.056372
+ram_usage: 31592
+date_completed: 2026-10-26 11:41:59
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpy6l73gli/formatted/third_party/tests/utd-sv -I/home/darya/verilog/sv-tests/out/tmp/tmpy6l73gli/formatted/tests/generated/utd-sv -I/home/darya/verilog/sv-tests/third_party/tests/utd-sv -I/home/darya/verilog/sv-tests/tests/generated/utd-sv /home/darya/verilog/sv-tests/out/tmp/tmpy6l73gli/formatted/tests/generated/utd-sv/utd-sv_cpx_buf_pm.sv /home/darya/verilog/sv-tests/out/tmp/tmpy6l73gli/formatted/third_party/tests/utd-sv/cpx_buf_pm.v
+CST verification passed

@@ -1,0 +1,29 @@
+name: associative-arrays-as-arguments
+description: Test passing associative array as arugments support
+tags: 7.9.10 7.8
+type: simulation elaboration parsing
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/associative/arguments.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/associative
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.045990705490112305
+user_time: 0.006532
+system_time: 0.038818
+ram_usage: 21544
+date_completed: 2026-10-26 11:37:56
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmp85k4n75y/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-7/arrays/associative /home/darya/verilog/sv-tests/out/tmp/tmp85k4n75y/formatted/arguments.sv
+CST verification passed

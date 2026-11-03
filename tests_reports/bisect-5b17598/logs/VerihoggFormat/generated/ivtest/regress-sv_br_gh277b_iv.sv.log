@@ -1,0 +1,29 @@
+name: regress-sv_br_gh277b_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/br_gh277b.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03783607482910156
+user_time: 0.013607
+system_time: 0.0235
+ram_usage: 21492
+date_completed: 2026-10-26 14:53:07
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp05p0mo0x/formatted/br_gh277b.v
+CST verification passed

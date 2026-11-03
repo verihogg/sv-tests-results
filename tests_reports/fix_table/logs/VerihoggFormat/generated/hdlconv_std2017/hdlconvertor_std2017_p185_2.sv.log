@@ -1,0 +1,34 @@
+name: hdlconvertor_std2017_p185_2
+description: Tests imported from hdlconv_std2017
+files: /home/darya/verilog/sv-tests/tests/generated/hdlconv_std2017/hdlconvertor_std2017_p185_2.sv /home/darya/verilog/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017/p185_2.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017
+tags: hdlconv_std2017
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 5
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.06110501289367676
+user_time: 0.011356
+system_time: 0.044719999999999996
+ram_usage: 20356
+date_completed: 2026-10-24 23:02:10
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpi75tgazd/formatted/tests/generated/hdlconv_std2017/hdlconvertor_std2017_p185_2.sv /home/darya/verilog/sv-tests/out/tmp/tmpi75tgazd/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p185_2.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpi75tgazd/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p185_2.sv: unsupported SystemVerilog construct 'virtual'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpi75tgazd/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p185_2.sv: unsupported SystemVerilog construct 'virtual'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpi75tgazd/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p185_2.sv: unsupported SystemVerilog construct 'virtual'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpi75tgazd/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p185_2.sv: cannot annotate SystemVerilog line (unsupported token kind ExtendsKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpi75tgazd/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p185_2.sv: cannot annotate SystemVerilog line (unsupported token kind TypeKeyword); original text preserved [invalid-annotation]
+CST verification passed

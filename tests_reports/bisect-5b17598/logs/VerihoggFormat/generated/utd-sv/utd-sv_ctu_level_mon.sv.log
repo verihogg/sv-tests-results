@@ -1,0 +1,30 @@
+name: utd-sv_ctu_level_mon
+description: Tests imported from utd-sv
+files: /home/darya/verilog/sv-tests/tests/generated/utd-sv/utd-sv_ctu_level_mon.sv /home/darya/verilog/sv-tests/third_party/tests/utd-sv/ctu_level_mon.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/utd-sv
+tags: utd-sv
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.06909060478210449
+user_time: 0.016597999999999998
+system_time: 0.046624
+ram_usage: 21488
+date_completed: 2026-10-26 14:43:01
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp62b48n3k/formatted/tests/generated/utd-sv/utd-sv_ctu_level_mon.sv /home/darya/verilog/sv-tests/out/tmp/tmp62b48n3k/formatted/third_party/tests/utd-sv/ctu_level_mon.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp62b48n3k/formatted/third_party/tests/utd-sv/ctu_level_mon.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+CST verification passed

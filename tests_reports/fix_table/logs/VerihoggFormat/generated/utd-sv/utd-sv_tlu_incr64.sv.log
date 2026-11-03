@@ -1,0 +1,29 @@
+name: utd-sv_tlu_incr64
+description: Tests imported from utd-sv
+files: /home/darya/verilog/sv-tests/tests/generated/utd-sv/utd-sv_tlu_incr64.sv /home/darya/verilog/sv-tests/third_party/tests/utd-sv/tlu_incr64.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/utd-sv
+tags: utd-sv
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.07192063331604004
+user_time: 0.026199
+system_time: 0.031337
+ram_usage: 29484
+date_completed: 2026-10-24 22:52:12
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpnafc7y6n/formatted/tests/generated/utd-sv/utd-sv_tlu_incr64.sv /home/darya/verilog/sv-tests/out/tmp/tmpnafc7y6n/formatted/third_party/tests/utd-sv/tlu_incr64.v
+CST verification passed

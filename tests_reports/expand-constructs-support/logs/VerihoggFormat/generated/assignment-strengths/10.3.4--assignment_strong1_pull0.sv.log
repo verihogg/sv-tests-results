@@ -1,0 +1,30 @@
+name: cont_assignment_strength_strong1_pull0
+description: strong1 pull0 assignment test
+tags: 10.3.4
+files: /home/darya/verilog/sv-tests/tests/generated/assignment-strengths/10.3.4--assignment_strong1_pull0.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/assignment-strengths
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.02934885025024414
+user_time: 0.002536
+system_time: 0.029575999999999998
+ram_usage: 20588
+date_completed: 2026-10-24 21:19:35
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp930jcy0g/formatted/10.3.4--assignment_strong1_pull0.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp930jcy0g/formatted/10.3.4--assignment_strong1_pull0.sv: cannot annotate SystemVerilog line (unsupported token kind Strong1Keyword); original text preserved [invalid-annotation]
+CST verification passed

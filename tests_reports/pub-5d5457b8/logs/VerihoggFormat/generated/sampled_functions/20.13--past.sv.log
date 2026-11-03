@@ -1,0 +1,29 @@
+name: past_function
+description: $past test
+tags: 20.13 16.9
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/generated/sampled_functions/20.13--past.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/sampled_functions
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03420686721801758
+user_time: 0.022831999999999998
+system_time: 0.005134
+ram_usage: 20584
+date_completed: 2026-10-26 11:55:03
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmprgpfgj_c/formatted/. -I/home/darya/verilog/sv-tests/tests/generated/sampled_functions /home/darya/verilog/sv-tests/out/tmp/tmprgpfgj_c/formatted/20.13--past.sv
+CST verification passed

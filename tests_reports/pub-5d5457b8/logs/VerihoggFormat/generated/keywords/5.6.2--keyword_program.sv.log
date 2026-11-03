@@ -1,0 +1,56 @@
+name: keyword_program
+description: The 'program' keyword should be reserved
+should_fail_because: The 'program' keyword should be reserved
+tags: 5.6.2
+files: /home/darya/verilog/sv-tests/tests/generated/keywords/5.6.2--keyword_program.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/keywords
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.020836353302001953
+user_time: 0.0
+system_time: 0.021273
+ram_usage: 20364
+date_completed: 2026-10-26 11:42:11
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpcpwaj55u/formatted/. -I/home/darya/verilog/sv-tests/tests/generated/keywords /home/darya/verilog/sv-tests/out/tmp/tmpcpwaj55u/formatted/5.6.2--keyword_program.sv
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpcpwaj55u/comparison/5.6.2--keyword_program.sv
+comparison/5.6.2--keyword_program.sv:8:9: error: expected a declaration name
+    bit program;
+        ^
+comparison/5.6.2--keyword_program.sv:8:9: error: member not allowed in module declaration
+    bit program;
+        ^~~~~~~~
+comparison/5.6.2--keyword_program.sv:9:1: error: unexpected 'endmodule' delimiter
+endmodule
+^~~~~~~~~
+comparison/5.6.2--keyword_program.sv:7:11: note: last complete block started here
+module top();
+          ^
+comparison/5.6.2--keyword_program.sv:7:12: note: and ended here
+module top();
+           ^
+comparison/5.6.2--keyword_program.sv:9:10: error: expected 'endprogram'
+endmodule
+         ^
+comparison/5.6.2--keyword_program.sv:8:9: note: to match this 'program'
+    bit program;
+        ^
+comparison/5.6.2--keyword_program.sv:9:10: error: expected 'endmodule'
+endmodule
+         ^
+comparison/5.6.2--keyword_program.sv:7:1: note: to match this 'module'
+module top();
+^

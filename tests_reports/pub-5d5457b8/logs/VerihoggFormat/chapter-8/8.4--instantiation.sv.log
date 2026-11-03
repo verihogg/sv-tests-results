@@ -1,0 +1,31 @@
+name: instantiation
+description: simple class instantiation test
+tags: 8.4
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-8/8.4--instantiation.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-8
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.04667401313781738
+user_time: 0.0
+system_time: 0.042658
+ram_usage: 20540
+date_completed: 2026-10-26 11:58:00
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmp037bdike/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-8 /home/darya/verilog/sv-tests/out/tmp/tmp037bdike/formatted/8.4--instantiation.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp037bdike/formatted/8.4--instantiation.sv: cannot annotate SystemVerilog line (unsupported token kind NullKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp037bdike/formatted/8.4--instantiation.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+CST verification passed

@@ -1,0 +1,32 @@
+name: simple_func_block
+description: Tests imported from yosys
+files: /home/darya/verilog/sv-tests/tests/generated/yosys/simple_func_block.sv /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/simple/func_block.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/simple
+tags: yosys
+results_group: imported
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 3
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.0662987232208252
+user_time: 0.011616
+system_time: 0.045359
+ram_usage: 23276
+date_completed: 2026-10-24 21:19:35
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp2h8xwhfx/formatted/tests/generated/yosys/simple_func_block.sv /home/darya/verilog/sv-tests/out/tmp/tmp2h8xwhfx/formatted/third_party/tools/yosys/tests/simple/func_block.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp2h8xwhfx/formatted/third_party/tools/yosys/tests/simple/func_block.v: cannot annotate SystemVerilog line (unsupported token kind AutomaticKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp2h8xwhfx/formatted/third_party/tools/yosys/tests/simple/func_block.v: cannot annotate SystemVerilog line (unsupported token kind AutomaticKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp2h8xwhfx/formatted/third_party/tools/yosys/tests/simple/func_block.v: cannot annotate SystemVerilog line (unsupported token kind AutomaticKeyword); original text preserved [invalid-annotation]
+CST verification passed

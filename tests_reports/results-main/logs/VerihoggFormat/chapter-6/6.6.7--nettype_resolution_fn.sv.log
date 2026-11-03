@@ -1,0 +1,31 @@
+name: nettype_resolution_fn
+description: user-defined nettype with resolution function tests
+tags: 6.6.7
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-6/6.6.7--nettype_resolution_fn.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-6
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03360390663146973
+user_time: 0.003342
+system_time: 0.03225
+ram_usage: 20700
+date_completed: 2026-10-24 22:00:51
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpji8v2bq_/formatted/6.6.7--nettype_resolution_fn.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpji8v2bq_/formatted/6.6.7--nettype_resolution_fn.sv: unsupported SystemVerilog construct 'nettype'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpji8v2bq_/formatted/6.6.7--nettype_resolution_fn.sv: cannot annotate SystemVerilog line (unsupported token kind AutomaticKeyword); original text preserved [invalid-annotation]
+CST verification passed

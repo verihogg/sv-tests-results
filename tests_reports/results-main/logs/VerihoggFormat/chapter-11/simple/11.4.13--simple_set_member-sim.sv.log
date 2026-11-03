@@ -1,0 +1,30 @@
+name: simple_set_member_sim
+description: minimal inside operator simulation test (without result verification)
+type: simulation elaboration parsing
+tags: 11.4.13
+files: /home/darya/verilog/sv-tests/tests/chapter-11/simple/11.4.13--simple_set_member-sim.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-11/simple
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.030646085739135742
+user_time: 0.00499
+system_time: 0.027007999999999997
+ram_usage: 20636
+date_completed: 2026-10-24 21:58:41
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpu_7b5w9f/formatted/11.4.13--simple_set_member-sim.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpu_7b5w9f/formatted/11.4.13--simple_set_member-sim.sv: cannot annotate SystemVerilog line (unsupported token kind InsideKeyword); original text preserved [invalid-annotation]
+CST verification passed

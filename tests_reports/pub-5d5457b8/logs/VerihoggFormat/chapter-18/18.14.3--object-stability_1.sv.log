@@ -1,0 +1,35 @@
+name: object_stability_1
+description: object stability test
+tags: uvm-random uvm
+timeout: 300
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/tests/chapter-18/18.14.3--object-stability_1.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src /home/darya/verilog/sv-tests/tests/chapter-18
+top_module: 
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 6
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 24.32139301300049
+user_time: 1.7217959999999999
+system_time: 1.131484
+ram_usage: 1074804
+date_completed: 2026-10-26 12:02:05
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmp3vpn8_u7/formatted/third_party/tests/uvm/src -I/home/darya/verilog/sv-tests/out/tmp/tmp3vpn8_u7/formatted/tests/chapter-18 -I/home/darya/verilog/sv-tests/third_party/tests/uvm/src -I/home/darya/verilog/sv-tests/tests/chapter-18 /home/darya/verilog/sv-tests/out/tmp/tmp3vpn8_u7/formatted/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmp3vpn8_u7/formatted/tests/chapter-18/18.14.3--object-stability_1.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp3vpn8_u7/formatted/third_party/tests/uvm/src/uvm_pkg.sv: unsupported SystemVerilog construct 'static'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp3vpn8_u7/formatted/third_party/tests/uvm/src/uvm_pkg.sv: unsupported SystemVerilog construct 'export'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp3vpn8_u7/formatted/third_party/tests/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp3vpn8_u7/formatted/third_party/tests/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp3vpn8_u7/formatted/third_party/tests/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp3vpn8_u7/formatted/tests/chapter-18/18.14.3--object-stability_1.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+CST verification passed

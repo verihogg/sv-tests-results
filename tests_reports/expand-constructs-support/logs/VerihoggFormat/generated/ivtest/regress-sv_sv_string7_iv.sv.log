@@ -1,0 +1,29 @@
+name: regress-sv_sv_string7_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/sv_string7.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.032965898513793945
+user_time: 0.016253
+system_time: 0.016791999999999998
+ram_usage: 23516
+date_completed: 2026-10-24 21:20:43
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpw5fz6fy8/formatted/sv_string7.v
+CST verification passed

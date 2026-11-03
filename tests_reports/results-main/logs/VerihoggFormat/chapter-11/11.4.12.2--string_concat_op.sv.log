@@ -1,0 +1,29 @@
+name: string_concat_op
+description: string concatenation operator test
+tags: 11.4.12.2
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-11/11.4.12.2--string_concat_op.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-11
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03815269470214844
+user_time: 0.008728999999999999
+system_time: 0.028467
+ram_usage: 20572
+date_completed: 2026-10-24 21:58:40
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpnr61hwj_/formatted/11.4.12.2--string_concat_op.sv
+CST verification passed

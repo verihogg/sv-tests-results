@@ -1,0 +1,30 @@
+name: sva_sva_value_change_changed_wide
+description: Tests imported from yosys
+files: /home/darya/verilog/sv-tests/tests/generated/yosys/sva_sva_value_change_changed_wide.sv /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/sva/sva_value_change_changed_wide.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/sva
+tags: yosys
+results_group: imported
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.07784128189086914
+user_time: 0.002217
+system_time: 0.067451
+ram_usage: 21440
+date_completed: 2026-10-24 21:19:29
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp5h0es83_/formatted/tests/generated/yosys/sva_sva_value_change_changed_wide.sv /home/darya/verilog/sv-tests/out/tmp/tmp5h0es83_/formatted/third_party/tools/yosys/tests/sva/sva_value_change_changed_wide.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp5h0es83_/formatted/third_party/tools/yosys/tests/sva/sva_value_change_changed_wide.sv: unsupported SystemVerilog construct 'default'; original text preserved [unsupported-construct]
+CST verification passed

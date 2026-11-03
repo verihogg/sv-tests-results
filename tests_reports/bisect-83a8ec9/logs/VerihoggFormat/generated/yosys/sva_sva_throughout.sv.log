@@ -1,0 +1,30 @@
+name: sva_sva_throughout
+description: Tests imported from yosys
+files: /home/darya/verilog/sv-tests/tests/generated/yosys/sva_sva_throughout.sv /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/sva/sva_throughout.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/sva
+tags: yosys
+results_group: imported
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.08385109901428223
+user_time: 0.027698999999999998
+system_time: 0.029452
+ram_usage: 21328
+date_completed: 2026-10-26 14:12:20
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpyyhaq_3e/formatted/tests/generated/yosys/sva_sva_throughout.sv /home/darya/verilog/sv-tests/out/tmp/tmpyyhaq_3e/formatted/third_party/tools/yosys/tests/sva/sva_throughout.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpyyhaq_3e/formatted/third_party/tools/yosys/tests/sva/sva_throughout.sv: unsupported SystemVerilog construct 'default'; original text preserved [unsupported-construct]
+CST verification passed

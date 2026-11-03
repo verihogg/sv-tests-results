@@ -1,0 +1,33 @@
+name: process_cls_await
+description: process class await method
+tags: 9.7
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-9/9.7--process_cls_await.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-9
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 4
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.045104265213012695
+user_time: 0.0051979999999999995
+system_time: 0.040653999999999996
+ram_usage: 21576
+date_completed: 2026-10-24 23:04:41
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpzbjyhi5m/formatted/9.7--process_cls_await.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpzbjyhi5m/formatted/9.7--process_cls_await.sv: unsupported SystemVerilog construct 'automatic'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpzbjyhi5m/formatted/9.7--process_cls_await.sv: unsupported SystemVerilog construct 'wait'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpzbjyhi5m/formatted/9.7--process_cls_await.sv: cannot annotate SystemVerilog line (unsupported token kind AutomaticKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpzbjyhi5m/formatted/9.7--process_cls_await.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+CST verification passed

@@ -1,0 +1,29 @@
+name: simple_ge_operator_sim
+description: minimal >= operator simulation test (without result verification)
+type: simulation elaboration parsing
+tags: 11.4.4
+files: /home/darya/verilog/sv-tests/tests/generated/operators_sim/11.4.4--simple_ge_operator_sim.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/operators_sim
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03365492820739746
+user_time: 0.0
+system_time: 0.033162
+ram_usage: 20460
+date_completed: 2026-10-26 11:37:58
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmp4q3fqt7w/formatted/. -I/home/darya/verilog/sv-tests/tests/generated/operators_sim /home/darya/verilog/sv-tests/out/tmp/tmp4q3fqt7w/formatted/11.4.4--simple_ge_operator_sim.sv
+CST verification passed

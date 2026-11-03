@@ -1,0 +1,29 @@
+name: assert_test_uvm
+description: assert test with UVM
+type: simulation elaboration parsing
+tags: uvm uvm-assertions
+timeout: 300
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/tests/chapter-16/16.2--assert-uvm.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src /home/darya/verilog/sv-tests/tests/chapter-16
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 20.451045513153076
+user_time: 1.350253
+system_time: 1.015467
+ram_usage: 1075140
+date_completed: 2026-10-24 21:22:24
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp3jnscvd2/formatted/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmp3jnscvd2/formatted/tests/chapter-16/16.2--assert-uvm.sv
+CST mismatch between original and formatted: tests/chapter-16/16.2--assert-uvm.sv

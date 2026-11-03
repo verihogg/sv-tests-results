@@ -1,0 +1,30 @@
+name: dynamic-arrays-op-new
+description: Test dynamic arrays operator new support
+tags: 7.5.1
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/dynamic/op-new.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/dynamic
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03453469276428223
+user_time: 0.009811
+system_time: 0.026268999999999997
+ram_usage: 21456
+date_completed: 2026-10-24 22:48:45
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp715c54zw/formatted/op-new.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp715c54zw/formatted/op-new.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+CST verification passed

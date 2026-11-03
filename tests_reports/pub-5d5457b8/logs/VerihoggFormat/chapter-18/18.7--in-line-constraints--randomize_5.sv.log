@@ -1,0 +1,32 @@
+name: in-line_constraints--randomize_5
+description: in-line constraints test - randomize()
+tags: 18.7
+files: /home/darya/verilog/sv-tests/tests/chapter-18/18.7--in-line-constraints--randomize_5.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-18
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 3
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.06146883964538574
+user_time: 0.007618
+system_time: 0.019933
+ram_usage: 20716
+date_completed: 2026-10-26 12:00:05
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpt7o90xge/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-18 /home/darya/verilog/sv-tests/out/tmp/tmpt7o90xge/formatted/18.7--in-line-constraints--randomize_5.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpt7o90xge/formatted/18.7--in-line-constraints--randomize_5.sv: unsupported SystemVerilog construct 'rand'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpt7o90xge/formatted/18.7--in-line-constraints--randomize_5.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpt7o90xge/formatted/18.7--in-line-constraints--randomize_5.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+CST verification passed

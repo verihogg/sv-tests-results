@@ -1,0 +1,29 @@
+name: wildcard_const_operator_sim_0
+description: wildcard operator with constant test in simulation
+type: simulation elaboration parsing
+tags: 11.4.6
+files: /home/darya/verilog/sv-tests/tests/generated/wildcard_const_operators_sim/11.4.6--wildcard_const_operator_0.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/wildcard_const_operators_sim
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.057401418685913086
+user_time: 0.003002
+system_time: 0.025637
+ram_usage: 20584
+date_completed: 2026-10-26 11:43:16
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpsjtm03wx/formatted/. -I/home/darya/verilog/sv-tests/tests/generated/wildcard_const_operators_sim /home/darya/verilog/sv-tests/out/tmp/tmpsjtm03wx/formatted/11.4.6--wildcard_const_operator_0.sv
+CST verification passed

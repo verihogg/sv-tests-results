@@ -1,0 +1,29 @@
+name: file_tasks
+description: $fopen and $fclose test
+tags: 21.3
+type: simulation elaboration parsing
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-21/21.3--file.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-21
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.0331120491027832
+user_time: 0.0
+system_time: 0.034489
+ram_usage: 20672
+date_completed: 2026-10-24 23:05:03
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpmknxj3ro/formatted/21.3--file.sv
+CST verification passed

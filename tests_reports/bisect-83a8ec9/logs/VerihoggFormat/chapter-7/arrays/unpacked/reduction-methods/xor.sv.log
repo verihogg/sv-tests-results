@@ -1,0 +1,30 @@
+name: unpacked-array-reduction-method-xor
+description: Test support of unpacked arrays reduction method xor
+tags: 7.12.3 7.4.2
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/unpacked/reduction-methods/xor.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/unpacked/reduction-methods
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03147244453430176
+user_time: 0.018073
+system_time: 0.014965
+ram_usage: 21572
+date_completed: 2026-10-26 13:58:59
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpisx_vja0/formatted/xor.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpisx_vja0/formatted/xor.sv: cannot annotate SystemVerilog line (unsupported token kind XorKeyword); original text preserved [invalid-annotation]
+CST verification passed

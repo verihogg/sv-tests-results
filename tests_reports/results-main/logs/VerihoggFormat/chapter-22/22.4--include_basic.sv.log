@@ -1,0 +1,29 @@
+name: 22.4--include_basic
+description: Test
+tags: 22.4
+type: preprocessing parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-22/22.4--include_basic.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-22
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.02821969985961914
+user_time: 0.006176
+system_time: 0.024832
+ram_usage: 20572
+date_completed: 2026-10-24 22:01:18
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpoyij8mad/formatted/22.4--include_basic.sv
+CST verification passed

@@ -1,0 +1,30 @@
+name: operations-on-unpacked-arrays-variable-slice-rw
+description: Test packed arrays operations support (Variable slice)
+tags: 7.4.3 7.4.6
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/unpacked/variable-slice.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/unpacked
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.0335080623626709
+user_time: 0.0
+system_time: 0.033146
+ram_usage: 23520
+date_completed: 2026-10-26 13:58:59
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpkni9sjax/formatted/variable-slice.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpkni9sjax/formatted/variable-slice.sv: cannot annotate SystemVerilog line (unsupported token kind PlusColon); original text preserved [invalid-annotation]
+CST verification passed

@@ -1,0 +1,29 @@
+name: equality_operator_sim_23
+description: equality operator test in simulation
+type: simulation elaboration parsing
+tags: 11.4.5
+files: /home/darya/verilog/sv-tests/tests/generated/equality_operators_sim/11.4.5--equality_operator_23.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/equality_operators_sim
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03084254264831543
+user_time: 0.004674
+system_time: 0.027939
+ram_usage: 20712
+date_completed: 2026-10-26 11:54:56
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmps5xs9mzo/formatted/. -I/home/darya/verilog/sv-tests/tests/generated/equality_operators_sim /home/darya/verilog/sv-tests/out/tmp/tmps5xs9mzo/formatted/11.4.5--equality_operator_23.sv
+CST verification passed

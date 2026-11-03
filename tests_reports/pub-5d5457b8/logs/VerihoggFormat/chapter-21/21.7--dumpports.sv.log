@@ -1,0 +1,29 @@
+name: vcd_dumpports_test
+description: vcd dump ports tests
+tags: 21.7
+type: simulation elaboration parsing
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-21/21.7--dumpports.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-21
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03021550178527832
+user_time: 0.006978
+system_time: 0.025020999999999998
+ram_usage: 21452
+date_completed: 2026-10-26 11:58:05
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmp08d3iw1f/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-21 /home/darya/verilog/sv-tests/out/tmp/tmp08d3iw1f/formatted/21.7--dumpports.sv
+CST verification passed

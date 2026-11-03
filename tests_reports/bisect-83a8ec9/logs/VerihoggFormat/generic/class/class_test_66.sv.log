@@ -1,0 +1,29 @@
+name: class_test_66
+description: Test
+tags: 6.15 8.3
+files: /home/darya/verilog/sv-tests/tests/generic/class/class_test_66.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generic/class
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03363227844238281
+user_time: 0.008081999999999999
+system_time: 0.026888
+ram_usage: 20760
+date_completed: 2026-10-26 14:17:08
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp1_855c3t/formatted/class_test_66.sv
+CST verification passed

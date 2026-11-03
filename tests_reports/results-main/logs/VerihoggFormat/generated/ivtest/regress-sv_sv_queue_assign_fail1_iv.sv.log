@@ -1,0 +1,31 @@
+name: regress-sv_sv_queue_assign_fail1_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/sv_queue_assign_fail1.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+should_fail_because: this test was imported from ivtest and is designed to fail
+top_module: 
+timeout: 30
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.030068159103393555
+user_time: 0.002057
+system_time: 0.029355
+ram_usage: 20572
+date_completed: 2026-10-24 21:58:01
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpyvt_mv1q/formatted/sv_queue_assign_fail1.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpyvt_mv1q/formatted/sv_queue_assign_fail1.v: cannot annotate SystemVerilog line (unsupported token kind Dollar); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpyvt_mv1q/formatted/sv_queue_assign_fail1.v: cannot annotate SystemVerilog line (unsupported token kind Dollar); original text preserved [invalid-annotation]
+CST verification passed

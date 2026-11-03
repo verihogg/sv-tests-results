@@ -1,0 +1,29 @@
+name: assign_in_exp_sim
+description: assignment in expression simulation test
+type: simulation elaboration parsing
+tags: 11.3.6
+files: /home/darya/verilog/sv-tests/tests/chapter-11/11.3.6--assign_in_exp-sim.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-11
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.027545690536499023
+user_time: 0.005885
+system_time: 0.023507999999999998
+ram_usage: 20584
+date_completed: 2026-10-26 11:55:09
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmp3si_tugi/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-11 /home/darya/verilog/sv-tests/out/tmp/tmp3si_tugi/formatted/11.3.6--assign_in_exp-sim.sv
+CST verification passed

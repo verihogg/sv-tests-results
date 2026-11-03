@@ -1,0 +1,30 @@
+name: regress-vlg_pr1704726a_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/pr1704726a.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+should_fail_because: this test was imported from ivtest and is designed to fail
+top_module: 
+timeout: 30
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03565526008605957
+user_time: 0.010350999999999999
+system_time: 0.025176
+ram_usage: 21280
+date_completed: 2026-10-24 23:01:06
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp_qcj_yuj/formatted/pr1704726a.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp_qcj_yuj/formatted/pr1704726a.v: unsupported SystemVerilog construct 'event'; original text preserved [unsupported-construct]
+CST verification passed

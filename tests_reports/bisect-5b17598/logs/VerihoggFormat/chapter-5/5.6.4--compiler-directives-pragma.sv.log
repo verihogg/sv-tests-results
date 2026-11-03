@@ -1,0 +1,29 @@
+name: pragma-directive
+description: Try to set a pragma
+tags: 5.6.4
+files: /home/darya/verilog/sv-tests/tests/chapter-5/5.6.4--compiler-directives-pragma.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-5
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03223299980163574
+user_time: 0.006895
+system_time: 0.027933
+ram_usage: 20716
+date_completed: 2026-10-26 14:56:54
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpwe8y_41k/formatted/5.6.4--compiler-directives-pragma.sv
+CST verification passed

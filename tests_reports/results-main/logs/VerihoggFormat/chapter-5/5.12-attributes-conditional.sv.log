@@ -1,0 +1,29 @@
+name: attributes-conditional
+description: Assing attributes to a conditional operator
+tags: 5.12
+files: /home/darya/verilog/sv-tests/tests/chapter-5/5.12-attributes-conditional.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-5
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.030283689498901367
+user_time: 0.006542
+system_time: 0.025217
+ram_usage: 20572
+date_completed: 2026-10-24 22:01:19
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp845umi0y/formatted/5.12-attributes-conditional.sv
+CST verification passed

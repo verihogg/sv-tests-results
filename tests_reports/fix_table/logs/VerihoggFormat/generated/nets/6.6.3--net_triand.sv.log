@@ -1,0 +1,30 @@
+name: net_triand
+description: triand net test
+tags: 6.6.3
+files: /home/darya/verilog/sv-tests/tests/generated/nets/6.6.3--net_triand.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/nets
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.032428741455078125
+user_time: 0.014457
+system_time: 0.021658999999999998
+ram_usage: 20612
+date_completed: 2026-10-24 22:51:34
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpor5375yw/formatted/6.6.3--net_triand.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpor5375yw/formatted/6.6.3--net_triand.sv: unsupported SystemVerilog construct 'triand'; original text preserved [unsupported-construct]
+CST verification passed

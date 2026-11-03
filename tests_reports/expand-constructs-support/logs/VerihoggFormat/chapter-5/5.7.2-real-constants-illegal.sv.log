@@ -1,0 +1,47 @@
+name: real-constants-illegal
+description: Examples of real literal constants
+should_fail_because: Real literal constants must have at least one digit on each side of the decimal point
+tags: 5.7.2
+files: /home/darya/verilog/sv-tests/tests/chapter-5/5.7.2-real-constants-illegal.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-5
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.01519322395324707
+user_time: 0.002463
+system_time: 0.015028999999999999
+ram_usage: 20588
+date_completed: 2026-10-24 21:23:32
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpm1__duu0/formatted/5.7.2-real-constants-illegal.sv
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpm1__duu0/comparison/5.7.2-real-constants-illegal.sv
+comparison/5.7.2-real-constants-illegal.sv:20:8: error: expected identifier
+    a = .12;
+       ^
+comparison/5.7.2-real-constants-illegal.sv:20:10: error: expected identifier
+    a = .12;
+         ^
+comparison/5.7.2-real-constants-illegal.sv:21:11: error: expected fractional digits after decimal
+    a = 9.;
+          ^
+comparison/5.7.2-real-constants-illegal.sv:22:11: error: expected fractional digits after decimal
+    a = 4.E3;
+          ^
+comparison/5.7.2-real-constants-illegal.sv:23:8: error: expected identifier
+    a = .2e-7;
+       ^
+comparison/5.7.2-real-constants-illegal.sv:23:10: error: expected identifier
+    a = .2e-7;
+         ^

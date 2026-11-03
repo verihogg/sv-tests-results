@@ -1,0 +1,32 @@
+name: regress-sv_br_gh390a_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/br_gh390a.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+should_fail_because: this test was imported from ivtest and is designed to fail
+top_module: 
+timeout: 30
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.016338586807250977
+user_time: 0.014215
+system_time: 0.003997
+ram_usage: 21596
+date_completed: 2026-10-24 21:19:52
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpzn__js9u/formatted/br_gh390a.v
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpzn__js9u/comparison/br_gh390a.v
+comparison/br_gh390a.v:25:14: error: super class constructor can only be called from the first statement in a derived class's constructor
+       super.new (name);
+       ~~~~~~^~~

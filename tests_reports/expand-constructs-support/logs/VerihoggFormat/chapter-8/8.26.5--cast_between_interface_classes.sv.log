@@ -1,0 +1,30 @@
+name: cast_between_interface_classes
+description: it should be possible to cast between implemented interface classes
+tags: 8.26.2
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-8/8.26.5--cast_between_interface_classes.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-8
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.02898573875427246
+user_time: 0.012314
+system_time: 0.017217
+ram_usage: 21468
+date_completed: 2026-10-24 21:23:30
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpt2v0v48a/formatted/8.26.5--cast_between_interface_classes.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpt2v0v48a/formatted/8.26.5--cast_between_interface_classes.sv: unsupported SystemVerilog construct 'pure'; original text preserved [unsupported-construct]
+CST verification passed

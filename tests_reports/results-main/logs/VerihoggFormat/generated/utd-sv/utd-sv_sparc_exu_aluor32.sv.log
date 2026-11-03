@@ -1,0 +1,29 @@
+name: utd-sv_sparc_exu_aluor32
+description: Tests imported from utd-sv
+files: /home/darya/verilog/sv-tests/tests/generated/utd-sv/utd-sv_sparc_exu_aluor32.sv /home/darya/verilog/sv-tests/third_party/tests/utd-sv/sparc_exu_aluor32.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/utd-sv
+tags: utd-sv
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.069000244140625
+user_time: 0.018933
+system_time: 0.039796
+ram_usage: 25248
+date_completed: 2026-10-24 21:48:20
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpt28_mnpx/formatted/tests/generated/utd-sv/utd-sv_sparc_exu_aluor32.sv /home/darya/verilog/sv-tests/out/tmp/tmpt28_mnpx/formatted/third_party/tests/utd-sv/sparc_exu_aluor32.v
+CST verification passed

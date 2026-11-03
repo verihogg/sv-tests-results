@@ -1,0 +1,33 @@
+name: hdlconvertor_std2017_p760
+description: Tests imported from hdlconv_std2017
+files: /home/darya/verilog/sv-tests/tests/generated/hdlconv_std2017/hdlconvertor_std2017_p760.sv /home/darya/verilog/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017/p760.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017
+tags: hdlconv_std2017
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 4
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.07014155387878418
+user_time: 0.014848
+system_time: 0.045781999999999996
+ram_usage: 21172
+date_completed: 2026-10-24 21:58:36
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpqbz7lfcj/formatted/tests/generated/hdlconv_std2017/hdlconvertor_std2017_p760.sv /home/darya/verilog/sv-tests/out/tmp/tmpqbz7lfcj/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p760.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpqbz7lfcj/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p760.sv: unsupported SystemVerilog construct 'modport'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpqbz7lfcj/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p760.sv: unsupported SystemVerilog construct 'specify'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpqbz7lfcj/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p760.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpqbz7lfcj/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p760.sv: cannot annotate SystemVerilog line (unsupported token kind EndInterfaceKeyword); original text preserved [invalid-annotation]
+CST verification passed

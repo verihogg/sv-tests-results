@@ -1,0 +1,30 @@
+name: methods
+description: class method test
+tags: 8.6
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-8/8.6--methods.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-8
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.028800249099731445
+user_time: 0.008256
+system_time: 0.022182999999999998
+ram_usage: 21576
+date_completed: 2026-10-24 22:01:16
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpx3ivuxr6/formatted/8.6--methods.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpx3ivuxr6/formatted/8.6--methods.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+CST verification passed

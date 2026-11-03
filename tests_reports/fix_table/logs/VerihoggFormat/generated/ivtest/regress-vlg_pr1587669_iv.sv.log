@@ -1,0 +1,31 @@
+name: regress-vlg_pr1587669_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/pr1587669.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03640151023864746
+user_time: 0.005274
+system_time: 0.028062
+ram_usage: 23524
+date_completed: 2026-10-24 23:01:39
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpvntn41fp/formatted/pr1587669.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpvntn41fp/formatted/pr1587669.v: unsupported SystemVerilog construct 'not'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpvntn41fp/formatted/pr1587669.v: unsupported SystemVerilog construct 'or'; original text preserved [unsupported-construct]
+CST verification passed

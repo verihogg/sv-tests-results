@@ -1,0 +1,35 @@
+name: keyword_reg
+description: The 'reg' keyword should be reserved
+should_fail_because: The 'reg' keyword should be reserved
+tags: 5.6.2
+files: /home/darya/verilog/sv-tests/tests/generated/keywords/5.6.2--keyword_reg.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/keywords
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.018416881561279297
+user_time: 0.009646
+system_time: 0.011205
+ram_usage: 20648
+date_completed: 2026-10-24 21:48:28
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpwguc50fa/formatted/5.6.2--keyword_reg.sv
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpwguc50fa/comparison/5.6.2--keyword_reg.sv
+comparison/5.6.2--keyword_reg.sv:8:9: error: expected a declaration name
+    bit reg;
+        ^
+comparison/5.6.2--keyword_reg.sv:8:12: error: expected a declaration name
+    bit reg;
+           ^

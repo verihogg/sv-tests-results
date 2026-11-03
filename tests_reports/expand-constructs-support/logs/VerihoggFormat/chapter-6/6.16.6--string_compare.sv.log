@@ -1,0 +1,29 @@
+name: string_compare_fn
+description: string.compare()  tests
+tags: 6.16.6
+files: /home/darya/verilog/sv-tests/tests/chapter-6/6.16.6--string_compare.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-6
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.027788162231445312
+user_time: 0.005778
+system_time: 0.024232999999999998
+ram_usage: 20588
+date_completed: 2026-10-24 21:23:08
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpk2d0lm7g/formatted/6.16.6--string_compare.sv
+CST verification passed

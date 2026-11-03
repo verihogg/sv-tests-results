@@ -1,0 +1,32 @@
+name: static_properties
+description: static class properties test
+tags: 8.9
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-8/8.9--static_properties.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-8
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 3
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03162550926208496
+user_time: 0.0
+system_time: 0.033319
+ram_usage: 20572
+date_completed: 2026-10-24 22:01:16
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpw44czxke/formatted/8.9--static_properties.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpw44czxke/formatted/8.9--static_properties.sv: unsupported SystemVerilog construct 'static'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpw44czxke/formatted/8.9--static_properties.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpw44czxke/formatted/8.9--static_properties.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+CST verification passed

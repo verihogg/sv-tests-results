@@ -1,0 +1,31 @@
+name: regress-vlg_rtranif1_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/rtranif1.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.07254242897033691
+user_time: 0.014456
+system_time: 0.023413
+ram_usage: 29580
+date_completed: 2026-10-26 11:54:44
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpej7rwavl/formatted/. -I/home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest -I/home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests /home/darya/verilog/sv-tests/out/tmp/tmpej7rwavl/formatted/rtranif1.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpej7rwavl/formatted/rtranif1.v: unsupported SystemVerilog construct 'rtranif1'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpej7rwavl/formatted/rtranif1.v: cannot annotate SystemVerilog line (unsupported token kind Supply1Keyword); original text preserved [invalid-annotation]
+CST verification passed

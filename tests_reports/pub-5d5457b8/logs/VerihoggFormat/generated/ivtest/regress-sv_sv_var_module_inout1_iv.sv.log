@@ -1,0 +1,38 @@
+name: regress-sv_sv_var_module_inout1_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/sv_var_module_inout1.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+should_fail_because: this test was imported from ivtest and is designed to fail
+top_module: 
+timeout: 30
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.019011735916137695
+user_time: 0.0030039999999999997
+system_time: 0.016047
+ram_usage: 20568
+date_completed: 2026-10-26 11:54:08
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpf8ah0suk/formatted/. -I/home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest -I/home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests /home/darya/verilog/sv-tests/out/tmp/tmpf8ah0suk/formatted/sv_var_module_inout1.v
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpf8ah0suk/comparison/sv_var_module_inout1.v
+comparison/sv_var_module_inout1.v:3:15: error: expected parameter declaration
+module test #(
+              ^
+comparison/sv_var_module_inout1.v:4:14: error: expected ';'
+  inout var x
+             ^
+comparison/sv_var_module_inout1.v:5:1: error: unexpected ')' delimiter
+);
+^

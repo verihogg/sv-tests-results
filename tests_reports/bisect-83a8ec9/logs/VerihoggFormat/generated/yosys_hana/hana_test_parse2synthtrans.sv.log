@@ -1,0 +1,71 @@
+name: hana_test_parse2synthtrans
+description: Tests imported from yosys
+files: /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/hana/test_parse2synthtrans.v /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/hana/hana_vlib.v
+results_group: imported
+tags: yosys
+incdirs: /home/darya/verilog/sv-tests/tests/generated/yosys_hana
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 42
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.2836284637451172
+user_time: 0.032325
+system_time: 0.054335999999999995
+ram_usage: 39892
+date_completed: 2026-10-26 14:12:35
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/test_parse2synthtrans.v /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/test_parse2synthtrans.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/test_parse2synthtrans.v: cannot annotate SystemVerilog line (unsupported token kind DefaultKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/test_parse2synthtrans.v: cannot annotate SystemVerilog line (unsupported token kind DefaultKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind Supply1Keyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps8q0ro9w/formatted/hana_vlib.v: cannot annotate SystemVerilog line (unsupported token kind Supply0Keyword); original text preserved [invalid-annotation]
+CST verification passed

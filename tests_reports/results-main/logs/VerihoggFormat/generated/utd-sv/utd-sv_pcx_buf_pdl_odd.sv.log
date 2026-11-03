@@ -1,0 +1,29 @@
+name: utd-sv_pcx_buf_pdl_odd
+description: Tests imported from utd-sv
+files: /home/darya/verilog/sv-tests/tests/generated/utd-sv/utd-sv_pcx_buf_pdl_odd.sv /home/darya/verilog/sv-tests/third_party/tests/utd-sv/pcx_buf_pdl_odd.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/utd-sv
+tags: utd-sv
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.20825886726379395
+user_time: 0.028363
+system_time: 0.038155999999999995
+ram_usage: 31756
+date_completed: 2026-10-24 21:48:14
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpy6tbg8m0/formatted/tests/generated/utd-sv/utd-sv_pcx_buf_pdl_odd.sv /home/darya/verilog/sv-tests/out/tmp/tmpy6tbg8m0/formatted/third_party/tests/utd-sv/pcx_buf_pdl_odd.v
+CST verification passed

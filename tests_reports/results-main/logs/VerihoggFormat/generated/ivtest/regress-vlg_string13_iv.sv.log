@@ -1,0 +1,29 @@
+name: regress-vlg_string13_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/string13.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.042024850845336914
+user_time: 0.018789999999999998
+system_time: 0.016866
+ram_usage: 27720
+date_completed: 2026-10-24 21:58:02
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpwdxbvwxj/formatted/string13.v
+CST mismatch between original and formatted: string13.v

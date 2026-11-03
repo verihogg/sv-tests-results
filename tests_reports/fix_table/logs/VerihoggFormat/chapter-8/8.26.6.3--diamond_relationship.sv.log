@@ -1,0 +1,31 @@
+name: diamond_relationship
+description: interface class inherited from multiple sources shouldn't create symbol conflicts
+tags: 8.26.6.3
+files: /home/darya/verilog/sv-tests/tests/chapter-8/8.26.6.3--diamond_relationship.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-8
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.029909849166870117
+user_time: 0.002585
+system_time: 0.028215999999999998
+ram_usage: 20448
+date_completed: 2026-10-24 23:04:58
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp10f3dujs/formatted/8.26.6.3--diamond_relationship.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp10f3dujs/formatted/8.26.6.3--diamond_relationship.sv: unsupported SystemVerilog construct 'pure'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp10f3dujs/formatted/8.26.6.3--diamond_relationship.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+CST verification passed

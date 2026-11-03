@@ -1,0 +1,31 @@
+name: class_test_30
+description: Test
+tags: 6.15 8.3
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/generic/class/class_test_30.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generic/class
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03435087203979492
+user_time: 0.0
+system_time: 0.035616
+ram_usage: 20632
+date_completed: 2026-10-26 14:17:06
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp4wwnouj9/formatted/class_test_30.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp4wwnouj9/formatted/class_test_30.sv: unsupported SystemVerilog construct 'this'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp4wwnouj9/formatted/class_test_30.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+CST verification passed

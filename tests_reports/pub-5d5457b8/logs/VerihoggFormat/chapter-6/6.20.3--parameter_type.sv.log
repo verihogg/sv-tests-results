@@ -1,0 +1,30 @@
+name: parameter_type
+description: parameter type tests
+tags: 6.20.3
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-6/6.20.3--parameter_type.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-6
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.031134605407714844
+user_time: 0.015266
+system_time: 0.017478
+ram_usage: 20588
+date_completed: 2026-10-26 11:57:40
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmph8f0naky/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-6 /home/darya/verilog/sv-tests/out/tmp/tmph8f0naky/formatted/6.20.3--parameter_type.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmph8f0naky/formatted/6.20.3--parameter_type.sv: cannot annotate SystemVerilog line (unsupported token kind TypeKeyword); original text preserved [invalid-annotation]
+CST verification passed

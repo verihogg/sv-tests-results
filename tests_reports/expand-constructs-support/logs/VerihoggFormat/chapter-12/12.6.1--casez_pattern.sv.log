@@ -1,0 +1,32 @@
+name: casez_pattern
+description: A module testing pattern matching in casez statements
+tags: 12.6.1
+files: /home/darya/verilog/sv-tests/tests/chapter-12/12.6.1--casez_pattern.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-12
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 3
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.030242204666137695
+user_time: 0.002972
+system_time: 0.027718999999999997
+ram_usage: 21212
+date_completed: 2026-10-24 21:29:57
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmptxmn1atw/formatted/12.6.1--casez_pattern.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmptxmn1atw/formatted/12.6.1--casez_pattern.sv: unsupported SystemVerilog construct 'struct'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmptxmn1atw/formatted/12.6.1--casez_pattern.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmptxmn1atw/formatted/12.6.1--casez_pattern.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+CST verification passed

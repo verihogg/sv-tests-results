@@ -1,0 +1,32 @@
+name: 22.3--resetall_illegal
+description: It shall be illegal for the `resetall directive to be specified within a design element.
+should_fail_because: It shall be illegal for the `resetall directive to be specified within a design element.
+tags: 22.3
+type: preprocessing parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-22/22.3--resetall_illegal.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-22
+top_module: 
+timeout: 30
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.01790904998779297
+user_time: 0.002486
+system_time: 0.018132
+ram_usage: 20716
+date_completed: 2026-10-26 14:56:52
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpi70uus1y/formatted/22.3--resetall_illegal.sv
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpi70uus1y/comparison/22.3--resetall_illegal.sv
+comparison/22.3--resetall_illegal.sv:19:1: error: directive is not allowed inside a design element
+`resetall
+^~~~~~~~~

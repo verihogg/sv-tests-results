@@ -1,0 +1,29 @@
+name: simple_and_logical_operator_sim
+description: minimal && operator simulation test (without result verification)
+type: simulation elaboration parsing
+tags: 11.4.7
+files: /home/darya/verilog/sv-tests/tests/generated/simple_logical_operators_sim/11.4.7--simple_and_logical_operator.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/simple_logical_operators_sim
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.032164573669433594
+user_time: 0.011968999999999999
+system_time: 0.022765999999999998
+ram_usage: 20584
+date_completed: 2026-10-26 11:41:52
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmp2zmvplor/formatted/. -I/home/darya/verilog/sv-tests/tests/generated/simple_logical_operators_sim /home/darya/verilog/sv-tests/out/tmp/tmp2zmvplor/formatted/11.4.7--simple_and_logical_operator.sv
+CST verification passed

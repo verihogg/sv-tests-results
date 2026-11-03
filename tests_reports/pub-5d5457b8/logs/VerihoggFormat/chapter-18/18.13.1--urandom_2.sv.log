@@ -1,0 +1,30 @@
+name: urandom_2
+description: urandom() test
+tags: 18.13.1
+files: /home/darya/verilog/sv-tests/tests/chapter-18/18.13.1--urandom_2.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-18
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.02830958366394043
+user_time: 0.0
+system_time: 0.030742
+ram_usage: 20600
+date_completed: 2026-10-26 11:58:06
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpesh8cgp0/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-18 /home/darya/verilog/sv-tests/out/tmp/tmpesh8cgp0/formatted/18.13.1--urandom_2.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpesh8cgp0/formatted/18.13.1--urandom_2.sv: cannot annotate SystemVerilog line (unsupported token kind ReturnKeyword); original text preserved [invalid-annotation]
+CST verification passed

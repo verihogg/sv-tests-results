@@ -1,0 +1,29 @@
+name: typedef_test_8
+description: Test
+tags: 6.18
+files: /home/darya/verilog/sv-tests/tests/generic/typedef/typedef_test_8.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generic/typedef
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03181862831115723
+user_time: 0.014884999999999999
+system_time: 0.016486
+ram_usage: 20588
+date_completed: 2026-10-26 11:57:58
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmp62i0tieg/formatted/. -I/home/darya/verilog/sv-tests/tests/generic/typedef /home/darya/verilog/sv-tests/out/tmp/tmp62i0tieg/formatted/typedef_test_8.sv
+CST verification passed

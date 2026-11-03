@@ -1,0 +1,31 @@
+name: typedef_test_6
+description: Test
+tags: 6.18
+files: /home/darya/verilog/sv-tests/tests/generic/typedef/typedef_test_6.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generic/typedef
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.02700185775756836
+user_time: 0.005941
+system_time: 0.02362
+ram_usage: 20588
+date_completed: 2026-10-24 21:23:28
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp9ykzy0mx/formatted/typedef_test_6.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp9ykzy0mx/formatted/typedef_test_6.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp9ykzy0mx/formatted/typedef_test_6.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+CST verification passed

@@ -1,0 +1,36 @@
+name: hdlconvertor_std2017_p780
+description: Tests imported from hdlconv_std2017
+files: /home/darya/verilog/sv-tests/tests/generated/hdlconv_std2017/hdlconvertor_std2017_p780.sv /home/darya/verilog/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017/p780.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017
+tags: hdlconv_std2017
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 7
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.05452895164489746
+user_time: 0.014516
+system_time: 0.034273
+ram_usage: 20612
+date_completed: 2026-10-24 23:02:11
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp6rv69856/formatted/tests/generated/hdlconv_std2017/hdlconvertor_std2017_p780.sv /home/darya/verilog/sv-tests/out/tmp/tmp6rv69856/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p780.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp6rv69856/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p780.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp6rv69856/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p780.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp6rv69856/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p780.sv: cannot annotate SystemVerilog line (unsupported token kind ReturnKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp6rv69856/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p780.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp6rv69856/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p780.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp6rv69856/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p780.sv: cannot annotate SystemVerilog line (unsupported token kind ReturnKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp6rv69856/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p780.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+CST verification passed

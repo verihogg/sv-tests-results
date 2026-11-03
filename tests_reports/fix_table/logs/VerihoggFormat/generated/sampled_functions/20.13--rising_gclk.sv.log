@@ -1,0 +1,30 @@
+name: rising_gclk_function
+description: $rising_gclk test
+tags: 20.13 16.9
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/generated/sampled_functions/20.13--rising_gclk.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/sampled_functions
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.02934575080871582
+user_time: 0.011257
+system_time: 0.019606
+ram_usage: 20484
+date_completed: 2026-10-24 23:02:14
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmps7jccv4z/formatted/20.13--rising_gclk.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmps7jccv4z/formatted/20.13--rising_gclk.sv: unsupported SystemVerilog construct 'global'; original text preserved [unsupported-construct]
+CST verification passed

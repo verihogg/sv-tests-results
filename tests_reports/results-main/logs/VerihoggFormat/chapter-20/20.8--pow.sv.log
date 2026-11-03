@@ -1,0 +1,29 @@
+name: pow_function
+description: $pow test
+tags: 20.8
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-20/20.8--pow.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-20
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03303813934326172
+user_time: 0.0
+system_time: 0.034648
+ram_usage: 20572
+date_completed: 2026-10-24 22:01:16
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpsm2__q0s/formatted/20.8--pow.sv
+CST verification passed

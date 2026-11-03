@@ -1,0 +1,30 @@
+name: expected_hdlconvertor_function_non_ansi
+description: Tests imported from hdlconv
+files: /home/darya/verilog/sv-tests/tests/generated/hdlconv/expected_hdlconvertor_function_non_ansi.sv /home/darya/verilog/sv-tests/third_party/tests/hdlconvertor/tests/verilog/expected/function_non_ansi.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/hdlconvertor/tests/verilog/expected
+tags: hdlconv
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.07726430892944336
+user_time: 0.013524999999999999
+system_time: 0.038232999999999996
+ram_usage: 20484
+date_completed: 2026-10-24 22:52:15
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpohhplr3l/formatted/tests/generated/hdlconv/expected_hdlconvertor_function_non_ansi.sv /home/darya/verilog/sv-tests/out/tmp/tmpohhplr3l/formatted/third_party/tests/hdlconvertor/tests/verilog/expected/function_non_ansi.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpohhplr3l/formatted/third_party/tests/hdlconvertor/tests/verilog/expected/function_non_ansi.v: unsupported SystemVerilog construct 'real'; original text preserved [unsupported-construct]
+CST verification passed

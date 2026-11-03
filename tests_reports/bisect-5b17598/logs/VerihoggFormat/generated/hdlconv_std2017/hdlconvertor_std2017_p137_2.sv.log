@@ -1,0 +1,30 @@
+name: hdlconvertor_std2017_p137_2
+description: Tests imported from hdlconv_std2017
+files: /home/darya/verilog/sv-tests/tests/generated/hdlconv_std2017/hdlconvertor_std2017_p137_2.sv /home/darya/verilog/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017/p137_2.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017
+tags: hdlconv_std2017
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.06510210037231445
+user_time: 0.005115
+system_time: 0.052126
+ram_usage: 20920
+date_completed: 2026-10-26 14:53:49
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpc20kr88l/formatted/tests/generated/hdlconv_std2017/hdlconvertor_std2017_p137_2.sv /home/darya/verilog/sv-tests/out/tmp/tmpc20kr88l/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p137_2.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpc20kr88l/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2017/p137_2.sv: unsupported SystemVerilog construct 'virtual'; original text preserved [unsupported-construct]
+CST verification passed

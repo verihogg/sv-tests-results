@@ -1,0 +1,30 @@
+name: uvm_component_2
+description: uvm_component class test
+tags: uvm uvm-classes
+type: parsing
+timeout: 300
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/tests/generated/uvm_classes_2/uvm_component_class_2.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src /home/darya/verilog/sv-tests/tests/generated/uvm_classes_2
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 24.753609895706177
+user_time: 1.732592
+system_time: 1.016528
+ram_usage: 1075036
+date_completed: 2026-10-24 20:20:43
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp_c_1emah/formatted/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmp_c_1emah/formatted/tests/generated/uvm_classes_2/uvm_component_class_2.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp_c_1emah/formatted/tests/generated/uvm_classes_2/uvm_component_class_2.sv: cannot annotate SystemVerilog line (unsupported token kind ExtendsKeyword); original text preserved [invalid-annotation]
+CST verification passed

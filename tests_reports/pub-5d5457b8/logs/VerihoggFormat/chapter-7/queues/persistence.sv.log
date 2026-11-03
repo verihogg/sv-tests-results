@@ -1,0 +1,31 @@
+name: queues-elements-persistence
+description: Test status of persistence of references to elements of queue
+tags: 7.10.3
+type: simulation elaboration parsing
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-7/queues/persistence.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-7/queues
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03876996040344238
+user_time: 0.007313
+system_time: 0.031654999999999996
+ram_usage: 21444
+date_completed: 2026-10-26 11:37:55
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpn4tvp_sz/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-7/queues /home/darya/verilog/sv-tests/out/tmp/tmpn4tvp_sz/formatted/persistence.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpn4tvp_sz/formatted/persistence.sv: cannot annotate SystemVerilog line (unsupported token kind Dollar); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpn4tvp_sz/formatted/persistence.sv: cannot annotate SystemVerilog line (unsupported token kind AutomaticKeyword); original text preserved [invalid-annotation]
+CST verification passed

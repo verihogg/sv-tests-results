@@ -1,0 +1,29 @@
+name: utd-sv_cpx_buf_p4
+description: Tests imported from utd-sv
+files: /home/darya/verilog/sv-tests/tests/generated/utd-sv/utd-sv_cpx_buf_p4.sv /home/darya/verilog/sv-tests/third_party/tests/utd-sv/cpx_buf_p4.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/utd-sv
+tags: utd-sv
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.13033747673034668
+user_time: 0.031305
+system_time: 0.033817
+ram_usage: 31416
+date_completed: 2026-10-24 21:48:18
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp_wa7scwh/formatted/tests/generated/utd-sv/utd-sv_cpx_buf_p4.sv /home/darya/verilog/sv-tests/out/tmp/tmp_wa7scwh/formatted/third_party/tests/utd-sv/cpx_buf_p4.v
+CST verification passed

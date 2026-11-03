@@ -1,0 +1,29 @@
+name: uvm_priority_arbitration
+description: UVM example - uvm_priority_arbitration
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src
+tags: uvm-examples uvm
+type: simulation elaboration parsing
+timeout: 900
+unsynthesizable: 1
+simvariants: ARB_TYPE=SEQ_ARB_FIFO ARB_TYPE=SEQ_ARB_WEIGHTED ARB_TYPE=SEQ_ARB_RANDOM ARB_TYPE=SEQ_ARB_STRICT_FIFO ARB_TYPE=SEQ_ARB_STRICT_RANDOM ARB_TYPE=SEQ_ARB_USER
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 2940.079653978348
+user_time: 1.707171
+system_time: 0.9009419999999999
+ram_usage: 1075112
+date_completed: 2026-10-24 21:18:40
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpf1ilodg1/formatted/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpf1ilodg1/formatted/uvm-examples/uvm_priority_arbitration/top.sv
+CST mismatch between original and formatted: uvm-examples/uvm_priority_arbitration/top.sv

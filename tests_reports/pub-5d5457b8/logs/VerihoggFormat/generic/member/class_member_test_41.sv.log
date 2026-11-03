@@ -1,0 +1,31 @@
+name: class_member_test_41
+description: Test
+tags: 8.3
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/generic/member/class_member_test_41.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generic/member
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.04394173622131348
+user_time: 0.010494
+system_time: 0.030070999999999997
+ram_usage: 20588
+date_completed: 2026-10-26 11:57:46
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmp4uhhlfof/formatted/. -I/home/darya/verilog/sv-tests/tests/generic/member /home/darya/verilog/sv-tests/out/tmp/tmp4uhhlfof/formatted/class_member_test_41.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp4uhhlfof/formatted/class_member_test_41.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp4uhhlfof/formatted/class_member_test_41.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+CST verification passed

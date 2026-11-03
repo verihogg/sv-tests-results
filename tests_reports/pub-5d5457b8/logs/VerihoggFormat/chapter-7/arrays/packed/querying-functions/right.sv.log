@@ -1,0 +1,29 @@
+name: arrays-packed-quering-functions-right
+description: Test quering functions support on packed arrays
+tags: 7.11 7.4.1
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/packed/querying-functions/right.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/packed/querying-functions
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.033678293228149414
+user_time: 0.00733
+system_time: 0.029221999999999998
+ram_usage: 20588
+date_completed: 2026-10-26 11:37:57
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmp03zz7wib/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-7/arrays/packed/querying-functions /home/darya/verilog/sv-tests/out/tmp/tmp03zz7wib/formatted/right.sv
+CST verification passed

@@ -1,0 +1,30 @@
+name: implicit_external_constraint_1
+description: implicit external constraint test
+tags: 18.5.1
+files: /home/darya/verilog/sv-tests/tests/chapter-18/18.5.1--implicit-external-constraint_1.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-18
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.0448765754699707
+user_time: 0.012176999999999999
+system_time: 0.021672999999999998
+ram_usage: 20412
+date_completed: 2026-10-24 23:07:59
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpvyvnzvcl/formatted/18.5.1--implicit-external-constraint_1.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpvyvnzvcl/formatted/18.5.1--implicit-external-constraint_1.sv: unsupported SystemVerilog construct 'rand'; original text preserved [unsupported-construct]
+CST verification passed

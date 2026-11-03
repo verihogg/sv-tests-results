@@ -1,0 +1,30 @@
+name: random_weighted_case_randcase_0
+description: randcase test
+tags: 18.16
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-18/18.16--random-weighted-case-randcase_0.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-18
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03302407264709473
+user_time: 0.014247
+system_time: 0.020582
+ram_usage: 20716
+date_completed: 2026-10-26 12:03:17
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmp3pqfizbz/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-18 /home/darya/verilog/sv-tests/out/tmp/tmp3pqfizbz/formatted/18.16--random-weighted-case-randcase_0.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp3pqfizbz/formatted/18.16--random-weighted-case-randcase_0.sv: unsupported SystemVerilog construct 'randcase'; original text preserved [unsupported-construct]
+CST verification passed

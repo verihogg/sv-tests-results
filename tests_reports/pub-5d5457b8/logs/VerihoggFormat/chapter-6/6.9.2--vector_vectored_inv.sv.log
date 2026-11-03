@@ -1,0 +1,35 @@
+name: vector_vectored_inv
+description: vectored vector invalid access tests
+should_fail_because: bit selects are not permitted on vectored vector nets
+tags: 6.9.2
+files: /home/darya/verilog/sv-tests/tests/chapter-6/6.9.2--vector_vectored_inv.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-6
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.025761127471923828
+user_time: 0.007221
+system_time: 0.020572999999999998
+ram_usage: 20588
+date_completed: 2026-10-26 11:57:30
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmph1lro6ne/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-6 /home/darya/verilog/sv-tests/out/tmp/tmph1lro6ne/formatted/6.9.2--vector_vectored_inv.sv
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmph1lro6ne/comparison/6.9.2--vector_vectored_inv.sv
+comparison/6.9.2--vector_vectored_inv.sv:17:15: error: expected a declaration name
+        logic vectored [15:0] a = 0;
+              ^
+comparison/6.9.2--vector_vectored_inv.sv:17:33: error: expected a declaration name
+        logic vectored [15:0] a = 0;
+                                ^

@@ -1,0 +1,31 @@
+name: shallow_copy
+description: object shallow copy
+tags: 8.12
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-8/8.12--shallow_copy.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-8
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03741145133972168
+user_time: 0.009937
+system_time: 0.02591
+ram_usage: 21576
+date_completed: 2026-10-26 14:17:15
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp7sh7ttuv/formatted/8.12--shallow_copy.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp7sh7ttuv/formatted/8.12--shallow_copy.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp7sh7ttuv/formatted/8.12--shallow_copy.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+CST verification passed

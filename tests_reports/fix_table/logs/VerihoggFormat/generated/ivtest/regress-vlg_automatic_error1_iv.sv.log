@@ -1,0 +1,38 @@
+name: regress-vlg_automatic_error1_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/automatic_error1.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+should_fail_because: this test was imported from ivtest and is designed to fail
+top_module: 
+timeout: 30
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.01755666732788086
+user_time: 0.0026049999999999997
+system_time: 0.017211999999999998
+ram_usage: 20612
+date_completed: 2026-10-24 23:01:38
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpgtd32z_i/formatted/automatic_error1.v
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpgtd32z_i/comparison/automatic_error1.v
+comparison/automatic_error1.v:5:5: error: expected a declaration name
+reg local;
+    ^
+comparison/automatic_error1.v:7:1: error: expected statement
+local = 1;
+^~~~~
+comparison/automatic_error1.v:11:19: error: expected identifier
+initial auto_task.local = 0;
+                  ^

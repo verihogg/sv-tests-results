@@ -1,0 +1,29 @@
+name: utd-sv_mod-param-dec
+description: Tests imported from utd-sv
+files: /home/darya/verilog/sv-tests/tests/generated/utd-sv/utd-sv_mod-param-dec.sv /home/darya/verilog/sv-tests/third_party/tests/utd-sv/mod-param-dec.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/utd-sv
+tags: utd-sv
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.06806588172912598
+user_time: 0.014107
+system_time: 0.049828
+ram_usage: 20716
+date_completed: 2026-10-26 14:42:57
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpfv2yt1lm/formatted/tests/generated/utd-sv/utd-sv_mod-param-dec.sv /home/darya/verilog/sv-tests/out/tmp/tmpfv2yt1lm/formatted/third_party/tests/utd-sv/mod-param-dec.v
+CST verification passed

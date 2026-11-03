@@ -1,0 +1,33 @@
+name: regress-sv_sv_var_package_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/sv_var_package.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 4
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.04267311096191406
+user_time: 0.014398999999999999
+system_time: 0.02133
+ram_usage: 29668
+date_completed: 2026-10-24 23:01:54
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpn8remqr2/formatted/sv_var_package.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpn8remqr2/formatted/sv_var_package.v: unsupported SystemVerilog construct 'var'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpn8remqr2/formatted/sv_var_package.v: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpn8remqr2/formatted/sv_var_package.v: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpn8remqr2/formatted/sv_var_package.v: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+CST verification passed

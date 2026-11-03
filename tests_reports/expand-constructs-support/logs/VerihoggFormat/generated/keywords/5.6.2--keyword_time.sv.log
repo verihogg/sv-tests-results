@@ -1,0 +1,35 @@
+name: keyword_time
+description: The 'time' keyword should be reserved
+should_fail_because: The 'time' keyword should be reserved
+tags: 5.6.2
+files: /home/darya/verilog/sv-tests/tests/generated/keywords/5.6.2--keyword_time.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/keywords
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.018786907196044922
+user_time: 0.010275
+system_time: 0.009373
+ram_usage: 20460
+date_completed: 2026-10-24 20:21:31
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpt1osrcc8/formatted/5.6.2--keyword_time.sv
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpt1osrcc8/comparison/5.6.2--keyword_time.sv
+comparison/5.6.2--keyword_time.sv:8:9: error: expected a declaration name
+    bit time;
+        ^
+comparison/5.6.2--keyword_time.sv:8:13: error: expected a declaration name
+    bit time;
+            ^

@@ -1,0 +1,30 @@
+name: event_sequence_controls
+description: event sequence
+tags: 9.4.3
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-9/9.4.3--event_sequence_controls.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-9
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.029855012893676758
+user_time: 0.020277999999999997
+system_time: 0.011594
+ram_usage: 20716
+date_completed: 2026-10-24 21:23:14
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp3o_eygfg/formatted/9.4.3--event_sequence_controls.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp3o_eygfg/formatted/9.4.3--event_sequence_controls.sv: unsupported SystemVerilog construct 'wait'; original text preserved [unsupported-construct]
+CST verification passed

@@ -1,0 +1,29 @@
+name: ln_function
+description: $ln test
+tags: 20.8
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-20/20.8--ln.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-20
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03250932693481445
+user_time: 0.009805999999999999
+system_time: 0.024700999999999997
+ram_usage: 20632
+date_completed: 2026-10-26 14:17:14
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp_gumk4b5/formatted/20.8--ln.sv
+CST verification passed

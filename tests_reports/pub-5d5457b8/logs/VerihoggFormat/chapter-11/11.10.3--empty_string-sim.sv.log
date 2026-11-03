@@ -1,0 +1,29 @@
+name: empty_string_sim
+description: empty string simulation test
+type: simulation elaboration parsing
+tags: 11.10.3
+files: /home/darya/verilog/sv-tests/tests/chapter-11/11.10.3--empty_string-sim.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-11
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03419137001037598
+user_time: 0.009651
+system_time: 0.026413
+ram_usage: 20712
+date_completed: 2026-10-26 11:55:08
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmp6vn8gyy8/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-11 /home/darya/verilog/sv-tests/out/tmp/tmp6vn8gyy8/formatted/11.10.3--empty_string-sim.sv
+CST verification passed

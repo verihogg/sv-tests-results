@@ -1,0 +1,45 @@
+name: regress-sv_l_impl_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/l_impl.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 16
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.037718772888183594
+user_time: 0.018018
+system_time: 0.012891
+ram_usage: 27492
+date_completed: 2026-10-24 21:57:36
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmploxu8jv3/formatted/l_impl.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmploxu8jv3/formatted/l_impl.v: cannot annotate SystemVerilog line (unsupported token kind MinusArrow); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmploxu8jv3/formatted/l_impl.v: cannot annotate SystemVerilog line (unsupported token kind MinusArrow); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmploxu8jv3/formatted/l_impl.v: cannot annotate SystemVerilog line (unsupported token kind MinusArrow); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmploxu8jv3/formatted/l_impl.v: cannot annotate SystemVerilog line (unsupported token kind MinusArrow); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmploxu8jv3/formatted/l_impl.v: cannot annotate SystemVerilog line (unsupported token kind MinusArrow); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmploxu8jv3/formatted/l_impl.v: cannot annotate SystemVerilog line (unsupported token kind MinusArrow); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmploxu8jv3/formatted/l_impl.v: cannot annotate SystemVerilog line (unsupported token kind MinusArrow); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmploxu8jv3/formatted/l_impl.v: cannot annotate SystemVerilog line (unsupported token kind MinusArrow); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmploxu8jv3/formatted/l_impl.v: cannot annotate SystemVerilog line (unsupported token kind MinusArrow); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmploxu8jv3/formatted/l_impl.v: cannot annotate SystemVerilog line (unsupported token kind MinusArrow); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmploxu8jv3/formatted/l_impl.v: cannot annotate SystemVerilog line (unsupported token kind MinusArrow); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmploxu8jv3/formatted/l_impl.v: cannot annotate SystemVerilog line (unsupported token kind MinusArrow); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmploxu8jv3/formatted/l_impl.v: cannot annotate SystemVerilog line (unsupported token kind MinusArrow); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmploxu8jv3/formatted/l_impl.v: cannot annotate SystemVerilog line (unsupported token kind MinusArrow); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmploxu8jv3/formatted/l_impl.v: cannot annotate SystemVerilog line (unsupported token kind MinusArrow); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmploxu8jv3/formatted/l_impl.v: cannot annotate SystemVerilog line (unsupported token kind MinusArrow); original text preserved [invalid-annotation]
+CST verification passed

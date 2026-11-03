@@ -1,0 +1,29 @@
+name: string_repl_op
+description: string replication operator test
+tags: 11.4.12.2
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-11/11.4.12.2--string_repl_op.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-11
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.02974247932434082
+user_time: 0.005889
+system_time: 0.025325
+ram_usage: 20508
+date_completed: 2026-10-26 14:14:16
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpnfd_eq9q/formatted/11.4.12.2--string_repl_op.sv
+CST verification passed

@@ -1,0 +1,29 @@
+name: cast_func
+description: $cast function test
+tags: 8.16
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-8/8.16--cast_func.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-8
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03177666664123535
+user_time: 0.0045579999999999996
+system_time: 0.028666999999999998
+ram_usage: 20420
+date_completed: 2026-10-24 23:04:58
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp2b5o_l02/formatted/8.16--cast_func.sv
+CST verification passed

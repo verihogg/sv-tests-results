@@ -1,0 +1,31 @@
+name: slice
+description: Test queues slice support
+tags: 7.10.1 7.10.2
+type: simulation elaboration parsing
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-7/queues/slice.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-7/queues
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.04808664321899414
+user_time: 0.024149999999999998
+system_time: 0.01125
+ram_usage: 21580
+date_completed: 2026-10-24 22:48:43
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpyp4lg2rl/formatted/slice.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpyp4lg2rl/formatted/slice.sv: cannot annotate SystemVerilog line (unsupported token kind Dollar); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpyp4lg2rl/formatted/slice.sv: cannot annotate SystemVerilog line (unsupported token kind Dollar); original text preserved [invalid-annotation]
+CST verification passed

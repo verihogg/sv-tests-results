@@ -1,0 +1,30 @@
+name: regress-vlg_sdf4_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/sdf4.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.033606529235839844
+user_time: 0.00346
+system_time: 0.030921999999999998
+ram_usage: 21552
+date_completed: 2026-10-26 11:53:54
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpaoo9237_/formatted/. -I/home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest -I/home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests /home/darya/verilog/sv-tests/out/tmp/tmpaoo9237_/formatted/sdf4.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpaoo9237_/formatted/sdf4.v: unsupported SystemVerilog construct 'xor'; original text preserved [unsupported-construct]
+CST verification passed

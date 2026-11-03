@@ -1,0 +1,29 @@
+name: logical_operator_sim_1
+description: logical operator test in simulation
+type: simulation elaboration parsing
+tags: 11.4.7
+files: /home/darya/verilog/sv-tests/tests/generated/logical_operators_sim/11.4.7--logical_operator_1.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/logical_operators_sim
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03811526298522949
+user_time: 0.014371
+system_time: 0.025592
+ram_usage: 20708
+date_completed: 2026-10-26 14:01:59
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp9ryescu9/formatted/11.4.7--logical_operator_1.sv
+CST verification passed

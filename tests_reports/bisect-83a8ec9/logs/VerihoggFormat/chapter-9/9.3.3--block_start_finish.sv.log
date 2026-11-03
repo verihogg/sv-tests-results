@@ -1,0 +1,29 @@
+name: block_start_finish
+description: block start finish check
+tags: 9.3.3
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-9/9.3.3--block_start_finish.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-9
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.07585453987121582
+user_time: 0.010976
+system_time: 0.057897
+ram_usage: 20888
+date_completed: 2026-10-26 14:16:56
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpgb9qmf_m/formatted/9.3.3--block_start_finish.sv
+CST verification passed

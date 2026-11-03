@@ -1,0 +1,30 @@
+name: logical_equiv_operator_sim_2
+description: logical equivalence operator test in simulation
+type: simulation elaboration parsing
+tags: 11.4.7
+files: /home/darya/verilog/sv-tests/tests/generated/logical_equivalence_operator_sim/11.4.7--logical_equiv_operator_2.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/logical_equivalence_operator_sim
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.035021305084228516
+user_time: 0.003495
+system_time: 0.033091999999999996
+ram_usage: 20764
+date_completed: 2026-10-26 14:12:36
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpuhxg730_/formatted/11.4.7--logical_equiv_operator_2.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpuhxg730_/formatted/11.4.7--logical_equiv_operator_2.sv: cannot annotate SystemVerilog line (unsupported token kind LessThanMinusArrow); original text preserved [invalid-annotation]
+CST verification passed

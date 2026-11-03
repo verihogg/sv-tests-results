@@ -1,0 +1,29 @@
+name: assignment_in_expression
+description: assignment in expression test
+tags: 11.3.6
+files: /home/darya/verilog/sv-tests/tests/chapter-11/11.3.6--assignment_in_expression.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-11
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.02614736557006836
+user_time: 0.004947
+system_time: 0.022878
+ram_usage: 20588
+date_completed: 2026-10-24 21:20:57
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmplqiod_zf/formatted/11.3.6--assignment_in_expression.sv
+CST verification passed

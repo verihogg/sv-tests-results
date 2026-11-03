@@ -1,0 +1,29 @@
+name: enum_numerical_expr_cast
+description: enum numerical expression with casting
+tags: 6.19.4
+files: /home/darya/verilog/sv-tests/tests/chapter-6/6.19.4--enum_numerical_expr_cast.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-6
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.032042741775512695
+user_time: 0.007205
+system_time: 0.027327999999999998
+ram_usage: 20700
+date_completed: 2026-10-24 22:00:51
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmphejg5rvo/formatted/6.19.4--enum_numerical_expr_cast.sv
+CST verification passed

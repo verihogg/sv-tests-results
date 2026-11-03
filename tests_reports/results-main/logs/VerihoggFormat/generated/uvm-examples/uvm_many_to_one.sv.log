@@ -1,0 +1,29 @@
+name: uvm_many_to_one
+description: UVM example - uvm_many_to_one
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_many_to_one/./b.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_many_to_one/./a.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_many_to_one/./c.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_many_to_one/./abc_layering.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_many_to_one/./env.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_many_to_one/./test.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_many_to_one
+tags: uvm-examples uvm
+type: simulation elaboration parsing
+timeout: 900
+unsynthesizable: 1
+simvariants: UVM_TESTNAME=test
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 26.196452856063843
+user_time: 1.820446
+system_time: 1.180235
+ram_usage: 1099776
+date_completed: 2026-10-24 21:55:48
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpnzu546ej/formatted/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpnzu546ej/formatted/uvm-examples/uvm_many_to_one/b.sv /home/darya/verilog/sv-tests/out/tmp/tmpnzu546ej/formatted/uvm-examples/uvm_many_to_one/a.sv /home/darya/verilog/sv-tests/out/tmp/tmpnzu546ej/formatted/uvm-examples/uvm_many_to_one/c.sv /home/darya/verilog/sv-tests/out/tmp/tmpnzu546ej/formatted/uvm-examples/uvm_many_to_one/abc_layering.sv /home/darya/verilog/sv-tests/out/tmp/tmpnzu546ej/formatted/uvm-examples/uvm_many_to_one/env.sv /home/darya/verilog/sv-tests/out/tmp/tmpnzu546ej/formatted/uvm-examples/uvm_many_to_one/test.sv
+CST mismatch between original and formatted: uvm-examples/uvm_many_to_one/a.sv

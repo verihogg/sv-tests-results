@@ -1,0 +1,30 @@
+name: array-locator-methods-max
+description: Test support of array locator methods
+tags: 7.12.1 7.12 7.10
+type: simulation elaboration parsing
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/associative/locator-methods/max.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/associative/locator-methods
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.031252384185791016
+user_time: 0.004083
+system_time: 0.028793
+ram_usage: 20716
+date_completed: 2026-10-24 21:44:37
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp604tm2zv/formatted/max.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp604tm2zv/formatted/max.sv: cannot annotate SystemVerilog line (unsupported token kind Dollar); original text preserved [invalid-annotation]
+CST verification passed

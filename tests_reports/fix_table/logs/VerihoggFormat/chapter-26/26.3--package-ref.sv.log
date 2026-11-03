@@ -1,0 +1,33 @@
+name: package_ref
+description: package reference test
+tags: 26.3
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-26/26.3--package-ref.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-26
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 4
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.0319819450378418
+user_time: 0.009007
+system_time: 0.025731999999999998
+ram_usage: 20612
+date_completed: 2026-10-24 23:11:40
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpogpbsn5p/formatted/26.3--package-ref.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpogpbsn5p/formatted/26.3--package-ref.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpogpbsn5p/formatted/26.3--package-ref.sv: cannot annotate SystemVerilog line (unsupported token kind ReturnKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpogpbsn5p/formatted/26.3--package-ref.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpogpbsn5p/formatted/26.3--package-ref.sv: cannot annotate SystemVerilog line (unsupported token kind DoubleColon); original text preserved [invalid-annotation]
+CST verification passed

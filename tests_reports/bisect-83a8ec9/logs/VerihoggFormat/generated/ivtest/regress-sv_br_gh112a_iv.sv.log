@@ -1,0 +1,31 @@
+name: regress-sv_br_gh112a_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/br_gh112a.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.036107778549194336
+user_time: 0.004321
+system_time: 0.031497
+ram_usage: 25580
+date_completed: 2026-10-26 14:13:20
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpgua_buvo/formatted/br_gh112a.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpgua_buvo/formatted/br_gh112a.v: cannot annotate SystemVerilog line (unsupported token kind DoublePlus); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpgua_buvo/formatted/br_gh112a.v: cannot annotate SystemVerilog line (unsupported token kind DoublePlus); original text preserved [invalid-annotation]
+CST verification passed

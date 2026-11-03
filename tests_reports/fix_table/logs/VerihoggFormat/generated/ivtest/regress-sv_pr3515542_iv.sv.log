@@ -1,0 +1,47 @@
+name: regress-sv_pr3515542_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/pr3515542.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+should_fail_because: this test was imported from ivtest and is designed to fail
+top_module: 
+timeout: 30
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.015859365463256836
+user_time: 0.010166999999999999
+system_time: 0.006737
+ram_usage: 20484
+date_completed: 2026-10-24 23:01:35
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpnjusv0nw/formatted/pr3515542.v
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpnjusv0nw/comparison/pr3515542.v
+comparison/pr3515542.v:5:11: error: expected ';'
+    a = 15'1;
+          ^
+comparison/pr3515542.v:6:11: error: expected ';'
+    a = 15'0;
+          ^
+comparison/pr3515542.v:7:11: error: expected ';'
+    a = 15'x;
+          ^
+comparison/pr3515542.v:8:11: error: expected ';'
+    a = 15'X;
+          ^
+comparison/pr3515542.v:9:11: error: expected ';'
+    a = 15'z;
+          ^
+comparison/pr3515542.v:10:11: error: expected ';'
+    a = 15'Z;
+          ^

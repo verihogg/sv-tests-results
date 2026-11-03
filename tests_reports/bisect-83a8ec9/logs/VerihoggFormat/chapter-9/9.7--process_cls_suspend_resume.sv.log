@@ -1,0 +1,33 @@
+name: process_control
+description: process control
+tags: 9.7
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-9/9.7--process_cls_suspend_resume.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-9
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 4
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03322649002075195
+user_time: 0.005778
+system_time: 0.022733999999999997
+ram_usage: 21552
+date_completed: 2026-10-26 14:16:57
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpg9lzu0eg/formatted/9.7--process_cls_suspend_resume.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpg9lzu0eg/formatted/9.7--process_cls_suspend_resume.sv: unsupported SystemVerilog construct 'automatic'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpg9lzu0eg/formatted/9.7--process_cls_suspend_resume.sv: unsupported SystemVerilog construct 'wait'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpg9lzu0eg/formatted/9.7--process_cls_suspend_resume.sv: cannot annotate SystemVerilog line (unsupported token kind AutomaticKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpg9lzu0eg/formatted/9.7--process_cls_suspend_resume.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+CST verification passed

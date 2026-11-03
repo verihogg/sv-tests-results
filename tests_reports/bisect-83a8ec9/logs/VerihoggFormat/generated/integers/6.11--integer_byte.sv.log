@@ -1,0 +1,29 @@
+name: integer_byte
+description: byte net test
+tags: 6.11
+files: /home/darya/verilog/sv-tests/tests/generated/integers/6.11--integer_byte.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/integers
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.02899622917175293
+user_time: 0.015618
+system_time: 0.015491999999999999
+ram_usage: 20700
+date_completed: 2026-10-26 14:14:12
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpv5ewvr3s/formatted/6.11--integer_byte.sv
+CST verification passed

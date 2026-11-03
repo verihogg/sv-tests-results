@@ -1,0 +1,30 @@
+name: regress-vlg_ca_mult_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/ca_mult.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.0282440185546875
+user_time: 0.010879999999999999
+system_time: 0.018091
+ram_usage: 20588
+date_completed: 2026-10-24 21:20:12
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpnor0ljht/formatted/ca_mult.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpnor0ljht/formatted/ca_mult.v: unsupported SystemVerilog construct 'real'; original text preserved [unsupported-construct]
+CST verification passed

@@ -1,0 +1,36 @@
+name: class_test_53
+description: Test
+tags: 6.15 8.3
+files: /home/darya/verilog/sv-tests/tests/generic/class/class_test_53.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generic/class
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 7
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.031929969787597656
+user_time: 0.002698
+system_time: 0.031124
+ram_usage: 21196
+date_completed: 2026-10-26 11:57:53
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmprewf5qbn/formatted/. -I/home/darya/verilog/sv-tests/tests/generic/class /home/darya/verilog/sv-tests/out/tmp/tmprewf5qbn/formatted/class_test_53.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmprewf5qbn/formatted/class_test_53.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmprewf5qbn/formatted/class_test_53.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmprewf5qbn/formatted/class_test_53.sv: cannot annotate SystemVerilog line (unsupported token kind TypeKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmprewf5qbn/formatted/class_test_53.sv: cannot annotate SystemVerilog line (unsupported token kind TypeKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmprewf5qbn/formatted/class_test_53.sv: cannot annotate SystemVerilog line (unsupported token kind TypeKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmprewf5qbn/formatted/class_test_53.sv: cannot annotate SystemVerilog line (unsupported token kind TypeKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmprewf5qbn/formatted/class_test_53.sv: cannot annotate SystemVerilog line (unsupported token kind TypeKeyword); original text preserved [invalid-annotation]
+CST verification passed

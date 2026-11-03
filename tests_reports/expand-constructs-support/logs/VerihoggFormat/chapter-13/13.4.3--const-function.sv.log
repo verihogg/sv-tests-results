@@ -1,0 +1,30 @@
+name: const_function
+description: const function test
+tags: 13.4.3
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-13/13.4.3--const-function.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-13
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.02797842025756836
+user_time: 0.001992
+system_time: 0.027934999999999998
+ram_usage: 20700
+date_completed: 2026-10-24 21:20:56
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmprahdsz6n/formatted/13.4.3--const-function.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmprahdsz6n/formatted/13.4.3--const-function.sv: cannot annotate SystemVerilog line (unsupported token kind ReturnKeyword); original text preserved [invalid-annotation]
+CST verification passed

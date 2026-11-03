@@ -1,0 +1,29 @@
+name: block_names_par
+description: parallel block names check
+tags: 9.3.4
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-9/9.3.4--block_names_par.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-9
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03802013397216797
+user_time: 0.005569999999999999
+system_time: 0.034407
+ram_usage: 20716
+date_completed: 2026-10-26 11:57:43
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmp1_7ss19k/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-9 /home/darya/verilog/sv-tests/out/tmp/tmp1_7ss19k/formatted/9.3.4--block_names_par.sv
+CST verification passed

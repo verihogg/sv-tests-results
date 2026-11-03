@@ -1,0 +1,29 @@
+name: number_test_60
+description: Test
+tags: 5.6.4 5.7.1 5.7.2
+files: /home/darya/verilog/sv-tests/tests/generic/number/number_test_60.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generic/number
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.029749393463134766
+user_time: 0.011616999999999999
+system_time: 0.01932
+ram_usage: 20544
+date_completed: 2026-10-24 23:04:55
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpsja515gd/formatted/number_test_60.sv
+CST verification passed

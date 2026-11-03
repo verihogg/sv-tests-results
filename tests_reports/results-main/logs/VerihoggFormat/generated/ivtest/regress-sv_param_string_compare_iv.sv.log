@@ -1,0 +1,29 @@
+name: regress-sv_param_string_compare_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/param_string_compare.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03290677070617676
+user_time: 0.014641
+system_time: 0.017620999999999998
+ram_usage: 23396
+date_completed: 2026-10-24 21:57:35
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpteivndud/formatted/param_string_compare.v
+CST verification passed

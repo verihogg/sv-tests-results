@@ -1,0 +1,29 @@
+name: typename_function
+description: $typename test
+tags: 20.6
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-20/20.6--typename.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-20
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03658699989318848
+user_time: 0.011951999999999999
+system_time: 0.024090999999999998
+ram_usage: 20620
+date_completed: 2026-10-26 14:56:49
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpijcpjyk6/formatted/20.6--typename.sv
+CST verification passed

@@ -1,0 +1,60 @@
+name: uvm_interrupts_simple
+description: UVM example - uvm_interrupts_simple
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_interrupts_simple/utils/interrupt/interrupt_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_interrupts_simple/utils/interrupt/interrupt_if.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_interrupts_simple/bidirect_bus_agent_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_interrupts_simple/simple/top.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_interrupts_simple/utils/interrupt
+tags: uvm-examples uvm
+type: simulation elaboration parsing
+timeout: 900
+unsynthesizable: 1
+simvariants: 
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 31
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 26.703657865524292
+user_time: 1.780421
+system_time: 1.89991
+ram_usage: 1075280
+date_completed: 2026-10-26 14:52:16
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/utils/interrupt/interrupt_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/utils/interrupt/interrupt_if.sv /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/bidirect_bus_agent_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/simple/top.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm/src/uvm_pkg.sv: unsupported SystemVerilog construct 'static'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm/src/uvm_pkg.sv: unsupported SystemVerilog construct 'export'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/utils/interrupt/interrupt_pkg.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/utils/interrupt/interrupt_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/utils/interrupt/interrupt_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/utils/interrupt/interrupt_if.sv: unsupported SystemVerilog construct 'wait'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/utils/interrupt/interrupt_if.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/utils/interrupt/interrupt_if.sv: cannot annotate SystemVerilog line (unsupported token kind DoubleColon); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/utils/interrupt/interrupt_if.sv: cannot annotate SystemVerilog line (unsupported token kind ReturnKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/utils/interrupt/interrupt_if.sv: cannot annotate SystemVerilog line (unsupported token kind AutomaticKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/utils/interrupt/interrupt_if.sv: cannot annotate SystemVerilog line (unsupported token kind EndInterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/bidirect_bus_agent_pkg.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/bidirect_bus_agent_pkg.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/bidirect_bus_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/bidirect_bus_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/bidirect_bus_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/bidirect_bus_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndInterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/bidirect_bus_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/bidirect_bus_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndInterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/bidirect_bus_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/bidirect_bus_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndInterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/bidirect_bus_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/bidirect_bus_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/bidirect_bus_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind InsideKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/bidirect_bus_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind InsideKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/bidirect_bus_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind InsideKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/simple/top.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmyiuz09f/formatted/uvm-examples/uvm_interrupts_simple/simple/top.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+CST verification passed

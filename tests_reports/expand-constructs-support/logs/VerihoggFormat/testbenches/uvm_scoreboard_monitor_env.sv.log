@@ -1,0 +1,29 @@
+name: uvm_scoreboard_monitor_env
+description: uvm scoreboard + monitor + env test
+tags: uvm uvm-scoreboards
+type: simulation elaboration parsing
+timeout: 300
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/tests/testbenches/uvm_scoreboard_monitor_env.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src /home/darya/verilog/sv-tests/tests/testbenches
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 18.700412034988403
+user_time: 1.170919
+system_time: 0.8574919999999999
+ram_usage: 1074164
+date_completed: 2026-10-24 21:30:15
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpt38ujpw_/formatted/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpt38ujpw_/formatted/tests/testbenches/uvm_scoreboard_monitor_env.sv
+CST mismatch between original and formatted: tests/testbenches/uvm_scoreboard_monitor_env.sv

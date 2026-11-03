@@ -1,0 +1,29 @@
+name: asicworld_code_hdl_models_cam
+description: Tests imported from yosys
+files: /home/darya/verilog/sv-tests/tests/generated/yosys/asicworld_code_hdl_models_cam.sv /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/asicworld/code_hdl_models_cam.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/asicworld
+tags: yosys
+results_group: imported
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.06890702247619629
+user_time: 0.015064
+system_time: 0.047271999999999995
+ram_usage: 23376
+date_completed: 2026-10-24 23:00:45
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpzooz4pxl/formatted/tests/generated/yosys/asicworld_code_hdl_models_cam.sv /home/darya/verilog/sv-tests/out/tmp/tmpzooz4pxl/formatted/third_party/tools/yosys/tests/asicworld/code_hdl_models_cam.v
+CST verification passed

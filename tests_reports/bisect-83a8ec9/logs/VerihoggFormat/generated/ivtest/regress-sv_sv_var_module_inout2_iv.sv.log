@@ -1,0 +1,30 @@
+name: regress-sv_sv_var_module_inout2_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/sv_var_module_inout2.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+should_fail_because: this test was imported from ivtest and is designed to fail
+top_module: 
+timeout: 30
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.030020713806152344
+user_time: 0.004199
+system_time: 0.027589
+ram_usage: 20764
+date_completed: 2026-10-26 14:12:49
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp1xhodtx_/formatted/sv_var_module_inout2.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp1xhodtx_/formatted/sv_var_module_inout2.v: cannot annotate SystemVerilog line (unsupported token kind VarKeyword); original text preserved [invalid-annotation]
+CST verification passed

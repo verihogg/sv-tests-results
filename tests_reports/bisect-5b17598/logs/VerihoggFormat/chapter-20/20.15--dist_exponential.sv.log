@@ -1,0 +1,29 @@
+name: dist_exponential_function
+description: $dist_exponential test
+tags: 20.15
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-20/20.15--dist_exponential.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-20
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.029550790786743164
+user_time: 0.00378
+system_time: 0.026215
+ram_usage: 20716
+date_completed: 2026-10-26 14:56:48
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpflyqslc4/formatted/20.15--dist_exponential.sv
+CST verification passed

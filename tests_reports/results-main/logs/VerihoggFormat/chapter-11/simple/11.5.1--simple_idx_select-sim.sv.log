@@ -1,0 +1,29 @@
+name: simple_idx_select_sim
+description: minimal indexed select bit simulation test (without result verification)
+type: simulation elaboration parsing
+tags: 11.5.1
+files: /home/darya/verilog/sv-tests/tests/chapter-11/simple/11.5.1--simple_idx_select-sim.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-11/simple
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03015875816345215
+user_time: 0.012705
+system_time: 0.019892
+ram_usage: 20572
+date_completed: 2026-10-24 21:58:41
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpjg71op1i/formatted/11.5.1--simple_idx_select-sim.sv
+CST verification passed

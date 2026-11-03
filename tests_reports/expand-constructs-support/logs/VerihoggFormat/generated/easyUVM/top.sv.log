@@ -1,0 +1,29 @@
+name: easyUVM
+description: UVM testbench test
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/easyUVM/top.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src /home/darya/verilog/sv-tests/third_party/tests/easyUVM
+tags: uvm
+timeout: 300
+unsynthesizable: 1
+top_module: 
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 24.380711555480957
+user_time: 1.433458
+system_time: 1.077635
+ram_usage: 1075076
+date_completed: 2026-10-24 21:19:59
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpcyhx1q9s/formatted/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpcyhx1q9s/formatted/easyUVM/top.sv
+CST verification passed

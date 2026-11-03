@@ -1,0 +1,29 @@
+name: regress-sv_parameter_scalar_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/parameter_scalar.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.039093017578125
+user_time: 0.007989999999999999
+system_time: 0.026470999999999998
+ram_usage: 23356
+date_completed: 2026-10-24 23:01:09
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpwxpukqm_/formatted/parameter_scalar.v
+CST mismatch between original and formatted: parameter_scalar.v

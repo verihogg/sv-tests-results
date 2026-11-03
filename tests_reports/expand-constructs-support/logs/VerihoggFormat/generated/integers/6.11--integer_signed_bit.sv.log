@@ -1,0 +1,29 @@
+name: integer_signed_bit
+description: bit signed net test
+tags: 6.11
+files: /home/darya/verilog/sv-tests/tests/generated/integers/6.11--integer_signed_bit.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/integers
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.02867889404296875
+user_time: 0.01582
+system_time: 0.016805999999999998
+ram_usage: 20588
+date_completed: 2026-10-24 21:20:56
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp93vfk9uc/formatted/6.11--integer_signed_bit.sv
+CST verification passed

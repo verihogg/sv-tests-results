@@ -1,0 +1,41 @@
+name: uvm_overriding
+description: UVM example - uvm_overriding
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_overriding/a_agent_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_overriding/top.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src
+tags: uvm-examples uvm
+type: simulation elaboration parsing
+timeout: 900
+unsynthesizable: 1
+simvariants: 
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 12
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 26.885592460632324
+user_time: 1.691961
+system_time: 1.835804
+ram_usage: 1100488
+date_completed: 2026-10-26 14:11:22
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpvoi1yrdu/formatted/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpvoi1yrdu/formatted/uvm-examples/uvm_overriding/a_agent_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpvoi1yrdu/formatted/uvm-examples/uvm_overriding/top.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpvoi1yrdu/formatted/uvm/src/uvm_pkg.sv: unsupported SystemVerilog construct 'static'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpvoi1yrdu/formatted/uvm/src/uvm_pkg.sv: unsupported SystemVerilog construct 'export'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpvoi1yrdu/formatted/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpvoi1yrdu/formatted/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpvoi1yrdu/formatted/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpvoi1yrdu/formatted/uvm-examples/uvm_overriding/a_agent_pkg.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpvoi1yrdu/formatted/uvm-examples/uvm_overriding/a_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpvoi1yrdu/formatted/uvm-examples/uvm_overriding/a_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpvoi1yrdu/formatted/uvm-examples/uvm_overriding/top.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpvoi1yrdu/formatted/uvm-examples/uvm_overriding/top.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpvoi1yrdu/formatted/uvm-examples/uvm_overriding/top.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpvoi1yrdu/formatted/uvm-examples/uvm_overriding/top.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+CST verification passed

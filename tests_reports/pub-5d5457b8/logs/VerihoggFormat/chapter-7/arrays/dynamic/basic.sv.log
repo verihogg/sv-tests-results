@@ -1,0 +1,29 @@
+name: dyn-arr-basic
+description: Test dynamic arrays support
+tags: 7.5
+files: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/dynamic/basic.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/dynamic
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03854966163635254
+user_time: 0.013378
+system_time: 0.026171
+ram_usage: 20460
+date_completed: 2026-10-26 11:37:57
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmp_z27of40/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-7/arrays/dynamic /home/darya/verilog/sv-tests/out/tmp/tmp_z27of40/formatted/basic.sv
+CST verification passed

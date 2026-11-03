@@ -1,0 +1,30 @@
+name: if_else
+description: A module testing if-else statement
+tags: 12.4
+files: /home/darya/verilog/sv-tests/tests/chapter-12/12.4--if_else.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-12
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.032465457916259766
+user_time: 0.0
+system_time: 0.033491
+ram_usage: 20588
+date_completed: 2026-10-26 12:05:16
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpx1uilh97/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-12 /home/darya/verilog/sv-tests/out/tmp/tmpx1uilh97/formatted/12.4--if_else.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpx1uilh97/formatted/12.4--if_else.sv: unsupported SystemVerilog construct 'else'; original text preserved [unsupported-construct]
+CST verification passed

@@ -1,0 +1,31 @@
+name: type_access_extends
+description: accessing types from extended interface class
+tags: 8.26.3
+files: /home/darya/verilog/sv-tests/tests/chapter-8/8.26.3--type_access_extends.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-8
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.028725385665893555
+user_time: 0.0070149999999999995
+system_time: 0.023150999999999998
+ram_usage: 20572
+date_completed: 2026-10-24 22:01:17
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp0x4o_y3q/formatted/8.26.3--type_access_extends.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp0x4o_y3q/formatted/8.26.3--type_access_extends.sv: unsupported SystemVerilog construct 'pure'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp0x4o_y3q/formatted/8.26.3--type_access_extends.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+CST verification passed

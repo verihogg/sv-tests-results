@@ -1,0 +1,32 @@
+name: regress-vlg_timescale3_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/timescale3.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+should_fail_because: this test was imported from ivtest and is designed to fail
+top_module: 
+timeout: 30
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.017344236373901367
+user_time: 0.0
+system_time: 0.018588
+ram_usage: 20484
+date_completed: 2026-10-24 21:58:31
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpb6y6z_pu/formatted/timescale3.v
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpb6y6z_pu/comparison/timescale3.v
+comparison/timescale3.v:3:16: error: time precision must be at least as precise as the time unit (i.e. it cannot be a longer unit of time)
+`timescale 1ns/10ns
+           ~~~ ^~~~

@@ -1,0 +1,31 @@
+name: randomization_of_scope_variables_0
+description: Randomization of scope variables - std::randomize() test
+tags: 18.12
+files: /home/darya/verilog/sv-tests/tests/chapter-18/18.12--randomization-of-scope-variables_0.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-18
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.031615257263183594
+user_time: 0.016224
+system_time: 0.017615
+ram_usage: 20716
+date_completed: 2026-10-26 14:58:30
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpp0jpm0qq/formatted/18.12--randomization-of-scope-variables_0.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpp0jpm0qq/formatted/18.12--randomization-of-scope-variables_0.sv: cannot annotate SystemVerilog line (unsupported token kind DoubleColon); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpp0jpm0qq/formatted/18.12--randomization-of-scope-variables_0.sv: cannot annotate SystemVerilog line (unsupported token kind ReturnKeyword); original text preserved [invalid-annotation]
+CST verification passed

@@ -1,0 +1,48 @@
+name: apb_protocol_monitor
+description: UVM example - apb_protocol_monitor
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src
+tags: uvm-examples uvm
+type: simulation elaboration parsing
+timeout: 900
+unsynthesizable: 1
+simvariants: 
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 19
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 24.267996311187744
+user_time: 1.33352
+system_time: 1.160447
+ram_usage: 1074864
+date_completed: 2026-10-26 14:12:18
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpv5amqitc/formatted/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpv5amqitc/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpv5amqitc/formatted/uvm/src/uvm_pkg.sv: unsupported SystemVerilog construct 'static'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpv5amqitc/formatted/uvm/src/uvm_pkg.sv: unsupported SystemVerilog construct 'export'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpv5amqitc/formatted/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpv5amqitc/formatted/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpv5amqitc/formatted/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpv5amqitc/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: unsupported SystemVerilog construct 'property'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpv5amqitc/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: unsupported SystemVerilog construct 'property'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpv5amqitc/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: unsupported SystemVerilog construct 'property'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpv5amqitc/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: unsupported SystemVerilog construct 'property'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpv5amqitc/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: unsupported SystemVerilog construct 'property'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpv5amqitc/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: unsupported SystemVerilog construct 'property'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpv5amqitc/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: unsupported SystemVerilog construct 'property'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpv5amqitc/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: unsupported SystemVerilog construct 'property'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpv5amqitc/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: unsupported SystemVerilog construct 'property'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpv5amqitc/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: unsupported SystemVerilog construct 'covergroup'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpv5amqitc/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: unsupported SystemVerilog construct 'sequence'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpv5amqitc/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: unsupported SystemVerilog construct 'cover'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpv5amqitc/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpv5amqitc/formatted/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+CST verification passed

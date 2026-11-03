@@ -1,0 +1,30 @@
+name: regress-vlg_assign32D_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/assign3.2D.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03789496421813965
+user_time: 0.005783
+system_time: 0.024267
+ram_usage: 21604
+date_completed: 2026-10-26 11:53:29
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpn72z_z5p/formatted/. -I/home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest -I/home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests /home/darya/verilog/sv-tests/out/tmp/tmpn72z_z5p/formatted/assign3.2D.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpn72z_z5p/formatted/assign3.2D.v: unsupported SystemVerilog construct 'deassign'; original text preserved [unsupported-construct]
+CST verification passed

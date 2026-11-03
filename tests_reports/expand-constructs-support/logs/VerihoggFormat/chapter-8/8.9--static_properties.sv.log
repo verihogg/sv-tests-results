@@ -1,0 +1,29 @@
+name: static_properties
+description: static class properties test
+tags: 8.9
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-8/8.9--static_properties.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-8
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.027345657348632812
+user_time: 0.0
+system_time: 0.027957
+ram_usage: 20672
+date_completed: 2026-10-24 21:23:29
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpotwctr2v/formatted/8.9--static_properties.sv
+CST verification passed

@@ -1,0 +1,53 @@
+name: regress-vlg_real_invalid_ops_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/real_invalid_ops.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+should_fail_because: this test was imported from ivtest and is designed to fail
+top_module: 
+timeout: 30
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.023214101791381836
+user_time: 0.007975
+system_time: 0.01074
+ram_usage: 23572
+date_completed: 2026-10-26 11:54:17
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpb_6bud56/formatted/. -I/home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest -I/home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests /home/darya/verilog/sv-tests/out/tmp/tmpb_6bud56/formatted/real_invalid_ops.v
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpb_6bud56/comparison/real_invalid_ops.v
+comparison/real_invalid_ops.v:17:21: error: expected ';'
+  wire r_b_na = var1 ~& var2;
+                    ^
+comparison/real_invalid_ops.v:17:25: error: unexpected identifier 'var2'; did you mean 'var'?
+  wire r_b_na = var1 ~& var2;
+                        ^~~~
+comparison/real_invalid_ops.v:17:29: error: expected a declaration name
+  wire r_b_na = var1 ~& var2;
+                            ^
+comparison/real_invalid_ops.v:18:21: error: expected ';'
+  wire r_b_no = var1 ~| var2;
+                    ^
+comparison/real_invalid_ops.v:18:25: error: unexpected identifier 'var2'; did you mean 'var'?
+  wire r_b_no = var1 ~| var2;
+                        ^~~~
+comparison/real_invalid_ops.v:18:29: error: expected a declaration name
+  wire r_b_no = var1 ~| var2;
+                            ^
+comparison/real_invalid_ops.v:51:18: error: expected ';'
+    result = var1 ~& var2;
+                 ^
+comparison/real_invalid_ops.v:52:18: error: expected ';'
+    result = var1 ~| var2;
+                 ^

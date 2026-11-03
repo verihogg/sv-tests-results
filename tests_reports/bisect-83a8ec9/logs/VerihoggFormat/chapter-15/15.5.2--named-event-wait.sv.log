@@ -1,0 +1,31 @@
+name: named_event_wait
+description: Wait for a named event
+tags: 15.5
+top_module: top
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-15/15.5.2--named-event-wait.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-15
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03375363349914551
+user_time: 0.010014
+system_time: 0.024385999999999998
+ram_usage: 20716
+date_completed: 2026-10-26 13:58:57
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp13wea1hq/formatted/15.5.2--named-event-wait.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp13wea1hq/formatted/15.5.2--named-event-wait.sv: unsupported SystemVerilog construct 'event'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp13wea1hq/formatted/15.5.2--named-event-wait.sv: unsupported SystemVerilog construct 'event'; original text preserved [unsupported-construct]
+CST verification passed

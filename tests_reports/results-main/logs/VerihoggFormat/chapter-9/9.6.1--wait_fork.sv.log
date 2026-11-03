@@ -1,0 +1,30 @@
+name: wait_fork
+description: wait fork test
+tags: 9.6.1
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-9/9.6.1--wait_fork.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-9
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.02786087989807129
+user_time: 0.0093
+system_time: 0.020444999999999998
+ram_usage: 21348
+date_completed: 2026-10-24 22:01:02
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpow4lm8z9/formatted/9.6.1--wait_fork.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpow4lm8z9/formatted/9.6.1--wait_fork.sv: unsupported SystemVerilog construct 'wait'; original text preserved [unsupported-construct]
+CST verification passed

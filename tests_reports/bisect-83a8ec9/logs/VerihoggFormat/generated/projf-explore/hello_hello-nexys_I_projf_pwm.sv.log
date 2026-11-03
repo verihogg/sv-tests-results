@@ -1,0 +1,29 @@
+name: hello_hello-nexys_I_projf_pwm
+description: Tests imported from projf-explore
+files: /home/darya/verilog/sv-tests/tests/generated/projf-explore/hello_hello-nexys_I_projf_pwm.sv /home/darya/verilog/sv-tests/third_party/tests/projf-explore/hello/hello-nexys/I/pwm.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/projf-explore/hello/hello-nexys/I
+tags: projf-explore
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.08198857307434082
+user_time: 0.012223999999999999
+system_time: 0.043446
+ram_usage: 21328
+date_completed: 2026-10-26 14:12:18
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpnyazwsr_/formatted/tests/generated/projf-explore/hello_hello-nexys_I_projf_pwm.sv /home/darya/verilog/sv-tests/out/tmp/tmpnyazwsr_/formatted/third_party/tests/projf-explore/hello/hello-nexys/I/pwm.sv
+CST verification passed

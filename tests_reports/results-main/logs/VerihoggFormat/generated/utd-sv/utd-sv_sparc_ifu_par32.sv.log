@@ -1,0 +1,29 @@
+name: utd-sv_sparc_ifu_par32
+description: Tests imported from utd-sv
+files: /home/darya/verilog/sv-tests/tests/generated/utd-sv/utd-sv_sparc_ifu_par32.sv /home/darya/verilog/sv-tests/third_party/tests/utd-sv/sparc_ifu_par32.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/utd-sv
+tags: utd-sv
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.06436920166015625
+user_time: 0.006547
+system_time: 0.049179999999999995
+ram_usage: 20648
+date_completed: 2026-10-24 21:48:11
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp_exvffov/formatted/tests/generated/utd-sv/utd-sv_sparc_ifu_par32.sv /home/darya/verilog/sv-tests/out/tmp/tmp_exvffov/formatted/third_party/tests/utd-sv/sparc_ifu_par32.v
+CST verification passed

@@ -1,0 +1,29 @@
+name: random_function
+description: $random test
+tags: 20.15
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-20/20.15--random.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-20
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.035832881927490234
+user_time: 0.003695
+system_time: 0.03145
+ram_usage: 20632
+date_completed: 2026-10-26 14:17:13
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpkpc7j565/formatted/20.15--random.sv
+CST verification passed

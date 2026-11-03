@@ -1,0 +1,30 @@
+name: net_supply1
+description: supply1 net test
+tags: 6.6.6
+files: /home/darya/verilog/sv-tests/tests/generated/nets/6.6.6--net_supply1.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/nets
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.032593488693237305
+user_time: 0.007526
+system_time: 0.029574999999999997
+ram_usage: 20580
+date_completed: 2026-10-26 14:01:59
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp77p8c_k5/formatted/6.6.6--net_supply1.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp77p8c_k5/formatted/6.6.6--net_supply1.sv: unsupported SystemVerilog construct 'supply1'; original text preserved [unsupported-construct]
+CST verification passed

@@ -1,0 +1,32 @@
+name: asicworld_code_verilog_tutorial_fsm_full
+description: Tests imported from yosys
+files: /home/darya/verilog/sv-tests/tests/generated/yosys/asicworld_code_verilog_tutorial_fsm_full.sv /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/asicworld/code_verilog_tutorial_fsm_full.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/asicworld
+tags: yosys
+results_group: imported
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 3
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.0849299430847168
+user_time: 0.015996
+system_time: 0.051751
+ram_usage: 27500
+date_completed: 2026-10-26 14:12:30
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpdsf81d9y/formatted/tests/generated/yosys/asicworld_code_verilog_tutorial_fsm_full.sv /home/darya/verilog/sv-tests/out/tmp/tmpdsf81d9y/formatted/third_party/tools/yosys/tests/asicworld/code_verilog_tutorial_fsm_full.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpdsf81d9y/formatted/third_party/tools/yosys/tests/asicworld/code_verilog_tutorial_fsm_full.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpdsf81d9y/formatted/third_party/tools/yosys/tests/asicworld/code_verilog_tutorial_fsm_full.v: cannot annotate SystemVerilog line (unsupported token kind DefaultKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpdsf81d9y/formatted/third_party/tools/yosys/tests/asicworld/code_verilog_tutorial_fsm_full.v: cannot annotate SystemVerilog line (unsupported token kind DefaultKeyword); original text preserved [invalid-annotation]
+CST verification passed

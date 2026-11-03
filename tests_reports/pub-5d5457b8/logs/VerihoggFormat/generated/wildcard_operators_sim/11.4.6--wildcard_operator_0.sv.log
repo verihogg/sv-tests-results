@@ -1,0 +1,29 @@
+name: wildcard_operator_sim_0
+description: wildcard operator test in simulation
+type: simulation elaboration parsing
+tags: 11.4.6
+files: /home/darya/verilog/sv-tests/tests/generated/wildcard_operators_sim/11.4.6--wildcard_operator_0.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/wildcard_operators_sim
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03552389144897461
+user_time: 0.011269999999999999
+system_time: 0.026971
+ram_usage: 20716
+date_completed: 2026-10-26 11:37:59
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpm9080raz/formatted/. -I/home/darya/verilog/sv-tests/tests/generated/wildcard_operators_sim /home/darya/verilog/sv-tests/out/tmp/tmpm9080raz/formatted/11.4.6--wildcard_operator_0.sv
+CST verification passed

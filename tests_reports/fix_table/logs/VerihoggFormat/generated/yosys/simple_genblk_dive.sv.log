@@ -1,0 +1,29 @@
+name: simple_genblk_dive
+description: Tests imported from yosys
+files: /home/darya/verilog/sv-tests/tests/generated/yosys/simple_genblk_dive.sv /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/simple/genblk_dive.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/simple
+tags: yosys
+results_group: imported
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.06220650672912598
+user_time: 0.008343
+system_time: 0.047642
+ram_usage: 21320
+date_completed: 2026-10-24 23:00:47
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmps3lrqn9g/formatted/tests/generated/yosys/simple_genblk_dive.sv /home/darya/verilog/sv-tests/out/tmp/tmps3lrqn9g/formatted/third_party/tools/yosys/tests/simple/genblk_dive.v
+CST verification passed

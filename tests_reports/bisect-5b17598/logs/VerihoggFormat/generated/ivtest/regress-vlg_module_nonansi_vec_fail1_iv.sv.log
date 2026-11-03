@@ -1,0 +1,29 @@
+name: regress-vlg_module_nonansi_vec_fail1_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/module_nonansi_vec_fail1.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+should_fail_because: this test was imported from ivtest and is designed to fail
+top_module: 
+timeout: 30
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.028619766235351562
+user_time: 0.011901
+system_time: 0.018567
+ram_usage: 20588
+date_completed: 2026-10-26 14:52:44
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpbsi14q1h/formatted/module_nonansi_vec_fail1.v
+CST verification passed

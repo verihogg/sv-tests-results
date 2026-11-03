@@ -1,0 +1,30 @@
+name: cover0_test
+description: cover #0 test
+tags: 16.4
+files: /home/darya/verilog/sv-tests/tests/chapter-16/16.2--cover0.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-16
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.0325160026550293
+user_time: 0.008081
+system_time: 0.025185
+ram_usage: 20716
+date_completed: 2026-10-26 11:56:41
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpl1cu_e2l/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-16 /home/darya/verilog/sv-tests/out/tmp/tmpl1cu_e2l/formatted/16.2--cover0.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpl1cu_e2l/formatted/16.2--cover0.sv: unsupported SystemVerilog construct 'cover'; original text preserved [unsupported-construct]
+CST verification passed

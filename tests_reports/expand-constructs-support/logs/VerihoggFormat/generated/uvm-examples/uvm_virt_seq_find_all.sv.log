@@ -1,0 +1,29 @@
+name: uvm_virt_seq_find_all
+description: UVM example - uvm_virt_seq_find_all
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm-1.2/src/uvm_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_virt_seq_find_all/simple_ovc/simple_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_virt_seq_find_all/top.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm-1.2/src /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_virt_seq_find_all/simple_ovc
+tags: uvm-examples uvm-1.2
+type: simulation elaboration parsing
+timeout: 900
+unsynthesizable: 1
+simvariants: 
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 20.222003936767578
+user_time: 1.251433
+system_time: 0.709556
+ram_usage: 926200
+date_completed: 2026-10-24 20:29:35
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpoa1bg6iv/formatted/uvm-1.2/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpoa1bg6iv/formatted/uvm-examples/uvm_virt_seq_find_all/simple_ovc/simple_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpoa1bg6iv/formatted/uvm-examples/uvm_virt_seq_find_all/top.sv
+CST mismatch between original and formatted: uvm-examples/uvm_virt_seq_find_all/top.sv

@@ -1,0 +1,35 @@
+name: override_member
+description: class member override test
+tags: 8.14
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-8/8.14--override_member.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-8
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 6
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03269648551940918
+user_time: 0.017238
+system_time: 0.014988
+ram_usage: 21476
+date_completed: 2026-10-24 22:01:16
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp_1f_c6zp/formatted/8.14--override_member.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp_1f_c6zp/formatted/8.14--override_member.sv: unsupported SystemVerilog construct 'super'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp_1f_c6zp/formatted/8.14--override_member.sv: cannot annotate SystemVerilog line (unsupported token kind DoublePlus); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp_1f_c6zp/formatted/8.14--override_member.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp_1f_c6zp/formatted/8.14--override_member.sv: cannot annotate SystemVerilog line (unsupported token kind ExtendsKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp_1f_c6zp/formatted/8.14--override_member.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp_1f_c6zp/formatted/8.14--override_member.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+CST verification passed

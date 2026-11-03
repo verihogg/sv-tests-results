@@ -1,0 +1,29 @@
+name: event_nonblocking_assignment_repeat_neg
+description: event non blk assignment repeat
+tags: 9.4.5
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-9/9.4.5--event_nonblocking_assignment_repeat_neg.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-9
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03800606727600098
+user_time: 0.005545
+system_time: 0.034561999999999996
+ram_usage: 20588
+date_completed: 2026-10-26 11:57:41
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpdvci0qxk/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-9 /home/darya/verilog/sv-tests/out/tmp/tmpdvci0qxk/formatted/9.4.5--event_nonblocking_assignment_repeat_neg.sv
+CST verification passed

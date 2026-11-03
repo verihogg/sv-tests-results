@@ -1,0 +1,38 @@
+name: regress-sv_sv_end_labels_unnamed_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/sv_end_labels_unnamed.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+should_fail_because: this test was imported from ivtest and is designed to fail
+top_module: 
+timeout: 30
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.016268491744995117
+user_time: 0.016604999999999998
+system_time: 0.0
+ram_usage: 20588
+date_completed: 2026-10-24 21:20:42
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp1t1agln3/formatted/sv_end_labels_unnamed.v
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmp1t1agln3/comparison/sv_end_labels_unnamed.v
+comparison/sv_end_labels_unnamed.v:7:11: error: trailing name not allowed on previously unnamed block
+    end : label
+          ^
+comparison/sv_end_labels_unnamed.v:11:9: error: trailing name not allowed on previously unnamed block
+  end : label
+        ^
+comparison/sv_end_labels_unnamed.v:14:10: error: trailing name not allowed on previously unnamed block
+  join : label
+         ^

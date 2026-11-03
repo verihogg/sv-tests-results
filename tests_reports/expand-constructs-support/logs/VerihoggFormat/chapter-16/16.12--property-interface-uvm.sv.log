@@ -1,0 +1,29 @@
+name: property_interface_test_uvm
+description: interface property test with UVM
+type: simulation elaboration parsing
+tags: uvm uvm-assertions
+timeout: 300
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/tests/chapter-16/16.12--property-interface-uvm.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src /home/darya/verilog/sv-tests/tests/chapter-16
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 21.966498613357544
+user_time: 1.273117
+system_time: 1.220764
+ram_usage: 1073852
+date_completed: 2026-10-24 21:21:22
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpdt1e4ib_/formatted/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpdt1e4ib_/formatted/tests/chapter-16/16.12--property-interface-uvm.sv
+CST mismatch between original and formatted: tests/chapter-16/16.12--property-interface-uvm.sv

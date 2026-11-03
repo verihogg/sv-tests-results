@@ -1,0 +1,32 @@
+name: regress-sv_sv_uwire3_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/sv_uwire3.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 3
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03304696083068848
+user_time: 0.008834
+system_time: 0.024954999999999998
+ram_usage: 21604
+date_completed: 2026-10-24 21:57:55
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpb_jqt7qm/formatted/sv_uwire3.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpb_jqt7qm/formatted/sv_uwire3.v: unsupported SystemVerilog construct 'end'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpb_jqt7qm/formatted/sv_uwire3.v: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpb_jqt7qm/formatted/sv_uwire3.v: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+CST verification passed

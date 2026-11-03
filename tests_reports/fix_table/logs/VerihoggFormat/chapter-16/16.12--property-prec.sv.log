@@ -1,0 +1,29 @@
+name: property_prec_test
+description: property with precondition test
+tags: 16.12
+files: /home/darya/verilog/sv-tests/tests/chapter-16/16.12--property-prec.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-16
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.025790691375732422
+user_time: 0.009274
+system_time: 0.017106
+ram_usage: 20612
+date_completed: 2026-10-24 23:02:19
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmppht9r1yn/formatted/16.12--property-prec.sv
+CST verification passed

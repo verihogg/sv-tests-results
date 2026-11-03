@@ -1,0 +1,29 @@
+name: disable_other
+description: disable other task
+tags: 9.6.2
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-9/9.6.2--disable_other.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-9
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03023982048034668
+user_time: 0.013401
+system_time: 0.017713
+ram_usage: 20716
+date_completed: 2026-10-24 21:23:18
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmphsy56syk/formatted/9.6.2--disable_other.sv
+CST verification passed

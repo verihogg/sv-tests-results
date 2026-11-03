@@ -1,0 +1,30 @@
+name: urandom_range_0
+description: urandom_range() test
+tags: 18.13.2
+files: /home/darya/verilog/sv-tests/tests/chapter-18/18.13.2--urandom_range_0.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-18
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03162813186645508
+user_time: 0.00507
+system_time: 0.028593999999999998
+ram_usage: 20716
+date_completed: 2026-10-24 21:26:04
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpm_c3oyvt/formatted/18.13.2--urandom_range_0.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpm_c3oyvt/formatted/18.13.2--urandom_range_0.sv: cannot annotate SystemVerilog line (unsupported token kind ReturnKeyword); original text preserved [invalid-annotation]
+CST verification passed

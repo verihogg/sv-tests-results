@@ -1,0 +1,29 @@
+name: utd-sv_spu_lsurpt
+description: Tests imported from utd-sv
+files: /home/darya/verilog/sv-tests/tests/generated/utd-sv/utd-sv_spu_lsurpt.sv /home/darya/verilog/sv-tests/third_party/tests/utd-sv/spu_lsurpt.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/utd-sv
+tags: utd-sv
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.059658050537109375
+user_time: 0.004893
+system_time: 0.049698
+ram_usage: 21220
+date_completed: 2026-10-24 22:52:13
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmptn7k723l/formatted/tests/generated/utd-sv/utd-sv_spu_lsurpt.sv /home/darya/verilog/sv-tests/out/tmp/tmptn7k723l/formatted/third_party/tests/utd-sv/spu_lsurpt.v
+CST verification passed

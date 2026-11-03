@@ -1,0 +1,29 @@
+name: expected_hdlconvertor_ram_sp_ar_sw
+description: Tests imported from hdlconv
+files: /home/darya/verilog/sv-tests/tests/generated/hdlconv/expected_hdlconvertor_ram_sp_ar_sw.sv /home/darya/verilog/sv-tests/third_party/tests/hdlconvertor/tests/verilog/expected/ram_sp_ar_sw.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/hdlconvertor/tests/verilog/expected
+tags: hdlconv
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.09223055839538574
+user_time: 0.007122
+system_time: 0.041629
+ram_usage: 21192
+date_completed: 2026-10-24 22:52:15
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpgik3486d/formatted/tests/generated/hdlconv/expected_hdlconvertor_ram_sp_ar_sw.sv /home/darya/verilog/sv-tests/out/tmp/tmpgik3486d/formatted/third_party/tests/hdlconvertor/tests/verilog/expected/ram_sp_ar_sw.v
+CST verification passed

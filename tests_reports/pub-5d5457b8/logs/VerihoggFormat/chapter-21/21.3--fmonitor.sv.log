@@ -1,0 +1,29 @@
+name: fmonitor_task
+description: $fmonitor test
+tags: 21.3
+type: simulation elaboration parsing
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-21/21.3--fmonitor.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-21
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.030530691146850586
+user_time: 0.005023
+system_time: 0.021748999999999998
+ram_usage: 21456
+date_completed: 2026-10-26 11:58:06
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmp0rze707h/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-21 /home/darya/verilog/sv-tests/out/tmp/tmp0rze707h/formatted/21.3--fmonitor.sv
+CST verification passed

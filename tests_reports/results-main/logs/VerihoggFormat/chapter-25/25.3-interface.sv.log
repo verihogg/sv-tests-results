@@ -1,0 +1,31 @@
+name: interface
+description: interface test
+tags: 25.3
+top_module: top
+files: /home/darya/verilog/sv-tests/tests/chapter-25/25.3-interface.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-25
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.02836775779724121
+user_time: 0.013901
+system_time: 0.015057
+ram_usage: 20572
+date_completed: 2026-10-24 22:01:18
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp5mfhxr9b/formatted/25.3-interface.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp5mfhxr9b/formatted/25.3-interface.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp5mfhxr9b/formatted/25.3-interface.sv: cannot annotate SystemVerilog line (unsupported token kind EndInterfaceKeyword); original text preserved [invalid-annotation]
+CST verification passed

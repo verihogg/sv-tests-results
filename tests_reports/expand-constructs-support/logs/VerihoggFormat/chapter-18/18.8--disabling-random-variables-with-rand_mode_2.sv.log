@@ -1,0 +1,29 @@
+name: disabling-random-variables-with-rand_mode_2
+description: rand_mode() test
+tags: uvm-random uvm
+timeout: 300
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/tests/chapter-18/18.8--disabling-random-variables-with-rand_mode_2.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src /home/darya/verilog/sv-tests/tests/chapter-18
+top_module: 
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 20.59975242614746
+user_time: 1.190556
+system_time: 1.197325
+ram_usage: 1075152
+date_completed: 2026-10-24 21:29:15
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmph7i2m_xe/formatted/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmph7i2m_xe/formatted/tests/chapter-18/18.8--disabling-random-variables-with-rand_mode_2.sv
+CST mismatch between original and formatted: tests/chapter-18/18.8--disabling-random-variables-with-rand_mode_2.sv

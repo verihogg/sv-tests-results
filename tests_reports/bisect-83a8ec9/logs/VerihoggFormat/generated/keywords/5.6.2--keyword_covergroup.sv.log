@@ -1,0 +1,50 @@
+name: keyword_covergroup
+description: The 'covergroup' keyword should be reserved
+should_fail_because: The 'covergroup' keyword should be reserved
+tags: 5.6.2
+files: /home/darya/verilog/sv-tests/tests/generated/keywords/5.6.2--keyword_covergroup.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/keywords
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.019578218460083008
+user_time: 0.009720999999999999
+system_time: 0.012185999999999999
+ram_usage: 20708
+date_completed: 2026-10-26 14:02:49
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpemd567fj/formatted/5.6.2--keyword_covergroup.sv
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpemd567fj/comparison/5.6.2--keyword_covergroup.sv
+comparison/5.6.2--keyword_covergroup.sv:8:9: error: expected a declaration name
+    bit covergroup;
+        ^
+comparison/5.6.2--keyword_covergroup.sv:8:19: error: expected identifier
+    bit covergroup;
+                  ^
+comparison/5.6.2--keyword_covergroup.sv:9:1: error: unexpected 'endmodule' delimiter
+endmodule
+^~~~~~~~~
+comparison/5.6.2--keyword_covergroup.sv:7:11: note: last complete block started here
+module top();
+          ^
+comparison/5.6.2--keyword_covergroup.sv:7:12: note: and ended here
+module top();
+           ^
+comparison/5.6.2--keyword_covergroup.sv:9:10: error: expected 'endgroup'
+endmodule
+         ^
+comparison/5.6.2--keyword_covergroup.sv:8:9: note: to match this 'covergroup'
+    bit covergroup;
+        ^

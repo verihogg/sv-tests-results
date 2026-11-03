@@ -1,0 +1,29 @@
+name: uvm_agent_env
+description: uvm agent + env test
+tags: uvm uvm-agents
+type: simulation elaboration parsing
+timeout: 300
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/tests/testbenches/uvm_agent_env.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src /home/darya/verilog/sv-tests/tests/testbenches
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 20.005584716796875
+user_time: 1.177953
+system_time: 1.261275
+ram_usage: 1074904
+date_completed: 2026-10-24 21:29:15
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmplp1ma6if/formatted/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmplp1ma6if/formatted/tests/testbenches/uvm_agent_env.sv
+CST mismatch between original and formatted: tests/testbenches/uvm_agent_env.sv

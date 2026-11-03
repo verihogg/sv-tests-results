@@ -1,0 +1,29 @@
+name: arith_shift_assignment_unsigned
+description: arithmetic shift assignment operator test
+type: simulation elaboration parsing
+tags: 11.4.10
+files: /home/darya/verilog/sv-tests/tests/chapter-11/11.4.10--arith-shift-assignment-unsigned.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-11
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.04195427894592285
+user_time: 0.013108
+system_time: 0.024503
+ram_usage: 20764
+date_completed: 2026-10-26 14:14:16
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpe2k35msq/formatted/11.4.10--arith-shift-assignment-unsigned.sv
+CST verification passed

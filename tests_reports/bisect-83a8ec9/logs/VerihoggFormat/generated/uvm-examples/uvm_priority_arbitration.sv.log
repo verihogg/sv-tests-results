@@ -1,0 +1,38 @@
+name: uvm_priority_arbitration
+description: UVM example - uvm_priority_arbitration
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src
+tags: uvm-examples uvm
+type: simulation elaboration parsing
+timeout: 900
+unsynthesizable: 1
+simvariants: ARB_TYPE=SEQ_ARB_FIFO ARB_TYPE=SEQ_ARB_WEIGHTED ARB_TYPE=SEQ_ARB_RANDOM ARB_TYPE=SEQ_ARB_STRICT_FIFO ARB_TYPE=SEQ_ARB_STRICT_RANDOM ARB_TYPE=SEQ_ARB_USER
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 9
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 25.100873231887817
+user_time: 1.439612
+system_time: 1.241259
+ram_usage: 1075052
+date_completed: 2026-10-26 14:11:27
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp57m40n1o/formatted/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmp57m40n1o/formatted/uvm-examples/uvm_priority_arbitration/top.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp57m40n1o/formatted/uvm/src/uvm_pkg.sv: unsupported SystemVerilog construct 'static'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp57m40n1o/formatted/uvm/src/uvm_pkg.sv: unsupported SystemVerilog construct 'export'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp57m40n1o/formatted/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp57m40n1o/formatted/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp57m40n1o/formatted/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp57m40n1o/formatted/uvm-examples/uvm_priority_arbitration/top.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp57m40n1o/formatted/uvm-examples/uvm_priority_arbitration/top.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp57m40n1o/formatted/uvm-examples/uvm_priority_arbitration/top.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp57m40n1o/formatted/uvm-examples/uvm_priority_arbitration/top.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+CST verification passed

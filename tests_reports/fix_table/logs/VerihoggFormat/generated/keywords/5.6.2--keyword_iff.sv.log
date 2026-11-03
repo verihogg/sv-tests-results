@@ -1,0 +1,32 @@
+name: keyword_iff
+description: The 'iff' keyword should be reserved
+should_fail_because: The 'iff' keyword should be reserved
+tags: 5.6.2
+files: /home/darya/verilog/sv-tests/tests/generated/keywords/5.6.2--keyword_iff.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/keywords
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.020155668258666992
+user_time: 0.005645
+system_time: 0.013731
+ram_usage: 20484
+date_completed: 2026-10-24 22:52:19
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpcf4u41r2/formatted/5.6.2--keyword_iff.sv
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpcf4u41r2/comparison/5.6.2--keyword_iff.sv
+comparison/5.6.2--keyword_iff.sv:8:9: error: expected a declaration name
+    bit iff;
+        ^

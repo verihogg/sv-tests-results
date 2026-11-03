@@ -1,0 +1,32 @@
+name: regress-synth_if_part_no_else2_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/if_part_no_else2.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 3
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.04122424125671387
+user_time: 0.0
+system_time: 0.034795
+ram_usage: 27700
+date_completed: 2026-10-26 14:52:29
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpfa7h8v3u/formatted/if_part_no_else2.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpfa7h8v3u/formatted/if_part_no_else2.v: unsupported SystemVerilog construct 'end'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpfa7h8v3u/formatted/if_part_no_else2.v: unsupported SystemVerilog construct 'end'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpfa7h8v3u/formatted/if_part_no_else2.v: cannot annotate SystemVerilog line (unsupported token kind DefaultKeyword); original text preserved [invalid-annotation]
+CST verification passed

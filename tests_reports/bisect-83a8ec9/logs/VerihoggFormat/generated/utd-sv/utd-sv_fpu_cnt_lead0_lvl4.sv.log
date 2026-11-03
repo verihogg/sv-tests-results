@@ -1,0 +1,29 @@
+name: utd-sv_fpu_cnt_lead0_lvl4
+description: Tests imported from utd-sv
+files: /home/darya/verilog/sv-tests/tests/generated/utd-sv/utd-sv_fpu_cnt_lead0_lvl4.sv /home/darya/verilog/sv-tests/third_party/tests/utd-sv/fpu_cnt_lead0_lvl4.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/utd-sv
+tags: utd-sv
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.07761597633361816
+user_time: 0.023496
+system_time: 0.043428
+ram_usage: 21092
+date_completed: 2026-10-26 14:02:42
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpov2_9cnk/formatted/tests/generated/utd-sv/utd-sv_fpu_cnt_lead0_lvl4.sv /home/darya/verilog/sv-tests/out/tmp/tmpov2_9cnk/formatted/third_party/tests/utd-sv/fpu_cnt_lead0_lvl4.v
+CST verification passed

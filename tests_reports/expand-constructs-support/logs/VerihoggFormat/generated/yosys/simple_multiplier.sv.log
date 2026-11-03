@@ -1,0 +1,32 @@
+name: simple_multiplier
+description: Tests imported from yosys
+files: /home/darya/verilog/sv-tests/tests/generated/yosys/simple_multiplier.sv /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/simple/multiplier.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/simple
+tags: yosys
+results_group: imported
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 3
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.07579636573791504
+user_time: 0.018468
+system_time: 0.041818
+ram_usage: 29632
+date_completed: 2026-10-24 21:19:26
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp9q2vv4z0/formatted/tests/generated/yosys/simple_multiplier.sv /home/darya/verilog/sv-tests/out/tmp/tmp9q2vv4z0/formatted/third_party/tools/yosys/tests/simple/multiplier.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp9q2vv4z0/formatted/third_party/tools/yosys/tests/simple/multiplier.v: cannot annotate SystemVerilog line (unsupported token kind MinusColon); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp9q2vv4z0/formatted/third_party/tools/yosys/tests/simple/multiplier.v: cannot annotate SystemVerilog line (unsupported token kind PlusColon); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp9q2vv4z0/formatted/third_party/tools/yosys/tests/simple/multiplier.v: cannot annotate SystemVerilog line (unsupported token kind PlusColon); original text preserved [invalid-annotation]
+CST verification passed

@@ -1,0 +1,51 @@
+name: uvm_use_models_bidir_item_done
+description: UVM example - uvm_use_models_bidir_item_done
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_use_models_bidir_item_done/top_tb.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_use_models_bidir_item_done/top_hdl.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src
+tags: uvm-examples uvm
+type: simulation elaboration parsing
+timeout: 900
+unsynthesizable: 1
+simvariants: 
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 22
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 25.732670545578003
+user_time: 1.595764
+system_time: 1.428892
+ram_usage: 1075948
+date_completed: 2026-10-26 14:12:20
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm-examples/uvm_use_models_bidir_item_done/top_tb.sv /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm-examples/uvm_use_models_bidir_item_done/top_hdl.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm/src/uvm_pkg.sv: unsupported SystemVerilog construct 'static'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm/src/uvm_pkg.sv: unsupported SystemVerilog construct 'export'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm-examples/uvm_use_models_bidir_item_done/top_tb.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm-examples/uvm_use_models_bidir_item_done/top_tb.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm-examples/uvm_use_models_bidir_item_done/top_tb.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm-examples/uvm_use_models_bidir_item_done/top_tb.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm-examples/uvm_use_models_bidir_item_done/top_hdl.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm-examples/uvm_use_models_bidir_item_done/top_hdl.sv: cannot annotate SystemVerilog line (unsupported token kind DoubleColon); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm-examples/uvm_use_models_bidir_item_done/top_hdl.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm-examples/uvm_use_models_bidir_item_done/top_hdl.sv: cannot annotate SystemVerilog line (unsupported token kind EndInterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm-examples/uvm_use_models_bidir_item_done/top_hdl.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm-examples/uvm_use_models_bidir_item_done/top_hdl.sv: cannot annotate SystemVerilog line (unsupported token kind EndInterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm-examples/uvm_use_models_bidir_item_done/top_hdl.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm-examples/uvm_use_models_bidir_item_done/top_hdl.sv: cannot annotate SystemVerilog line (unsupported token kind EndInterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm-examples/uvm_use_models_bidir_item_done/top_hdl.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm-examples/uvm_use_models_bidir_item_done/top_hdl.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm-examples/uvm_use_models_bidir_item_done/top_hdl.sv: cannot annotate SystemVerilog line (unsupported token kind InsideKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm-examples/uvm_use_models_bidir_item_done/top_hdl.sv: cannot annotate SystemVerilog line (unsupported token kind InsideKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpowkb2rlk/formatted/uvm-examples/uvm_use_models_bidir_item_done/top_hdl.sv: cannot annotate SystemVerilog line (unsupported token kind InsideKeyword); original text preserved [invalid-annotation]
+CST verification passed

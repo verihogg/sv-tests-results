@@ -1,0 +1,30 @@
+name: const
+description: const test
+tags: 6.20.6
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-6/6.20.6--const.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-6
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.029775381088256836
+user_time: 0.008376
+system_time: 0.023587
+ram_usage: 20672
+date_completed: 2026-10-24 23:04:38
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmphgomg_ii/formatted/6.20.6--const.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmphgomg_ii/formatted/6.20.6--const.sv: unsupported SystemVerilog construct 'const'; original text preserved [unsupported-construct]
+CST verification passed

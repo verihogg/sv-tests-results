@@ -1,0 +1,31 @@
+name: coverage_routines
+description: coverage routine test
+tags: 20.14
+type: simulation elaboration parsing
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-20/20.14--coverage.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-20
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.04817771911621094
+user_time: 0.003756
+system_time: 0.033333999999999996
+ram_usage: 21448
+date_completed: 2026-10-26 14:17:13
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpz6e0nx6w/formatted/20.14--coverage.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpz6e0nx6w/formatted/20.14--coverage.sv: unsupported SystemVerilog construct 'real'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpz6e0nx6w/formatted/20.14--coverage.sv: formatting would move a macro invocation to another source line; original text preserved [macro-line-number]
+CST verification passed

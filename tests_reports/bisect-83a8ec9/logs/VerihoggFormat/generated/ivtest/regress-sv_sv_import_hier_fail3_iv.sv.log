@@ -1,0 +1,32 @@
+name: regress-sv_sv_import_hier_fail3_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/sv_import_hier_fail3.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+should_fail_because: this test was imported from ivtest and is designed to fail
+top_module: 
+timeout: 30
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 3
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03262615203857422
+user_time: 0.0047799999999999995
+system_time: 0.029369
+ram_usage: 20764
+date_completed: 2026-10-26 14:13:18
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpb3_2o6_k/formatted/sv_import_hier_fail3.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpb3_2o6_k/formatted/sv_import_hier_fail3.v: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpb3_2o6_k/formatted/sv_import_hier_fail3.v: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpb3_2o6_k/formatted/sv_import_hier_fail3.v: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+CST verification passed

@@ -1,0 +1,29 @@
+name: arrays-packed-quering-functions-size
+description: Test quering functions support on packed arrays
+tags: 7.11 7.4.1
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/packed/querying-functions/size.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/packed/querying-functions
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.04734230041503906
+user_time: 0.010674
+system_time: 0.018564
+ram_usage: 20800
+date_completed: 2026-10-26 14:39:05
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmparfzmyxo/formatted/size.sv
+CST verification passed

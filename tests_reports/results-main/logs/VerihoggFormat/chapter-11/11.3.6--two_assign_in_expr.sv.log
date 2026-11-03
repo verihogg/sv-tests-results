@@ -1,0 +1,29 @@
+name: two_assignments_in_expression
+description: assignment in expression test
+tags: 11.3.6
+files: /home/darya/verilog/sv-tests/tests/chapter-11/11.3.6--two_assign_in_expr.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-11
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03249239921569824
+user_time: 0.011915
+system_time: 0.02063
+ram_usage: 20700
+date_completed: 2026-10-24 21:58:42
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmput1ler7l/formatted/11.3.6--two_assign_in_expr.sv
+CST verification passed

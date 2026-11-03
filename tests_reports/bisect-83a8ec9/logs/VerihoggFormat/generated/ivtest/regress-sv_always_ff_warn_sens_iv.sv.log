@@ -1,0 +1,35 @@
+name: regress-sv_always_ff_warn_sens_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/always_ff_warn_sens.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 6
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.046631813049316406
+user_time: 0.008161
+system_time: 0.026983
+ram_usage: 23300
+date_completed: 2026-10-26 14:12:55
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmprt4kgp6c/formatted/always_ff_warn_sens.v
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmprt4kgp6c/formatted/always_ff_warn_sens.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmprt4kgp6c/formatted/always_ff_warn_sens.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmprt4kgp6c/formatted/always_ff_warn_sens.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmprt4kgp6c/formatted/always_ff_warn_sens.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmprt4kgp6c/formatted/always_ff_warn_sens.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmprt4kgp6c/formatted/always_ff_warn_sens.v: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+CST verification passed

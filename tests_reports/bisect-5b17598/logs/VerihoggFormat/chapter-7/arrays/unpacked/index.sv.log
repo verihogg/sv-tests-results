@@ -1,0 +1,31 @@
+name: unpacked-array-iterator-index-querying
+description: Test support of unpacked arrays index querying method
+tags: 7.12.4 7.4.2 7.10 7.12.1
+type: simulation elaboration parsing
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/unpacked/index.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/unpacked
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.10451412200927734
+user_time: 0.009451
+system_time: 0.029067
+ram_usage: 21424
+date_completed: 2026-10-26 14:39:04
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp9sa0yqdm/formatted/index.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp9sa0yqdm/formatted/index.sv: cannot annotate SystemVerilog line (unsupported token kind Dollar); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp9sa0yqdm/formatted/index.sv: cannot annotate SystemVerilog line (unsupported token kind WithKeyword); original text preserved [invalid-annotation]
+CST verification passed

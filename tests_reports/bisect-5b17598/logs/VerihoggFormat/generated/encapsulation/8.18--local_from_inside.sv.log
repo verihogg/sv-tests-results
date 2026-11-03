@@ -1,0 +1,33 @@
+name: local_from_inside
+description: encapsulation test
+tags: 8.18
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/generated/encapsulation/8.18--local_from_inside.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/encapsulation
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 4
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03331899642944336
+user_time: 0.0
+system_time: 0.03517
+ram_usage: 21452
+date_completed: 2026-10-26 14:41:27
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmphdul02rb/formatted/8.18--local_from_inside.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmphdul02rb/formatted/8.18--local_from_inside.sv: unsupported SystemVerilog construct 'local'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmphdul02rb/formatted/8.18--local_from_inside.sv: unsupported SystemVerilog construct 'local'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmphdul02rb/formatted/8.18--local_from_inside.sv: cannot annotate SystemVerilog line (unsupported token kind ExtendsKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmphdul02rb/formatted/8.18--local_from_inside.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+CST verification passed

@@ -1,0 +1,29 @@
+name: implicit_port
+description: implicit port signal tests
+tags: 6.10
+files: /home/darya/verilog/sv-tests/tests/chapter-6/6.10--implicit_port.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-6
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.035799503326416016
+user_time: 0.015415
+system_time: 0.012636999999999999
+ram_usage: 20716
+date_completed: 2026-10-26 11:57:39
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpd7rd5viq/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-6 /home/darya/verilog/sv-tests/out/tmp/tmpd7rd5viq/formatted/6.10--implicit_port.sv
+CST verification passed

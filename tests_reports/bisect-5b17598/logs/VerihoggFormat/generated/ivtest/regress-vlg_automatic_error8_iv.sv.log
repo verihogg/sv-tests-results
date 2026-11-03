@@ -1,0 +1,41 @@
+name: regress-vlg_automatic_error8_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/automatic_error8.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+should_fail_because: this test was imported from ivtest and is designed to fail
+top_module: 
+timeout: 30
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.021943092346191406
+user_time: 0.0031219999999999998
+system_time: 0.017787999999999998
+ram_usage: 20716
+date_completed: 2026-10-26 14:53:45
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpg4fh5v_u/formatted/automatic_error8.v
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpg4fh5v_u/comparison/automatic_error8.v
+comparison/automatic_error8.v:3:6: error: expected a declaration name
+reg  global;
+     ^
+comparison/automatic_error8.v:7:5: error: expected a declaration name
+reg local;
+    ^
+comparison/automatic_error8.v:10:14: error: expected '::'
+  force local = global;
+             ^
+comparison/automatic_error8.v:10:17: error: expected expression
+  force local = global;
+                ^

@@ -1,0 +1,29 @@
+name: implicit_port_connection
+description: implicit port connection tests
+tags: 6.10
+files: /home/darya/verilog/sv-tests/tests/chapter-6/6.10--implicit_port_connection.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-6
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.033826589584350586
+user_time: 0.013427999999999999
+system_time: 0.019983
+ram_usage: 20588
+date_completed: 2026-10-26 11:57:39
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpxpocka22/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-6 /home/darya/verilog/sv-tests/out/tmp/tmpxpocka22/formatted/6.10--implicit_port_connection.sv
+CST verification passed

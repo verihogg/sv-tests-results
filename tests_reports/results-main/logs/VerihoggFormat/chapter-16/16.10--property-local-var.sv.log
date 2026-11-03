@@ -1,0 +1,30 @@
+name: property_local_var_test
+description: property with local variables
+type: simulation elaboration parsing
+tags: 16.10
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-16/16.10--property-local-var.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-16
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.06436872482299805
+user_time: 0.011032
+system_time: 0.025577
+ram_usage: 23368
+date_completed: 2026-10-24 21:59:23
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpw84qmaaq/formatted/16.10--property-local-var.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpw84qmaaq/formatted/16.10--property-local-var.sv: unsupported SystemVerilog construct 'property'; original text preserved [unsupported-construct]
+CST verification passed

@@ -1,0 +1,29 @@
+name: expected_hdlconvertor_pri_encoder_using_assign
+description: Tests imported from hdlconv
+files: /home/darya/verilog/sv-tests/tests/generated/hdlconv/expected_hdlconvertor_pri_encoder_using_assign.sv /home/darya/verilog/sv-tests/third_party/tests/hdlconvertor/tests/verilog/expected/pri_encoder_using_assign.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/hdlconvertor/tests/verilog/expected
+tags: hdlconv
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.10513567924499512
+user_time: 0.022775
+system_time: 0.042426
+ram_usage: 25012
+date_completed: 2026-10-26 11:42:08
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpj1nu3l1s/formatted/third_party/tests/hdlconvertor/tests/verilog/expected -I/home/darya/verilog/sv-tests/out/tmp/tmpj1nu3l1s/formatted/tests/generated/hdlconv -I/home/darya/verilog/sv-tests/third_party/tests/hdlconvertor/tests/verilog/expected -I/home/darya/verilog/sv-tests/tests/generated/hdlconv /home/darya/verilog/sv-tests/out/tmp/tmpj1nu3l1s/formatted/tests/generated/hdlconv/expected_hdlconvertor_pri_encoder_using_assign.sv /home/darya/verilog/sv-tests/out/tmp/tmpj1nu3l1s/formatted/third_party/tests/hdlconvertor/tests/verilog/expected/pri_encoder_using_assign.v
+CST verification passed

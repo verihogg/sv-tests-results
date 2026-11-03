@@ -1,0 +1,29 @@
+name: event_nonblocking_assignment_delay
+description: event non blk assignment delay
+tags: 9.4.5
+files: /home/darya/verilog/sv-tests/tests/chapter-9/9.4.5--event_nonblocking_assignment_delay.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-9
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.030568838119506836
+user_time: 0.010537999999999999
+system_time: 0.022643
+ram_usage: 20572
+date_completed: 2026-10-24 22:00:59
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpr4b420uu/formatted/9.4.5--event_nonblocking_assignment_delay.sv
+CST verification passed

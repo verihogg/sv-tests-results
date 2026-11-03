@@ -1,0 +1,29 @@
+name: fread_task
+description: $fread test
+tags: 21.3
+type: simulation elaboration parsing
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-21/21.3--fread.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-21
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.032654762268066406
+user_time: 0.011101999999999999
+system_time: 0.023216999999999998
+ram_usage: 20592
+date_completed: 2026-10-24 23:05:02
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpgptj634i/formatted/21.3--fread.sv
+CST verification passed

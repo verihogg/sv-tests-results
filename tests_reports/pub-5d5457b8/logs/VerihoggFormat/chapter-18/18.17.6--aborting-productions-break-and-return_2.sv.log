@@ -1,0 +1,30 @@
+name: aborting_productions_break_and_return_2
+description: return statement test
+type: simulation elaboration parsing
+tags: 18.17.6
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-18/18.17.6--aborting-productions-break-and-return_2.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-18
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03690290451049805
+user_time: 0.022264
+system_time: 0.014324
+ram_usage: 21476
+date_completed: 2026-10-26 12:00:07
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpil6s3_ni/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-18 /home/darya/verilog/sv-tests/out/tmp/tmpil6s3_ni/formatted/18.17.6--aborting-productions-break-and-return_2.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpil6s3_ni/formatted/18.17.6--aborting-productions-break-and-return_2.sv: unsupported SystemVerilog construct 'static'; original text preserved [unsupported-construct]
+CST verification passed

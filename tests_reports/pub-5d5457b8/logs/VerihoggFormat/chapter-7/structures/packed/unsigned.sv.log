@@ -1,0 +1,30 @@
+name: packed-and-unsigned-structures
+description: Test packed and unsigned structures support
+tags: 7.2.1 7.2
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-7/structures/packed/unsigned.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-7/structures/packed
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.029607295989990234
+user_time: 0.0
+system_time: 0.030507999999999997
+ram_usage: 20588
+date_completed: 2026-10-26 11:37:57
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpjg1sx7zh/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-7/structures/packed /home/darya/verilog/sv-tests/out/tmp/tmpjg1sx7zh/formatted/unsigned.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpjg1sx7zh/formatted/unsigned.sv: unsupported SystemVerilog construct 'struct'; original text preserved [unsupported-construct]
+CST verification passed

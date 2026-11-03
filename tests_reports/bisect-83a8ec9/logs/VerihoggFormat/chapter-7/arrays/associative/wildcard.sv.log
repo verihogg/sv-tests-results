@@ -1,0 +1,29 @@
+name: associative-arrays-wildcard
+description: Test associative arrays support
+tags: 7.8.1
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/associative/wildcard.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/associative
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03075575828552246
+user_time: 0.012395
+system_time: 0.020544
+ram_usage: 20588
+date_completed: 2026-10-26 13:58:59
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp2eetf51z/formatted/wildcard.sv
+CST verification passed

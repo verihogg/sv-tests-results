@@ -1,0 +1,30 @@
+name: case_constant
+description: A module testing case statement with constant expression
+tags: 12.5.2
+files: /home/darya/verilog/sv-tests/tests/chapter-12/12.5.2--case_const.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-12
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.030640363693237305
+user_time: 0.0020989999999999997
+system_time: 0.028658999999999997
+ram_usage: 20712
+date_completed: 2026-10-26 14:24:58
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpd4tiruua/formatted/12.5.2--case_const.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpd4tiruua/formatted/12.5.2--case_const.sv: unsupported SystemVerilog construct 'default'; original text preserved [unsupported-construct]
+CST verification passed

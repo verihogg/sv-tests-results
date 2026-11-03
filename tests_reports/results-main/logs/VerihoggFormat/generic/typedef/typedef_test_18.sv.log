@@ -1,0 +1,31 @@
+name: typedef_test_18
+description: Test
+tags: 6.18
+files: /home/darya/verilog/sv-tests/tests/generic/typedef/typedef_test_18.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generic/typedef
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.028975725173950195
+user_time: 0.005565
+system_time: 0.024981
+ram_usage: 20572
+date_completed: 2026-10-24 22:01:15
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpg95h3c1t/formatted/typedef_test_18.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpg95h3c1t/formatted/typedef_test_18.sv: unsupported SystemVerilog construct 'randc'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpg95h3c1t/formatted/typedef_test_18.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+CST verification passed

@@ -1,0 +1,29 @@
+name: event_conditional
+description: event conditional
+tags: 9.4.2.3
+files: /home/darya/verilog/sv-tests/tests/chapter-9/9.4.2.3--event_conditional.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-9
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.042359113693237305
+user_time: 0.013679
+system_time: 0.029363999999999998
+ram_usage: 20460
+date_completed: 2026-10-26 11:57:42
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpte11vp1e/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-9 /home/darya/verilog/sv-tests/out/tmp/tmpte11vp1e/formatted/9.4.2.3--event_conditional.sv
+CST verification passed

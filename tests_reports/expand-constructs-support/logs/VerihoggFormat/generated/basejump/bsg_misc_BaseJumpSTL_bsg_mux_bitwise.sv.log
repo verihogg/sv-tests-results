@@ -1,0 +1,63 @@
+name: bsg_misc_BaseJumpSTL_bsg_mux_bitwise
+description: Tests imported from basejump
+files: /home/darya/verilog/sv-tests/tests/generated/basejump/bsg_misc_BaseJumpSTL_bsg_mux_bitwise.sv /home/darya/verilog/sv-tests/third_party/cores/basejump_stl/bsg_axi/bsg_axi_pkg.sv /home/darya/verilog/sv-tests/third_party/cores/basejump_stl/bsg_test/bsg_dramsim3_pkg.sv /home/darya/verilog/sv-tests/third_party/cores/basejump_stl/bsg_tag/bsg_tag_pkg.sv /home/darya/verilog/sv-tests/third_party/cores/basejump_stl/bsg_noc/bsg_wormhole_router_pkg.sv /home/darya/verilog/sv-tests/third_party/cores/basejump_stl/bsg_noc/bsg_mesh_router_pkg.sv /home/darya/verilog/sv-tests/third_party/cores/basejump_stl/bsg_noc/bsg_noc_pkg.sv /home/darya/verilog/sv-tests/third_party/cores/basejump_stl/bsg_dmc/bsg_dmc_pkg.sv /home/darya/verilog/sv-tests/third_party/cores/basejump_stl/bsg_cache/bsg_cache_non_blocking_pkg.sv /home/darya/verilog/sv-tests/third_party/cores/basejump_stl/bsg_cache/bsg_cache_pkg.sv /home/darya/verilog/sv-tests/third_party/cores/basejump_stl/bsg_misc/bsg_defines.sv /home/darya/verilog/sv-tests/third_party/cores/basejump_stl/bsg_misc/bsg_mux_bitwise.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/cores/basejump_stl/bsg_clk_gen /home/darya/verilog/sv-tests/third_party/cores/basejump_stl/bsg_noc /home/darya/verilog/sv-tests/third_party/cores/basejump_stl/bsg_misc /home/darya/verilog/sv-tests/third_party/cores/basejump_stl/bsg_misc
+tags: basejump
+results_group: imported
+top_module: top
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 34
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.7534620761871338
+user_time: 0.12809299999999998
+system_time: 0.323132
+ram_usage: 32296
+date_completed: 2026-10-24 20:17:44
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/tests/generated/basejump/bsg_misc_BaseJumpSTL_bsg_mux_bitwise.sv /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_axi/bsg_axi_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_test/bsg_dramsim3_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_tag/bsg_tag_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_noc/bsg_wormhole_router_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_noc/bsg_mesh_router_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_noc/bsg_noc_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_dmc/bsg_dmc_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_cache/bsg_cache_non_blocking_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_cache/bsg_cache_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_misc/bsg_defines.sv /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_misc/bsg_mux_bitwise.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_test/bsg_dramsim3_pkg.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_test/bsg_dramsim3_pkg.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_test/bsg_dramsim3_pkg.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_test/bsg_dramsim3_pkg.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_test/bsg_dramsim3_pkg.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_test/bsg_dramsim3_pkg.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_test/bsg_dramsim3_pkg.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_test/bsg_dramsim3_pkg.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_test/bsg_dramsim3_pkg.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_test/bsg_dramsim3_pkg.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_test/bsg_dramsim3_pkg.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_test/bsg_dramsim3_pkg.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_test/bsg_dramsim3_pkg.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_test/bsg_dramsim3_pkg.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_test/bsg_dramsim3_pkg.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_test/bsg_dramsim3_pkg.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_tag/bsg_tag_pkg.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_tag/bsg_tag_pkg.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_dmc/bsg_dmc_pkg.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_dmc/bsg_dmc_pkg.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_dmc/bsg_dmc_pkg.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_dmc/bsg_dmc_pkg.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_dmc/bsg_dmc_pkg.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_dmc/bsg_dmc_pkg.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_dmc/bsg_dmc_pkg.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_dmc/bsg_dmc_pkg.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_dmc/bsg_dmc_pkg.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_dmc/bsg_dmc_pkg.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_dmc/bsg_dmc_pkg.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_dmc/bsg_dmc_pkg.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_cache/bsg_cache_non_blocking_pkg.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_cache/bsg_cache_non_blocking_pkg.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_cache/bsg_cache_pkg.sv: cannot annotate SystemVerilog line (unclosed bracket before statement end); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpwnpyr9bx/formatted/third_party/cores/basejump_stl/bsg_cache/bsg_cache_pkg.sv: cannot annotate SystemVerilog line (unmatched closing bracket); original text preserved [invalid-annotation]
+CST verification passed

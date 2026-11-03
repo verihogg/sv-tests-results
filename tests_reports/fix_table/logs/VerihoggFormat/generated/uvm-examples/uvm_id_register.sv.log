@@ -1,0 +1,29 @@
+name: uvm_id_register
+description: UVM example - uvm_id_register
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_id_register/apb_agent/apb_agent_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_id_register/apb_agent/apb_driver_bfm.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_id_register/apb_agent/apb_monitor_bfm.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_id_register/reg_dut.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_id_register/regmodel_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_id_register/uvm_tb_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_id_register/hvl_top.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_id_register/hdl_top.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_id_register/apb_agent
+tags: uvm-examples uvm
+type: simulation elaboration parsing
+timeout: 900
+unsynthesizable: 1
+simvariants: 
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 25.361215114593506
+user_time: 1.638605
+system_time: 1.3697650000000001
+ram_usage: 1102232
+date_completed: 2026-10-24 22:57:07
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp02cye00r/formatted/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmp02cye00r/formatted/uvm-examples/uvm_id_register/apb_agent/apb_agent_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmp02cye00r/formatted/uvm-examples/uvm_id_register/apb_agent/apb_driver_bfm.sv /home/darya/verilog/sv-tests/out/tmp/tmp02cye00r/formatted/uvm-examples/uvm_id_register/apb_agent/apb_monitor_bfm.sv /home/darya/verilog/sv-tests/out/tmp/tmp02cye00r/formatted/uvm-examples/uvm_id_register/reg_dut.sv /home/darya/verilog/sv-tests/out/tmp/tmp02cye00r/formatted/uvm-examples/uvm_id_register/regmodel_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmp02cye00r/formatted/uvm-examples/uvm_id_register/uvm_tb_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmp02cye00r/formatted/uvm-examples/uvm_id_register/hvl_top.sv /home/darya/verilog/sv-tests/out/tmp/tmp02cye00r/formatted/uvm-examples/uvm_id_register/hdl_top.sv
+CST mismatch between original and formatted: uvm-examples/uvm_id_register/apb_agent/apb_driver_bfm.sv

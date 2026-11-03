@@ -1,0 +1,31 @@
+name: sva_sva_not
+description: Tests imported from yosys
+files: /home/darya/verilog/sv-tests/tests/generated/yosys/sva_sva_not.sv /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/sva/sva_not.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/sva
+tags: yosys
+results_group: imported
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.06684350967407227
+user_time: 0.020510999999999998
+system_time: 0.03952
+ram_usage: 21468
+date_completed: 2026-10-24 21:19:32
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp4edzv5jj/formatted/tests/generated/yosys/sva_sva_not.sv /home/darya/verilog/sv-tests/out/tmp/tmp4edzv5jj/formatted/third_party/tools/yosys/tests/sva/sva_not.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp4edzv5jj/formatted/third_party/tools/yosys/tests/sva/sva_not.sv: unsupported SystemVerilog construct 'assume'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp4edzv5jj/formatted/third_party/tools/yosys/tests/sva/sva_not.sv: cannot annotate SystemVerilog line (unsupported token kind NotKeyword); original text preserved [invalid-annotation]
+CST verification passed

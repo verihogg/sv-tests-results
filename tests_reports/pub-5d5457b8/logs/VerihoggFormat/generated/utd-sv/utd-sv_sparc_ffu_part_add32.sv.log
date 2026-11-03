@@ -1,0 +1,29 @@
+name: utd-sv_sparc_ffu_part_add32
+description: Tests imported from utd-sv
+files: /home/darya/verilog/sv-tests/tests/generated/utd-sv/utd-sv_sparc_ffu_part_add32.sv /home/darya/verilog/sv-tests/third_party/tests/utd-sv/sparc_ffu_part_add32.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/utd-sv
+tags: utd-sv
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.0826728343963623
+user_time: 0.019837
+system_time: 0.039960999999999997
+ram_usage: 21232
+date_completed: 2026-10-26 11:42:00
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmp7whdofoj/formatted/third_party/tests/utd-sv -I/home/darya/verilog/sv-tests/out/tmp/tmp7whdofoj/formatted/tests/generated/utd-sv -I/home/darya/verilog/sv-tests/third_party/tests/utd-sv -I/home/darya/verilog/sv-tests/tests/generated/utd-sv /home/darya/verilog/sv-tests/out/tmp/tmp7whdofoj/formatted/tests/generated/utd-sv/utd-sv_sparc_ffu_part_add32.sv /home/darya/verilog/sv-tests/out/tmp/tmp7whdofoj/formatted/third_party/tests/utd-sv/sparc_ffu_part_add32.v
+CST verification passed

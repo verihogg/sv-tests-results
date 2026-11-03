@@ -1,0 +1,29 @@
+name: acosh_function
+description: $acosh test
+tags: 20.8
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/generated/trig_functions/20.8--acosh.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/trig_functions
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.029424190521240234
+user_time: 0.010837999999999999
+system_time: 0.020686
+ram_usage: 20512
+date_completed: 2026-10-24 22:48:47
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmppq3na1s0/formatted/20.8--acosh.sv
+CST verification passed

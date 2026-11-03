@@ -1,0 +1,30 @@
+name: unpacked-array-reduction-method-or
+description: Test support of unpacked arrays reduction method or
+tags: 7.12.3 7.4.2
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/unpacked/reduction-methods/or.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/unpacked/reduction-methods
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03415989875793457
+user_time: 0.007181
+system_time: 0.028953999999999997
+ram_usage: 21468
+date_completed: 2026-10-26 11:37:56
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpnhemwjdi/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-7/arrays/unpacked/reduction-methods /home/darya/verilog/sv-tests/out/tmp/tmpnhemwjdi/formatted/or.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpnhemwjdi/formatted/or.sv: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+CST verification passed

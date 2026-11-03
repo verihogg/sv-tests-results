@@ -1,0 +1,29 @@
+name: memories_no_implicit_en
+description: Tests imported from yosys
+files: /home/darya/verilog/sv-tests/tests/generated/yosys/memories_no_implicit_en.sv /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/memories/no_implicit_en.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/memories
+tags: yosys
+results_group: imported
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.07513666152954102
+user_time: 0.020429
+system_time: 0.044829999999999995
+ram_usage: 23404
+date_completed: 2026-10-26 14:12:26
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpbvyk43ho/formatted/tests/generated/yosys/memories_no_implicit_en.sv /home/darya/verilog/sv-tests/out/tmp/tmpbvyk43ho/formatted/third_party/tools/yosys/tests/memories/no_implicit_en.v
+CST verification passed

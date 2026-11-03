@@ -1,0 +1,30 @@
+name: push_back
+description: Test queues push_back function support
+tags: 7.10.2.7 7.10.2
+type: simulation elaboration parsing
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-7/queues/push_back.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-7/queues
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.032178640365600586
+user_time: 0.011377
+system_time: 0.02207
+ram_usage: 20716
+date_completed: 2026-10-26 13:58:58
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmprm3gfxsa/formatted/push_back.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmprm3gfxsa/formatted/push_back.sv: cannot annotate SystemVerilog line (unsupported token kind Dollar); original text preserved [invalid-annotation]
+CST verification passed

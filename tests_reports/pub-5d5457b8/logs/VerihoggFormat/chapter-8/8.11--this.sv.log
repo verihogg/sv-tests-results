@@ -1,0 +1,30 @@
+name: this
+description: this keyword test
+tags: 8.11
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-8/8.11--this.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-8
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03386855125427246
+user_time: 0.0078
+system_time: 0.022962999999999997
+ram_usage: 20588
+date_completed: 2026-10-26 11:58:01
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmppj27vsok/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-8 /home/darya/verilog/sv-tests/out/tmp/tmppj27vsok/formatted/8.11--this.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmppj27vsok/formatted/8.11--this.sv: unsupported SystemVerilog construct 'this'; original text preserved [unsupported-construct]
+CST verification passed

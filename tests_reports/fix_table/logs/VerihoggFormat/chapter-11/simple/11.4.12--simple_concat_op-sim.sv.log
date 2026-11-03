@@ -1,0 +1,29 @@
+name: simple_concat_op_sim
+description: minimal concatenation operator simulation test (without result verification)
+type: simulation elaboration parsing
+tags: 11.4.12
+files: /home/darya/verilog/sv-tests/tests/chapter-11/simple/11.4.12--simple_concat_op-sim.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-11/simple
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.027362346649169922
+user_time: 0.002117
+system_time: 0.027424999999999998
+ram_usage: 20612
+date_completed: 2026-10-24 23:02:17
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpg0rkei8c/formatted/11.4.12--simple_concat_op-sim.sv
+CST verification passed

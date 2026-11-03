@@ -1,0 +1,31 @@
+name: array-locator-methods-find-first
+description: Test support of array locator methods
+tags: 7.12.1 7.12 7.10
+type: simulation elaboration parsing
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/associative/locator-methods/find-first.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-7/arrays/associative/locator-methods
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03634476661682129
+user_time: 0.007832
+system_time: 0.030418999999999998
+ram_usage: 21440
+date_completed: 2026-10-26 11:37:55
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpe6219s52/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-7/arrays/associative/locator-methods /home/darya/verilog/sv-tests/out/tmp/tmpe6219s52/formatted/find-first.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpe6219s52/formatted/find-first.sv: cannot annotate SystemVerilog line (unsupported token kind Dollar); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpe6219s52/formatted/find-first.sv: cannot annotate SystemVerilog line (unsupported token kind WithKeyword); original text preserved [invalid-annotation]
+CST verification passed

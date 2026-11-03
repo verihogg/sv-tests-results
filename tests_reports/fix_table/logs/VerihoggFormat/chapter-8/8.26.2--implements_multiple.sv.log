@@ -1,0 +1,31 @@
+name: implements_multiple
+description: class implementing multiple interfaces
+tags: 8.26.2
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-8/8.26.2--implements_multiple.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-8
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 2
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.028133630752563477
+user_time: 0.0037419999999999997
+system_time: 0.025738
+ram_usage: 21336
+date_completed: 2026-10-24 23:04:58
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpmoedp281/formatted/8.26.2--implements_multiple.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmoedp281/formatted/8.26.2--implements_multiple.sv: unsupported SystemVerilog construct 'pure'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpmoedp281/formatted/8.26.2--implements_multiple.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+CST verification passed

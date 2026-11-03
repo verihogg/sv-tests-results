@@ -1,0 +1,30 @@
+name: unique0_case
+description: case statement with unique0
+tags: 12.5.3
+files: /home/darya/verilog/sv-tests/tests/generated/uniquecase/12.5.3--unique0_case.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/uniquecase
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03276324272155762
+user_time: 0.009859
+system_time: 0.025023999999999998
+ram_usage: 20588
+date_completed: 2026-10-24 20:24:52
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpcg2olv8z/formatted/12.5.3--unique0_case.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpcg2olv8z/formatted/12.5.3--unique0_case.sv: unsupported SystemVerilog construct 'unique0'; original text preserved [unsupported-construct]
+CST verification passed

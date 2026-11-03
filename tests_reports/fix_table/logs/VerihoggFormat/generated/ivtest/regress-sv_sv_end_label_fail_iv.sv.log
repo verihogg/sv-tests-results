@@ -1,0 +1,74 @@
+name: regress-sv_sv_end_label_fail_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/sv_end_label_fail.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+should_fail_because: this test was imported from ivtest and is designed to fail
+top_module: 
+timeout: 30
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.01787734031677246
+user_time: 0.01096
+system_time: 0.008505
+ram_usage: 21200
+date_completed: 2026-10-24 23:01:38
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpltsigpz0/formatted/sv_end_label_fail.v
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpltsigpz0/comparison/sv_end_label_fail.v
+comparison/sv_end_label_fail.v:4:8: error: 'b_label_f' doesn't match previous name 'b_label'
+  end: b_label_f
+       ^
+comparison/sv_end_label_fail.v:7:8: error: 'fj_label_f' doesn't match previous name 'fj_label'
+  join:fj_label_f
+       ^
+comparison/sv_end_label_fail.v:10:12: error: 'fja_label_f' doesn't match previous name 'fja_label'
+  join_any:fja_label_f
+           ^
+comparison/sv_end_label_fail.v:13:13: error: 'fjn_label_f' doesn't match previous name 'fjn_label'
+  join_none:fjn_label_f
+            ^
+comparison/sv_end_label_fail.v:16:12: error: 't_label_f' doesn't match previous name 't_label'
+  endtask: t_label_f
+           ^
+comparison/sv_end_label_fail.v:19:12: error: 'twa_label_f' doesn't match previous name 'twa_label'
+  endtask: twa_label_f
+           ^
+comparison/sv_end_label_fail.v:23:16: error: 'fn_label_f' doesn't match previous name 'fn_label'
+  endfunction: fn_label_f
+               ^
+comparison/sv_end_label_fail.v:26:16: error: 'fa_label_f' doesn't match previous name 'fa_label'
+  endfunction: fa_label_f
+               ^
+comparison/sv_end_label_fail.v:28:11: error: 'top_f' doesn't match previous name 'top'
+endmodule:top_f
+          ^
+comparison/sv_end_label_fail.v:38:8: error: 'g_label_f' doesn't match previous name 'g_label'
+  end: g_label_f
+       ^
+comparison/sv_end_label_fail.v:40:12: error: 'extra_f' doesn't match previous name 'extra'
+endmodule: extra_f
+           ^
+comparison/sv_end_label_fail.v:43:13: error: 'pkg_f' doesn't match previous name 'pkg'
+endpackage: pkg_f
+            ^
+comparison/sv_end_label_fail.v:47:13: error: 'foo_f' doesn't match previous name 'foo'
+  endclass: foo_f
+            ^
+comparison/sv_end_label_fail.v:48:13: error: 'pgm_f' doesn't match previous name 'pgm'
+endprogram: pgm_f
+            ^
+comparison/sv_end_label_fail.v:64:15: error: 'pinv_f' doesn't match previous name 'pinv'
+endprimitive: pinv_f
+              ^

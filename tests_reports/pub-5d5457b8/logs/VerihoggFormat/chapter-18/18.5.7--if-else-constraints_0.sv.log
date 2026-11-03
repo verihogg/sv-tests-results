@@ -1,0 +1,30 @@
+name: if_else_constraints_0
+description: if-else constraints test
+tags: 18.5.7
+files: /home/darya/verilog/sv-tests/tests/chapter-18/18.5.7--if-else-constraints_0.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-18
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.04958605766296387
+user_time: 0.0056549999999999994
+system_time: 0.036244
+ram_usage: 20716
+date_completed: 2026-10-26 12:02:04
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpjghau_wf/formatted/. -I/home/darya/verilog/sv-tests/tests/chapter-18 /home/darya/verilog/sv-tests/out/tmp/tmpjghau_wf/formatted/18.5.7--if-else-constraints_0.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpjghau_wf/formatted/18.5.7--if-else-constraints_0.sv: unsupported SystemVerilog construct 'rand'; original text preserved [unsupported-construct]
+CST verification passed

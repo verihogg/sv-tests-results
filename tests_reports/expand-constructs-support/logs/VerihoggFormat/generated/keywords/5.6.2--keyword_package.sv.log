@@ -1,0 +1,59 @@
+name: keyword_package
+description: The 'package' keyword should be reserved
+should_fail_because: The 'package' keyword should be reserved
+tags: 5.6.2
+files: /home/darya/verilog/sv-tests/tests/generated/keywords/5.6.2--keyword_package.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/keywords
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.02003312110900879
+user_time: 0.002582
+system_time: 0.019766
+ram_usage: 20404
+date_completed: 2026-10-24 20:21:35
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpbjgf89dc/formatted/5.6.2--keyword_package.sv
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpbjgf89dc/comparison/5.6.2--keyword_package.sv
+comparison/5.6.2--keyword_package.sv:8:9: error: expected a declaration name
+    bit package;
+        ^
+comparison/5.6.2--keyword_package.sv:8:9: error: member not allowed in module declaration
+    bit package;
+        ^~~~~~~~
+comparison/5.6.2--keyword_package.sv:8:16: error: expected identifier
+    bit package;
+               ^
+comparison/5.6.2--keyword_package.sv:9:1: error: unexpected 'endmodule' delimiter
+endmodule
+^~~~~~~~~
+comparison/5.6.2--keyword_package.sv:7:11: note: last complete block started here
+module top();
+          ^
+comparison/5.6.2--keyword_package.sv:7:12: note: and ended here
+module top();
+           ^
+comparison/5.6.2--keyword_package.sv:9:10: error: expected 'endpackage'
+endmodule
+         ^
+comparison/5.6.2--keyword_package.sv:8:9: note: to match this 'package'
+    bit package;
+        ^
+comparison/5.6.2--keyword_package.sv:9:10: error: expected 'endmodule'
+endmodule
+         ^
+comparison/5.6.2--keyword_package.sv:7:1: note: to match this 'module'
+module top();
+^

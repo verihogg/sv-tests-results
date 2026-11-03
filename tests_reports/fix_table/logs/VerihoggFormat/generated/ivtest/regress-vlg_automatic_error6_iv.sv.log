@@ -1,0 +1,38 @@
+name: regress-vlg_automatic_error6_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/automatic_error6.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+should_fail_because: this test was imported from ivtest and is designed to fail
+top_module: 
+timeout: 30
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.017653465270996094
+user_time: 0.014067999999999999
+system_time: 0.004208
+ram_usage: 20484
+date_completed: 2026-10-24 23:01:24
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpd7bxrk_6/formatted/automatic_error6.v
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpd7bxrk_6/comparison/automatic_error6.v
+comparison/automatic_error6.v:3:6: error: expected a declaration name
+reg  global;
+     ^
+comparison/automatic_error6.v:7:5: error: expected a declaration name
+reg local;
+    ^
+comparison/automatic_error6.v:10:17: error: expected '::'
+  deassign local;
+                ^

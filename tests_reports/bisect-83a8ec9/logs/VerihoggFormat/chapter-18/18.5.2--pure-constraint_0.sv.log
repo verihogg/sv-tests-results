@@ -1,0 +1,30 @@
+name: pure_constraint_0
+description: pure constraint test
+tags: 18.5.2
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-18/18.5.2--pure-constraint_0.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-18
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.041605472564697266
+user_time: 0.010824
+system_time: 0.031507
+ram_usage: 20752
+date_completed: 2026-10-26 14:20:07
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpcrmlojzx/formatted/18.5.2--pure-constraint_0.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpcrmlojzx/formatted/18.5.2--pure-constraint_0.sv: unsupported SystemVerilog construct 'virtual'; original text preserved [unsupported-construct]
+CST verification passed

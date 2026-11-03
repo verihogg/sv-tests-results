@@ -1,0 +1,29 @@
+name: uvm_sequence
+description: uvm_sequence test
+tags: uvm uvm-classes
+type: simulation elaboration parsing
+timeout: 300
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/tests/testbenches/uvm_sequence.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src /home/darya/verilog/sv-tests/tests/testbenches
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 20.362100839614868
+user_time: 1.179769
+system_time: 0.8274889999999999
+ram_usage: 1075068
+date_completed: 2026-10-24 21:29:57
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp5z0ul47e/formatted/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmp5z0ul47e/formatted/tests/testbenches/uvm_sequence.sv
+CST mismatch between original and formatted: tests/testbenches/uvm_sequence.sv

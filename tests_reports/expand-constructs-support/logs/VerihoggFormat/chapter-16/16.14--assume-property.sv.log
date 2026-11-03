@@ -1,0 +1,30 @@
+name: assume_property_test
+description: assume property test
+tags: 16.14
+files: /home/darya/verilog/sv-tests/tests/chapter-16/16.14--assume-property.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-16
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.032189130783081055
+user_time: 0.011508
+system_time: 0.023014
+ram_usage: 20588
+date_completed: 2026-10-24 21:23:03
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpbl7w8fva/formatted/16.14--assume-property.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmpbl7w8fva/formatted/16.14--assume-property.sv: unsupported SystemVerilog construct 'assume'; original text preserved [unsupported-construct]
+CST verification passed

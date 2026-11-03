@@ -1,0 +1,29 @@
+name: sequence_and_op_test_uvm
+description: sequence with "and" operator in UVM
+type: simulation elaboration parsing
+tags: uvm uvm-assertions
+timeout: 300
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/tests/chapter-16/16.7--sequence-and-uvm.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src /home/darya/verilog/sv-tests/tests/chapter-16
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 20.942073822021484
+user_time: 1.303094
+system_time: 1.125252
+ram_usage: 1075068
+date_completed: 2026-10-24 21:21:39
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp3j0f2bgz/formatted/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmp3j0f2bgz/formatted/tests/chapter-16/16.7--sequence-and-uvm.sv
+CST mismatch between original and formatted: tests/chapter-16/16.7--sequence-and-uvm.sv

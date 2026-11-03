@@ -1,0 +1,30 @@
+name: unique0_casex
+description: casex statement with unique0
+tags: 12.5.3
+files: /home/darya/verilog/sv-tests/tests/generated/uniquecase/12.5.3--unique0_casex.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/uniquecase
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.043526411056518555
+user_time: 0.018146
+system_time: 0.024454
+ram_usage: 20716
+date_completed: 2026-10-26 11:46:04
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmp3k4ytw8h/formatted/. -I/home/darya/verilog/sv-tests/tests/generated/uniquecase /home/darya/verilog/sv-tests/out/tmp/tmp3k4ytw8h/formatted/12.5.3--unique0_casex.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp3k4ytw8h/formatted/12.5.3--unique0_casex.sv: unsupported SystemVerilog construct 'unique0'; original text preserved [unsupported-construct]
+CST verification passed

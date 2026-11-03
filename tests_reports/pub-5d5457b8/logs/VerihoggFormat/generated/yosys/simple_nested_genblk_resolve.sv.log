@@ -1,0 +1,29 @@
+name: simple_nested_genblk_resolve
+description: Tests imported from yosys
+files: /home/darya/verilog/sv-tests/tests/generated/yosys/simple_nested_genblk_resolve.sv /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/simple/nested_genblk_resolve.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/simple
+tags: yosys
+results_group: imported
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.07335519790649414
+user_time: 0.017573
+system_time: 0.043847
+ram_usage: 20584
+date_completed: 2026-10-26 11:53:20
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpbvss6b5v/formatted/third_party/tools/yosys/tests/simple -I/home/darya/verilog/sv-tests/out/tmp/tmpbvss6b5v/formatted/tests/generated/yosys -I/home/darya/verilog/sv-tests/third_party/tools/yosys/tests/simple -I/home/darya/verilog/sv-tests/tests/generated/yosys /home/darya/verilog/sv-tests/out/tmp/tmpbvss6b5v/formatted/tests/generated/yosys/simple_nested_genblk_resolve.sv /home/darya/verilog/sv-tests/out/tmp/tmpbvss6b5v/formatted/third_party/tools/yosys/tests/simple/nested_genblk_resolve.v
+CST verification passed

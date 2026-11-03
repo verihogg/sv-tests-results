@@ -1,0 +1,53 @@
+name: uvm_slave_agent
+description: UVM example - uvm_slave_agent
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_slave_agent/agents/apb_slave_agent/apb_slave_agent_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_slave_agent/./agents/apb_slave_agent/apb_if.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_slave_agent/./agents/apb_slave_agent/apb_slave_driver_bfm.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_slave_agent/./agents/apb_slave_agent/apb_slave_monitor_bfm.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_slave_agent/./rtl/apb3_wlm_host.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_slave_agent/./tb/env_pkg.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_slave_agent/./tb/hvl_top.sv /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_slave_agent/./tb/hdl_top.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_slave_agent/agents/apb_slave_agent /home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_slave_agent/tb
+tags: uvm-examples uvm
+type: simulation elaboration parsing
+timeout: 900
+unsynthesizable: 1
+simvariants: 
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 24
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 36.59729337692261
+user_time: 3.439237
+system_time: 1.581475
+ram_usage: 1101204
+date_completed: 2026-10-26 11:52:44
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm/src -I/home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/agents/apb_slave_agent -I/home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/tb -I/home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/rtl -I/home/darya/verilog/sv-tests/third_party/tests/uvm/src -I/home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_slave_agent/agents/apb_slave_agent -I/home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_slave_agent/tb -I/home/darya/verilog/sv-tests/third_party/tests/uvm-examples/uvm_slave_agent/rtl /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/agents/apb_slave_agent/apb_slave_agent_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/agents/apb_slave_agent/apb_if.sv /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/agents/apb_slave_agent/apb_slave_driver_bfm.sv /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/agents/apb_slave_agent/apb_slave_monitor_bfm.sv /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/rtl/apb3_wlm_host.sv /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/tb/env_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/tb/hvl_top.sv /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/tb/hdl_top.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm/src/uvm_pkg.sv: unsupported SystemVerilog construct 'static'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm/src/uvm_pkg.sv: unsupported SystemVerilog construct 'export'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm/src/uvm_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/agents/apb_slave_agent/apb_slave_agent_pkg.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/agents/apb_slave_agent/apb_slave_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/agents/apb_slave_agent/apb_slave_agent_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/agents/apb_slave_agent/apb_if.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/agents/apb_slave_agent/apb_if.sv: cannot annotate SystemVerilog line (unsupported token kind EndInterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/agents/apb_slave_agent/apb_slave_driver_bfm.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/agents/apb_slave_agent/apb_slave_driver_bfm.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/agents/apb_slave_agent/apb_slave_driver_bfm.sv: cannot annotate SystemVerilog line (unsupported token kind EndInterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/agents/apb_slave_agent/apb_slave_monitor_bfm.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/agents/apb_slave_agent/apb_slave_monitor_bfm.sv: cannot annotate SystemVerilog line (unsupported token kind InterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/agents/apb_slave_agent/apb_slave_monitor_bfm.sv: cannot annotate SystemVerilog line (unsupported token kind EndInterfaceKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/rtl/apb3_wlm_host.sv: unsupported SystemVerilog construct 'randcase'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/rtl/apb3_wlm_host.sv: unsupported SystemVerilog construct 'randcase'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/rtl/apb3_wlm_host.sv: cannot annotate SystemVerilog line (unsupported token kind OrKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/tb/env_pkg.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/tb/env_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind PackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/tb/env_pkg.sv: cannot annotate SystemVerilog line (unsupported token kind EndPackageKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/tb/hvl_top.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp27prn0ye/formatted/uvm-examples/uvm_slave_agent/tb/hdl_top.sv: unsupported SystemVerilog construct 'import'; original text preserved [unsupported-construct]
+CST verification passed

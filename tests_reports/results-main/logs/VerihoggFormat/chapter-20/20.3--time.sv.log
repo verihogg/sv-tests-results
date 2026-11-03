@@ -1,0 +1,29 @@
+name: time_task
+description: $time test
+tags: 20.3
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-20/20.3--time.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-20
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03493046760559082
+user_time: 0.007993
+system_time: 0.028841
+ram_usage: 20572
+date_completed: 2026-10-24 22:01:16
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpfnb61gtx/formatted/20.3--time.sv
+CST verification passed

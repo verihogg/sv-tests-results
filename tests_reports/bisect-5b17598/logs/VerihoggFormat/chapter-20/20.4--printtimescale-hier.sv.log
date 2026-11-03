@@ -1,0 +1,29 @@
+name: printtimescale_hier_task
+description: $printtimescale hierarchy test
+tags: 20.4
+type: simulation elaboration parsing
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-20/20.4--printtimescale-hier.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-20
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.030118465423583984
+user_time: 0.005934
+system_time: 0.024749999999999998
+ram_usage: 20844
+date_completed: 2026-10-26 14:56:48
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpd0p9bd8a/formatted/20.4--printtimescale-hier.sv
+CST verification passed

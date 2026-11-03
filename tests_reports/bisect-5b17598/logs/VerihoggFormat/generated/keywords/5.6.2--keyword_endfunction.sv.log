@@ -1,0 +1,41 @@
+name: keyword_endfunction
+description: The 'endfunction' keyword should be reserved
+should_fail_because: The 'endfunction' keyword should be reserved
+tags: 5.6.2
+files: /home/darya/verilog/sv-tests/tests/generated/keywords/5.6.2--keyword_endfunction.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/keywords
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.020849227905273438
+user_time: 0.0
+system_time: 0.020821
+ram_usage: 20716
+date_completed: 2026-10-26 14:43:03
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpaf8afyeb/formatted/5.6.2--keyword_endfunction.sv
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpaf8afyeb/comparison/5.6.2--keyword_endfunction.sv
+comparison/5.6.2--keyword_endfunction.sv:8:9: error: expected a declaration name
+    bit endfunction;
+        ^
+comparison/5.6.2--keyword_endfunction.sv:8:9: error: unexpected 'endfunction' delimiter
+    bit endfunction;
+        ^~~~~~~~~~~
+comparison/5.6.2--keyword_endfunction.sv:7:11: note: last complete block started here
+module top();
+          ^
+comparison/5.6.2--keyword_endfunction.sv:7:12: note: and ended here
+module top();
+           ^

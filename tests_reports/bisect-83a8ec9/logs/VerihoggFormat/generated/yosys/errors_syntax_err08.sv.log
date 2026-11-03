@@ -1,0 +1,32 @@
+name: errors_syntax_err08
+description: Tests imported from yosys
+files: /home/darya/verilog/sv-tests/tests/generated/yosys/errors_syntax_err08.sv /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/errors/syntax_err08.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/yosys/tests/errors
+tags: yosys
+should_fail_because: this test imported from yosys repository contains intentional syntax error
+results_group: imported
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.05596804618835449
+user_time: 0.011255999999999999
+system_time: 0.028586999999999998
+ram_usage: 20764
+date_completed: 2026-10-26 14:12:26
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpksp01vsj/formatted/tests/generated/yosys/errors_syntax_err08.sv /home/darya/verilog/sv-tests/out/tmp/tmpksp01vsj/formatted/third_party/tools/yosys/tests/errors/syntax_err08.v
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpksp01vsj/comparison/third_party/tools/yosys/tests/errors/syntax_err08.v
+comparison/third_party/tools/yosys/tests/errors/syntax_err08.v:4:13: error: expected ';'
+assign y = x 55;
+            ^

@@ -1,0 +1,29 @@
+name: uvm_component_0
+description: uvm_component class test
+tags: uvm uvm-classes
+type: simulation elaboration parsing
+timeout: 300
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/tests/generated/uvm_classes_0/uvm_component_class_0.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/uvm/src /home/darya/verilog/sv-tests/tests/generated/uvm_classes_0
+top_module: 
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 26.03277564048767
+user_time: 1.7093720000000001
+system_time: 1.176804
+ram_usage: 1075060
+date_completed: 2026-10-24 20:22:03
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpvp8gpyc3/formatted/third_party/tests/uvm/src/uvm_pkg.sv /home/darya/verilog/sv-tests/out/tmp/tmpvp8gpyc3/formatted/tests/generated/uvm_classes_0/uvm_component_class_0.sv
+CST mismatch between original and formatted: tests/generated/uvm_classes_0/uvm_component_class_0.sv

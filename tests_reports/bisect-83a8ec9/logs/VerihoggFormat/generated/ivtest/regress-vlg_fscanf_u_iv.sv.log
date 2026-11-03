@@ -1,0 +1,29 @@
+name: regress-vlg_fscanf_u_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/fscanf_u.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.0754854679107666
+user_time: 0.011536
+system_time: 0.029224999999999998
+ram_usage: 29776
+date_completed: 2026-10-26 14:13:20
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp1c211ixv/formatted/fscanf_u.v
+CST verification passed

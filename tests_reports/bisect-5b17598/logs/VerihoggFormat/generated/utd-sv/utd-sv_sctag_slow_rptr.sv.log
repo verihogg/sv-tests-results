@@ -1,0 +1,29 @@
+name: utd-sv_sctag_slow_rptr
+description: Tests imported from utd-sv
+files: /home/darya/verilog/sv-tests/tests/generated/utd-sv/utd-sv_sctag_slow_rptr.sv /home/darya/verilog/sv-tests/third_party/tests/utd-sv/sctag_slow_rptr.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/utd-sv
+tags: utd-sv
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.0697927474975586
+user_time: 0.002781
+system_time: 0.058609999999999995
+ram_usage: 23152
+date_completed: 2026-10-26 14:42:58
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmprzi3q1z9/formatted/tests/generated/utd-sv/utd-sv_sctag_slow_rptr.sv /home/darya/verilog/sv-tests/out/tmp/tmprzi3q1z9/formatted/third_party/tests/utd-sv/sctag_slow_rptr.v
+CST verification passed

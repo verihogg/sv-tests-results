@@ -1,0 +1,30 @@
+name: interleaving_productions_rand_join_2
+description: rand join statement test
+type: simulation elaboration parsing
+tags: 18.17.5
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-18/18.17.5--interleaving-productions-rand-join_2.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-18
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.10093951225280762
+user_time: 0.0
+system_time: 0.10311999999999999
+ram_usage: 20892
+date_completed: 2026-10-26 15:00:55
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp_quw4787/formatted/18.17.5--interleaving-productions-rand-join_2.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp_quw4787/formatted/18.17.5--interleaving-productions-rand-join_2.sv: unsupported SystemVerilog construct 'randsequence'; original text preserved [unsupported-construct]
+CST verification passed

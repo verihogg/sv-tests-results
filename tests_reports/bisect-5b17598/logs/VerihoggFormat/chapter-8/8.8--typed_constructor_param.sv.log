@@ -1,0 +1,34 @@
+name: typed_constructor_param
+description: typed class constructor with parameters test
+tags: 8.8
+unsynthesizable: 1
+files: /home/darya/verilog/sv-tests/tests/chapter-8/8.8--typed_constructor_param.sv
+incdirs: /home/darya/verilog/sv-tests/tests/chapter-8
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 5
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03374886512756348
+user_time: 0.00541
+system_time: 0.027562
+ram_usage: 21584
+date_completed: 2026-10-26 14:56:50
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp7uok44a2/formatted/8.8--typed_constructor_param.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp7uok44a2/formatted/8.8--typed_constructor_param.sv: unsupported SystemVerilog construct 'super'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp7uok44a2/formatted/8.8--typed_constructor_param.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp7uok44a2/formatted/8.8--typed_constructor_param.sv: cannot annotate SystemVerilog line (unsupported token kind ExtendsKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp7uok44a2/formatted/8.8--typed_constructor_param.sv: cannot annotate SystemVerilog line (unsupported token kind NewKeyword); original text preserved [invalid-annotation]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp7uok44a2/formatted/8.8--typed_constructor_param.sv: cannot annotate SystemVerilog line (unsupported token kind DoubleColon); original text preserved [invalid-annotation]
+CST verification passed

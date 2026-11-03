@@ -1,0 +1,29 @@
+name: regress-vlg_pr1875866b_iv
+description: Test imported from ivtest
+files: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests/pr1875866b.v
+incdirs: /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest /home/darya/verilog/sv-tests/third_party/tools/icarus/ivtest/ivltests
+tags: ivtest
+results_group: imported
+type: simulation elaboration parsing
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.035570383071899414
+user_time: 0.004808
+system_time: 0.031653
+ram_usage: 21340
+date_completed: 2026-10-24 21:19:46
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp4nnjm0bw/formatted/pr1875866b.v
+CST verification passed

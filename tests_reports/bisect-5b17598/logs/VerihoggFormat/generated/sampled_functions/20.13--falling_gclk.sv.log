@@ -1,0 +1,30 @@
+name: falling_gclk_function
+description: $falling_gclk test
+tags: 20.13 16.9
+type: simulation elaboration parsing
+files: /home/darya/verilog/sv-tests/tests/generated/sampled_functions/20.13--falling_gclk.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/sampled_functions
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 1
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.03307294845581055
+user_time: 0.00718
+system_time: 0.028714999999999997
+ram_usage: 20716
+date_completed: 2026-10-26 14:53:53
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp0hs59za5/formatted/20.13--falling_gclk.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp0hs59za5/formatted/20.13--falling_gclk.sv: unsupported SystemVerilog construct 'global'; original text preserved [unsupported-construct]
+CST verification passed

@@ -1,0 +1,32 @@
+name: keyword_randcase
+description: The 'randcase' keyword should be reserved
+should_fail_because: The 'randcase' keyword should be reserved
+tags: 5.6.2
+files: /home/darya/verilog/sv-tests/tests/generated/keywords/5.6.2--keyword_randcase.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/keywords
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.019545793533325195
+user_time: 0.0032559999999999998
+system_time: 0.018514
+ram_usage: 20708
+date_completed: 2026-10-26 14:02:55
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmpiifvuofz/formatted/5.6.2--keyword_randcase.sv
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpiifvuofz/comparison/5.6.2--keyword_randcase.sv
+comparison/5.6.2--keyword_randcase.sv:8:9: error: expected a declaration name
+    bit randcase;
+        ^

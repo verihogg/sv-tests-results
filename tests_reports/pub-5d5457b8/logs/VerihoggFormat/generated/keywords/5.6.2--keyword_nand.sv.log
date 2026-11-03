@@ -1,0 +1,35 @@
+name: keyword_nand
+description: The 'nand' keyword should be reserved
+should_fail_because: The 'nand' keyword should be reserved
+tags: 5.6.2
+files: /home/darya/verilog/sv-tests/tests/generated/keywords/5.6.2--keyword_nand.sv
+incdirs: /home/darya/verilog/sv-tests/tests/generated/keywords
+top_module: 
+timeout: 30
+type: parsing elaboration
+should_fail: 1
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+results_group: 
+simvariants: 
+mode: parsing
+rc: 1
+tool_success: 0
+warning_count: 0
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.01866006851196289
+user_time: 0.0
+system_time: 0.020142
+ram_usage: 20556
+date_completed: 2026-10-26 11:42:13
+
+verihogg-format --inplace -I/home/darya/verilog/sv-tests/out/tmp/tmpd581z86v/formatted/. -I/home/darya/verilog/sv-tests/tests/generated/keywords /home/darya/verilog/sv-tests/out/tmp/tmpd581z86v/formatted/5.6.2--keyword_nand.sv
+slang-driver (original) /home/darya/verilog/sv-tests/out/tmp/tmpd581z86v/comparison/5.6.2--keyword_nand.sv
+comparison/5.6.2--keyword_nand.sv:8:9: error: expected a declaration name
+    bit nand;
+        ^
+comparison/5.6.2--keyword_nand.sv:8:13: error: expected hierarchical instantiation
+    bit nand;
+            ^

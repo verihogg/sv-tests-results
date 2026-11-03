@@ -1,0 +1,32 @@
+name: hdlconvertor_std2012_p90
+description: Tests imported from hdlconv_std2012
+files: /home/darya/verilog/sv-tests/tests/generated/hdlconv_std2012/hdlconvertor_std2012_p90.sv /home/darya/verilog/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2012/p90.sv
+incdirs: /home/darya/verilog/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2012
+tags: hdlconv_std2012
+type: parsing
+results_group: imported
+top_module: 
+timeout: 30
+should_fail: 0
+should_fail_because: 
+defines: 
+compatible-runners: all
+unsynthesizable: 0
+simvariants: 
+mode: parsing
+rc: 0
+tool_success: 1
+warning_count: 3
+runner: VerihoggFormat
+runner_url: https://github.com/verihogg/verihogg-format/tree/5d5457b8b35be1cb61f4f68d83b3362cc486df2f
+time_elapsed: 0.06772375106811523
+user_time: 0.004815
+system_time: 0.053223
+ram_usage: 20640
+date_completed: 2026-10-24 22:48:48
+
+verihogg-format --inplace /home/darya/verilog/sv-tests/out/tmp/tmp2mu_mk1b/formatted/tests/generated/hdlconv_std2012/hdlconvertor_std2012_p90.sv /home/darya/verilog/sv-tests/out/tmp/tmp2mu_mk1b/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2012/p90.sv
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp2mu_mk1b/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2012/p90.sv: unsupported SystemVerilog construct 'static'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp2mu_mk1b/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2012/p90.sv: unsupported SystemVerilog construct 'static'; original text preserved [unsupported-construct]
+Warning in /home/darya/verilog/sv-tests/out/tmp/tmp2mu_mk1b/formatted/third_party/tests/hdlconvertor/tests/sv_test/std2012/p90.sv: cannot annotate SystemVerilog line (unsupported token kind AutomaticKeyword); original text preserved [invalid-annotation]
+CST verification passed
