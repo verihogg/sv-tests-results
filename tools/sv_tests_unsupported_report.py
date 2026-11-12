@@ -1031,7 +1031,8 @@ def render_page(data: dict, root: Path, output: Path, args: argparse.Namespace) 
         f"<style>{CSS}</style>\n</head>\n<body>\n"
         "<header>"
         "<h1>VerihoggFormat: unsupported constructs</h1>"
-        f'<p class="meta">{total} tests · generated {html.escape(generated)}</p>'
+        f'<p class="meta">{total} tests · generated {html.escape(generated)} · '
+        '<a href="constructs.html">Warning constructs</a></p>'
         "</header>\n<main>\n"
         + render_cards(data)
         + "\n"

@@ -52,6 +52,23 @@ verihogg-format/unsupported.html
 The report prints a one-line summary with the total test count, number of
 unique causes, and number of warning tests.
 
+## Warning constructs table
+
+For a user-facing table with only warning constructs and links to example test
+code, run the separate generator:
+
+```sh
+python3 tools/sv_tests_warning_constructs.py --report verihogg-format
+```
+
+This writes `verihogg-format/constructs.html`. The page contains one row per
+warning construct and links each row to a test source page. The detailed
+report links to this page, and this page links back to `unsupported.html`.
+
+The script accepts `--report`, `--output`, and `--quiet` with the same meaning
+as the detailed report generator. It reads the same report inputs and does not
+modify them.
+
 ## Choosing the report directory
 
 `--report` accepts any of these layouts:
@@ -146,10 +163,12 @@ relative links to `logs/...` and `tests/...` are computed from the output file
 location.
 
 For links to work after publishing, keep `unsupported.html` in the same
-directory as `logs/` and `tests/`. For example, publishing the
-`verihogg-format/` directory as-is keeps the report and all log/test links
-working. If the HTML is moved somewhere else, relative links may point outside
-the published tree or stop working.
+directory as `logs/` and `tests/`, and keep `constructs.html` next to
+`unsupported.html` so the cross-links between the two pages keep working. For
+example, publishing the `verihogg-format/` directory as-is keeps the report,
+the constructs page, and all log/test links working. If the HTML is moved
+somewhere else, relative links may point outside the published tree or stop
+working.
 
 The page includes:
 
@@ -158,6 +177,9 @@ The page includes:
 - a greedy fix-priority table;
 - a sortable table of all causes;
 - a searchable table of tests with unsupported constructs.
+
+The separate `constructs.html` page is a compact table with only warning
+constructs and links to example test code.
 
 ## How the numbers work
 
@@ -191,13 +213,14 @@ the report.
 
 ```sh
 python3 -m py_compile tools/sv_tests_unsupported_report.py
+python3 -m py_compile tools/sv_tests_warning_constructs.py
 ```
 
 If `ruff` is installed:
 
 ```sh
-ruff check tools/sv_tests_unsupported_report.py
-ruff format --check tools/sv_tests_unsupported_report.py
+ruff check tools/sv_tests_unsupported_report.py tools/sv_tests_warning_constructs.py
+ruff format --check tools/sv_tests_unsupported_report.py tools/sv_tests_warning_constructs.py
 ```
 
 ## Troubleshooting

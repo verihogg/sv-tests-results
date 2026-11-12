@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VerihoggFormat — warning constructs</title>
+<style>
+:root {
+  --bg: #0f172a;
+  --panel: #111c34;
+  --panel-2: #162240;
+  --text: #e6edf7;
+  --muted: #8ca0bf;
+  --line: #24345a;
+  --green: #3fb950;
+  --yellow: #d29922;
+  --red: #f85149;
+  --gray: #6e7681;
+  --blue: #58a6ff;
+  --accent: #7c9cff;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+header {
+  padding: 28px 32px 20px;
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(180deg, #131f3b, #0f172a);
+}
+header h1 { margin: 0 0 6px; font-size: 26px; }
+header .meta { margin: 0; color: var(--muted); }
+main { padding: 24px 32px 48px; max-width: 1500px; margin: 0 auto; }
+section { margin: 0 0 34px; }
+h2 { font-size: 18px; margin: 0 0 10px; }
+.lead, .hint { color: var(--muted); margin: 0 0 12px; }
+.hint { font-size: 12px; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+.card .value { font-size: 26px; font-weight: 650; }
+.card .pct { font-size: 13px; color: var(--muted); margin-left: 6px; }
+.card .label { color: var(--muted); font-size: 12px; margin-top: 2px; }
+.card.green { border-color: #1f6b32; }
+.card.green .value { color: var(--green); }
+.card.yellow { border-color: #6b561a; }
+.card.yellow .value { color: var(--yellow); }
+.card.red { border-color: #7a2220; }
+.card.red .value { color: var(--red); }
+.card.gray { border-color: #3b4250; }
+.card.gray .value { color: #b6bfcc; }
+.card.blue { border-color: #1f4e7a; }
+.card.blue .value { color: var(--blue); }
+.note {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 10px;
+  padding: 14px 18px;
+  color: var(--muted);
+}
+.note strong { color: var(--text); }
+.note h2 { color: var(--text); font-size: 16px; margin: 0 0 10px; }
+.note p { margin: 0 0 9px; }
+.note p:last-child { margin-bottom: 0; }
+.defs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  margin: 0 0 12px;
+}
+.defs div {
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+.defs h3 { margin: 0 0 4px; font-size: 13px; color: var(--text); }
+.defs p { margin: 0; font-size: 13px; }
+.example-box {
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin: 0 0 12px;
+  font-size: 13px;
+}
+.example-box ul { margin: 6px 0 0; padding-left: 20px; }
+.example-box li { margin: 2px 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.controls { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+.controls input, .controls select {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font: inherit;
+}
+.controls input { min-width: 320px; }
+table.plain {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+table.plain th, table.plain td {
+  padding: 9px 11px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+table.plain th { vertical-align: top; }
+table.plain td { vertical-align: baseline; }
+table.plain td > code,
+table.plain td .badge,
+table.plain td .chip { vertical-align: baseline; }
+table.plain thead th {
+  background: var(--panel-2);
+  color: var(--muted);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+table.plain tbody tr:hover { background: #14203c; }
+table.plain tbody tr:last-child td { border-bottom: none; }
+table.sortable th[data-sort] { cursor: pointer; user-select: none; }
+table.sortable th[data-sort]:hover { color: var(--text); }
+th.sorted-desc::after { content: " ↓"; color: var(--accent); }
+th.sorted-asc::after { content: " ↑"; color: var(--accent); }
+.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.wide { min-width: 180px; }
+.muted { color: var(--muted); }
+code {
+  background: #0b1428;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 1px 5px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12.5px;
+}
+.bar {
+  height: 7px;
+  background: #0b1428;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+.bar span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #2f81f7, #58a6ff);
+}
+.badge {
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+.badge-passed { color: var(--green); border-color: #1f6b32; background: #0f2a18; }
+.badge-warning { color: var(--yellow); border-color: #6b561a; background: #2a2210; }
+.badge-failed { color: var(--red); border-color: #7a2220; background: #2a1212; }
+.badge-unverified { color: #b6bfcc; border-color: #3b4250; background: #1a1f29; }
+.badge-negative-pass { color: var(--blue); border-color: #1f4e7a; background: #0f1f33; }
+.badge-unknown { color: var(--muted); border-color: var(--line); }
+.chips-inner {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 100%;
+  vertical-align: baseline;
+}
+.chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 1px 6px;
+  font-size: 12px;
+  line-height: 18px;
+}
+.chip .count {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.chip code { border: none; background: transparent; padding: 0; }
+#tests-table th:last-child,
+#tests-table td.links {
+  width: 1%;
+  white-space: nowrap;
+  text-align: right;
+}
+.example { min-width: 180px; }
+
+#constructs-table td:first-child { width: 38%; }
+#constructs-table td:last-child { overflow-wrap: anywhere; }
+#constructs-table td a {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12.5px;
+}
+</style>
+</head>
+<body>
+<header><h1>VerihoggFormat: warning constructs</h1><p class="meta">185 constructs · <a href="unsupported.html">Full report</a></p></header>
+<main>
+<section><p class="lead">One example test for each construct that produces a warning. The link opens the test source.</p><table class="plain" id="constructs-table"><thead><tr><th>Construct</th><th>Example code</th></tr></thead><tbody><tr><td><code>alias</code></td><td><a href="third_party/tests/hdlconvertor/tests/sv_test/std2017/p252.sv.html">hdlconvertor_std2017_p252</a></td></tr><tr><td><code>and</code></td><td><a href="third_party/tools/yosys/tests/asicworld/code_hdl_models_full_adder_gates.v.html">asicworld_code_hdl_models_full_adder_gates</a></td></tr><tr><td><code>and</code> <span class="muted">AndKeyword</span></td><td><a href="tests/chapter-7/arrays/unpacked/reduction-methods/and.sv.html">unpacked-array-reduction-method-and</a></td></tr><tr><td><code>assert</code></td><td><a href="tests/chapter-16/16.2--assert0.sv.html">assert0_test</a></td></tr><tr><td><code>assume</code></td><td><a href="tests/chapter-16/16.2--assume0.sv.html">assume0_test</a></td></tr><tr><td><code>AssumeKeyword</code></td><td><a href="third_party/tools/yosys/tests/sva/basic03.sv.html">sva_basic03</a></td></tr><tr><td><code>automatic</code></td><td><a href="third_party/tests/hdlconvertor/tests/sv_test/std2012/p91.sv.html">hdlconvertor_std2012_p91</a></td></tr><tr><td><code>automatic</code> <span class="muted">AutomaticKeyword</span></td><td><a href="third_party/tools/icarus/ivtest/ivltests/always_comb_rfunc.v.html">regress-sv_always_comb_rfunc_iv</a></td></tr><tr><td><code>based literal wildcard is not supported</code></td><td><a href="tests/chapter-5/5.7.1--integers-signed.sv.html">integers-signed</a></td></tr><tr><td><code>bind</code></td><td><a href="third_party/tools/yosys/tests/sva/basic02.sv.html">sva_basic02</a></td></tr><tr><td><code>break</code> <span class="muted">BreakKeyword</span></td><td><a href="tests/chapter-12/12.8--break.sv.html">jump_break</a></td></tr><tr><td><code>btb_prediction_t</code></td><td><a href="third_party/cores/ariane/vendor/pulp-platform/fpga-support/rtl/SyncDpRam.sv.html">cva6_cv32a6_imac_sv32</a></td></tr><tr><td><code>buf</code></td><td><a href="third_party/tools/yosys/tests/asicworld/code_verilog_tutorial_n_out_primitive.v.html">asicworld_code_verilog_tutorial_n_out_primitive</a></td></tr><tr><td><code>bufif0</code></td><td><a href="third_party/tests/hdlconvertor/tests/sv_test/std2017/p801.sv.html">hdlconvertor_std2017_p801</a></td></tr><tr><td><code>bufif1</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/br960a.v.html">regress-vlg_br960a_iv</a></td></tr><tr><td><code>chandle</code></td><td><a href="tests/chapter-6/6.14--chandle.sv.html">chandle</a></td></tr><tr><td><code>checker</code></td><td><a href="third_party/tests/hdlconvertor/tests/sv_test/std2017/p488.sv.html">hdlconvertor_std2017_p488</a></td></tr><tr><td><code>clocking</code></td><td><a href="tests/chapter-14/14.3--clocking-block.sv.html">clocking_block</a></td></tr><tr><td><code>cmos</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/br_gh99k.v.html">regress-vlg_br_gh99k_iv</a></td></tr><tr><td><code>conditional operator has no matching colon</code></td><td><a href="third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv.html">scr1</a></td></tr><tr><td><code>const</code></td><td><a href="tests/generic/class/class_test_57.sv.html">class_test_57</a></td></tr><tr><td><code>constraint</code></td><td><a href="tests/chapter-18/18.5.1--explicit-external-constraint_0.sv.html">explicit_external_constraint_0</a></td></tr><tr><td><code>continue</code></td><td><a href="tests/chapter-12/12.8--continue.sv.html">jump_continue</a></td></tr><tr><td><code>cover</code></td><td><a href="tests/chapter-16/16.2--cover0.sv.html">cover0_test</a></td></tr><tr><td><code>covergroup</code></td><td><a href="third_party/tests/hdlconvertor/tests/sv_test/std2017/p556.sv.html">hdlconvertor_std2017_p556</a></td></tr><tr><td><code>CoverKeyword</code></td><td><a href="third_party/tests/uvm-1.2/src/uvm_pkg.sv.html">biquad_example</a></td></tr><tr><td><code>csr_trace1</code></td><td><a href="third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv.html">scr1</a></td></tr><tr><td><code>deassign</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/array_lval_select3b.v.html">regress-vlg_array_lval_select3b_iv</a></td></tr><tr><td><code>default</code></td><td><a href="tests/chapter-5/5.12-attributes-case.sv.html">attributes-case</a></td></tr><tr><td><code>default</code> <span class="muted">DefaultKeyword</span></td><td><a href="tests/chapter-5/5.11-arrays-key-index.sv.html">arrays-key-index</a></td></tr><tr><td><code>defparam</code></td><td><a href="third_party/tests/hdlconvertor/tests/sv_test/std2017/p733.sv.html">hdlconvertor_std2017_p733</a></td></tr><tr><td><code>disable</code></td><td><a href="tests/chapter-9/9.6.2--disable.sv.html">disable</a></td></tr><tr><td><code>do</code></td><td><a href="tests/chapter-12/12.7.5--dowhile.sv.html">dowhile_loop</a></td></tr><tr><td><code>$</code> <span class="muted">Dollar</span></td><td><a href="tests/chapter-7/arrays/associative/locator-methods/max.sv.html">array-locator-methods-max</a></td></tr><tr><td><code>::</code> <span class="muted">DoubleColon</span></td><td><a href="third_party/tools/icarus/ivtest/ivltests/sv_class_new_typed_fail1.v.html">regress-sv_sv_class_new_typed_fail1_iv</a></td></tr><tr><td><code>DoubleHash</code></td><td><a href="third_party/tests/hdlconvertor/tests/sv_test/std2017/p771.sv.html">hdlconvertor_std2017_p771</a></td></tr><tr><td><code>--</code> <span class="muted">DoubleMinus</span></td><td><a href="third_party/tools/icarus/ivtest/ivltests/br_gh568.v.html">regress-sv_br_gh568_iv</a></td></tr><tr><td><code>++</code> <span class="muted">DoublePlus</span></td><td><a href="tests/chapter-11/11.3.6--assign_in_expression.sv.html">assign_in_expression</a></td></tr><tr><td><code>EdgeKeyword</code></td><td><a href="tests/chapter-9/9.4.2--event_control_edge.sv.html">event_control_edge</a></td></tr><tr><td><code>else</code></td><td><a href="tests/chapter-12/12.4--if_else.sv.html">if_else</a></td></tr><tr><td><code>end</code></td><td><a href="tests/chapter-12/12.4--if.sv.html">if</a></td></tr><tr><td><code>endcase</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/casesynth7.v.html">regress-fsv_casesynth7_iv</a></td></tr><tr><td><code>endclass</code></td><td><a href="tests/generic/class/class_test_26.sv.html">class_test_26</a></td></tr><tr><td><code>endfunction</code></td><td><a href="third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv.html">scr1</a></td></tr><tr><td><code>endinterface</code> <span class="muted">EndInterfaceKeyword</span></td><td><a href="third_party/tests/hdlconvertor/tests/sv_test/std2017/p751.sv.html">hdlconvertor_std2017_p751</a></td></tr><tr><td><code>endmodule</code></td><td><a href="tests/chapter-5/5.12-attributes-module.sv.html">attributes-module</a></td></tr><tr><td><code>endpackage</code> <span class="muted">EndPackageKeyword</span></td><td><a href="tests/generic/class/class_test_19.sv.html">class_test_19</a></td></tr><tr><td><code>endprogram</code> <span class="muted">EndProgramKeyword</span></td><td><a href="third_party/tests/hdlconvertor/tests/sv_test/std2017/p745.sv.html">hdlconvertor_std2017_p745</a></td></tr><tr><td><code>enum</code></td><td><a href="tests/chapter-6/6.19--enum_anon.sv.html">enum_anon</a></td></tr><tr><td><code>event</code></td><td><a href="tests/generic/class/class_test_54.sv.html">class_test_54</a></td></tr><tr><td><code>expect</code></td><td><a href="tests/chapter-16/16.17--expect.sv.html">expect_test</a></td></tr><tr><td><code>expect</code> <span class="muted">ExpectKeyword</span></td><td><a href="third_party/tools/icarus/ivtest/ivltests/br937.v.html">regress-vlg_br937_iv</a></td></tr><tr><td><code>export</code></td><td><a href="third_party/tests/hdlconvertor/tests/sv_test/std2017/p783.sv.html">hdlconvertor_std2017_p783</a></td></tr><tr><td><code>extends</code> <span class="muted">ExtendsKeyword</span></td><td><a href="tests/generic/class/class_test_12.sv.html">class_test_12</a></td></tr><tr><td><code>extern</code></td><td><a href="tests/generic/member/class_member_test_15.sv.html">class_member_test_15</a></td></tr><tr><td><code>force</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/array_lval_select4b.v.html">regress-vlg_array_lval_select4b_iv</a></td></tr><tr><td><code>ForceKeyword</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/always3.1.3D2.v.html">regress-vlg_always313D2_iv</a></td></tr><tr><td><code>global</code></td><td><a href="tests/generated/sampled_functions/20.13--changed_gclk.sv.html">changed_gclk_function</a></td></tr><tr><td><code>GlobalKeyword</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/automatic_error3.v.html">regress-vlg_automatic_error3_iv</a></td></tr><tr><td><code>HighZ0Keyword</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/pr1703346.v.html">regress-vlg_pr1703346_iv</a></td></tr><tr><td><code>HighZ1Keyword</code></td><td><a href="tests/generated/assignment-strengths/10.3.4--assignment_highz1_pull0.sv.html">cont_assignment_strength_highz1_pull0</a></td></tr><tr><td><code>i</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/br1000.v.html">regress-vlg_br1000_iv</a></td></tr><tr><td><code>idx</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/pr1565544.v.html">regress-vlg_pr1565544_iv</a></td></tr><tr><td><code>import</code></td><td><a href="third_party/tests/hdlconvertor/tests/sv_test/std2017/p729.sv.html">hdlconvertor_std2017_p729</a></td></tr><tr><td><code>in</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/pr693.v.html">regress-vlg_pr693_iv</a></td></tr><tr><td><code>inside</code> <span class="muted">InsideKeyword</span></td><td><a href="tests/chapter-11/11.4.13--set_member.sv.html">set_member</a></td></tr><tr><td><code>InstanceKeyword</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/pr1758122.v.html">regress-vlg_pr1758122_iv</a></td></tr><tr><td><code>interconnect</code></td><td><a href="tests/chapter-6/6.6.8--interconnect.sv.html">interconnect</a></td></tr><tr><td><code>interface</code> <span class="muted">InterfaceKeyword</span></td><td><a href="tests/chapter-8/8.26.5--cast_between_interface_classes.sv.html">cast_between_interface_classes</a></td></tr><tr><td><code>j</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/for_loop_synth2.v.html">regress-synth_for_loop_synth2_iv</a></td></tr><tr><td><code>join</code></td><td><a href="third_party/tests/hdlconvertor/tests/sv_test/std2017/p723.sv.html">hdlconvertor_std2017_p723</a></td></tr><tr><td><code>k</code></td><td><a href="third_party/tools/yosys/tests/simple/forloops.v.html">simple_forloops</a></td></tr><tr><td><code>LessThanMinusArrow</code></td><td><a href="tests/generated/binary_op/11.4.7--binary_op_log_equiv.sv.html">binary_op_log_equiv</a></td></tr><tr><td><code>let</code></td><td><a href="third_party/tests/hdlconvertor/tests/sv_test/std2017/p612.sv.html">hdlconvertor_std2017_p612</a></td></tr><tr><td><code>local</code></td><td><a href="tests/generic/member/class_member_test_12.sv.html">class_member_test_12</a></td></tr><tr><td><code>LocalKeyword</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/automatic_error3.v.html">regress-vlg_automatic_error3_iv</a></td></tr><tr><td><code>longint</code></td><td><a href="tests/generated/integers/6.11--integer_longint.sv.html">integer_longint</a></td></tr><tr><td><code>macro-line-number</code></td><td><a href="tests/chapter-22/22.4--check_included_definitions.sv.html">22.4--check_included_definitions</a></td></tr><tr><td><code>-&gt;</code> <span class="muted">MinusArrow</span></td><td><a href="tests/generated/binary_op/11.4.7--binary_op_log_imp.sv.html">binary_op_log_imp</a></td></tr><tr><td><code>-:</code> <span class="muted">MinusColon</span></td><td><a href="tests/chapter-11/11.5.1--idx_neg_part_select.sv.html">idx_neg_part_select</a></td></tr><tr><td><code>MinusDoubleArrow</code></td><td><a href="tests/chapter-15/15.5.1--named-event-trigger-non-blocking.sv.html">named_event_trigger_non_blocking</a></td></tr><tr><td><code>modport</code></td><td><a href="third_party/tests/hdlconvertor/tests/sv_test/std2017/p766.sv.html">hdlconvertor_std2017_p766</a></td></tr><tr><td><code>nand</code></td><td><a href="third_party/tests/hdlconvertor/tests/sv_test/std2017/p719.sv.html">hdlconvertor_std2017_p719</a></td></tr><tr><td><code>nettype</code></td><td><a href="tests/chapter-6/6.6.7--nettype.sv.html">nettype</a></td></tr><tr><td><code>new</code> <span class="muted">NewKeyword</span></td><td><a href="tests/chapter-8/8.12--assignment.sv.html">assignment</a></td></tr><tr><td><code>nmos</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/br_gh99j.v.html">regress-vlg_br_gh99j_iv</a></td></tr><tr><td><code>nor</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/ga_nor.v.html">regress-vlg_ga_nor_iv</a></td></tr><tr><td><code>not</code></td><td><a href="third_party/tools/yosys/tests/asicworld/code_hdl_models_d_ff_gates.v.html">asicworld_code_hdl_models_d_ff_gates</a></td></tr><tr><td><code>notif0</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/test_notif0.v.html">regress-vlg_test_notif0_iv</a></td></tr><tr><td><code>notif1</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/test_notif1.v.html">regress-vlg_test_notif1_iv</a></td></tr><tr><td><code>NotKeyword</code></td><td><a href="third_party/tools/yosys/tests/sva/sva_not.sv.html">sva_sva_not</a></td></tr><tr><td><code>NullKeyword</code></td><td><a href="tests/chapter-8/8.4--instantiation.sv.html">instantiation</a></td></tr><tr><td><code>or</code></td><td><a href="third_party/tools/yosys/tests/asicworld/code_hdl_models_encoder_4to2_gates.v.html">asicworld_code_hdl_models_encoder_4to2_gates</a></td></tr><tr><td><code>=&gt;</code> <span class="muted">OrEqualsArrow</span></td><td><a href="third_party/tools/yosys/tests/sva/basic00.sv.html">sva_basic00</a></td></tr><tr><td><code>or</code> <span class="muted">OrKeyword</span></td><td><a href="third_party/tools/yosys/tests/asicworld/code_hdl_models_decoder_using_case.v.html">asicworld_code_hdl_models_decoder_using_case</a></td></tr><tr><td><code>package</code> <span class="muted">PackageKeyword</span></td><td><a href="tests/generic/class/class_test_19.sv.html">class_test_19</a></td></tr><tr><td><code>PackedKeyword</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/bits3.v.html">regress-sv_bits3_iv</a></td></tr><tr><td><code>+:</code> <span class="muted">PlusColon</span></td><td><a href="tests/chapter-11/11.5.1--idx_pos_part_select.sv.html">idx_pos_part_select</a></td></tr><tr><td><code>pmos</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/pr1703959.v.html">regress-vlg_pr1703959_iv</a></td></tr><tr><td><code>primitive</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/br_gh1175a.v.html">regress-vlg_br_gh1175a_iv</a></td></tr><tr><td><code>priority</code></td><td><a href="tests/generated/uniquecase/12.5.3--priority_case.sv.html">priority_case</a></td></tr><tr><td><code>program</code> <span class="muted">ProgramKeyword</span></td><td><a href="third_party/tests/hdlconvertor/tests/sv_test/std2017/p745.sv.html">hdlconvertor_std2017_p745</a></td></tr><tr><td><code>property</code></td><td><a href="tests/chapter-16/16.10--property-local-var.sv.html">property_local_var_test</a></td></tr><tr><td><code>protected</code></td><td><a href="tests/chapter-8/8.18--var_protected.sv.html">var_protected</a></td></tr><tr><td><code>Pull0Keyword</code></td><td><a href="third_party/tests/utd-sv/unconnected_drive.v.html">utd-sv_unconnected_drive</a></td></tr><tr><td><code>Pull1Keyword</code></td><td><a href="tests/generated/assignment-strengths/10.3.4--assignment_pull1_highz0.sv.html">cont_assignment_strength_pull1_highz0</a></td></tr><tr><td><code>pulldown</code></td><td><a href="third_party/tests/hdlconvertor/tests/sv_test/std2017/p628.sv.html">hdlconvertor_std2017_p628</a></td></tr><tr><td><code>pullup</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/pr1598445.v.html">regress-vlg_pr1598445_iv</a></td></tr><tr><td><code>pure</code></td><td><a href="tests/chapter-8/8.26.5--cast_between_interface_classes.sv.html">cast_between_interface_classes</a></td></tr><tr><td><code>rand</code></td><td><a href="tests/chapter-18/18.5.8.2--array-reduction-iterative-constraints_0.sv.html">array_reduction_iterative_constraints_0</a></td></tr><tr><td><code>randc</code></td><td><a href="tests/chapter-18/18.4.2--randc-modifier.sv.html">randc_modifier</a></td></tr><tr><td><code>randcase</code></td><td><a href="tests/chapter-18/18.16--random-weighted-case-randcase_0.sv.html">random_weighted_case_randcase_0</a></td></tr><tr><td><code>RandKeyword</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/pr2305307b.v.html">regress-vlg_pr2305307b_iv</a></td></tr><tr><td><code>randsequence</code></td><td><a href="tests/chapter-18/18.17.6--aborting-productions-break-and-return_0.sv.html">aborting_productions_break_and_return_0</a></td></tr><tr><td><code>real</code></td><td><a href="third_party/tests/hdlconvertor/tests/verilog/expected/function_non_ansi.v.html">expected_hdlconvertor_function_non_ansi</a></td></tr><tr><td><code>realtime</code></td><td><a href="tests/chapter-6/6.12--realtime.sv.html">realtime</a></td></tr><tr><td><code>release</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/sbyte_test.v.html">regress-sv_sbyte_test_iv</a></td></tr><tr><td><code>ReleaseKeyword</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/pr1735836.v.html">regress-vlg_pr1735836_iv</a></td></tr><tr><td><code>return</code> <span class="muted">ReturnKeyword</span></td><td><a href="tests/chapter-13/13.4.3--const-function.sv.html">const_function</a></td></tr><tr><td><code>rnmos</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/rnpmos.v.html">regress-vlg_rnpmos_iv</a></td></tr><tr><td><code>rpmos</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/rnpmos2.v.html">regress-vlg_rnpmos2_iv</a></td></tr><tr><td><code>rtran</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/rtran.v.html">regress-vlg_rtran_iv</a></td></tr><tr><td><code>rtranif0</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/rtranif0.v.html">regress-vlg_rtranif0_iv</a></td></tr><tr><td><code>rtranif1</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/rtranif1.v.html">regress-vlg_rtranif1_iv</a></td></tr><tr><td><code>ScalaredKeyword</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/scalar_vector.v.html">regress-sv_scalar_vector_iv</a></td></tr><tr><td><code>sequence</code></td><td><a href="tests/chapter-9/9.4.2.4--event_sequence.sv.html">event_sequence</a></td></tr><tr><td><code>shortint</code></td><td><a href="tests/generated/integers/6.11--integer_shortint.sv.html">integer_shortint</a></td></tr><tr><td><code>shortreal</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/sv_darray5b.v.html">regress-sv_sv_darray5b_iv</a></td></tr><tr><td><code>specify</code></td><td><a href="third_party/tests/hdlconvertor/tests/sv_test/std2017/p125.sv.html">hdlconvertor_std2017_p125</a></td></tr><tr><td><code>specparam</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/br_gh732.v.html">regress-vlg_br_gh732_iv</a></td></tr><tr><td><code>static</code></td><td><a href="tests/chapter-18/18.17.6--aborting-productions-break-and-return_2.sv.html">aborting_productions_break_and_return_2</a></td></tr><tr><td><code>static</code> <span class="muted">StaticKeyword</span></td><td><a href="tests/chapter-13/13.4.2--function-static.sv.html">function_static</a></td></tr><tr><td><code>Strong0Keyword</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/pr1703346.v.html">regress-vlg_pr1703346_iv</a></td></tr><tr><td><code>Strong1Keyword</code></td><td><a href="tests/generated/assignment-strengths/10.3.4--assignment_strong1_highz0.sv.html">cont_assignment_strength_strong1_highz0</a></td></tr><tr><td><code>struct</code></td><td><a href="tests/chapter-7/structures/packed/basic.sv.html">basic-packed-structures</a></td></tr><tr><td><code>super</code></td><td><a href="tests/chapter-8/8.7--constructor_super.sv.html">constructor_super</a></td></tr><tr><td><code>SuperKeyword</code></td><td><a href="third_party/tests/hdlconvertor/tests/sv_test/std2017/p181_2.sv.html">hdlconvertor_std2017_p181_2</a></td></tr><tr><td><code>supply0</code></td><td><a href="tests/generated/nets/6.6.6--net_supply0.sv.html">net_supply0</a></td></tr><tr><td><code>Supply0Keyword</code></td><td><a href="third_party/tools/yosys/tests/hana/test_intermout.v.html">hana_test_intermout</a></td></tr><tr><td><code>supply1</code></td><td><a href="tests/generated/nets/6.6.6--net_supply1.sv.html">net_supply1</a></td></tr><tr><td><code>Supply1Keyword</code></td><td><a href="tests/generated/assignment-strengths/10.3.4--assignment_supply1_highz0.sv.html">cont_assignment_strength_supply1_highz0</a></td></tr><tr><td><code>TaggedKeyword</code></td><td><a href="tests/chapter-11/11.9--tagged_union.sv.html">tagged_union</a></td></tr><tr><td><code>this</code></td><td><a href="tests/chapter-8/8.11--this.sv.html">this</a></td></tr><tr><td><code>ThisKeyword</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/sv_class_prop_shadow1.v.html">regress-sv_sv_class_prop_shadow1_iv</a></td></tr><tr><td><code>time</code> <span class="muted">TimeKeyword</span></td><td><a href="tests/generated/integers/6.11--integer_signed_time.sv.html">integer_signed_time</a></td></tr><tr><td><code>timeprecision</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/sv_timeunit_prec3c.v.html">regress-sv_sv_timeunit_prec3c_iv</a></td></tr><tr><td><code>timeunit</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/br1003a.v.html">regress-sv_br1003a_iv</a></td></tr><tr><td><code>tran</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/pr2937417.v.html">regress-vlg_pr2937417_iv</a></td></tr><tr><td><code>tranif0</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/tranif0.v.html">regress-vlg_tranif0_iv</a></td></tr><tr><td><code>tranif1</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/br_gh956b.v.html">regress-fsv_br_gh956b_iv</a></td></tr><tr><td><code>tri</code></td><td><a href="third_party/tests/hdlconvertor/tests/sv_test/std2017/p234.sv.html">hdlconvertor_std2017_p234</a></td></tr><tr><td><code>tri0</code></td><td><a href="tests/generated/nets/6.6.5--net_tri0.sv.html">net_tri0</a></td></tr><tr><td><code>Tri0Keyword</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/def_nettype.v.html">regress-vlg_def_nettype_iv</a></td></tr><tr><td><code>tri1</code></td><td><a href="tests/generated/nets/6.6.5--net_tri1.sv.html">net_tri1</a></td></tr><tr><td><code>Tri1Keyword</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/def_nettype.v.html">regress-vlg_def_nettype_iv</a></td></tr><tr><td><code>triand</code></td><td><a href="tests/generated/nets/6.6.3--net_triand.sv.html">net_triand</a></td></tr><tr><td><code>TriAndKeyword</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/def_nettype.v.html">regress-vlg_def_nettype_iv</a></td></tr><tr><td><code>TriKeyword</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/def_nettype.v.html">regress-vlg_def_nettype_iv</a></td></tr><tr><td><code>trior</code></td><td><a href="tests/generated/nets/6.6.3--net_trior.sv.html">net_trior</a></td></tr><tr><td><code>TriOrKeyword</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/def_nettype.v.html">regress-vlg_def_nettype_iv</a></td></tr><tr><td><code>trireg</code></td><td><a href="third_party/tests/hdlconvertor/tests/sv_test/std2017/p827.sv.html">hdlconvertor_std2017_p827</a></td></tr><tr><td><code>type</code> <span class="muted">TypeKeyword</span></td><td><a href="tests/generic/class/class_test_13.sv.html">class_test_13</a></td></tr><tr><td><code>unclosed bracket before statement end</code></td><td><a href="tests/chapter-7/arrays/associative/other.sv.html">associative-arrays-other-types</a></td></tr><tr><td><code>union</code></td><td><a href="tests/chapter-7/unions/packed/basic.sv.html">basic-packed-unions</a></td></tr><tr><td><code>unique</code></td><td><a href="tests/generated/uniquecase/12.5.3--unique_case.sv.html">unique_case</a></td></tr><tr><td><code>unique0</code></td><td><a href="tests/generated/uniquecase/12.5.3--unique0_case.sv.html">unique0_case</a></td></tr><tr><td><code>unmatched closing bracket</code></td><td><a href="tests/generic/typedef/typedef_test_26.sv.html">typedef_test_26</a></td></tr><tr><td><code>uwire</code></td><td><a href="tests/generated/nets/6.6.2--net_uwire.sv.html">net_uwire</a></td></tr><tr><td><code>var</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/sv_var_module.v.html">regress-sv_sv_var_module_iv</a></td></tr><tr><td><code>var</code> <span class="muted">VarKeyword</span></td><td><a href="tests/generic/member/class_member_test_32.sv.html">class_member_test_32</a></td></tr><tr><td><code>VectoredKeyword</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/scalar_vector.v.html">regress-sv_scalar_vector_iv</a></td></tr><tr><td><code>virtual</code></td><td><a href="tests/chapter-8/8.21--abstract_class.sv.html">abstract_class</a></td></tr><tr><td><code>VirtualKeyword</code></td><td><a href="third_party/tests/hdlconvertor/tests/sv_test/std2017/p771.sv.html">hdlconvertor_std2017_p771</a></td></tr><tr><td><code>wait</code></td><td><a href="tests/chapter-9/9.4.3--event_sequence_controls.sv.html">event_sequence_controls</a></td></tr><tr><td><code>WaitKeyword</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/schedule.v.html">regress-vlg_schedule_iv</a></td></tr><tr><td><code>wand</code></td><td><a href="tests/generated/nets/6.6.3--net_wand.sv.html">net_wand</a></td></tr><tr><td><code>WAndKeyword</code></td><td><a href="third_party/tests/hdlconvertor/tests/sv_test/std2017/p718.sv.html">hdlconvertor_std2017_p718</a></td></tr><tr><td><code>Weak0Keyword</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/drive_strength1.v.html">regress-vlg_drive_strength1_iv</a></td></tr><tr><td><code>Weak1Keyword</code></td><td><a href="tests/generated/assignment-strengths/10.3.4--assignment_weak1_highz0.sv.html">cont_assignment_strength_weak1_highz0</a></td></tr><tr><td><code>WithKeyword</code></td><td><a href="tests/chapter-7/arrays/associative/locator-methods/find.sv.html">array-locator-methods-find</a></td></tr><tr><td><code>wor</code></td><td><a href="tests/generated/nets/6.6.3--net_wor.sv.html">net_wor</a></td></tr><tr><td><code>WOrKeyword</code></td><td><a href="third_party/tools/yosys/tests/simple/wandwor.v.html">simple_wandwor</a></td></tr><tr><td><code>xnor</code></td><td><a href="third_party/tools/icarus/ivtest/ivltests/ga_xnor.v.html">regress-vlg_ga_xnor_iv</a></td></tr><tr><td><code>xor</code></td><td><a href="third_party/tools/yosys/tests/asicworld/code_verilog_tutorial_parity.v.html">asicworld_code_verilog_tutorial_parity</a></td></tr><tr><td><code>xor</code> <span class="muted">XorKeyword</span></td><td><a href="tests/chapter-7/arrays/unpacked/reduction-methods/xor.sv.html">unpacked-array-reduction-method-xor</a></td></tr></tbody></table></section>
+</main>
+</body>
+</html>
