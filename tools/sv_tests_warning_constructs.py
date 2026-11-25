@@ -21,7 +21,9 @@ from sv_tests_unsupported_report import (
 )
 
 EXTRA_CSS = """
-#constructs-table td:first-child { width: 38%; }
+.constructs-count { color: var(--muted); font-size: .875rem; margin: 0 0 .375rem; }
+#constructs-table { table-layout: fixed; }
+#constructs-table th:first-child { width: 38%; }
 #constructs-table td { overflow-wrap: anywhere; }
 #constructs-table td a {
   font-family: var(--mono);
@@ -78,10 +80,10 @@ def render_page(examples: dict[str, Test], root: Path, output: Path) -> str:
         f"<style>{CSS}{EXTRA_CSS}</style>\n</head>\n<body>\n"
         + render_report_header(
             "VerihoggFormat: warning constructs",
-            f"{len(examples)} constructs",
             "constructs.html",
         )
         + "<main>\n"
+        + f'<p class="constructs-count">{len(examples)} constructs</p>'
         + render_table(examples, root, output.parent)
         + "\n</main>\n</body>\n</html>\n"
     )

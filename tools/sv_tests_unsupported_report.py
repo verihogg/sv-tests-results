@@ -17,7 +17,6 @@ import re
 import sys
 from collections import Counter
 from dataclasses import dataclass, field
-from datetime import datetime, timezone
 from pathlib import Path
 
 TOOL = "VerihoggFormat"
@@ -470,26 +469,38 @@ def render_cards(data: dict) -> str:
     def percent(value: int) -> str:
         return f"{value / total * 100:.1f}%" if total else "0.0%"
 
-    cards = [
+    overview = [
         ("", str(total), "Total tests", ""),
+        ("", str(data["total_occurrences"]), "Warning occurrences", ""),
+        ("", str(causes), "Unique causes", ""),
+    ]
+    statuses = [
         ("green", str(passed), "Passed", percent(passed)),
         ("yellow", str(warning), "Warning", percent(warning)),
         ("red", str(failed), "Failed", percent(failed)),
         ("gray", str(unverified), "Unverified", percent(unverified)),
         ("blue", str(negative), "Negative pass", percent(negative)),
-        ("", str(data["total_occurrences"]), "Warning occurrences", ""),
-        ("", str(causes), "Unique causes", ""),
     ]
-    parts = ['<section class="cards">']
-    for css, value, label, extra in cards:
-        extra_html = f'<span class="pct">{html.escape(extra)}</span>' if extra else ""
-        class_name = f"card {css}".strip()
-        parts.append(
-            f'<div class="{class_name}">'
-            f'<div class="value">{html.escape(value)}{extra_html}</div>'
-            f'<div class="label">{html.escape(label)}</div>'
-            "</div>"
-        )
+    parts = ['<section class="cards" aria-label="Test statistics">']
+    for group, group_label, metrics in (
+        ("stats-overview", "Totals", overview),
+        ("stats-status", "Test results by status", statuses),
+    ):
+        parts.append(f'<div class="{group}" role="group" aria-label="{group_label}">')
+        for css, value, label, percent_text in metrics:
+            extra = (
+                f'<span class="pct">{html.escape(percent_text)}</span>'
+                if percent_text
+                else ""
+            )
+            class_name = f"card {css}".strip()
+            parts.append(
+                f'<div class="{class_name}">'
+                f'<div class="value">{html.escape(value)}{extra}</div>'
+                f'<div class="label">{html.escape(label)}</div>'
+                "</div>"
+            )
+        parts.append("</div>")
     parts.append("</section>")
     return "\n".join(parts)
 
@@ -722,6 +733,8 @@ CSS = """
   --yellow: #795000;
   --red: #a12220;
   --blue: #1234ff;
+  --purple: #6941c6;
+  --gutter: clamp(.875rem, 4vw, 3.5rem);
   --mono: ui-monospace, SFMono-Regular, Consolas, monospace;
 }
 * { box-sizing: border-box; }
@@ -729,72 +742,90 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  font: .9375rem/1.6 system-ui, sans-serif;
 }
-.report-header, main { width: min(91%, 1300px); margin-inline: auto; }
+.report-header, main {
+  width: min(calc(100% - var(--gutter) - var(--gutter)), 1300px);
+  margin-inline: auto;
+}
 .report-brand {
   margin: 0;
-  padding: 34px 0 22px;
+  padding: clamp(1.125rem, 3vw, 2.125rem) 0 clamp(.875rem, 2vw, 1.375rem);
   border-bottom: 2px solid var(--text);
-  font: 700 clamp(21px, 2.8vw, 34px)/1.1 var(--mono);
-  letter-spacing: -.055em;
+  font: 700 clamp(1.25rem, 2.6vw, 2.125rem)/1.15 var(--mono);
+  letter-spacing: -.05em;
 }
 .report-brand span { color: var(--blue); }
 .report-header h1 {
-  margin: 27px 0 6px;
-  font-size: clamp(30px, 4.2vw, 58px);
-  line-height: 1.08;
-  letter-spacing: -.05em;
+  margin: clamp(1.125rem, 3vw, 1.875rem) 0 .875rem;
+  font-size: clamp(1.75rem, 1.15rem + 2.9vw, 3.5rem);
+  font-weight: 750;
+  line-height: 1.12;
+  letter-spacing: -.045em;
   overflow-wrap: anywhere;
 }
-.report-header .meta { margin: 0; color: var(--muted); }
 .report-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 22px;
+  gap: 0 clamp(.25rem, 2vw, 1.5rem);
+  border-bottom: 1px solid var(--line);
 }
 .report-nav a {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: center;
   min-height: 44px;
-  padding: 8px 14px;
-  border: 2px solid var(--blue);
-  border-radius: 8px;
-  background: var(--blue);
-  color: #fff;
-  font-weight: 700;
+  padding: .6rem .5rem;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -1px;
+  color: var(--muted);
+  font-size: clamp(1rem, .9rem + .45vw, 1.25rem);
+  font-weight: 650;
+  line-height: 1.3;
+  text-align: center;
   text-decoration: none;
 }
-.report-nav a:hover { background: #0e29cc; border-color: #0e29cc; }
+.report-nav a:hover { background: var(--panel-2); color: var(--text); }
 .report-nav a[aria-current="page"] {
-  border-color: var(--line);
-  background: var(--panel);
+  border-bottom-color: var(--purple);
   color: var(--text);
 }
-.report-nav a[aria-current="page"]:hover { border-color: var(--blue); }
-:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
-main { padding: 28px 0 48px; }
-section { margin: 0 0 34px; }
-h2 { font-size: 22px; margin: 0 0 10px; letter-spacing: -.02em; }
-.lead, .hint { color: var(--muted); margin: 0 0 12px; }
-.hint { font-size: 12px; }
-.cards {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
-  margin-bottom: 24px;
+:focus-visible { outline: 2px solid var(--purple); outline-offset: 3px; }
+main { padding: clamp(1.25rem, 3vw, 2rem) 0 3rem; }
+section { margin: 0 0 clamp(1.5rem, 4vw, 2.25rem); }
+h2 {
+  margin: 0 0 .625rem;
+  font-size: clamp(1.125rem, 1rem + .6vw, 1.5rem);
+  line-height: 1.25;
+  letter-spacing: -.02em;
 }
+.lead, .hint { color: var(--muted); margin: 0 0 .75rem; }
+.hint { font-size: .875rem; }
+.cards, .stats-overview, .stats-status {
+  display: grid;
+  gap: clamp(.5rem, 1.2vw, .875rem);
+}
+.stats-overview { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.stats-status { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 .card {
   background: var(--panel);
   border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 14px 16px;
+  border-radius: 8px;
+  padding: clamp(.5rem, 1.35vw, 1rem);
 }
-.card .value { font-size: 26px; font-weight: 650; }
-.card .pct { font-size: 13px; color: var(--muted); margin-left: 6px; }
-.card .label { color: var(--muted); font-size: 12px; margin-top: 2px; }
+.card .value {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .25rem .5rem;
+  font-size: clamp(1.125rem, .95rem + .8vw, 1.75rem);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+}
+.stats-overview .value { font-size: clamp(1.125rem, .8rem + 1.5vw, 2.25rem); }
+.card .pct { font-size: .8125rem; font-weight: 500; color: var(--muted); }
+.card .label { color: var(--muted); font-size: .8125rem; margin-top: .35rem; }
 .card.green { border-color: #a4c9ab; }
 .card.green .value { color: var(--green); }
 .card.yellow { border-color: #d6b36b; }
@@ -814,7 +845,7 @@ h2 { font-size: 22px; margin: 0 0 10px; letter-spacing: -.02em; }
   color: var(--muted);
 }
 .note strong { color: var(--text); }
-.note h2 { color: var(--text); font-size: 16px; margin: 0 0 10px; }
+.note h2 { color: var(--text); font-size: 1.125rem; }
 .note p { margin: 0 0 9px; }
 .note p:last-child { margin-bottom: 0; }
 .defs {
@@ -955,14 +986,33 @@ code {
 .example { min-width: 180px; }
 .table-scroll { overflow-x: auto; }
 .table-scroll:focus-visible { outline-offset: -2px; }
-@media (min-width: 1200px) {
-  .cards { grid-template-columns: repeat(8, minmax(0, 1fr)); }
-}
-@media (max-width: 760px) {
-  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .report-header, main { width: calc(100% - 32px); }
-  .report-brand { padding: 24px 0 18px; }
-  .report-header h1 { margin-top: 22px; }
+@media (max-width: 46rem) {
+  .report-nav { flex-wrap: nowrap; }
+  .report-nav a { flex: 1 1 auto; }
+  .stats-status {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    padding-inline: .75rem;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--panel);
+  }
+  .stats-status .card {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: .5rem;
+    padding: .5rem .125rem;
+    border: 0;
+    border-radius: 0;
+  }
+  .stats-status .card + .card { border-top: 1px solid var(--line); }
+  .stats-status .value { justify-content: flex-end; }
+  .stats-status .label { margin-top: 0; }
+  .controls input, .controls select { min-height: 44px; font-size: 1rem; }
+  .controls input { flex: 1 1 14rem; min-width: 0; }
+  table.plain th, table.plain td { padding: .5rem .625rem; }
 }
 """
 
@@ -1068,24 +1118,18 @@ def render_how_to_read(data: dict) -> str:
     )
 
 
-def render_report_header(title: str, meta: str, current_page: str) -> str:
+def render_report_header(title: str, current_page: str) -> str:
     links = []
     for href, label in (
         ("unsupported.html", "Full report"),
         ("constructs.html", "Warning constructs"),
     ):
-        if href == current_page:
-            attrs = ' aria-current="page"'
-            arrow = ""
-        else:
-            attrs = ""
-            arrow = '<span aria-hidden="true">→</span>'
-        links.append(f'<a href="{href}"{attrs}>{label}{arrow}</a>')
+        current = ' aria-current="page"' if href == current_page else ""
+        links.append(f'<a href="{href}"{current}>{label}</a>')
     return (
         '<header class="report-header">'
         '<p class="report-brand">verihogg <span>/ reports</span></p>'
         f"<h1>{html.escape(title)}</h1>"
-        f'<p class="meta">{html.escape(meta)}</p>'
         '<nav class="report-nav" aria-label="Construct reports">'
         + "".join(links)
         + "</nav></header>\n"
@@ -1094,8 +1138,6 @@ def render_report_header(title: str, meta: str, current_page: str) -> str:
 
 def render_page(data: dict, root: Path, output: Path, args: argparse.Namespace) -> str:
     output_dir = output.parent
-    total = len(data["tests"])
-    generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
     return (
         "<!doctype html>\n"
@@ -1105,7 +1147,6 @@ def render_page(data: dict, root: Path, output: Path, args: argparse.Namespace) 
         f"<style>{CSS}</style>\n</head>\n<body>\n"
         + render_report_header(
             "VerihoggFormat: unsupported constructs",
-            f"{total} tests · generated {generated}",
             "unsupported.html",
         )
         + "<main>\n"
