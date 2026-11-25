@@ -756,7 +756,7 @@ body {
 }
 .report-brand span { color: var(--blue); }
 .report-header h1 {
-  margin: clamp(1.125rem, 3vw, 1.875rem) 0 .875rem;
+  margin: clamp(1.125rem, 3vw, 1.875rem) 0 clamp(1.5rem, 1rem + 1.5vw, 2rem);
   font-size: clamp(1.75rem, 1.15rem + 2.9vw, 3.5rem);
   font-weight: 750;
   line-height: 1.12;
