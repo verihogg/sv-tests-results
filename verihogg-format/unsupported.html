@@ -17,7 +17,6 @@
   --yellow: #795000;
   --red: #a12220;
   --blue: #1234ff;
-  --purple: #6941c6;
   --gutter: clamp(.875rem, 4vw, 3.5rem);
   --mono: ui-monospace, SFMono-Regular, Consolas, monospace;
 }
@@ -71,10 +70,10 @@ body {
 }
 .report-nav a:hover { background: var(--panel-2); color: var(--text); }
 .report-nav a[aria-current="page"] {
-  border-bottom-color: var(--purple);
+  border-bottom-color: var(--blue);
   color: var(--text);
 }
-:focus-visible { outline: 2px solid var(--purple); outline-offset: 3px; }
+:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
 main { padding: clamp(1.25rem, 3vw, 2rem) 0 3rem; }
 section { margin: 0 0 clamp(1.5rem, 4vw, 2.25rem); }
 h2 {
