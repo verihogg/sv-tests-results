@@ -754,9 +754,11 @@ body {
   font: 700 clamp(1.25rem, 2.6vw, 2.125rem)/1.15 var(--mono);
   letter-spacing: -.05em;
 }
+.report-brand a { color: inherit; text-decoration: none; }
+.report-brand a:hover { text-decoration: underline; }
 .report-brand span { color: var(--blue); }
 .report-header h1 {
-  margin: clamp(1.125rem, 3vw, 1.875rem) 0 clamp(1.5rem, 1rem + 1.5vw, 2rem);
+  margin: clamp(1.125rem, 3vw, 1.875rem) 0 clamp(2.25rem, 1.75rem + 2vw, 3rem);
   font-size: clamp(1.75rem, 1.15rem + 2.9vw, 3.5rem);
   font-weight: 750;
   line-height: 1.12;
@@ -1127,7 +1129,7 @@ def render_report_header(title: str, current_page: str) -> str:
         links.append(f'<a href="{href}"{current}>{label}</a>')
     return (
         '<header class="report-header">'
-        '<p class="report-brand">verihogg <span>/ reports</span></p>'
+        '<p class="report-brand"><a href="index.html">verihogg <span>/ reports</span></a></p>'
         f"<h1>{html.escape(title)}</h1>"
         '<nav class="report-nav" aria-label="Construct reports">'
         + "".join(links)
