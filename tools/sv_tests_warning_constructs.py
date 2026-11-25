@@ -16,14 +16,15 @@ from sv_tests_unsupported_report import (
     key_label_html,
     link_href,
     load_tests,
+    render_report_header,
     split_key,
 )
 
 EXTRA_CSS = """
 #constructs-table td:first-child { width: 38%; }
-#constructs-table td:last-child { overflow-wrap: anywhere; }
+#constructs-table td { overflow-wrap: anywhere; }
 #constructs-table td a {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: var(--mono);
   font-size: 12.5px;
 }
 """
@@ -75,11 +76,12 @@ def render_page(examples: dict[str, Test], root: Path, output: Path) -> str:
         '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
         "<title>VerihoggFormat — warning constructs</title>\n"
         f"<style>{CSS}{EXTRA_CSS}</style>\n</head>\n<body>\n"
-        "<header>"
-        "<h1>VerihoggFormat: warning constructs</h1>"
-        f'<p class="meta">{len(examples)} constructs · '
-        '<a href="unsupported.html">Full report</a></p>'
-        "</header>\n<main>\n"
+        + render_report_header(
+            "VerihoggFormat: warning constructs",
+            f"{len(examples)} constructs",
+            "constructs.html",
+        )
+        + "<main>\n"
         + render_table(examples, root, output.parent)
         + "\n</main>\n</body>\n</html>\n"
     )

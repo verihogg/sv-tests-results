@@ -560,13 +560,14 @@ def render_greedy(data: dict, top: int) -> str:
         "Coverage is cumulative. See "
         '<a href="#how-to-read">How to read this report</a>.</p>'
         + hint
-        + '<table class="plain sortable" id="greedy-table">'
+        + '<div class="table-scroll" role="region" aria-label="What to fix first" tabindex="0">'
+        '<table class="plain sortable" id="greedy-table">'
         "<thead><tr>"
         '<th class="num">#</th><th>Cause</th><th>Category</th>'
         '<th class="num">Occurrences</th><th class="num">Tests</th>'
         '<th class="num">Newly clean (sim.)</th>'
         '<th class="num">Cumulative</th>'
-        "</tr></thead><tbody>" + "".join(rows) + "</tbody></table></section>"
+        "</tr></thead><tbody>" + "".join(rows) + "</tbody></table></div></section>"
     )
 
 
@@ -630,6 +631,7 @@ def render_causes(data: dict, root: Path, output_dir: Path) -> str:
         '<option value="other">Other</option>'
         "</select>"
         "</div>"
+        '<div class="table-scroll" role="region" aria-label="All causes" tabindex="0">'
         '<table class="plain sortable" id="causes-table">'
         "<thead><tr>"
         '<th data-sort="name">Cause</th>'
@@ -639,7 +641,7 @@ def render_causes(data: dict, root: Path, output_dir: Path) -> str:
         '<th data-sort="solo" class="num">Solo</th>'
         '<th data-sort="rank" class="num">Greedy #</th>'
         "<th>Example</th>"
-        "</tr></thead><tbody>" + "".join(rows) + "</tbody></table>"
+        "</tr></thead><tbody>" + "".join(rows) + "</tbody></table></div>"
         '<p class="hint">Solo and Greedy # are explained in '
         '<a href="#how-to-read">How to read this report</a>.</p>'
         "</section>"
@@ -693,6 +695,8 @@ def render_tests(data: dict, root: Path, output_dir: Path) -> str:
         '<input id="test-search" type="search" '
         'placeholder="Search tests, tags, causes...">'
         "</div>"
+        '<div class="table-scroll" role="region" '
+        'aria-label="Tests with unsupported constructs" tabindex="0">'
         '<table class="plain sortable" id="tests-table">'
         "<thead><tr>"
         '<th data-sort="name">Test</th>'
@@ -700,48 +704,85 @@ def render_tests(data: dict, root: Path, output_dir: Path) -> str:
         '<th data-sort="tags">Tags</th>'
         "<th>Causes</th>"
         "<th>Links</th>"
-        "</tr></thead><tbody>" + "".join(rows) + "</tbody></table>"
+        "</tr></thead><tbody>" + "".join(rows) + "</tbody></table></div>"
         "</section>"
     )
 
 
 CSS = """
 :root {
-  --bg: #0f172a;
-  --panel: #111c34;
-  --panel-2: #162240;
-  --text: #e6edf7;
-  --muted: #8ca0bf;
-  --line: #24345a;
-  --green: #3fb950;
-  --yellow: #d29922;
-  --red: #f85149;
-  --gray: #6e7681;
-  --blue: #58a6ff;
-  --accent: #7c9cff;
+  color-scheme: light;
+  --bg: #fbf8f6;
+  --panel: #fff;
+  --panel-2: #f1eeec;
+  --text: #071735;
+  --muted: #4b576e;
+  --line: #d8d4d1;
+  --green: #1c642f;
+  --yellow: #795000;
+  --red: #a12220;
+  --blue: #1234ff;
+  --mono: ui-monospace, SFMono-Regular, Consolas, monospace;
 }
 * { box-sizing: border-box; }
 body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
 }
-header {
-  padding: 28px 32px 20px;
-  border-bottom: 1px solid var(--line);
-  background: linear-gradient(180deg, #131f3b, #0f172a);
+.report-header, main { width: min(91%, 1300px); margin-inline: auto; }
+.report-brand {
+  margin: 0;
+  padding: 34px 0 22px;
+  border-bottom: 2px solid var(--text);
+  font: 700 clamp(21px, 2.8vw, 34px)/1.1 var(--mono);
+  letter-spacing: -.055em;
 }
-header h1 { margin: 0 0 6px; font-size: 26px; }
-header .meta { margin: 0; color: var(--muted); }
-main { padding: 24px 32px 48px; max-width: 1500px; margin: 0 auto; }
+.report-brand span { color: var(--blue); }
+.report-header h1 {
+  margin: 27px 0 6px;
+  font-size: clamp(30px, 4.2vw, 58px);
+  line-height: 1.08;
+  letter-spacing: -.05em;
+  overflow-wrap: anywhere;
+}
+.report-header .meta { margin: 0; color: var(--muted); }
+.report-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+.report-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  padding: 8px 14px;
+  border: 2px solid var(--blue);
+  border-radius: 8px;
+  background: var(--blue);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+.report-nav a:hover { background: #0e29cc; border-color: #0e29cc; }
+.report-nav a[aria-current="page"] {
+  border-color: var(--line);
+  background: var(--panel);
+  color: var(--text);
+}
+.report-nav a[aria-current="page"]:hover { border-color: var(--blue); }
+:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+main { padding: 28px 0 48px; }
 section { margin: 0 0 34px; }
-h2 { font-size: 18px; margin: 0 0 10px; }
+h2 { font-size: 22px; margin: 0 0 10px; letter-spacing: -.02em; }
 .lead, .hint { color: var(--muted); margin: 0 0 12px; }
 .hint { font-size: 12px; }
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 12px;
   margin-bottom: 24px;
 }
@@ -754,20 +795,20 @@ h2 { font-size: 18px; margin: 0 0 10px; }
 .card .value { font-size: 26px; font-weight: 650; }
 .card .pct { font-size: 13px; color: var(--muted); margin-left: 6px; }
 .card .label { color: var(--muted); font-size: 12px; margin-top: 2px; }
-.card.green { border-color: #1f6b32; }
+.card.green { border-color: #a4c9ab; }
 .card.green .value { color: var(--green); }
-.card.yellow { border-color: #6b561a; }
+.card.yellow { border-color: #d6b36b; }
 .card.yellow .value { color: var(--yellow); }
-.card.red { border-color: #7a2220; }
+.card.red { border-color: #dfa7a4; }
 .card.red .value { color: var(--red); }
-.card.gray { border-color: #3b4250; }
-.card.gray .value { color: #b6bfcc; }
-.card.blue { border-color: #1f4e7a; }
+.card.gray { border-color: var(--line); }
+.card.gray .value { color: var(--muted); }
+.card.blue { border-color: #aebafa; }
 .card.blue .value { color: var(--blue); }
 .note {
   background: var(--panel);
   border: 1px solid var(--line);
-  border-left: 3px solid var(--accent);
+  border-left: 3px solid var(--blue);
   border-radius: 10px;
   padding: 14px 18px;
   color: var(--muted);
@@ -778,7 +819,7 @@ h2 { font-size: 18px; margin: 0 0 10px; }
 .note p:last-child { margin-bottom: 0; }
 .defs {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
   gap: 10px;
   margin: 0 0 12px;
 }
@@ -800,8 +841,8 @@ h2 { font-size: 18px; margin: 0 0 10px; }
 }
 .example-box ul { margin: 6px 0 0; padding-left: 20px; }
 .example-box li { margin: 2px 0; }
-a { color: var(--accent); text-decoration: none; }
-a:hover { text-decoration: underline; }
+a { color: var(--blue); text-underline-offset: .15em; }
+a:hover { text-decoration-thickness: 2px; }
 .controls { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
 .controls input, .controls select {
   background: var(--panel);
@@ -811,7 +852,7 @@ a:hover { text-decoration: underline; }
   padding: 8px 10px;
   font: inherit;
 }
-.controls input { min-width: 320px; }
+.controls input { width: min(100%, 320px); }
 table.plain {
   width: 100%;
   border-collapse: collapse;
@@ -832,34 +873,32 @@ table.plain td .badge,
 table.plain td .chip { vertical-align: baseline; }
 table.plain thead th {
   background: var(--panel-2);
-  color: var(--muted);
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: .03em;
+  color: var(--text);
+  font-size: 13px;
   position: sticky;
   top: 0;
   z-index: 1;
 }
-table.plain tbody tr:hover { background: #14203c; }
+table.plain tbody tr:hover { background: #f6f7ff; }
 table.plain tbody tr:last-child td { border-bottom: none; }
 table.sortable th[data-sort] { cursor: pointer; user-select: none; }
 table.sortable th[data-sort]:hover { color: var(--text); }
-th.sorted-desc::after { content: " ↓"; color: var(--accent); }
-th.sorted-asc::after { content: " ↑"; color: var(--accent); }
+th.sorted-desc::after { content: " ↓"; color: var(--blue); }
+th.sorted-asc::after { content: " ↑"; color: var(--blue); }
 .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .wide { min-width: 180px; }
 .muted { color: var(--muted); }
 code {
-  background: #0b1428;
+  background: #f6f4f2;
   border: 1px solid var(--line);
   border-radius: 5px;
   padding: 1px 5px;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: var(--mono);
   font-size: 12.5px;
 }
 .bar {
   height: 7px;
-  background: #0b1428;
+  background: #f6f4f2;
   border: 1px solid var(--line);
   border-radius: 4px;
   margin-top: 5px;
@@ -868,21 +907,21 @@ code {
 .bar span {
   display: block;
   height: 100%;
-  background: linear-gradient(90deg, #2f81f7, #58a6ff);
+  background: var(--blue);
 }
 .badge {
   display: inline-block;
   padding: 2px 7px;
-  border-radius: 999px;
+  border-radius: 5px;
   font-size: 11.5px;
   border: 1px solid transparent;
   white-space: nowrap;
 }
-.badge-passed { color: var(--green); border-color: #1f6b32; background: #0f2a18; }
-.badge-warning { color: var(--yellow); border-color: #6b561a; background: #2a2210; }
-.badge-failed { color: var(--red); border-color: #7a2220; background: #2a1212; }
-.badge-unverified { color: #b6bfcc; border-color: #3b4250; background: #1a1f29; }
-.badge-negative-pass { color: var(--blue); border-color: #1f4e7a; background: #0f1f33; }
+.badge-passed { color: var(--green); border-color: #a4c9ab; background: #edf6ee; }
+.badge-warning { color: var(--yellow); border-color: #d6b36b; background: #fff5dc; }
+.badge-failed { color: var(--red); border-color: #dfa7a4; background: #fff0ee; }
+.badge-unverified { color: var(--muted); border-color: var(--line); background: var(--panel-2); }
+.badge-negative-pass { color: var(--blue); border-color: #aebafa; background: #edf0ff; }
 .badge-unknown { color: var(--muted); border-color: var(--line); }
 .chips-inner {
   display: inline-flex;
@@ -914,6 +953,17 @@ code {
   text-align: right;
 }
 .example { min-width: 180px; }
+.table-scroll { overflow-x: auto; }
+.table-scroll:focus-visible { outline-offset: -2px; }
+@media (min-width: 1200px) {
+  .cards { grid-template-columns: repeat(8, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .report-header, main { width: calc(100% - 32px); }
+  .report-brand { padding: 24px 0 18px; }
+  .report-header h1 { margin-top: 22px; }
+}
 """
 
 JS = """
@@ -1018,6 +1068,30 @@ def render_how_to_read(data: dict) -> str:
     )
 
 
+def render_report_header(title: str, meta: str, current_page: str) -> str:
+    links = []
+    for href, label in (
+        ("unsupported.html", "Full report"),
+        ("constructs.html", "Warning constructs"),
+    ):
+        if href == current_page:
+            attrs = ' aria-current="page"'
+            arrow = ""
+        else:
+            attrs = ""
+            arrow = '<span aria-hidden="true">→</span>'
+        links.append(f'<a href="{href}"{attrs}>{label}{arrow}</a>')
+    return (
+        '<header class="report-header">'
+        '<p class="report-brand">verihogg <span>/ reports</span></p>'
+        f"<h1>{html.escape(title)}</h1>"
+        f'<p class="meta">{html.escape(meta)}</p>'
+        '<nav class="report-nav" aria-label="Construct reports">'
+        + "".join(links)
+        + "</nav></header>\n"
+    )
+
+
 def render_page(data: dict, root: Path, output: Path, args: argparse.Namespace) -> str:
     output_dir = output.parent
     total = len(data["tests"])
@@ -1029,11 +1103,12 @@ def render_page(data: dict, root: Path, output: Path, args: argparse.Namespace) 
         '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
         "<title>VerihoggFormat — unsupported constructs</title>\n"
         f"<style>{CSS}</style>\n</head>\n<body>\n"
-        "<header>"
-        "<h1>VerihoggFormat: unsupported constructs</h1>"
-        f'<p class="meta">{total} tests · generated {html.escape(generated)} · '
-        '<a href="constructs.html">Warning constructs</a></p>'
-        "</header>\n<main>\n"
+        + render_report_header(
+            "VerihoggFormat: unsupported constructs",
+            f"{total} tests · generated {generated}",
+            "unsupported.html",
+        )
+        + "<main>\n"
         + render_cards(data)
         + "\n"
         + render_how_to_read(data)
