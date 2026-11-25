@@ -779,7 +779,7 @@ body {
   border-bottom: 3px solid transparent;
   margin-bottom: -1px;
   color: var(--muted);
-  font-size: clamp(1rem, .9rem + .45vw, 1.25rem);
+  font-size: clamp(1.125rem, 1rem + .6vw, 1.5rem);
   font-weight: 650;
   line-height: 1.3;
   text-align: center;
